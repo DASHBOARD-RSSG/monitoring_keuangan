@@ -3498,12 +3498,21 @@ function resetUmPjkDetailFilter() {
 let currentBiayaBahanDetail = [];
 let currentBiayaUmumDetail  = [];
 
-function renderBiayaGeneric(rowsMentah) {
+// Nominal NETO untuk biaya: debet - kredit (kredit = retur/koreksi/Adj Naik
+// yang MENGURANGI biaya). JANGAN pakai akuntansiNominal() di sini karena
+// fungsi itu mengambil nilai absolut, sehingga kredit malah ditambahkan ke
+// total (Sep 2026: tampil Rp 6,94 M padahal yang benar Rp 6,05 M).
+// Sudah dicocokkan dengan Excel laporan laba rugi untuk COA 4.1.1-4.1.7.
+function biayaNominalNeto(r) {
+  return (parseFloat(r.debet) || 0) - (parseFloat(r.kredit) || 0);
+}
+
+function renderBiayaGeneric(rowsMentah, neto = false) {
   return rowsMentah.map(r => ({
     ...r,
     _debet: akuntansiDebet(r),
     _kredit: akuntansiKredit(r),
-    _nominal: akuntansiNominal(r),
+    _nominal: neto ? biayaNominalNeto(r) : akuntansiNominal(r),
     _namaCoa: namaCoaBiaya(r),
     _kodeCoa: kodeCoaBiaya(r),
   }));
@@ -3571,7 +3580,7 @@ function renderBiayaRekap(prefix, detail) {
   renderBiayaRekapTable(`tbl${prefix}SubUnit`, `head-tbl${prefix}SubUnit`, perSubUnit);
 
   const chartCoa = perCoa.slice(0,15);
-  const chartKategori = perKategori;
+  const chartKategori = perKategori.filter(r => r.total_nominal > 0); // donat tidak bisa menampilkan neto negatif (mis. Adj Naik); nilainya tetap ada di tabel
   makeBar(`chart${prefix}Coa`, chartCoa.map(r => r.nama.substring(0,22)), chartCoa.map(r => r.total_nominal), 'Nominal', { indexAxis:'y' });
   makeDoughnut(`chart${prefix}Kategori`, chartKategori.map(r => r.nama), chartKategori.map(r => r.total_nominal));
 }
@@ -3641,7 +3650,7 @@ function filterBiayaGeneric(prefix, sourceDetail, tableId, headId) {
 }
 
 function renderBiayaBahan(d) {
-  const detail = renderBiayaGeneric(d.biaya_bahan_detail || []);
+  const detail = renderBiayaGeneric(d.biaya_bahan_detail || [], true);
   currentBiayaBahanDetail = detail;
   populateBiayaFilterOptions('BiayaBahan', detail);
   filterBiayaBahanDetail();
@@ -3683,13 +3692,13 @@ function buildPerbandinganUnitRows() {
     revMap[normalizeMatchText(su)] = (revMap[normalizeMatchText(su)] || 0) + (parseFloat(r.net ?? r.total ?? r.pendapatan) || 0);
   });
   const costMap = {};
-  const addCost = (rows, field) => rows.forEach(r => {
+  const addCost = (rows, field, nominalFn = akuntansiNominal) => rows.forEach(r => {
     const su = r.nama_sub_unit || 'Lainnya';
     const key = normalizeMatchText(su);
     if (!costMap[key]) costMap[key] = { sub_unit: su, biaya_bahan: 0, biaya_umum: 0 };
-    costMap[key][field] += akuntansiNominal(r);
+    costMap[key][field] += nominalFn(r);
   });
-  addCost(FILTERED?.biaya_bahan_detail || [], 'biaya_bahan');
+  addCost(FILTERED?.biaya_bahan_detail || [], 'biaya_bahan', biayaNominalNeto);
   addCost(FILTERED?.biaya_umum_detail || [], 'biaya_umum');
   const keys = new Set([...Object.keys(revMap), ...Object.keys(costMap)]);
   return [...keys].map(key => {
