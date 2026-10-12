@@ -1732,6 +1732,24 @@ function dedupeExact(rows) {
   return out;
 }
 
+// ══ Buang baris yang isinya sama KECUALI kolom loaded_at ══
+// Khusus Biaya Bahan. Backfill/reload BigQuery bisa menyisipkan baris yang
+// sama (id_sub_transaksi sama, isi identik) lebih dari sekali dengan
+// loaded_at berbeda. dedupeExact() tidak menangkapnya karena loaded_at ikut
+// dibandingkan, sehingga biaya bahan tampak berlipat di dashboard.
+// JANGAN dipakai untuk kasir/kredit: di sana baris yang identik selain
+// loaded_at adalah transaksi sah yang berbeda (tidak ada kolom ID unik).
+function dedupeAbaikanLoadedAt(rows) {
+  const seen = new Set();
+  const out = [];
+  for (const r of rows) {
+    const { loaded_at, ...isi } = r;
+    const key = JSON.stringify(isi);
+    if (!seen.has(key)) { seen.add(key); out.push(r); }
+  }
+  return out;
+}
+
 // ══ Fetch file per-bulan (pakai cache), gabungkan jadi 1 array ══
 // Kasir & Kredit sekarang SAMA-SAMA di-export multi-file per bulan:
 //   data/kasir-YYYY-MM-p1.json, -p2.json, dst
@@ -1937,7 +1955,7 @@ async function loadSemuaUntukRentang(awal, akhir) {
     pelunasan: dedupeExact([].concat(...pelunasanArr)),
     kasir: dedupeExact([].concat(...kasirArr)),
     kredit: dedupeExact([].concat(...kreditArr)),
-    biayaBahan: dedupeExact([].concat(...biayaBahanArr)),
+    biayaBahan: dedupeAbaikanLoadedAt([].concat(...biayaBahanArr)),
     biayaUmum: dedupeExact([].concat(...biayaUmumArr)),
     pengeluaranKas: dedupeExact([].concat(...pengeluaranKasArr)),
     umPjk: dedupeExact([].concat(...umPjkArr)),
