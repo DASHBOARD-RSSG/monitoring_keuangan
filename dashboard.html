@@ -1737,7 +1737,7 @@ function dedupeExact(rows) {
 // sama (id_sub_transaksi sama, isi identik) lebih dari sekali dengan
 // loaded_at berbeda. dedupeExact() tidak menangkapnya karena loaded_at ikut
 // dibandingkan, sehingga biaya bahan tampak berlipat di dashboard.
-// JANGAN dipakai untuk kasir/kredit: di sana baris yang identik selain
+// Dipakai untuk Biaya Bahan & Biaya Umum. JANGAN dipakai untuk kasir/kredit: di sana baris yang identik selain
 // loaded_at adalah transaksi sah yang berbeda (tidak ada kolom ID unik).
 function dedupeAbaikanLoadedAt(rows) {
   const seen = new Set();
@@ -1956,7 +1956,7 @@ async function loadSemuaUntukRentang(awal, akhir) {
     kasir: dedupeExact([].concat(...kasirArr)),
     kredit: dedupeExact([].concat(...kreditArr)),
     biayaBahan: dedupeAbaikanLoadedAt([].concat(...biayaBahanArr)),
-    biayaUmum: dedupeExact([].concat(...biayaUmumArr)),
+    biayaUmum: dedupeAbaikanLoadedAt([].concat(...biayaUmumArr)),
     pengeluaranKas: dedupeExact([].concat(...pengeluaranKasArr)),
     umPjk: dedupeExact([].concat(...umPjkArr)),
     pendapatanLain: dedupeExact([].concat(...pendapatanLainArr)),
@@ -3502,7 +3502,8 @@ let currentBiayaUmumDetail  = [];
 // yang MENGURANGI biaya). JANGAN pakai akuntansiNominal() di sini karena
 // fungsi itu mengambil nilai absolut, sehingga kredit malah ditambahkan ke
 // total (Sep 2026: tampil Rp 6,94 M padahal yang benar Rp 6,05 M).
-// Sudah dicocokkan dengan Excel laporan laba rugi untuk COA 4.1.1-4.1.7.
+// Sudah dicocokkan dengan Excel laporan laba rugi untuk COA 4.1.1-4.1.7
+// (Biaya Bahan) dan 4.2.x (Biaya Umum, Sep 2026): selisih Rp 0.
 function biayaNominalNeto(r) {
   return (parseFloat(r.debet) || 0) - (parseFloat(r.kredit) || 0);
 }
@@ -3667,7 +3668,7 @@ function resetBiayaBahanDetailFilter() {
 }
 
 function renderBiayaUmum(d) {
-  const detail = renderBiayaGeneric(d.biaya_umum_detail || []);
+  const detail = renderBiayaGeneric(d.biaya_umum_detail || [], true);
   currentBiayaUmumDetail = detail;
   populateBiayaFilterOptions('BiayaUmum', detail);
   filterBiayaUmumDetail();
@@ -3699,7 +3700,7 @@ function buildPerbandinganUnitRows() {
     costMap[key][field] += nominalFn(r);
   });
   addCost(FILTERED?.biaya_bahan_detail || [], 'biaya_bahan', biayaNominalNeto);
-  addCost(FILTERED?.biaya_umum_detail || [], 'biaya_umum');
+  addCost(FILTERED?.biaya_umum_detail || [], 'biaya_umum', biayaNominalNeto);
   const keys = new Set([...Object.keys(revMap), ...Object.keys(costMap)]);
   return [...keys].map(key => {
     const c = costMap[key] || {sub_unit:key, biaya_bahan:0, biaya_umum:0};
