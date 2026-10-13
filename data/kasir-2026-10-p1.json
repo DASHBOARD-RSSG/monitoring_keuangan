@@ -1,6 +1,98 @@
 {
   "bulan": "2026-10",
   "bagian": 1,
-  "generated_at": "2026-10-13T01:22:33.179Z",
-  "kasir_detail": []
+  "generated_at": "2026-10-13T01:38:16.044Z",
+  "kasir_detail": [
+    {
+      "unit_kasir": "Kasir IRNA",
+      "id_transaksi": "2260",
+      "tanggal_transaksi": "2026-10-01 07:27:00",
+      "nama_kasir": "rani.ayu",
+      "nomor_rm": "920096",
+      "nama_pasien": "ATIKA KHOIRU NISA ",
+      "jaminan": "ASURANSI PLN",
+      "kas": "KAS BESAR",
+      "tipe_pembayaran": null,
+      "nominal": "2061174.0",
+      "keterangan": "RETUR"
+    },
+    {
+      "unit_kasir": "Kasir IRNA",
+      "id_transaksi": "2262",
+      "tanggal_transaksi": "2026-10-01 07:27:00",
+      "nama_kasir": "rani.ayu",
+      "nomor_rm": "931024",
+      "nama_pasien": "MAQIL GABINO RAJENDRA SUTRISNO",
+      "jaminan": "UMUM",
+      "kas": "KAS BESAR",
+      "tipe_pembayaran": null,
+      "nominal": "150650.0",
+      "keterangan": "RETUR"
+    },
+    {
+      "unit_kasir": "Admin AR",
+      "id_transaksi": "2360",
+      "tanggal_transaksi": "2026-10-06 07:48:00",
+      "nama_kasir": "shabrina.amelia",
+      "nomor_rm": "933001",
+      "nama_pasien": "AYUDIYAH CHAERANI",
+      "jaminan": "UMUM",
+      "kas": "Bank BCA-1500317473",
+      "tipe_pembayaran": null,
+      "nominal": "745000.0",
+      "keterangan": "RETUR"
+    },
+    {
+      "unit_kasir": "Kasir IPM",
+      "id_transaksi": "2327",
+      "tanggal_transaksi": "2026-10-07 06:31:00",
+      "nama_kasir": "mochamad.ridwan",
+      "nomor_rm": "563531",
+      "nama_pasien": "ISHAF ZAYD ARRASY",
+      "jaminan": "Asuransi Sinar Mas (SIMAS)",
+      "kas": "KAS BESAR",
+      "tipe_pembayaran": null,
+      "nominal": "700000.0",
+      "keterangan": "RETUR"
+    },
+    {
+      "unit_kasir": "Kasir IRJ",
+      "id_transaksi": "2322",
+      "tanggal_transaksi": "2026-10-07 07:34:00",
+      "nama_kasir": "dyla.layiantoro",
+      "nomor_rm": "585445",
+      "nama_pasien": "KASIATI",
+      "jaminan": "UMUM",
+      "kas": "KAS BESAR",
+      "tipe_pembayaran": null,
+      "nominal": "108868.0",
+      "keterangan": "RETUR"
+    },
+    {
+      "unit_kasir": "Admin AR",
+      "id_transaksi": "2337",
+      "tanggal_transaksi": "2026-10-07 16:06:00",
+      "nama_kasir": "shabrina.amelia",
+      "nomor_rm": "383171",
+      "nama_pasien": "SITI NURUL AINI",
+      "jaminan": "UMUM",
+      "kas": "Bank Mandiri-1400002285626",
+      "tipe_pembayaran": null,
+      "nominal": "330000.0",
+      "keterangan": "RETUR"
+    },
+    {
+      "unit_kasir": "Kasir IPM",
+      "id_transaksi": "2355",
+      "tanggal_transaksi": "2026-10-11 20:40:00",
+      "nama_kasir": "mochamad.ridwan",
+      "nomor_rm": "933361",
+      "nama_pasien": "MOHAMMAD SOLEH",
+      "jaminan": "UMUM",
+      "kas": "KAS BESAR",
+      "tipe_pembayaran": null,
+      "nominal": "4.0E7",
+      "keterangan": "RETUR"
+    }
+  ]
 }
