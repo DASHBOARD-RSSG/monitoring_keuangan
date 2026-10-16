@@ -1,7 +1,7 @@
 {
   "bulan": "2026-10",
   "bagian": 1,
-  "generated_at": "2026-10-15T01:30:05.848Z",
+  "generated_at": "2026-10-16T01:08:11.408Z",
   "pelunasan_detail": [
     {
       "id_sub_transaksi": "8355533",
@@ -14,7 +14,7 @@
       "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - ORITL - ORJTL BUPEL AGUSTUS 2026",
       "nama_sub_penerima": "indri.nurisa",
       "nama_penerima": "indri.nurisa",
-      "loaded_at": "1.791950223347E9"
+      "loaded_at": "1.792025388168E9"
     }
   ]
 }
