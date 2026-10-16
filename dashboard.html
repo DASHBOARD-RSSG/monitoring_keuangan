@@ -33,163 +33,38 @@
   --shadow-sm: 0 1px 2px rgba(30,36,51,.05);
   --shadow-md: 0 4px 14px rgba(30,36,51,.06);
 }
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  min-height: 100vh;
-  font-size: 14px;
-  line-height: 1.5;
-}
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; line-height: 1.5; }
 
 /* ── SIDEBAR ── */
-.sidebar {
-  position: fixed;
-  top: 0; left: 0;
-  width: var(--sidebar-w);
-  height: 100vh;
-  background: var(--bg2);
-  border-right: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  z-index: 100;
-  transition: transform var(--transition);
-  overflow-y: auto;
-}
+.sidebar { position: fixed; top: 0; left: 0; width: var(--sidebar-w); height: 100vh; background: var(--bg2); border-right: 1px solid var(--border); display: flex; flex-direction: column; z-index: 100; transition: transform var(--transition); overflow-y: auto; }
 .sidebar.collapsed { transform: translateX(calc(-1 * var(--sidebar-w))); }
-
-.sidebar-logo {
-  padding: 18px 20px 14px;
-  border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
-}
-.sidebar-logo .rs-name {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: .03em;
-}
-.sidebar-logo .rs-sub {
-  font-size: 11px;
-  color: var(--text3);
-  margin-top: 2px;
-}
-
-.sidebar-section {
-  padding: 16px 12px 4px;
-}
-.sidebar-section-label {
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--text3);
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  padding: 0 8px;
-  margin-bottom: 4px;
-}
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 10px;
-  border-radius: 7px;
-  cursor: pointer;
-  color: var(--text2);
-  font-size: 13px;
-  font-weight: 500;
-  transition: all var(--transition);
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-}
+.sidebar-logo { padding: 18px 20px 14px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+.sidebar-logo .rs-name { font-size: 13px; font-weight: 700; color: var(--text); letter-spacing: .03em; }
+.sidebar-logo .rs-sub { font-size: 11px; color: var(--text3); margin-top: 2px; }
+.sidebar-section { padding: 16px 12px 4px; }
+.sidebar-section-label { font-size: 10px; font-weight: 700; color: var(--text3); letter-spacing: .08em; text-transform: uppercase; padding: 0 8px; margin-bottom: 4px; }
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 7px; cursor: pointer; color: var(--text2); font-size: 13px; font-weight: 500; transition: all var(--transition); border: none; background: none; width: 100%; text-align: left; }
 .nav-item:hover { background: var(--bg3); color: var(--text); }
 .nav-item.active { background: rgba(37,99,235,.1); color: var(--accent); }
 .nav-item .nav-icon { width: 16px; height: 16px; opacity: .7; flex-shrink: 0; }
 .nav-item.active .nav-icon { opacity: 1; }
-
-.sidebar-footer {
-  margin-top: auto;
-  padding: 12px 20px;
-  border-top: 1px solid var(--border);
-  font-size: 11px;
-  color: var(--text3);
-}
+.sidebar-footer { margin-top: auto; padding: 12px 20px; border-top: 1px solid var(--border); font-size: 11px; color: var(--text3); }
 #lastUpdate { color: var(--text2); font-weight: 600; }
 
 /* ── HEADER ── */
-.header {
-  position: fixed;
-  top: 0;
-  left: var(--sidebar-w);
-  right: 0;
-  height: var(--header-h);
-  background: var(--bg2);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 0 24px;
-  z-index: 90;
-  transition: left var(--transition);
-}
+.header { position: fixed; top: 0; left: var(--sidebar-w); right: 0; height: var(--header-h); background: var(--bg2); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; padding: 0 24px; z-index: 90; transition: left var(--transition); }
 .header.full { left: 0; }
-
-.toggle-btn {
-  width: 34px; height: 34px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: var(--bg3);
-  color: var(--text2);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  transition: all var(--transition);
-}
+.toggle-btn { width: 34px; height: 34px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg3); color: var(--text2); cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all var(--transition); }
 .toggle-btn:hover { background: var(--border); color: var(--text); }
-
-.header-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
-  flex: 1;
-}
+.header-title { font-size: 15px; font-weight: 700; color: var(--text); flex: 1; }
 .header-title span { color: var(--text2); font-weight: 400; font-size: 13px; margin-left: 8px; }
 
 /* Filter bar */
-.filter-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: auto;
-}
-.filter-bar select,
-.filter-bar input[type=date] {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: 7px;
-  color: var(--text);
-  padding: 6px 10px;
-  font-size: 12px;
-  outline: none;
-  cursor: pointer;
-  transition: border-color var(--transition);
-}
-.filter-bar select:focus,
-.filter-bar input[type=date]:focus { border-color: var(--accent); }
+.filter-bar { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.filter-bar select, .filter-bar input[type=date] { background: var(--bg3); border: 1px solid var(--border); border-radius: 7px; color: var(--text); padding: 6px 10px; font-size: 12px; outline: none; cursor: pointer; transition: border-color var(--transition); }
+.filter-bar select:focus, .filter-bar input[type=date]:focus { border-color: var(--accent); }
 .filter-bar label { font-size: 11px; color: var(--text2); }
-
-.btn {
-  padding: 7px 14px;
-  border-radius: 7px;
-  border: none;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 600;
-  transition: all var(--transition);
-}
+.btn { padding: 7px 14px; border-radius: 7px; border: none; cursor: pointer; font-size: 12px; font-weight: 600; transition: all var(--transition); }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-primary:hover { background: var(--accent2); }
 .btn-primary:disabled { opacity: .6; cursor: wait; }
@@ -197,25 +72,9 @@ body {
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ── MAIN CONTENT ── */
-.main {
-  margin-left: var(--sidebar-w);
-  margin-top: var(--header-h);
-  padding: 24px;
-  min-height: calc(100vh - var(--header-h));
-  transition: margin-left var(--transition);
-  display: flex;
-  flex-direction: column;
-}
+.main { margin-left: var(--sidebar-w); margin-top: var(--header-h); padding: 24px; min-height: calc(100vh - var(--header-h)); transition: margin-left var(--transition); display: flex; flex-direction: column; }
 .main.full { margin-left: 0; }
-
-/* OVERLAY for mobile */
-.overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(15,20,30,.4);
-  z-index: 99;
-}
+.overlay { display: none; position: fixed; inset: 0; background: rgba(15,20,30,.4); z-index: 99; }
 .overlay.show { display: block; }
 
 /* ── PAGE ── */
@@ -223,157 +82,50 @@ body {
 .page.active { display: block; }
 
 /* ── KPI CARDS ── */
-.kpi-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  margin-bottom: 24px;
-}
-.kpi-card {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px 18px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-}
-.kpi-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-}
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.kpi-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; position: relative; overflow: hidden; box-shadow: var(--shadow-sm); }
+.kpi-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
 .kpi-card.blue::before   { background: var(--accent); }
 .kpi-card.green::before  { background: var(--green); }
 .kpi-card.amber::before  { background: var(--amber); }
 .kpi-card.purple::before { background: var(--purple); }
 .kpi-card.cyan::before   { background: var(--cyan); }
 .kpi-card.red::before    { background: var(--red); }
-
-.kpi-label {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text2);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin-bottom: 8px;
-}
-.kpi-value {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.1;
-}
-.kpi-sub {
-  font-size: 11px;
-  color: var(--text3);
-  margin-top: 5px;
-}
+.kpi-label { font-size: 11px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 8px; }
+.kpi-value { font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.1; }
+.kpi-sub { font-size: 11px; color: var(--text3); margin-top: 5px; }
 
 /* ── SECTION CARD ── */
-.section-card {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  margin-bottom: 20px;
-  overflow: hidden;
-  box-shadow: var(--shadow-sm);
-}
-.section-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.section-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text);
-}
-.section-sub {
-  font-size: 11px;
-  color: var(--text3);
-  margin-top: 1px;
-}
+.section-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; overflow: hidden; box-shadow: var(--shadow-sm); }
+.section-head { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; border-bottom: 1px solid var(--border); flex-wrap: wrap; gap: 10px; }
+.section-title { font-size: 13px; font-weight: 700; color: var(--text); }
+.section-sub { font-size: 11px; color: var(--text3); margin-top: 1px; }
 .section-body { padding: 18px; }
 
 /* ── GRID 2 COL ── */
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 20px;
-}
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
 @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
 
 /* ── TABLE ── */
-.tbl-wrap {
-  overflow: auto;
-  max-height: 460px;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 12px;
-}
-th {
-  text-align: left;
-  padding: 9px 12px;
-  font-size: 10px;
-  font-weight: 700;
-  color: var(--text2);
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  border-bottom: 1px solid var(--border);
-  white-space: nowrap;
-  background: var(--bg3);
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  box-shadow: 0 1px 0 var(--border);
-}
+.tbl-wrap { overflow: auto; max-height: 460px; border-radius: 8px; border: 1px solid var(--border); }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { text-align: left; padding: 9px 12px; font-size: 10px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: .06em; border-bottom: 1px solid var(--border); white-space: nowrap; background: var(--bg3); position: sticky; top: 0; z-index: 3; box-shadow: 0 1px 0 var(--border); }
 th[data-key] { cursor: pointer; user-select: none; }
 th[data-key]:hover { color: var(--accent); }
 .sort-ico-wrap { display: inline-block; margin-left: 4px; font-size: 8px; letter-spacing: -1px; color: var(--text3); }
 .sort-ico.active { color: var(--accent); font-weight: 700; }
-td {
-  padding: 9px 12px;
-  border-bottom: 1px solid var(--border);
-  color: var(--text2);
-  white-space: nowrap;
-  background: var(--bg2);
-}
+td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text2); white-space: nowrap; background: var(--bg2); }
 tr:last-child td { border-bottom: none; }
 tbody tr:nth-child(even) td { background: var(--zebra); }
 tbody tr:hover td { background: var(--hover); color: var(--text); }
 .td-num { text-align: right; font-variant-numeric: tabular-nums; font-family: 'SF Mono', 'Fira Code', monospace; }
 .td-bold { font-weight: 700; color: var(--text); }
-tfoot td {
-  position: sticky;
-  bottom: 0;
-  z-index: 3;
-  background: var(--bg3);
-  box-shadow: 0 -1px 0 var(--border);
-  font-weight: 700;
-  color: var(--text);
-}
+tfoot td { position: sticky; bottom: 0; z-index: 3; background: var(--bg3); box-shadow: 0 -1px 0 var(--border); font-weight: 700; color: var(--text); }
 .tbl-total-row td { border-bottom: none; }
 .tbl-total-label { text-transform: uppercase; font-size: 11px; letter-spacing: .04em; }
 
 /* ── BADGE ── */
-.badge {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 20px;
-  font-size: 10px;
-  font-weight: 700;
-}
+.badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 10px; font-weight: 700; }
 .badge-blue   { background: rgba(37,99,235,.1);  color: #2563eb; }
 .badge-green  { background: rgba(5,150,105,.1);  color: #059669; }
 .badge-amber  { background: rgba(217,119,6,.12); color: #b45309; }
@@ -383,119 +135,35 @@ tfoot td {
 .badge-gray   { background: rgba(100,116,139,.12); color: #475569; }
 
 /* ── UNIT FILTER ── */
-.unit-filter-wrap {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-}
-.unit-chip {
-  padding: 5px 12px;
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  background: var(--bg2);
-  color: var(--text2);
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition);
-}
+.unit-filter-wrap { display: flex; gap: 6px; flex-wrap: wrap; padding: 14px 18px; border-bottom: 1px solid var(--border); }
+.unit-chip { padding: 5px 12px; border-radius: 20px; border: 1px solid var(--border); background: var(--bg2); color: var(--text2); font-size: 12px; font-weight: 600; cursor: pointer; transition: all var(--transition); }
 .unit-chip:hover { border-color: var(--accent); color: var(--accent); }
 .unit-chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 /* ── LOCAL FILTER ROW ── */
-.local-filter-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  padding: 14px 18px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg3);
-}
-.local-filter-wrap select,
-.local-filter-wrap input[type=text] {
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: 7px;
-  color: var(--text);
-  padding: 6px 10px;
-  font-size: 12px;
-  outline: none;
-  cursor: pointer;
-  min-width: 130px;
-  transition: border-color var(--transition);
-}
+.local-filter-wrap { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--bg3); }
+.local-filter-wrap select, .local-filter-wrap input[type=text] { background: var(--bg2); border: 1px solid var(--border); border-radius: 7px; color: var(--text); padding: 6px 10px; font-size: 12px; outline: none; cursor: pointer; min-width: 130px; transition: border-color var(--transition); }
 .local-filter-wrap input[type=text] { cursor: text; }
-.local-filter-wrap select:focus,
-.local-filter-wrap input[type=text]:focus { border-color: var(--accent); }
-.local-filter-count {
-  margin-left: auto;
-  font-size: 11px;
-  color: var(--text3);
-  font-weight: 600;
-}
+.local-filter-wrap select:focus, .local-filter-wrap input[type=text]:focus { border-color: var(--accent); }
+.local-filter-count { margin-left: auto; font-size: 11px; color: var(--text3); font-weight: 600; }
 
 /* ── CHART CANVAS ── */
 .chart-wrap { position: relative; height: 240px; }
 .chart-wrap canvas { max-height: 240px; }
 
 /* ── LOADING ── */
-.loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 48px;
-  color: var(--text3);
-  font-size: 13px;
-  gap: 10px;
-}
-.spinner {
-  width: 18px; height: 18px;
-  border: 2px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin .7s linear infinite;
-}
+.loading { display: flex; align-items: center; justify-content: center; padding: 48px; color: var(--text3); font-size: 13px; gap: 10px; }
+.spinner { width: 18px; height: 18px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .7s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ── REKON TABLE ── */
 .rekon-match { color: var(--green); font-weight: 700; }
 .rekon-diff  { color: var(--red);   font-weight: 700; }
-
-/* ── EMPTY STATE ── */
-.empty {
-  text-align: center;
-  padding: 40px;
-  color: var(--text3);
-  font-size: 13px;
-}
+.empty { text-align: center; padding: 40px; color: var(--text3); font-size: 13px; }
 
 /* ── FOOTER ── */
-.app-footer {
-  margin-top: 4px;
-  padding: 16px 20px;
-  background: var(--bg2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px;
-  font-size: 12px;
-  color: var(--text2);
-  box-shadow: var(--shadow-sm);
-}
+.app-footer { margin-top: 4px; padding: 16px 20px; background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--text2); box-shadow: var(--shadow-sm); }
 .app-footer .footer-brand { display: flex; align-items: center; gap: 8px; }
-.app-footer .footer-brand-badge {
-  width: 30px; height: 30px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), var(--cyan));
-  color: #fff; font-size: 11px; font-weight: 800;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
+.app-footer .footer-brand-badge { width: 30px; height: 30px; border-radius: 8px; background: linear-gradient(135deg, var(--accent), var(--cyan)); color: #fff; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .app-footer strong { color: var(--text); }
 .footer-right { display: flex; gap: 10px; align-items: center; color: var(--text3); flex-wrap: wrap; }
 .footer-right .dot { color: var(--border); }
@@ -579,10 +247,14 @@ tfoot td {
     </button>
     <button class="nav-item" onclick="showPage('biaya-bahan')">
       <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg>
-      Biaya Bahan
+      Biaya Bahan Medis
     </button>
     <button class="nav-item" onclick="showPage('biaya-umum')">
       <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 12l3-3 3 3 5-5"/></svg>
+      Biaya Bahan Non Medis
+    </button>
+    <button class="nav-item" onclick="showPage('biaya-umum-baru')">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l3-3 3 2 5-6"/></svg>
       Biaya Umum
     </button>
     <button class="nav-item" onclick="showPage('perbandingan-unit')">
@@ -625,29 +297,21 @@ tfoot td {
     </div>
     <div class="grid-2">
       <div class="section-card">
-        <div class="section-head">
-          <div><div class="section-title">Tren Penerimaan Kasir Harian</div><div class="section-sub">Total nominal per hari</div></div>
-        </div>
+        <div class="section-head"><div><div class="section-title">Tren Penerimaan Kasir Harian</div><div class="section-sub">Total nominal per hari</div></div></div>
         <div class="section-body"><div class="chart-wrap"><canvas id="chartKasirHarian"></canvas></div></div>
       </div>
       <div class="section-card">
-        <div class="section-head">
-          <div><div class="section-title">Penerimaan per Unit Kasir</div><div class="section-sub">Total nominal per unit</div></div>
-        </div>
+        <div class="section-head"><div><div class="section-title">Penerimaan per Unit Kasir</div><div class="section-sub">Total nominal per unit</div></div></div>
         <div class="section-body"><div class="chart-wrap"><canvas id="chartKasirUnit"></canvas></div></div>
       </div>
     </div>
     <div class="grid-2">
       <div class="section-card">
-        <div class="section-head">
-          <div><div class="section-title">Tipe Pembayaran</div></div>
-        </div>
+        <div class="section-head"><div><div class="section-title">Tipe Pembayaran</div></div></div>
         <div class="section-body"><div class="chart-wrap"><canvas id="chartTipe"></canvas></div></div>
       </div>
       <div class="section-card">
-        <div class="section-head">
-          <div><div class="section-title">Top 10 Jaminan</div></div>
-        </div>
+        <div class="section-head"><div><div class="section-title">Top 10 Jaminan</div></div></div>
         <div class="section-body"><div class="chart-wrap"><canvas id="chartJaminan"></canvas></div></div>
       </div>
     </div>
@@ -705,9 +369,7 @@ tfoot td {
   <!-- ══ PAGE: KASIR PER JAMINAN ══ -->
   <div class="page" id="page-kasir-jaminan">
     <div class="section-card">
-      <div class="section-head">
-        <div><div class="section-title">Penerimaan Per Jaminan</div></div>
-      </div>
+      <div class="section-head"><div><div class="section-title">Penerimaan Per Jaminan</div></div></div>
       <div class="local-filter-wrap">
         <input type="text" id="searchJaminan" placeholder="Cari nama jaminan..." oninput="filterJaminan()"/>
         <button class="btn btn-outline" onclick="resetJaminanFilter()">Reset Filter</button>
@@ -821,9 +483,7 @@ tfoot td {
   <!-- ══ PAGE: PENDAPATAN UNIT ══ -->
   <div class="page" id="page-pendapatan-unit">
     <div class="section-card">
-      <div class="section-head">
-        <div><div class="section-title">Pendapatan Per Sub Unit</div></div>
-      </div>
+      <div class="section-head"><div><div class="section-title">Pendapatan Per Sub Unit</div></div></div>
       <div class="local-filter-wrap">
         <input type="text" id="searchPendapatanUnit" placeholder="Cari nama sub unit..." oninput="filterPendapatanUnit()"/>
         <button class="btn btn-outline" onclick="resetPendapatanUnitFilter()">Reset Filter</button>
@@ -844,13 +504,12 @@ tfoot td {
       </div>
     </div>
     <div class="section-card" style="margin-top:20px">
-      <div class="section-head">
-        <div><div class="section-title">Tren Pendapatan Harian</div></div>
-      </div>
+      <div class="section-head"><div><div class="section-title">Tren Pendapatan Harian</div></div></div>
       <div class="section-body"><div class="chart-wrap"><canvas id="chartPendapatanHarian"></canvas></div></div>
     </div>
   </div>
 
+  
   <!-- ══ PAGE: PENDAPATAN LAIN ══ -->
   <div class="page" id="page-pendapatan-lain">
     <div class="kpi-grid" id="kpiPendapatanLain">
@@ -954,6 +613,7 @@ tfoot td {
     </div>
   </div>
 
+
   <!-- ══ PAGE: PENJUALAN KREDIT ══ -->
   <div class="page" id="page-penjualan-kredit">
     <div class="kpi-grid" id="kpiKredit"></div>
@@ -968,9 +628,7 @@ tfoot td {
       </div>
     </div>
     <div class="section-card">
-      <div class="section-head">
-        <div><div class="section-title">Detail Penjualan Kredit</div></div>
-      </div>
+      <div class="section-head"><div><div class="section-title">Detail Penjualan Kredit</div></div></div>
       <div class="local-filter-wrap">
         <select id="fltSubPenerima" onchange="filterKredit()"><option value="">Semua Sub Penerima</option></select>
         <select id="fltPenanggungKredit" onchange="filterKredit()"><option value="">Semua Penanggung</option></select>
@@ -1225,7 +883,8 @@ tfoot td {
     </div>
   </div>
 
-  <!-- ══ PAGE: BIAYA BAHAN ══ -->
+  
+  <!-- ══ PAGE: BIAYA BAHAN MEDIS ══ -->
   <div class="page" id="page-biaya-bahan">
     <div class="kpi-grid" id="kpiBiayaBahan">
       <div class="loading"><div class="spinner"></div> Memuat data...</div>
@@ -1235,7 +894,7 @@ tfoot td {
     <div class="section-card" style="margin-bottom:18px">
       <div class="section-head">
         <div>
-          <div class="section-title">Filter Biaya Bahan</div>
+          <div class="section-title">Filter Biaya Bahan Medis</div>
           <div class="section-sub">Rekap Nama COA, Kategori, Sub Unit, dan total akan otomatis berubah mengikuti filter.</div>
         </div>
       </div>
@@ -1309,7 +968,7 @@ tfoot td {
 
     <div class="section-card" style="margin-top:18px">
       <div class="section-head">
-        <div><div class="section-title">Detail Biaya Bahan</div><div class="section-sub">Menampilkan maks 2000 baris pertama dari hasil filter</div></div>
+        <div><div class="section-title">Detail Biaya Bahan Medis</div><div class="section-sub">Menampilkan maks 2000 baris pertama dari hasil filter</div></div>
       </div>
       <div class="section-body" style="padding:0">
         <div class="tbl-wrap"><table id="tblBiayaBahanDetail">
@@ -1328,16 +987,17 @@ tfoot td {
     </div>
   </div>
 
-  <!-- ══ PAGE: BIAYA UMUM ══ -->
+  <!-- ══ PAGE: BIAYA BAHAN NON MEDIS ══ -->
   <div class="page" id="page-biaya-umum">
     <div class="kpi-grid" id="kpiBiayaUmum">
       <div class="loading"><div class="spinner"></div> Memuat data...</div>
     </div>
 
+    <!-- FILTER UTAMA: semua rekap + detail mengikuti filter ini -->
     <div class="section-card" style="margin-bottom:18px">
       <div class="section-head">
         <div>
-          <div class="section-title">Filter Biaya Umum</div>
+          <div class="section-title">Filter Biaya Bahan Non Medis</div>
           <div class="section-sub">Rekap Nama COA, Kategori, Sub Unit, dan total akan otomatis berubah mengikuti filter.</div>
         </div>
       </div>
@@ -1411,7 +1071,7 @@ tfoot td {
 
     <div class="section-card" style="margin-top:18px">
       <div class="section-head">
-        <div><div class="section-title">Detail Biaya Umum</div><div class="section-sub">Menampilkan maks 2000 baris pertama dari hasil filter</div></div>
+        <div><div class="section-title">Detail Biaya Bahan Non Medis</div><div class="section-sub">Menampilkan maks 2000 baris pertama dari hasil filter</div></div>
       </div>
       <div class="section-body" style="padding:0">
         <div class="tbl-wrap"><table id="tblBiayaUmumDetail">
@@ -1430,22 +1090,108 @@ tfoot td {
     </div>
   </div>
 
-  <!-- ══ FOOTER ══ -->
-  <footer class="app-footer">
-    <div class="footer-brand">
-      <div class="footer-brand-badge">PPB</div>
-      <div>
-        <strong>PPB &amp; ERP</strong> — RSSG Monitoring Keuangan
+  <!-- ══ PAGE: BIAYA UMUM ══ -->
+  <div class="page" id="page-biaya-umum-baru">
+    <div class="kpi-grid" id="kpiBiayaUmumBaru">
+      <div class="loading"><div class="spinner"></div> Memuat data...</div>
+    </div>
+
+    <!-- FILTER UTAMA: semua rekap + detail mengikuti filter ini -->
+    <div class="section-card" style="margin-bottom:18px">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Filter Biaya Umum</div>
+          <div class="section-sub">Rekap Nama COA, Kategori, Sub Unit, dan total akan otomatis berubah mengikuti filter.</div>
+        </div>
+      </div>
+      <div class="local-filter-wrap">
+        <input type="text" id="searchBiayaUmumBaruDetail" placeholder="Cari sub unit / keterangan..." oninput="filterBiayaUmumBaruDetail()"/>
+        <select id="fltBiayaUmumBaruCoa" onchange="filterBiayaUmumBaruDetail()"><option value="">Semua Nama COA</option></select>
+        <select id="fltBiayaUmumBaruKategori" onchange="filterBiayaUmumBaruDetail()"><option value="">Semua Kategori Jurnal</option></select>
+        <select id="fltBiayaUmumBaruSubUnit" onchange="filterBiayaUmumBaruDetail()"><option value="">Semua Sub Unit</option></select>
+        <button class="btn btn-outline" onclick="resetBiayaUmumBaruDetailFilter()">Reset Filter</button>
+        <span class="local-filter-count" id="biayaUmumBaruDetailCount"></span>
       </div>
     </div>
-    <div class="footer-right">
-      <span>Versi 2.1.0</span>
-      <span class="dot">•</span>
-      <span>Update terakhir: <span id="footerLastUpdate">—</span></span>
-    </div>
-  </footer>
 
-</main>
+    <div class="grid-2">
+      <div class="section-card">
+        <div class="section-head"><div class="section-title">Grafik Per Nama COA</div></div>
+        <div class="section-body"><div class="chart-wrap"><canvas id="chartBiayaUmumBaruCoa"></canvas></div></div>
+      </div>
+      <div class="section-card">
+        <div class="section-head"><div class="section-title">Grafik Per Kategori</div></div>
+        <div class="section-body"><div class="chart-wrap"><canvas id="chartBiayaUmumBaruKategori"></canvas></div></div>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:18px">
+      <div class="section-card">
+        <div class="section-head">
+          <div><div class="section-title">Rekap Per Nama COA</div><div class="section-sub">Total mengikuti filter aktif</div></div>
+        </div>
+        <div class="section-body" style="padding:0">
+          <div class="tbl-wrap"><table id="tblBiayaUmumBaruCoa">
+            <thead id="head-tblBiayaUmumBaruCoa"><tr>
+              <th data-key="nama" onclick="tblSort('tblBiayaUmumBaruCoa','nama','text')">Nama COA <span class="sort-ico-wrap"></span></th>
+              <th class="td-num" data-key="jumlah" onclick="tblSort('tblBiayaUmumBaruCoa','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th>
+              <th class="td-num" data-key="total_nominal" onclick="tblSort('tblBiayaUmumBaruCoa','total_nominal','number')">Total Nominal <span class="sort-ico-wrap"></span></th>
+            </tr></thead><tbody></tbody><tfoot></tfoot>
+          </table></div>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <div class="section-head">
+          <div><div class="section-title">Rekap Per Kategori Jurnal</div><div class="section-sub">Total mengikuti filter aktif</div></div>
+        </div>
+        <div class="section-body" style="padding:0">
+          <div class="tbl-wrap"><table id="tblBiayaUmumBaruKategori">
+            <thead id="head-tblBiayaUmumBaruKategori"><tr>
+              <th data-key="nama" onclick="tblSort('tblBiayaUmumBaruKategori','nama','text')">Kategori Jurnal <span class="sort-ico-wrap"></span></th>
+              <th class="td-num" data-key="jumlah" onclick="tblSort('tblBiayaUmumBaruKategori','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th>
+              <th class="td-num" data-key="total_nominal" onclick="tblSort('tblBiayaUmumBaruKategori','total_nominal','number')">Total Nominal <span class="sort-ico-wrap"></span></th>
+            </tr></thead><tbody></tbody><tfoot></tfoot>
+          </table></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-card" style="margin-top:18px">
+      <div class="section-head">
+        <div><div class="section-title">Rekap Per Sub Unit</div><div class="section-sub">Total mengikuti filter aktif</div></div>
+      </div>
+      <div class="section-body" style="padding:0">
+        <div class="tbl-wrap"><table id="tblBiayaUmumBaruSubUnit">
+          <thead id="head-tblBiayaUmumBaruSubUnit"><tr>
+            <th data-key="nama" onclick="tblSort('tblBiayaUmumBaruSubUnit','nama','text')">Sub Unit <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="jumlah" onclick="tblSort('tblBiayaUmumBaruSubUnit','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="total_nominal" onclick="tblSort('tblBiayaUmumBaruSubUnit','total_nominal','number')">Total Nominal <span class="sort-ico-wrap"></span></th>
+          </tr></thead><tbody></tbody><tfoot></tfoot>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="section-card" style="margin-top:18px">
+      <div class="section-head">
+        <div><div class="section-title">Detail Biaya Umum</div><div class="section-sub">Menampilkan maks 2000 baris pertama dari hasil filter</div></div>
+      </div>
+      <div class="section-body" style="padding:0">
+        <div class="tbl-wrap"><table id="tblBiayaUmumBaruDetail">
+          <thead id="head-tblBiayaUmumBaruDetail"><tr>
+            <th data-key="tanggal_sub_transaksi" onclick="tblSort('tblBiayaUmumBaruDetail','tanggal_sub_transaksi','text')">Tanggal <span class="sort-ico-wrap"></span></th>
+            <th data-key="nama_sub_unit" onclick="tblSort('tblBiayaUmumBaruDetail','nama_sub_unit','text')">Sub Unit <span class="sort-ico-wrap"></span></th>
+            <th data-key="_namaCoa" onclick="tblSort('tblBiayaUmumBaruDetail','_namaCoa','text')">Nama COA <span class="sort-ico-wrap"></span></th>
+            <th data-key="_kodeCoa" onclick="tblSort('tblBiayaUmumBaruDetail','_kodeCoa','text')">Kode COA <span class="sort-ico-wrap"></span></th>
+            <th data-key="keterangan" onclick="tblSort('tblBiayaUmumBaruDetail','keterangan','text')">Kategori Jurnal <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="_debet" onclick="tblSort('tblBiayaUmumBaruDetail','_debet','number')">Debet <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="_kredit" onclick="tblSort('tblBiayaUmumBaruDetail','_kredit','number')">Kredit <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="_nominal" onclick="tblSort('tblBiayaUmumBaruDetail','_nominal','number')">Nominal <span class="sort-ico-wrap"></span></th>
+          </tr></thead><tbody></tbody><tfoot></tfoot>
+        </table></div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- ══ PAGE: PERBANDINGAN BIAYA VS PENDAPATAN ══ -->
@@ -1457,7 +1203,7 @@ tfoot td {
       <div class="section-head">
         <div>
           <div class="section-title">Perbandingan Total Biaya vs Pendapatan per Sub Unit</div>
-          <div class="section-sub">Total Biaya = Biaya Bahan + Biaya Umum. Warning jika biaya > 65% dari pendapatan.</div>
+          <div class="section-sub">Total Biaya = Biaya Bahan Medis + Biaya Bahan Non Medis + Biaya Umum. Warning jika biaya > 65% dari pendapatan.</div>
         </div>
       </div>
       <div class="local-filter-wrap">
@@ -1471,7 +1217,8 @@ tfoot td {
           <thead id="head-tblPerbandinganUnit"><tr>
             <th data-key="sub_unit" onclick="tblSort('tblPerbandinganUnit','sub_unit','text')">Sub Unit <span class="sort-ico-wrap"></span></th>
             <th class="td-num" data-key="pendapatan" onclick="tblSort('tblPerbandinganUnit','pendapatan','number')">Pendapatan <span class="sort-ico-wrap"></span></th>
-            <th class="td-num" data-key="biaya_bahan" onclick="tblSort('tblPerbandinganUnit','biaya_bahan','number')">Biaya Bahan <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="biaya_medis" onclick="tblSort('tblPerbandinganUnit','biaya_medis','number')">Biaya Bahan Medis <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="biaya_non_medis" onclick="tblSort('tblPerbandinganUnit','biaya_non_medis','number')">Biaya Bahan Non Medis <span class="sort-ico-wrap"></span></th>
             <th class="td-num" data-key="biaya_umum" onclick="tblSort('tblPerbandinganUnit','biaya_umum','number')">Biaya Umum <span class="sort-ico-wrap"></span></th>
             <th class="td-num" data-key="total_biaya" onclick="tblSort('tblPerbandinganUnit','total_biaya','number')">Total Biaya <span class="sort-ico-wrap"></span></th>
             <th class="td-num" data-key="persentase_biaya" onclick="tblSort('tblPerbandinganUnit','persentase_biaya','number')">Biaya / Pendapatan <span class="sort-ico-wrap"></span></th>
@@ -1491,15 +1238,25 @@ tfoot td {
     </div>
   </div>
 
+  <!-- ══ FOOTER ══ -->
+  <footer class="app-footer">
+    <div class="footer-brand">
+      <div class="footer-brand-badge">PPB</div>
+      <div><strong>PPB &amp; ERP</strong> — RSSG Monitoring Keuangan</div>
+    </div>
+    <div class="footer-right">
+      <span>Versi 2.2.0</span>
+      <span class="dot">•</span>
+      <span>Update terakhir: <span id="footerLastUpdate">—</span></span>
+    </div>
+  </footer>
+
+</main>
+
 <script>
 // ══ STATE ══
 let MANIFEST  = null;       // { generated_at, bulan: ['2026-01', ...] }
 let AUX       = null;       // data.json lama: pendapatan (belum di-refactor per-bulan)
-let PELUNASAN = null;       // legacy state; pelunasan sekarang diambil per bulan via CACHE_PELUNASAN
-let PENGELUARAN_KAS = null; // pengeluaran-kas.json: { generated_at, pengeluaran_detail: [...] }
-let UANG_MUKA_PJK = null;   // uang-muka-pjk.json: { generated_at, uang_muka_pjk_detail: [...] }
-let BIAYA_BAHAN = null;     // biaya-bahan.json: { generated_at, biaya_bahan_detail: [...] }
-let BIAYA_UMUM = null;      // biaya-umum.json: { generated_at, biaya_umum_detail: [...] }
 let FILTERED  = null;       // hasil akhir yang dipakai semua render function
 let activeUnit = 'semua';
 let CHARTS = {};
@@ -1508,12 +1265,13 @@ let sidebarOpen = true;
 // ══ Nama kasir yang dikecualikan dari SELURUH data Laporan Kasir ══
 const KASIR_EXCLUDE_NAMA_KASIR = ['indri.nurisa'];
 
-// cache file per-bulan yang sudah pernah di-fetch, supaya tidak fetch ulang tiap klik Terapkan
+// cache file per-bulan yang sudah pernah di-fetch
 const CACHE_PELUNASAN = {};
-const CACHE_KASIR = {};   // { '2026-06': [...rows] } — gabungan semua bagian (pN) bulan itu
-const CACHE_KREDIT = {};  // { '2026-06': [...rows] } — gabungan semua bagian (pN) bulan itu
-const CACHE_BIAYA_BAHAN = {};
-const CACHE_BIAYA_UMUM = {};
+const CACHE_KASIR = {};
+const CACHE_KREDIT = {};
+const CACHE_BIAYA_BAHAN = {};        // Biaya Bahan Medis
+const CACHE_BIAYA_UMUM = {};         // Biaya Bahan Non Medis
+const CACHE_BIAYA_UMUM_BARU = {};    // Biaya Umum (baru)
 const CACHE_PENGELUARAN_KAS = {};
 const CACHE_UANG_MUKA_PJK = {};
 const CACHE_PENDAPATAN_LAIN = {};
@@ -1523,9 +1281,14 @@ const MAX_BAGIAN_KASIR = 200;
 const MAX_BAGIAN_KREDIT = 200;
 const MAX_BAGIAN_BIAYA_BAHAN = 200;
 const MAX_BAGIAN_BIAYA_UMUM = 200;
+const MAX_BAGIAN_BIAYA_UMUM_BARU = 200;
 const MAX_BAGIAN_PENGELUARAN_KAS = 200;
 const MAX_BAGIAN_UANG_MUKA_PJK = 200;
 const MAX_BAGIAN_PENDAPATAN_LAIN = 200;
+
+// Sumber data modul Biaya Umum (baru). Ubah di sini jika nama file / nama array di JSON berbeda.
+const BIAYA_UMUM_BARU_PREFIX = 'biaya-umum-baru';       // -> data/biaya-umum-baru-YYYY-MM-pN.json
+const BIAYA_UMUM_BARU_KEY    = 'biaya_umum_baru_detail'; // nama array di dalam JSON
 
 // ══ SIDEBAR TOGGLE ══
 function toggleSidebar() {
@@ -1557,8 +1320,9 @@ const PAGE_TITLES = {
   'pelunasan-piutang' : ['Pelunasan Piutang', 'Monitoring Harian'],
   'pengeluaran-kas'   : ['Pengeluaran Kas', 'Monitoring Harian'],
   'uang-muka-pjk'     : ['Uang Muka & PJK', 'Rekonsiliasi Pertanggungjawaban'],
-  'biaya-bahan'       : ['Biaya Bahan', 'Monitoring Biaya'],
-  'biaya-umum'        : ['Biaya Umum', 'Monitoring Biaya'],
+  'biaya-bahan'       : ['Biaya Bahan Medis', 'Monitoring Biaya'],
+  'biaya-umum'        : ['Biaya Bahan Non Medis', 'Monitoring Biaya'],
+  'biaya-umum-baru'   : ['Biaya Umum', 'Monitoring Biaya'],
   'perbandingan-unit' : ['Biaya vs Pendapatan', 'Analisis per Sub Unit'],
 };
 
@@ -1585,9 +1349,9 @@ function num(v) { return new Intl.NumberFormat('id-ID').format(parseInt(v)||0); 
 function pct(a,b) { return b ? ((a/b)*100).toFixed(1) + '%' : '0%'; }
 function sumBy(arr, key) { return arr.reduce((s,r) => s + (parseFloat(r[key])||0), 0); }
 
-// ══ GENERIC TABLE HELPERS: sort + total row (zebra & sticky header handled via CSS) ══
-const TblState    = {};   // tableId -> { key, dir, type }
-const TblRerender = {};   // tableId -> function that re-renders that table using its current data
+// ══ GENERIC TABLE HELPERS: sort + total row ══
+const TblState    = {};
+const TblRerender = {};
 
 function tblGetState(tableId) {
   return TblState[tableId] || (TblState[tableId] = { key: null, dir: null, type: 'text' });
@@ -1607,7 +1371,7 @@ function tblApplySort(tableId, rows) {
   const st = TblState[tableId];
   if (!st || !st.key || !st.dir) return rows;
   const { key, dir, type } = st;
-  const sorted = rows.slice().sort((a, b) => {
+  return rows.slice().sort((a, b) => {
     let va = a[key], vb = b[key];
     if (type === 'number') {
       va = parseFloat(va) || 0; vb = parseFloat(vb) || 0;
@@ -1619,7 +1383,6 @@ function tblApplySort(tableId, rows) {
     if (va > vb) return dir === 'asc' ? 1 : -1;
     return 0;
   });
-  return sorted;
 }
 function tblSortIconHtml(tableId, key) {
   const st = TblState[tableId];
@@ -1646,9 +1409,7 @@ function tblTotalRow(colSpanLabel, cells) {
 
 // ══ FILTER (tanggal - global, di header) ══
 function getDateRange() {
-  const a = document.getElementById('fltAwal').value;
-  const b = document.getElementById('fltAkhir').value;
-  return { awal: a, akhir: b };
+  return { awal: document.getElementById('fltAwal').value, akhir: document.getElementById('fltAkhir').value };
 }
 function inRange(tglStr, awal, akhir) {
   if (!awal && !akhir) return true;
@@ -1659,54 +1420,34 @@ function inRange(tglStr, awal, akhir) {
 }
 
 // ══ Cek apakah sebuah baris kasir termasuk nama kasir yang dikecualikan ══
-// Nama field sumber datanya bisa bervariasi (nama_kasir / Nama_Kasir, dst),
-// jadi semua kemungkinan dicek sekaligus, dibandingkan case-insensitive &
-// setelah di-trim supaya tidak lolos hanya karena beda kapitalisasi atau spasi.
 function kasirNamaKasirDikecualikan(r) {
-  const kandidat = [
-    r.nama_kasir, r.Nama_Kasir, r.NamaKasir,
-  ];
+  const kandidat = [r.nama_kasir, r.Nama_Kasir, r.NamaKasir];
   return kandidat.some(v => {
     if (!v) return false;
-    const bersih = String(v).trim().toLowerCase();
-    return KASIR_EXCLUDE_NAMA_KASIR.includes(bersih);
+    return KASIR_EXCLUDE_NAMA_KASIR.includes(String(v).trim().toLowerCase());
   });
 }
 function filterKasirExcludeSubPenerima(rows) {
   return rows.filter(r => !kasirNamaKasirDikecualikan(r));
 }
 
-// ══ Format sebuah objek Date jadi string 'YYYY-MM-DD' pakai komponen
-//    tanggal LOKAL (getFullYear/getMonth/getDate) ══
-// PENTING: JANGAN pakai toISOString() untuk ini. toISOString() mengonversi
-// Date ke UTC dulu sebelum diformat — di timezone WIB (UTC+7), Date jam
-// 00:00 lokal itu sama dengan jam 17:00 HARI SEBELUMNYA di UTC, jadi
-// toISOString() bisa menggeser tanggal mundur 1 hari (mis. 31 Juli jadi
-// "2026-07-30", atau tanggal hari ini jadi "kemarin" kalau dibuka dini hari
-// WIB jam 00:00-06:59). Dipakai di beberapa tempat: menghitung tanggal
-// akhir bulan (monthsInRange) dan default filter tanggal saat halaman
-// dimuat (loadData) — dua-duanya pernah kena bug pergeseran ini.
+// ══ Format Date jadi 'YYYY-MM-DD' pakai komponen tanggal LOKAL.
+//    JANGAN pakai toISOString() (konversi ke UTC bisa menggeser tanggal mundur 1 hari di WIB). ══
 function tanggalLokalStr(d) {
   const yyyy = d.getFullYear();
   const mm = String(d.getMonth() + 1).padStart(2, '0');
   const dd = String(d.getDate()).padStart(2, '0');
   return `${yyyy}-${mm}-${dd}`;
 }
-
-// ══ Hitung tanggal terakhir suatu bulan sebagai string 'YYYY-MM-DD' ══
 function tanggalAkhirBulanStr(y, m) {
-  return tanggalLokalStr(new Date(y, m, 0)); // local date = hari terakhir bulan m (1-indexed)
+  return tanggalLokalStr(new Date(y, m, 0));
 }
 
-// ══ Tentukan bulan (kode 'YYYY-MM') mana saja yang overlap dengan rentang tanggal ══
-// Di-dedupe dengan Set — kalau manifest.json sampai berisi kode bulan ganda
-// (mis. karena proses export mingguan menambahkan bulan yang sama lebih dari
-// sekali), tanpa dedupe di sini bulan itu akan di-fetch & digabung dua kali,
-// yang berujung pada baris transaksi yang tampak duplikat di dashboard.
+// ══ Tentukan bulan ('YYYY-MM') yang overlap dengan rentang tanggal (di-dedupe dengan Set) ══
 function monthsInRange(awal, akhir) {
   if (!MANIFEST || !MANIFEST.bulan) return [];
   const semuaBulan = [...new Set(MANIFEST.bulan)];
-  if (!awal && !akhir) return semuaBulan; // tanpa filter -> semua bulan yang tersedia
+  if (!awal && !akhir) return semuaBulan;
   return semuaBulan.filter(kode => {
     const [y, m] = kode.split('-').map(Number);
     const bulanAwal  = kode + '-01';
@@ -1718,10 +1459,6 @@ function monthsInRange(awal, akhir) {
 }
 
 // ══ Buang baris yang isinya PERSIS SAMA (semua kolom identik) ══
-// Dipakai sebagai pengaman terhadap data duplikat, misalnya kalau file
-// export per-minggu/per-bagian saling overlap (baris tanggal batas minggu
-// ikut ke-export di dua file sekaligus) sehingga transaksi yang sama bisa
-// muncul lebih dari sekali setelah semua file digabung.
 function dedupeExact(rows) {
   const seen = new Set();
   const out = [];
@@ -1732,13 +1469,9 @@ function dedupeExact(rows) {
   return out;
 }
 
-// ══ Buang baris yang isinya sama KECUALI kolom loaded_at ══
-// Khusus Biaya Bahan. Backfill/reload BigQuery bisa menyisipkan baris yang
-// sama (id_sub_transaksi sama, isi identik) lebih dari sekali dengan
-// loaded_at berbeda. dedupeExact() tidak menangkapnya karena loaded_at ikut
-// dibandingkan, sehingga biaya bahan tampak berlipat di dashboard.
-// Dipakai untuk Biaya Bahan & Biaya Umum. JANGAN dipakai untuk kasir/kredit: di sana baris yang identik selain
-// loaded_at adalah transaksi sah yang berbeda (tidak ada kolom ID unik).
+// ══ Buang baris yang sama KECUALI kolom loaded_at (backfill/reload BigQuery).
+//    Dipakai untuk Biaya Bahan Medis, Biaya Bahan Non Medis & Biaya Umum.
+//    JANGAN dipakai untuk kasir/kredit. ══
 function dedupeAbaikanLoadedAt(rows) {
   const seen = new Set();
   const out = [];
@@ -1751,46 +1484,19 @@ function dedupeAbaikanLoadedAt(rows) {
 }
 
 // ══ Fetch file per-bulan (pakai cache), gabungkan jadi 1 array ══
-// Kasir & Kredit sekarang SAMA-SAMA di-export multi-file per bulan:
-//   data/kasir-YYYY-MM-p1.json, -p2.json, dst
-//   data/kredit-YYYY-MM-p1.json, -p2.json, dst
-// Ukuran tiap file dikontrol jumlah baris (lihat export-apps-script.gs), bukan
-// tanggal, supaya tidak Out of Memory apapun kepadatan datanya.
-//
-// PENTING: nomor bagian TIDAK SELALU mulai dari p1 untuk setiap bulan, dan
-// gap di tengah (mis. p5..p9 hilang lalu p10 ada lagi) pernah terjadi. Karena
-// itu kita TIDAK BOLEH fetch berurutan lalu berhenti begitu ada 404 pertama.
-// Semua nomor bagian dari 1..maxBagian tetap harus dicoba.
-//
-// TAPI: bulan-bulan padat sekarang bisa punya 20-30+ bagian (Juli 2026 = 27
-// bagian kasir). Kalau semua nomor 1..maxBagian (200) di-fetch SEKALIGUS
-// secara paralel, itu berarti ratusan request bersamaan ke CDN GitHub untuk
-// satu bulan saja (dan berkali lipat kalau beberapa bulan sekaligus di rentang
-// filter) — ini memicu rate-limit di sisi CDN, yang membuat sebagian request
-// gagal (bukan 404 "beneran", tapi mis. 429/503 karena kebanyakan request
-// bersamaan) dan SALAH diperlakukan sebagai "bagian tidak ada", padahal
-// bagian itu sebenarnya ADA. Akibatnya: sebagian data (mis. tanggal-tanggal
-// tertentu) hilang secara acak/tidak konsisten dari dashboard.
-//
-// FIX: fetch di-batch dengan concurrency terbatas (FETCH_CONCURRENCY per
-// waktu, bukan semua sekaligus), DAN respons non-404 yang gagal (network
-// error, 429, 5xx) di-retry beberapa kali dengan jeda sebelum benar-benar
-// dianggap tidak ada — supaya rate-limit sesaat tidak menghilangkan data.
-const FETCH_CONCURRENCY = 4; // concurrency GLOBAL, bukan per sumber
+// File multi-bagian: data/<prefix>-YYYY-MM-p1.json, -p2.json, dst.
+// Semua nomor bagian 1..maxBagian dicoba (bisa ada gap), dengan antrean global
+// ber-concurrency terbatas + retry untuk 429/5xx/network error supaya data
+// tidak hilang acak karena rate-limit.
+const FETCH_CONCURRENCY = 4;
 const FETCH_MAX_RETRY = 4;
 const FETCH_RETRY_BASE_MS = 800;
 const FETCH_CONSECUTIVE_404_TO_STOP = 8;
 
-// Satu antrean global untuk SEMUA file JSON. Sebelumnya setiap sumber punya
-// Promise.all sendiri, sehingga 7 sumber x 12 request = sampai 84 request
-// bersamaan. Ditambah cache-busting ?_=timestamp yang memaksa CDN melayani
-// URL baru setiap kali, kondisi ini sangat mudah memicu rate limit GitHub Pages.
 let FETCH_ACTIVE = 0;
 const FETCH_QUEUE = [];
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+function sleep(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }
 
 function enqueueFetch(task) {
   return new Promise((resolve, reject) => {
@@ -1798,7 +1504,6 @@ function enqueueFetch(task) {
     pumpFetchQueue();
   });
 }
-
 function pumpFetchQueue() {
   while (FETCH_ACTIVE < FETCH_CONCURRENCY && FETCH_QUEUE.length) {
     const item = FETCH_QUEUE.shift();
@@ -1806,10 +1511,7 @@ function pumpFetchQueue() {
     Promise.resolve()
       .then(item.task)
       .then(item.resolve, item.reject)
-      .finally(() => {
-        FETCH_ACTIVE--;
-        pumpFetchQueue();
-      });
+      .finally(() => { FETCH_ACTIVE--; pumpFetchQueue(); });
   }
 }
 
@@ -1817,7 +1519,6 @@ async function fetchSatuBagianDenganRetry(file, arrKey, maxRetry) {
   maxRetry = maxRetry || FETCH_MAX_RETRY;
   for (let attempt = 1; attempt <= maxRetry; attempt++) {
     try {
-      // JANGAN pakai ?_=Date.now(). URL yang sama boleh di-cache browser/CDN.
       const r = await fetch(file, { cache: 'default' });
       if (r.status === 404) return { rows: [], status: 404 };
       if (!r.ok) throw new Error('HTTP ' + r.status);
@@ -1828,7 +1529,6 @@ async function fetchSatuBagianDenganRetry(file, arrKey, maxRetry) {
         console.warn('Gagal fetch ' + file + ' setelah ' + maxRetry + ' percobaan: ' + e.message);
         return { rows: [], status: 0, error: e.message };
       }
-      // Backoff lebih panjang untuk 429/5xx/network error.
       await sleep(FETCH_RETRY_BASE_MS * Math.pow(2, attempt - 1));
     }
   }
@@ -1838,21 +1538,12 @@ async function fetchSatuBagianDenganRetry(file, arrKey, maxRetry) {
 async function fetchBagianBerurutan(prefix, kode, maxBagian, arrKey) {
   let gabungan = [];
   let consecutive404 = 0;
-
-  // Tidak lagi langsung menembak 1..200 sekaligus.
-  // Bagian dibaca dalam batch kecil melalui antrean GLOBAL. Setelah sejumlah
-  // 404 berturut-turut di ujung data, diasumsikan file bulan tersebut selesai.
-  // Gap pendek tetap aman karena ambangnya 8.
   for (let mulai = 1; mulai <= maxBagian; mulai += FETCH_CONCURRENCY) {
     const batch = [];
-    for (let bagian = mulai; bagian < mulai + FETCH_CONCURRENCY && bagian <= maxBagian; bagian++) {
-      batch.push(bagian);
-    }
+    for (let bagian = mulai; bagian < mulai + FETCH_CONCURRENCY && bagian <= maxBagian; bagian++) batch.push(bagian);
 
     const hasilBatch = await Promise.all(batch.map(bagian =>
-      enqueueFetch(() => fetchSatuBagianDenganRetry(
-        `data/${prefix}-${kode}-p${bagian}.json`, arrKey
-      ))
+      enqueueFetch(() => fetchSatuBagianDenganRetry(`data/${prefix}-${kode}-p${bagian}.json`, arrKey))
     ));
 
     for (const hasil of hasilBatch) {
@@ -1862,90 +1553,43 @@ async function fetchBagianBerurutan(prefix, kode, maxBagian, arrKey) {
         consecutive404 = 0;
         gabungan = gabungan.concat(hasil.rows);
       } else {
-        // Error sementara/final tidak dianggap 404. Jangan menghentikan scan
-        // hanya karena satu request terkena rate limit/network error.
         consecutive404 = 0;
         gabungan = gabungan.concat(hasil.rows || []);
       }
     }
-
     if (consecutive404 >= FETCH_CONSECUTIVE_404_TO_STOP) break;
   }
   return gabungan;
 }
 
-async function fetchBulanPelunasan(kode) {
-  if (CACHE_PELUNASAN[kode]) return CACHE_PELUNASAN[kode];
-  const rows = await fetchBagianBerurutan('pelunasan-piutang', kode, MAX_BAGIAN_PELUNASAN, 'pelunasan_detail');
-  CACHE_PELUNASAN[kode] = rows;
+async function fetchBulanGeneric(cache, kode, prefix, maxBagian, arrKey) {
+  if (cache[kode]) return cache[kode];
+  const rows = await fetchBagianBerurutan(prefix, kode, maxBagian, arrKey);
+  cache[kode] = rows;
   return rows;
 }
-
-async function fetchBulanKasir(kode) {
-  if (CACHE_KASIR[kode]) return CACHE_KASIR[kode];
-  const rows = await fetchBagianBerurutan('kasir', kode, MAX_BAGIAN_KASIR, 'kasir_detail');
-  CACHE_KASIR[kode] = rows;
-  return rows;
-}
-
-async function fetchBulanKredit(kode) {
-  if (CACHE_KREDIT[kode]) return CACHE_KREDIT[kode];
-  const rows = await fetchBagianBerurutan('kredit', kode, MAX_BAGIAN_KREDIT, 'kredit_detail');
-  CACHE_KREDIT[kode] = rows;
-  return rows;
-}
-
-async function fetchBulanBiayaBahan(kode) {
-  if (CACHE_BIAYA_BAHAN[kode]) return CACHE_BIAYA_BAHAN[kode];
-  const rows = await fetchBagianBerurutan('biaya-bahan', kode, MAX_BAGIAN_BIAYA_BAHAN, 'biaya_bahan_detail');
-  CACHE_BIAYA_BAHAN[kode] = rows;
-  return rows;
-}
-
-async function fetchBulanBiayaUmum(kode) {
-  if (CACHE_BIAYA_UMUM[kode]) return CACHE_BIAYA_UMUM[kode];
-  const rows = await fetchBagianBerurutan('biaya-umum', kode, MAX_BAGIAN_BIAYA_UMUM, 'biaya_umum_detail');
-  CACHE_BIAYA_UMUM[kode] = rows;
-  return rows;
-}
-
-async function fetchBulanPengeluaranKas(kode) {
-  if (CACHE_PENGELUARAN_KAS[kode]) return CACHE_PENGELUARAN_KAS[kode];
-  const rows = await fetchBagianBerurutan('pengeluaran-kas', kode, MAX_BAGIAN_PENGELUARAN_KAS, 'pengeluaran_detail');
-  CACHE_PENGELUARAN_KAS[kode] = rows;
-  return rows;
-}
-
-async function fetchBulanUangMukaPjk(kode) {
-  if (CACHE_UANG_MUKA_PJK[kode]) return CACHE_UANG_MUKA_PJK[kode];
-  const rows = await fetchBagianBerurutan('uang-muka-pjk', kode, MAX_BAGIAN_UANG_MUKA_PJK, 'uang_muka_pjk_detail');
-  CACHE_UANG_MUKA_PJK[kode] = rows;
-  return rows;
-}
-
-// ── Pendapatan Lain: mengikuti pola pengambilan data per-bulan yang sama
-//    persis dengan Biaya Bahan/Biaya Umum/Pengeluaran Kas/Uang Muka & PJK,
-//    yaitu file data/pendapatan-lain-YYYY-MM-pN.json (array "pendapatan_lain_detail"). ──
-async function fetchBulanPendapatanLain(kode) {
-  if (CACHE_PENDAPATAN_LAIN[kode]) return CACHE_PENDAPATAN_LAIN[kode];
-  const rows = await fetchBagianBerurutan('pendapatan-lain', kode, MAX_BAGIAN_PENDAPATAN_LAIN, 'pendapatan_lain_detail');
-  CACHE_PENDAPATAN_LAIN[kode] = rows;
-  return rows;
-}
+const fetchBulanPelunasan      = kode => fetchBulanGeneric(CACHE_PELUNASAN, kode, 'pelunasan-piutang', MAX_BAGIAN_PELUNASAN, 'pelunasan_detail');
+const fetchBulanKasir          = kode => fetchBulanGeneric(CACHE_KASIR, kode, 'kasir', MAX_BAGIAN_KASIR, 'kasir_detail');
+const fetchBulanKredit         = kode => fetchBulanGeneric(CACHE_KREDIT, kode, 'kredit', MAX_BAGIAN_KREDIT, 'kredit_detail');
+const fetchBulanBiayaBahan     = kode => fetchBulanGeneric(CACHE_BIAYA_BAHAN, kode, 'biaya-bahan', MAX_BAGIAN_BIAYA_BAHAN, 'biaya_bahan_detail');
+const fetchBulanBiayaUmum      = kode => fetchBulanGeneric(CACHE_BIAYA_UMUM, kode, 'biaya-umum', MAX_BAGIAN_BIAYA_UMUM, 'biaya_umum_detail');
+const fetchBulanBiayaUmumBaru  = kode => fetchBulanGeneric(CACHE_BIAYA_UMUM_BARU, kode, BIAYA_UMUM_BARU_PREFIX, MAX_BAGIAN_BIAYA_UMUM_BARU, BIAYA_UMUM_BARU_KEY);
+const fetchBulanPengeluaranKas = kode => fetchBulanGeneric(CACHE_PENGELUARAN_KAS, kode, 'pengeluaran-kas', MAX_BAGIAN_PENGELUARAN_KAS, 'pengeluaran_detail');
+const fetchBulanUangMukaPjk    = kode => fetchBulanGeneric(CACHE_UANG_MUKA_PJK, kode, 'uang-muka-pjk', MAX_BAGIAN_UANG_MUKA_PJK, 'uang_muka_pjk_detail');
+const fetchBulanPendapatanLain = kode => fetchBulanGeneric(CACHE_PENDAPATAN_LAIN, kode, 'pendapatan-lain', MAX_BAGIAN_PENDAPATAN_LAIN, 'pendapatan_lain_detail');
 
 async function loadSemuaUntukRentang(awal, akhir) {
   const bulanList = monthsInRange(awal, akhir);
-  let pelunasanArr = [], kasirArr = [], kreditArr = [], biayaBahanArr = [], biayaUmumArr = [], pengeluaranKasArr = [], umPjkArr = [], pendapatanLainArr = [];
+  let pelunasanArr = [], kasirArr = [], kreditArr = [], biayaBahanArr = [], biayaUmumArr = [], biayaUmumBaruArr = [], pengeluaranKasArr = [], umPjkArr = [], pendapatanLainArr = [];
 
-  // Sumber diproses SATU PER SATU. Di dalamnya tetap ada concurrency global 4.
-  // Ini sengaja agar saat dashboard pertama dibuka tidak terjadi ledakan
-  // request dari 7 sumber sekaligus.
+  // Sumber diproses satu per satu (di dalamnya ada concurrency global 4)
   for (const k of bulanList) {
     pelunasanArr.push(await fetchBulanPelunasan(k));
     kasirArr.push(await fetchBulanKasir(k));
     kreditArr.push(await fetchBulanKredit(k));
     biayaBahanArr.push(await fetchBulanBiayaBahan(k));
     biayaUmumArr.push(await fetchBulanBiayaUmum(k));
+    biayaUmumBaruArr.push(await fetchBulanBiayaUmumBaru(k));
     pengeluaranKasArr.push(await fetchBulanPengeluaranKas(k));
     umPjkArr.push(await fetchBulanUangMukaPjk(k));
     pendapatanLainArr.push(await fetchBulanPendapatanLain(k));
@@ -1957,22 +1601,19 @@ async function loadSemuaUntukRentang(awal, akhir) {
     kredit: dedupeExact([].concat(...kreditArr)),
     biayaBahan: dedupeAbaikanLoadedAt([].concat(...biayaBahanArr)),
     biayaUmum: dedupeAbaikanLoadedAt([].concat(...biayaUmumArr)),
+    biayaUmumBaru: dedupeAbaikanLoadedAt([].concat(...biayaUmumBaruArr)),
     pengeluaranKas: dedupeExact([].concat(...pengeluaranKasArr)),
     umPjk: dedupeExact([].concat(...umPjkArr)),
     pendapatanLain: dedupeExact([].concat(...pendapatanLainArr)),
   };
 }
 
-// ══ BUILD FILTERED (async karena fetch file per-bulan) ══
+// ══ BUILD FILTERED ══
 async function buildFiltered() {
   const { awal, akhir } = getDateRange();
-  const { pelunasan, kasir, kredit, biayaBahan, biayaUmum, pengeluaranKas, umPjk, pendapatanLain } = await loadSemuaUntukRentang(awal, akhir);
+  const { pelunasan, kasir, kredit, biayaBahan, biayaUmum, biayaUmumBaru, pengeluaranKas, umPjk, pendapatanLain } = await loadSemuaUntukRentang(awal, akhir);
 
   let kasirRows  = kasir.filter(r => inRange(r.tanggal_transaksi, awal, akhir));
-  // Laporan Kasir: buang seluruh baris dengan nama kasir yang dikecualikan
-  // (mis. 'indri.nurisa') SEBELUM dipakai untuk agregat & tabel manapun,
-  // supaya konsisten di semua halaman Laporan Kasir (dashboard, per unit,
-  // per jaminan, per tipe, per kas, detail transaksi).
   kasirRows = filterKasirExcludeSubPenerima(kasirRows);
 
   const kreditRows = kredit.filter(r => inRange(r.tanggal, awal, akhir));
@@ -1984,31 +1625,21 @@ async function buildFiltered() {
   const umPjkRows = umPjk.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const biayaBahanRows = biayaBahan.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const biayaUmumRows = biayaUmum.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
+  const biayaUmumBaruRows = biayaUmumBaru.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const pendapatanLainRows = pendapatanLain.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
 
   FILTERED = {
     generated_at: MANIFEST?.generated_at,
     kasir_detail: kasirRows,
-    // pendapatan per sub unit masih dari data.json lama (belum di-refactor
-    // per-bulan — sumbernya project BigQuery lain / PP-DP)
     pendapatan_harian  : AUX?.pendapatan_harian  || [],
     pendapatan_per_unit: AUX?.pendapatan_per_unit || [],
-    // penjualan_kredit_detail dari file per-bulan data/kredit-YYYY-MM-pN.json
     penjualan_kredit_detail: kreditRows,
-    // pelunasan_detail dari data/pelunasan-piutang.json (single file, di-cache
-    // sekali saat load, difilter tanggal di sisi client). Sumbernya sekarang
-    // tabel `routing-dokumen.monitoring_keuangan.pelunasan_piutang`, yang
-    // di-refresh otomatis lewat scheduled query dari pendapatan_unit.
     pelunasan_detail: pelunasanRows,
-    // pengeluaran_detail dari data/pengeluaran-kas-YYYY-MM-pN.json.
     pengeluaran_detail: pengeluaranKasRows,
-    // uang_muka_pjk_detail dari data/uang-muka-pjk-YYYY-MM-pN.json.
     uang_muka_pjk_detail: umPjkRows,
-    // biaya_bahan_detail dari data/biaya-bahan-YYYY-MM-pN.json.
-    biaya_bahan_detail: biayaBahanRows,
-    // biaya_umum_detail dari data/biaya-umum-YYYY-MM-pN.json.
-    biaya_umum_detail: biayaUmumRows,
-    // pendapatan_lain_detail dari data/pendapatan-lain-YYYY-MM-pN.json.
+    biaya_bahan_detail: biayaBahanRows,          // Biaya Bahan Medis
+    biaya_umum_detail: biayaUmumRows,            // Biaya Bahan Non Medis
+    biaya_umum_baru_detail: biayaUmumBaruRows,   // Biaya Umum
     pendapatan_lain_detail: pendapatanLainRows,
   };
 
@@ -2019,9 +1650,6 @@ async function buildFiltered() {
   recomputePengeluaranKasAggregates(pengeluaranKasRows);
 }
 
-// ── Hitung ulang penjualan_kredit_per_penanggung & per_segment dari
-//    penjualan_kredit_detail (data/kredit-YYYY-MM-pN.json), sama seperti
-//    kasir_per_unit dkk dihitung dari kasir_detail. ──
 function recomputeKreditAggregates(rows) {
   const penanggungMap = {}, segmentMap = {};
   rows.forEach(r => {
@@ -2040,8 +1668,6 @@ function recomputeKreditAggregates(rows) {
   FILTERED.penjualan_kredit_per_segment    = Object.values(segmentMap).sort((a,b) => b.total_nominal - a.total_nominal);
 }
 
-// ── Hitung ulang kasir_per_unit, per_jaminan, per_tipe, per_kas, detail_per_unit
-//    dari kasir_detail. ──
 function recomputeKasirAggregates(rows) {
   const unitMap = {}, detailMap = {}, jaminanMap = {}, tipeMap = {}, keteranganMap = {}, kasMap = {};
   rows.forEach(r => {
@@ -2080,10 +1706,8 @@ function recomputeKasirAggregates(rows) {
     kasMap[kas].jumlah_transaksi += 1;
   });
 
-  FILTERED.kasir_per_unit = Object.values(unitMap).map(r => ({ ...r, jumlah_pasien: r.pasien.size }))
-    .sort((a,b) => b.total_nominal - a.total_nominal);
-  FILTERED.kasir_detail_per_unit = Object.values(detailMap).map(r => ({ ...r, jumlah_pasien: r.pasien.size }))
-    .sort((a,b) => b.total_nominal - a.total_nominal);
+  FILTERED.kasir_per_unit = Object.values(unitMap).map(r => ({ ...r, jumlah_pasien: r.pasien.size })).sort((a,b) => b.total_nominal - a.total_nominal);
+  FILTERED.kasir_detail_per_unit = Object.values(detailMap).map(r => ({ ...r, jumlah_pasien: r.pasien.size })).sort((a,b) => b.total_nominal - a.total_nominal);
   FILTERED.kasir_per_jaminan    = Object.values(jaminanMap).sort((a,b) => b.total_nominal - a.total_nominal);
   FILTERED.kasir_per_tipe       = Object.values(tipeMap).sort((a,b) => b.total_nominal - a.total_nominal);
   FILTERED.kasir_per_keterangan = Object.values(keteranganMap).sort((a,b) => b.total_nominal - a.total_nominal);
@@ -2102,12 +1726,7 @@ function recomputeKasirHarian(rows) {
   FILTERED.kasir_harian = Object.values(map).sort((a,b) => a.tanggal.localeCompare(b.tanggal));
 }
 
-// ── Nominal per baris untuk data akuntansi (pelunasan piutang & pengeluaran
-//    kas). Baris dicatat sebagai entri akuntansi (debet/kredit), field
-//    "Total" bisa negatif tergantung arah jurnal. Untuk tujuan monitoring
-//    "berapa yang sudah terjadi", kita pakai nilai absolut. Dipakai bersama
-//    oleh modul Pelunasan Piutang & Pengeluaran Kas karena skema datanya sama
-//    (keduanya berasal dari tabel pendapatan_unit, difilter coa_code berbeda). ──
+// ── Nominal per baris data akuntansi (pelunasan piutang & pengeluaran kas): nilai absolut ──
 function akuntansiNominal(r) {
   const t = parseFloat(r.Total ?? r.total);
   if (!isNaN(t) && t !== 0) return Math.abs(t);
@@ -2117,34 +1736,23 @@ function akuntansiNominal(r) {
 }
 function akuntansiDebet(r)  { return Math.abs(parseFloat(r.debet)  || 0); }
 function akuntansiKredit(r) { return Math.abs(parseFloat(r.kredit) || 0); }
-
-// ── Kolom "Penanggung" diambil dari kolom nama penerima (bukan dari field
-//    Penanggung), sesuai data pelunasan piutang / pengeluaran kas. ──
 function akuntansiPenanggung(r) {
   return r.nama_penerima || r.Nama_Penerima || r.NAMA_PENERIMA || r.nama_sub_penerima || '-';
 }
-// alias lama, tetap dipertahankan supaya tidak mengubah perilaku modul Pelunasan Piutang
 function pelunasanNominal(r) { return akuntansiNominal(r); }
 function pelunasanDebet(r)   { return akuntansiDebet(r); }
 function pelunasanKredit(r)  { return akuntansiKredit(r); }
 
-// ── Pelunasan Piutang: pengambilan nama Penanggung.
-//    Jika nama_penerima = 'indri.nurisa' (akun umum/kasir, bukan penanggung
-//    sebenarnya), nama Penanggung diambil dari nama_sub_penerima.
-//    Selain itu, nama Penanggung tetap diambil dari nama_penerima. ──
+// ── Pelunasan Piutang: jika nama_penerima = 'indri.nurisa' (akun umum), pakai nama_sub_penerima ──
 const PELUNASAN_PENANGGUNG_KHUSUS = 'indri.nurisa';
 function pelunasanPenanggung(r) {
   const namaPenerima = r.nama_penerima || r.Nama_Penerima || r.NAMA_PENERIMA || '';
   const bersih = String(namaPenerima).trim().toLowerCase();
-  if (bersih === PELUNASAN_PENANGGUNG_KHUSUS) {
-    return r.nama_sub_penerima || '-';
-  }
+  if (bersih === PELUNASAN_PENANGGUNG_KHUSUS) return r.nama_sub_penerima || '-';
   return namaPenerima || r.nama_sub_penerima || '-';
 }
 
-// ══ Lookup nama bank/deposito dari coa_code, khusus modul Pelunasan Piutang ══
-// (tabel pelunasan_piutang adalah hasil CREATE TABLE ... AS SELECT * dari
-// pendapatan_unit, jadi kolom coa_code ikut terbawa apa adanya)
+// ══ Lookup nama bank/deposito dari coa_code (Pelunasan Piutang) ══
 const COA_BANK_MAP = {
   '1.1.1.2'      : 'Bank & Deposito',
   '1.1.1.2.1'    : 'Bank - RSSG',
@@ -2175,7 +1783,7 @@ function namaBankDariCoa(r) {
   return COA_BANK_MAP[kode] || (r.Nama_COA || r.nama_coa || ('COA ' + kode));
 }
 
-// ══ Lookup nama COA untuk modul Biaya Bahan & Biaya Umum ══
+// ══ Lookup nama COA: Biaya Bahan Medis & Biaya Bahan Non Medis (COA 4.x) ══
 const COA_BIAYA_MAP = {
   '4.1'   : 'Biaya Bahan Medis',
   '4.1.1' : 'Biaya Bahan Tablet',
@@ -2202,13 +1810,18 @@ function kodeCoaBiaya(r) {
   return String(r.coa_code || r.Coa_Code || r.COA_CODE || r.kode_coa || '-').trim() || '-';
 }
 
-// ══ Lookup nama COA untuk modul Pendapatan Lain ══
-// Belum ada daftar kode COA "Pendapatan Lain" yang pasti (berbeda dari
-// COA_BIAYA_MAP di atas), jadi peta ini sengaja dikosongkan dulu — nama COA
-// akan otomatis jatuh ke kolom Nama_COA/nama_coa bawaan data (fallback di
-// namaCoaPendapatanLain), atau ke "COA <kode>" kalau nama itu pun kosong.
-// Tambahkan pasangan 'kode': 'Nama COA' di sini kalau ingin nama yang lebih
-// rapi ditampilkan, persis seperti pola COA_BIAYA_MAP.
+// ══ Lookup nama COA: Biaya Umum (modul baru). Isi 'kode': 'Nama' bila ingin nama lebih rapi;
+//    bila kosong otomatis memakai Nama_COA bawaan data. ══
+const COA_BIAYA_UMUM_BARU_MAP = {
+  // '5.1.1' : 'Nama COA Biaya Umum',
+};
+function namaCoaBiayaUmumBaru(r) {
+  const kode = String(r.coa_code || r.Coa_Code || r.COA_CODE || r.kode_coa || '').trim();
+  if (!kode) return r.Nama_COA || r.nama_coa || '-';
+  return COA_BIAYA_UMUM_BARU_MAP[kode] || (r.Nama_COA || r.nama_coa || ('COA ' + kode));
+}
+
+// ══ Lookup nama COA: Pendapatan Lain (kosong dulu; fallback ke Nama_COA bawaan data) ══
 const COA_PENDAPATAN_LAIN_MAP = {
   // '5.x.x' : 'Nama Pendapatan Lain',
 };
@@ -2221,12 +1834,7 @@ function kodeCoaPendapatanLain(r) {
   return String(r.coa_code || r.Coa_Code || r.COA_CODE || r.kode_coa || '-').trim() || '-';
 }
 
-// ══ Uang Muka & PJK: pisahkan kolom "keterangan" (Uang Muka/PJK) yang sudah
-//    dihitung di BigQuery, dan siapkan status pencocokan (sudah/belum
-//    dipertanggungjawabkan) berdasarkan kolom "keterangan_pencocokan" ══
-// Sebuah baris "Uang Muka" dianggap SUDAH dipertanggungjawabkan kalau ada
-// minimal satu baris "PJK" dengan keterangan_pencocokan yang SAMA PERSIS
-// (case-insensitive, trimmed) di dalam data yang sedang difilter.
+// ══ Uang Muka & PJK: pencocokan status pertanggungjawaban ══
 function normalizeMatchText(v) {
   return String(v || '').toLowerCase()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
@@ -2240,8 +1848,6 @@ function similarityText(a,b) {
   const A = matchTokens(a), B = matchTokens(b);
   if (!A.size || !B.size) return 0;
   let common = 0; A.forEach(x => { if (B.has(x)) common++; });
-  // Gunakan Dice + coverage agar perbedaan 1 kata tidak langsung dianggap berbeda.
-  // Contoh: 4 kata sama dari 5 kata -> skor 0.89, bukan 0.80.
   const dice = (2 * common) / (A.size + B.size);
   const coverage = common / Math.min(A.size, B.size);
   return Math.max(dice, coverage * 0.90);
@@ -2270,8 +1876,6 @@ function umPjkMatchScore(um, pjk) {
     amountScore = ratio >= .95 ? .35 : ratio >= .80 ? .25 : ratio >= .60 ? .12 : 0;
   }
 
-  // Jika hampir seluruh kata keterangan sama dan nominal sama, berikan bonus
-  // agar kasus beda 1 kata tetap terdeteksi sebagai PJK.
   const strongText = Math.max(simKeterangan, simGabungan);
   const nearExactBonus = strongText >= .80 ? .08 : 0;
   return sim * .62 + amountScore + nearExactBonus;
@@ -2294,8 +1898,7 @@ function hitungStatusUmPjk(rows) {
   });
 }
 
-// ══ Pisahkan kolom "operasional" pelunasan piutang menjadi Keterangan
-//    (frasa baku yang dikenali) & Penanggung (sisa kalimat) ══
+// ══ Pisahkan kolom "operasional" pelunasan piutang menjadi Keterangan & Penanggung ══
 const OPERASIONAL_KETERANGAN_PATTERNS = [
   'pelunasan piutang',
   'kelebihan pembayaran',
@@ -2321,7 +1924,6 @@ function parseOperasionalPelunasan(teks) {
   };
 }
 
-// ── Hitung rekap harian & ringkasan pelunasan piutang dari pelunasan_detail ──
 function recomputePelunasanAggregates(rows) {
   const map = {};
   rows.forEach(r => {
@@ -2334,16 +1936,11 @@ function recomputePelunasanAggregates(rows) {
     map[tgl].total_kredit     += pelunasanKredit(r);
   });
   const harian = Object.values(map).sort((a,b) => a.tanggal.localeCompare(b.tanggal));
-  // kumulatif berjalan sesuai urutan tanggal (dalam rentang yang sedang difilter)
   let running = 0;
   harian.forEach(h => { running += h.total; h.kumulatif = running; });
   FILTERED.pelunasan_harian = harian;
 }
 
-// ── Hitung rekap harian & ringkasan pengeluaran kas dari pengeluaran_detail.
-//    Sama persis strukturnya dengan recomputePelunasanAggregates, karena
-//    pengeluaran_detail memakai skema kolom yang sama (dari tabel
-//    routing-dokumen.monitoring_keuangan.pengeluaran_kas). ──
 function recomputePengeluaranKasAggregates(rows) {
   const map = {};
   rows.forEach(r => {
@@ -2441,7 +2038,8 @@ function renderPage(id) {
     case 'uang-muka-pjk':      renderUmPjk(d);             break;
     case 'biaya-bahan':        renderBiayaBahan(d);        break;
     case 'biaya-umum':         renderBiayaUmum(d);         break;
-    case 'perbandingan-unit': renderPerbandinganUnit();      break;
+    case 'biaya-umum-baru':    renderBiayaUmumBaru(d);     break;
+    case 'perbandingan-unit':  renderPerbandinganUnit();   break;
   }
   const fl = document.getElementById('footerLastUpdate');
   const lu = document.getElementById('lastUpdate');
@@ -2469,7 +2067,6 @@ function renderDashboard(d) {
     kasirH.map(r => r.tanggal?.substring(5)),
     [{ label:'Nominal', data: kasirH.map(r => parseFloat(r.total_nominal)||0), borderColor:'#2563eb', backgroundColor:'rgba(37,99,235,.08)', fill:true, tension:.3, pointRadius:1, borderWidth:2 }]
   );
-
   makeBar('chartKasirUnit', perUnit.map(r => r.unit_kasir), perUnit.map(r => parseFloat(r.total_nominal)||0), 'Nominal');
   makeDoughnut('chartTipe', perTipe.map(r => r.tipe_pembayaran || 'Lainnya'), perTipe.map(r => parseFloat(r.total_nominal)||0));
 
@@ -2485,14 +2082,11 @@ function renderKasirUnit(d) {
   const perUnit   = d.kasir_per_unit   || [];
   const perDetail = d.kasir_detail_per_unit || [];
   const units     = ['semua', ...new Set(perUnit.map(r => r.unit_kasir))];
-
   document.getElementById('unitChips').innerHTML = units.map(u =>
     `<button class="unit-chip ${u===activeUnit?'active':''}" onclick="setUnit('${u}')">${u==='semua'?'Semua Unit':u}</button>`
   ).join('');
-
   renderUnitData(perUnit, perDetail);
 }
-
 function setUnit(unit) {
   activeUnit = unit;
   document.querySelectorAll('.unit-chip').forEach(c => c.classList.toggle('active', c.textContent === (unit==='semua'?'Semua Unit':unit)));
@@ -2502,19 +2096,19 @@ function setUnit(unit) {
   document.getElementById('unitDetailSub').textContent = unit === 'semua' ? 'Semua unit' : unit;
   renderUnitData(perUnit, perDetail);
 }
-
 function renderUnitData(perUnit, perDetail) {
   currentUnitData = { perUnit, perDetail };
-
   makeBar('chartUnitNominal', perUnit.map(r => r.unit_kasir), perUnit.map(r => parseFloat(r.total_nominal)||0), 'Total Nominal');
   makeBar('chartUnitTrx', perUnit.map(r => r.unit_kasir), perUnit.map(r => parseInt(r.jumlah_transaksi)||0), 'Jumlah Transaksi',
     { plugins: { ...CHART_DEFAULTS.plugins, tooltip: { callbacks: { label: ctx => ' ' + num(ctx.raw) + ' transaksi' } } },
       scales: { x: CHART_DEFAULTS.scales.x, y: { ticks: { color: '#94a1b5', font: { size:10 }, callback: v => num(v) }, grid: { color:'#eef1f7' } } } }
   );
-
-  const unitSorted = tblApplySort('tblUnit', perUnit);
-  const tbody1 = document.querySelector('#tblUnit tbody');
-  tbody1.innerHTML = unitSorted.map(r => `
+  filterUnitDetailAndUnit();
+  filterUnitDetail();
+}
+function filterUnitDetailAndUnit() {
+  const unitSorted = tblApplySort('tblUnit', currentUnitData.perUnit);
+  document.querySelector('#tblUnit tbody').innerHTML = unitSorted.map(r => `
     <tr>
       <td class="td-bold">${r.unit_kasir||'-'}</td>
       <td class="td-num">${rupiah(r.total_nominal)}</td>
@@ -2527,19 +2121,14 @@ function renderUnitData(perUnit, perDetail) {
     { value: sumBy(unitSorted,'jumlah_pasien'), type: 'num' },
   ]) : '';
   tblRefreshIcons('tblUnit', 'head-tblUnit');
-
-  filterUnitDetail();
 }
-
 function filterUnitDetail() {
   const q = (document.getElementById('searchUnitDetail')?.value || '').toLowerCase();
   const filtered = currentUnitData.perDetail.filter(r =>
     !q || (r.nama_kasir||'').toLowerCase().includes(q) || (r.unit_kasir||'').toLowerCase().includes(q)
   );
   const sorted = tblApplySort('tblUnitDetail', filtered);
-
-  const tbody2 = document.querySelector('#tblUnitDetail tbody');
-  tbody2.innerHTML = sorted.map(r => `
+  document.querySelector('#tblUnitDetail tbody').innerHTML = sorted.map(r => `
     <tr>
       <td><span class="badge" style="background:${UNIT_COLORS[r.unit_kasir]||'#94a1b5'}22;color:${UNIT_COLORS[r.unit_kasir]||'#64748b'}">${r.unit_kasir||'-'}</span></td>
       <td>${r.nama_kasir||'-'}</td>
@@ -2562,19 +2151,12 @@ function resetUnitDetailFilter() {
 
 // ── KASIR PER JAMINAN ──
 let currentJaminanData = [];
-function renderKasirJaminan(d) {
-  currentJaminanData = d.kasir_per_jaminan || [];
-  filterJaminan();
-}
+function renderKasirJaminan(d) { currentJaminanData = d.kasir_per_jaminan || []; filterJaminan(); }
 function filterJaminan() {
   const q = (document.getElementById('searchJaminan')?.value || '').toLowerCase();
-  const filtered = currentJaminanData.filter(r => !q || (r.jaminan||'').toLowerCase().includes(q));
-  const rows = tblApplySort('tblJaminan', filtered);
-
+  const rows = tblApplySort('tblJaminan', currentJaminanData.filter(r => !q || (r.jaminan||'').toLowerCase().includes(q)));
   makeBar('chartJaminanFull', rows.map(r => r.jaminan?.substring(0,25)), rows.map(r => parseFloat(r.total_nominal)||0), 'Nominal', { indexAxis:'y' });
-
-  const tbody = document.querySelector('#tblJaminan tbody');
-  tbody.innerHTML = rows.map(r => `
+  document.querySelector('#tblJaminan tbody').innerHTML = rows.map(r => `
     <tr>
       <td class="td-bold">${r.jaminan||'-'}</td>
       <td class="td-num">${rupiah(r.total_nominal)}</td>
@@ -2587,27 +2169,17 @@ function filterJaminan() {
   document.getElementById('jaminanCount').textContent = `${num(rows.length)} dari ${num(currentJaminanData.length)} jaminan`;
   tblRefreshIcons('tblJaminan', 'head-tblJaminan');
 }
-function resetJaminanFilter() {
-  document.getElementById('searchJaminan').value = '';
-  filterJaminan();
-}
+function resetJaminanFilter() { document.getElementById('searchJaminan').value = ''; filterJaminan(); }
 
 // ── KASIR PER JENIS PEMBAYARAN ──
 let currentTipeData = [];
-function renderKasirTipe(d) {
-  currentTipeData = d.kasir_per_tipe || [];
-  filterTipe();
-}
+function renderKasirTipe(d) { currentTipeData = d.kasir_per_tipe || []; filterTipe(); }
 function filterTipe() {
   const q = (document.getElementById('searchTipe')?.value || '').toLowerCase();
-  const filtered = currentTipeData.filter(r => !q || (r.tipe_pembayaran||'').toLowerCase().includes(q));
-  const rows = tblApplySort('tblTipe', filtered);
+  const rows = tblApplySort('tblTipe', currentTipeData.filter(r => !q || (r.tipe_pembayaran||'').toLowerCase().includes(q)));
   const totalSemua = currentTipeData.reduce((s,r) => s + (parseFloat(r.total_nominal)||0), 0);
-
   makeDoughnut('chartTipeFull', rows.map(r => r.tipe_pembayaran || 'Lainnya'), rows.map(r => parseFloat(r.total_nominal)||0));
-
-  const tbody = document.querySelector('#tblTipe tbody');
-  tbody.innerHTML = rows.map(r => `
+  document.querySelector('#tblTipe tbody').innerHTML = rows.map(r => `
     <tr>
       <td class="td-bold">${r.tipe_pembayaran||'-'}</td>
       <td class="td-num">${rupiah(r.total_nominal)}</td>
@@ -2622,27 +2194,17 @@ function filterTipe() {
   document.getElementById('tipeCount').textContent = `${num(rows.length)} dari ${num(currentTipeData.length)} jenis pembayaran`;
   tblRefreshIcons('tblTipe', 'head-tblTipe');
 }
-function resetTipeFilter() {
-  document.getElementById('searchTipe').value = '';
-  filterTipe();
-}
+function resetTipeFilter() { document.getElementById('searchTipe').value = ''; filterTipe(); }
 
 // ── KASIR PER KAS ──
 let currentKasData = [];
-function renderKasirKas(d) {
-  currentKasData = d.kasir_per_kas || [];
-  filterKas();
-}
+function renderKasirKas(d) { currentKasData = d.kasir_per_kas || []; filterKas(); }
 function filterKas() {
   const q = (document.getElementById('searchKas')?.value || '').toLowerCase();
-  const filtered = currentKasData.filter(r => !q || (r.kas||'').toLowerCase().includes(q));
-  const rows = tblApplySort('tblKas', filtered);
+  const rows = tblApplySort('tblKas', currentKasData.filter(r => !q || (r.kas||'').toLowerCase().includes(q)));
   const totalSemua = currentKasData.reduce((s,r) => s + (parseFloat(r.total_nominal)||0), 0);
-
   makeBar('chartKasFull', rows.map(r => (r.kas||'-').substring(0,25)), rows.map(r => parseFloat(r.total_nominal)||0), 'Nominal', { indexAxis:'y' });
-
-  const tbody = document.querySelector('#tblKas tbody');
-  tbody.innerHTML = rows.map(r => `
+  document.querySelector('#tblKas tbody').innerHTML = rows.map(r => `
     <tr>
       <td class="td-bold">${r.kas||'-'}</td>
       <td class="td-num">${rupiah(r.total_nominal)}</td>
@@ -2657,36 +2219,26 @@ function filterKas() {
   document.getElementById('kasCount').textContent = `${num(rows.length)} dari ${num(currentKasData.length)} kas`;
   tblRefreshIcons('tblKas', 'head-tblKas');
 }
-function resetKasFilter() {
-  document.getElementById('searchKas').value = '';
-  filterKas();
-}
+function resetKasFilter() { document.getElementById('searchKas').value = ''; filterKas(); }
 
 // ── KASIR DETAIL ──
 let detailData = [];
 function populateDetailFilterOptions() {
-  const d = FILTERED;
-  const rows = d?.kasir_detail || [];
-  const fill = (elId, values) => {
+  const rows = FILTERED?.kasir_detail || [];
+  const fill = (elId, values, allLabel) => {
     const el = document.getElementById(elId);
     if (!el) return;
     const current = el.value;
     const opts = [...new Set(values.filter(Boolean))].sort();
-    el.innerHTML = `<option value="">${el.dataset.allLabel}</option>` + opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
+    el.innerHTML = `<option value="">${allLabel}</option>` + opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
     if (opts.includes(current)) el.value = current;
   };
-  document.getElementById('fltKasir').dataset.allLabel        = 'Semua Kasir';
-  document.getElementById('fltUnitKasir').dataset.allLabel    = 'Semua Unit';
-  document.getElementById('fltKas').dataset.allLabel          = 'Semua Kas';
-  document.getElementById('fltJaminan').dataset.allLabel      = 'Semua Jaminan';
-  document.getElementById('fltKeterangan').dataset.allLabel   = 'Semua Keterangan';
-  document.getElementById('fltTipe').dataset.allLabel         = 'Semua Jenis Pembayaran';
-  fill('fltKasir', rows.map(r => r.nama_kasir));
-  fill('fltUnitKasir', rows.map(r => r.unit_kasir));
-  fill('fltKas', rows.map(r => r.kas));
-  fill('fltJaminan', rows.map(r => r.jaminan));
-  fill('fltKeterangan', rows.map(r => r.keterangan));
-  fill('fltTipe', rows.map(r => r.tipe_pembayaran));
+  fill('fltKasir', rows.map(r => r.nama_kasir), 'Semua Kasir');
+  fill('fltUnitKasir', rows.map(r => r.unit_kasir), 'Semua Unit');
+  fill('fltKas', rows.map(r => r.kas), 'Semua Kas');
+  fill('fltJaminan', rows.map(r => r.jaminan), 'Semua Jaminan');
+  fill('fltKeterangan', rows.map(r => r.keterangan), 'Semua Keterangan');
+  fill('fltTipe', rows.map(r => r.tipe_pembayaran), 'Semua Jenis Pembayaran');
 }
 function resetDetailFilter() {
   document.getElementById('searchTrx').value = '';
@@ -2717,11 +2269,9 @@ function filterDetail() {
     (!tipe  || r.tipe_pembayaran === tipe)
   );
   rows = tblApplySort('tblDetail', rows);
-
   document.getElementById('detailCount').textContent = `${num(rows.length)} dari ${num(detailData.length)} transaksi`;
 
-  const tbody = document.querySelector('#tblDetail tbody');
-  tbody.innerHTML = rows.slice(0,2000).map(r => `
+  document.querySelector('#tblDetail tbody').innerHTML = rows.slice(0,2000).map(r => `
     <tr>
       <td>${(r.tanggal_transaksi||'').substring(0,10)}</td>
       <td>${r.nama_kasir||'-'}</td>
@@ -2732,23 +2282,19 @@ function filterDetail() {
       <td class="td-num td-bold">${rupiah(r.nominal)}</td>
       <td><span class="badge ${r.keterangan==='RETUR'?'badge-red':'badge-purple'}">${r.keterangan||'-'}</span></td>
     </tr>`).join('') || '<tr><td colspan="8" class="empty">Tidak ada data</td></tr>';
-
   document.querySelector('#tblDetail tfoot').innerHTML = rows.length ? tblTotalRow(6, [
     { value: sumBy(rows,'nominal'), type: 'rupiah' },
   ]) : '';
   tblRefreshIcons('tblDetail', 'head-tblDetail');
 }
 
-// ── PENDAPATAN UNIT (masih dari data.json lama, belum per-bulan) ──
+// ── PENDAPATAN UNIT (dari data.json lama) ──
 let currentPendapatanUnitAll = [];
 function renderPendapatanUnit(d) {
   const harian = d.pendapatan_harian || [];
   currentPendapatanUnitAll = d.pendapatan_per_unit || [];
-
-  // chart tetap memakai top-15 berdasarkan net, sesuai perilaku semula
   const top15 = [...currentPendapatanUnitAll].sort((a,b) => (parseFloat(b.net)||0) - (parseFloat(a.net)||0)).slice(0,15);
   makeBar('chartPendapatanUnit', top15.map(r => (r.nama_sub_unit||'-').substring(0,20)), top15.map(r => parseFloat(r.net)||0), 'Net', { indexAxis:'y' });
-
   makeLine('chartPendapatanHarian',
     harian.map(r => r.tanggal?.substring(5)),
     [
@@ -2756,16 +2302,12 @@ function renderPendapatanUnit(d) {
       { label:'Kredit', data: harian.map(r => parseFloat(r.total_kredit)||0), borderColor:'#059669', backgroundColor:'rgba(5,150,105,.08)', fill:true, tension:.3, pointRadius:1, borderWidth:2 },
     ]
   );
-
   filterPendapatanUnit();
 }
 function filterPendapatanUnit() {
   const q = (document.getElementById('searchPendapatanUnit')?.value || '').toLowerCase();
-  const filtered = currentPendapatanUnitAll.filter(r => !q || (r.nama_sub_unit||'').toLowerCase().includes(q));
-  const rows = tblApplySort('tblPendapatanUnit', filtered);
-
-  const tbody = document.querySelector('#tblPendapatanUnit tbody');
-  tbody.innerHTML = rows.map(r => {
+  const rows = tblApplySort('tblPendapatanUnit', currentPendapatanUnitAll.filter(r => !q || (r.nama_sub_unit||'').toLowerCase().includes(q)));
+  document.querySelector('#tblPendapatanUnit tbody').innerHTML = rows.map(r => {
     const net = parseFloat(r.net)||0;
     return `<tr>
       <td class="td-bold">${r.nama_sub_unit||'-'}</td>
@@ -2774,7 +2316,6 @@ function filterPendapatanUnit() {
       <td class="td-num ${net>=0?'rekon-match':'rekon-diff'}">${rupiah(net)}</td>
     </tr>`;
   }).join('') || '<tr><td colspan="4" class="empty">Tidak ada data</td></tr>';
-
   document.querySelector('#tblPendapatanUnit tfoot').innerHTML = rows.length ? tblTotalRow(1, [
     { value: sumBy(rows,'total_debet'), type: 'rupiah' },
     { value: sumBy(rows,'total_kredit'), type: 'rupiah' },
@@ -2783,12 +2324,9 @@ function filterPendapatanUnit() {
   document.getElementById('pendapatanUnitCount').textContent = `${num(rows.length)} dari ${num(currentPendapatanUnitAll.length)} sub unit`;
   tblRefreshIcons('tblPendapatanUnit', 'head-tblPendapatanUnit');
 }
-function resetPendapatanUnitFilter() {
-  document.getElementById('searchPendapatanUnit').value = '';
-  filterPendapatanUnit();
-}
+function resetPendapatanUnitFilter() { document.getElementById('searchPendapatanUnit').value = ''; filterPendapatanUnit(); }
 
-// ── PENJUALAN KREDIT (dari file per-bulan data/kredit-YYYY-MM-pN.json) ──
+// ── PENJUALAN KREDIT ──
 let kreditData = [];
 function renderPenjualanKredit(d) {
   const penanggung = d.penjualan_kredit_per_penanggung || [];
@@ -2800,35 +2338,29 @@ function renderPenjualanKredit(d) {
     _coa:        r.Nama_COA || r.nama_coa || '',
     _total:      r.total ?? r.Total ?? 0,
   }));
-
   const totalKredit = penanggung.reduce((s,r) => s + (parseFloat(r.total_nominal)||0), 0);
   document.getElementById('kpiKredit').innerHTML = `
     <div class="kpi-card blue"><div class="kpi-label">Total Kredit</div><div class="kpi-value">${rupiah(totalKredit)}</div><div class="kpi-sub">${penanggung.length} penanggung</div></div>
     <div class="kpi-card purple"><div class="kpi-label">Total Segmen</div><div class="kpi-value">${segmen.length}</div><div class="kpi-sub">segmen aktif</div></div>
   `;
-
   makeBar('chartPenanggung', penanggung.slice(0,10).map(r => (r.Penanggung||r.penanggung||'-').substring(0,25)), penanggung.slice(0,10).map(r => parseFloat(r.total_nominal)||0), 'Nominal', { indexAxis:'y' });
   makeDoughnut('chartSegmen', segmen.map(r => r.Segment||r.segment||'-'), segmen.map(r => parseFloat(r.total_nominal)||0));
   populateKreditFilterOptions();
   filterKredit();
 }
-
-// Isi ulang opsi dropdown Sub Penerima, Penanggung & Segmen sesuai data yang sedang aktif
 function populateKreditFilterOptions() {
   const fillSelect = (elId, values, allLabel) => {
     const el = document.getElementById(elId);
     if (!el) return;
     const current = el.value;
     const opts = [...new Set(values.filter(Boolean))].sort();
-    el.innerHTML = `<option value="">${allLabel}</option>` +
-      opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
+    el.innerHTML = `<option value="">${allLabel}</option>` + opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
     if (opts.includes(current)) el.value = current;
   };
   fillSelect('fltSubPenerima', kreditData.map(r => r.nama_sub_penerima), 'Semua Sub Penerima');
   fillSelect('fltPenanggungKredit', kreditData.map(r => r._penanggung), 'Semua Penanggung');
   fillSelect('fltSegmenKredit', kreditData.map(r => r._segmen), 'Semua Segmen');
 }
-
 function resetKreditFilter() {
   document.getElementById('searchKredit').value = '';
   document.getElementById('fltSubPenerima').value = '';
@@ -2836,7 +2368,6 @@ function resetKreditFilter() {
   document.getElementById('fltSegmenKredit').value = '';
   filterKredit();
 }
-
 function filterKredit() {
   const q           = (document.getElementById('searchKredit')?.value||'').toLowerCase();
   const subPenerima = document.getElementById('fltSubPenerima')?.value || '';
@@ -2844,9 +2375,7 @@ function filterKredit() {
   const segmenF     = document.getElementById('fltSegmenKredit')?.value || '';
 
   let rows = kreditData.filter(r => {
-    const sp = r.nama_sub_penerima || '';
-    const pg = r._penanggung || '';
-    const sg = r._segmen || '';
+    const sp = r.nama_sub_penerima || '', pg = r._penanggung || '', sg = r._segmen || '';
     if (q && !(sp.toLowerCase().includes(q) || pg.toLowerCase().includes(q))) return false;
     if (subPenerima && sp !== subPenerima) return false;
     if (penanggungF && pg !== penanggungF) return false;
@@ -2854,12 +2383,10 @@ function filterKredit() {
     return true;
   });
   rows = tblApplySort('tblKredit', rows);
-
   const countEl = document.getElementById('kreditCount');
   if (countEl) countEl.textContent = `${num(rows.length)} dari ${num(kreditData.length)} baris`;
 
-  const tbody = document.querySelector('#tblKredit tbody');
-  tbody.innerHTML = rows.slice(0,500).map(r => `
+  document.querySelector('#tblKredit tbody').innerHTML = rows.slice(0,500).map(r => `
     <tr>
       <td>${r.tanggal||'-'}</td>
       <td style="font-size:11px">${r.nama_sub_penerima||'-'}</td>
@@ -2871,7 +2398,6 @@ function filterKredit() {
       <td class="td-num">${rupiah(r.debet)}</td>
       <td class="td-num td-bold">${rupiah(r._total)}</td>
     </tr>`).join('') || '<tr><td colspan="9" class="empty">Tidak ada data</td></tr>';
-
   document.querySelector('#tblKredit tfoot').innerHTML = rows.length ? tblTotalRow(6, [
     { value: sumBy(rows,'kredit'), type: 'rupiah' },
     { value: sumBy(rows,'debet'), type: 'rupiah' },
@@ -2880,20 +2406,14 @@ function filterKredit() {
   tblRefreshIcons('tblKredit', 'head-tblKredit');
 }
 
-// ── PENDAPATAN LAIN (dari data/pendapatan-lain-YYYY-MM-pN.json). Strukturnya
-//    sengaja dibuat sejajar/mirip dengan modul Biaya Bahan & Biaya Umum di
-//    atas — sama-sama pakai infrastruktur generik renderBiayaGeneric-style
-//    (populateBiayaFilterOptions, filterBiayaGeneric, renderBiayaRekap,
-//    renderBiayaRekapTable), hanya lookup nama COA-nya pakai
-//    namaCoaPendapatanLain/kodeCoaPendapatanLain di atas. ──
+// ── PENDAPATAN LAIN (memakai infrastruktur generik Biaya di bawah) ──
 let currentPendapatanLainDetail = [];
 function renderPendapatanLainGeneric(rowsMentah) {
   return rowsMentah.map(r => ({
     ...r,
     _debet: akuntansiDebet(r),
     _kredit: akuntansiKredit(r),
-    // Pendapatan: nominal NETTO = kredit - debet, supaya pengembalian/retur
-    // (baris debet) MENGURANGI total, bukan ikut menambah seperti nilai absolut.
+    // Pendapatan: nominal NETO = kredit - debet (retur/pengembalian mengurangi total)
     _nominal: (parseFloat(r.kredit) || 0) - (parseFloat(r.debet) || 0),
     _namaCoa: namaCoaPendapatanLain(r),
     _kodeCoa: kodeCoaPendapatanLain(r),
@@ -2909,15 +2429,11 @@ function filterPendapatanLainDetail() {
   return filterBiayaGeneric('PendapatanLain', currentPendapatanLainDetail, 'tblPendapatanLainDetail', 'head-tblPendapatanLainDetail');
 }
 function resetPendapatanLainDetailFilter() {
-  document.getElementById('searchPendapatanLainDetail').value = '';
-  document.getElementById('fltPendapatanLainCoa').value = '';
-  document.getElementById('fltPendapatanLainKategori').value = '';
-  document.getElementById('fltPendapatanLainSubUnit').value = '';
+  ['searchPendapatanLainDetail','fltPendapatanLainCoa','fltPendapatanLainKategori','fltPendapatanLainSubUnit'].forEach(id => document.getElementById(id).value = '');
   filterPendapatanLainDetail();
 }
 
-// ── PELUNASAN PIUTANG (dari data/pelunasan-piutang.json, sumber tabel
-//    routing-dokumen.monitoring_keuangan.pelunasan_piutang) ──
+// ── PELUNASAN PIUTANG ──
 let currentPelunasanHarian  = [];
 let currentPelunasanDetail  = [];
 let currentPelunasanBank    = [];
@@ -2941,7 +2457,6 @@ function renderPelunasanPiutang(d) {
   currentPelunasanDetail = detail;
   currentPelunasanHarian = harian;
 
-  // Rekap per bank, dihitung dari detail yang baru saja diperkaya field _bank & _nominal
   const bankMap = {};
   detail.forEach(r => {
     const bank = r._bank || 'Lainnya';
@@ -2962,12 +2477,10 @@ function renderPelunasanPiutang(d) {
     <div class="kpi-card amber"><div class="kpi-label">Hari Tertinggi</div><div class="kpi-value">${hariTertinggi ? rupiah(hariTertinggi.total) : '-'}</div><div class="kpi-sub">${hariTertinggi ? hariTertinggi.tanggal : '-'}</div></div>
     <div class="kpi-card purple"><div class="kpi-label">Jumlah Baris</div><div class="kpi-value">${num(detail.length)}</div><div class="kpi-sub">baris pelunasan sesuai filter</div></div>
   `;
-
   makeLine('chartPelunasanHarian',
     harian.map(r => r.tanggal?.substring(5)),
     [{ label:'Total Pelunasan', data: harian.map(r => parseFloat(r.total)||0), borderColor:'#059669', backgroundColor:'rgba(5,150,105,.08)', fill:true, tension:.3, pointRadius:2, borderWidth:2 }]
   );
-
   populatePelunasanFilterOptions();
   filterPelunasanHarian();
   filterPelunasanBank();
@@ -2976,13 +2489,9 @@ function renderPelunasanPiutang(d) {
 
 function filterPelunasanBank() {
   const q = (document.getElementById('searchPelunasanBank')?.value || '').toLowerCase();
-  const filtered = currentPelunasanBank.filter(r => !q || (r.bank||'').toLowerCase().includes(q));
-  const rows = tblApplySort('tblPelunasanBank', filtered);
-
+  const rows = tblApplySort('tblPelunasanBank', currentPelunasanBank.filter(r => !q || (r.bank||'').toLowerCase().includes(q)));
   makeBar('chartPelunasanBank', rows.map(r => (r.bank||'-').substring(0,28)), rows.map(r => parseFloat(r.total_nominal)||0), 'Nominal', { indexAxis:'y' });
-
-  const tbody = document.querySelector('#tblPelunasanBank tbody');
-  tbody.innerHTML = rows.map(r => `
+  document.querySelector('#tblPelunasanBank tbody').innerHTML = rows.map(r => `
     <tr>
       <td class="td-bold">${r.bank||'-'}</td>
       <td class="td-num">${rupiah(r.total_nominal)}</td>
@@ -2995,17 +2504,12 @@ function filterPelunasanBank() {
   document.getElementById('pelunasanBankCount').textContent = `${num(rows.length)} dari ${num(currentPelunasanBank.length)} bank`;
   tblRefreshIcons('tblPelunasanBank', 'head-tblPelunasanBank');
 }
-function resetPelunasanBankFilter() {
-  document.getElementById('searchPelunasanBank').value = '';
-  filterPelunasanBank();
-}
+function resetPelunasanBankFilter() { document.getElementById('searchPelunasanBank').value = ''; filterPelunasanBank(); }
 
 function filterPelunasanHarian() {
   const q = (document.getElementById('searchPelunasanHarian')?.value || '').toLowerCase();
   const rows = tblApplySort('tblPelunasanHarian', currentPelunasanHarian.filter(r => !q || (r.tanggal||'').toLowerCase().includes(q)));
-
-  const tbody = document.querySelector('#tblPelunasanHarian tbody');
-  tbody.innerHTML = rows.map(r => `
+  document.querySelector('#tblPelunasanHarian tbody').innerHTML = rows.map(r => `
     <tr>
       <td class="td-bold">${r.tanggal||'-'}</td>
       <td class="td-num">${num(r.jumlah_transaksi)}</td>
@@ -3014,7 +2518,6 @@ function filterPelunasanHarian() {
       <td class="td-num td-bold">${rupiah(r.total)}</td>
       <td class="td-num">${rupiah(r.kumulatif)}</td>
     </tr>`).join('') || '<tr><td colspan="6" class="empty">Tidak ada data</td></tr>';
-
   document.querySelector('#tblPelunasanHarian tfoot').innerHTML = rows.length ? tblTotalRow(1, [
     { value: sumBy(rows,'jumlah_transaksi'), type: 'num' },
     { value: sumBy(rows,'total_debet'), type: 'rupiah' },
@@ -3025,10 +2528,7 @@ function filterPelunasanHarian() {
   document.getElementById('pelunasanHarianCount').textContent = `${num(rows.length)} dari ${num(currentPelunasanHarian.length)} hari`;
   tblRefreshIcons('tblPelunasanHarian', 'head-tblPelunasanHarian');
 }
-function resetPelunasanHarianFilter() {
-  document.getElementById('searchPelunasanHarian').value = '';
-  filterPelunasanHarian();
-}
+function resetPelunasanHarianFilter() { document.getElementById('searchPelunasanHarian').value = ''; filterPelunasanHarian(); }
 
 function populatePelunasanFilterOptions() {
   const fillSelect = (elId, values, allLabel) => {
@@ -3036,8 +2536,7 @@ function populatePelunasanFilterOptions() {
     if (!el) return;
     const current = el.value;
     const opts = [...new Set(values.filter(Boolean))].sort();
-    el.innerHTML = `<option value="">${allLabel}</option>` +
-      opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
+    el.innerHTML = `<option value="">${allLabel}</option>` + opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
     if (opts.includes(current)) el.value = current;
   };
   fillSelect('fltPelunasanSubUnit', currentPelunasanDetail.map(r => r.nama_sub_unit), 'Semua Sub Unit');
@@ -3057,12 +2556,9 @@ function filterPelunasanDetail() {
   const bank      = document.getElementById('fltPelunasanBankDetail')?.value || '';
 
   let rows = currentPelunasanDetail.filter(r => {
-    const su = r.nama_sub_unit || '';
-    const pg = r._penanggungOperasional || '';
-    const sg = r.Segment || '';
-    const kt = r._keterangan || '';
-    const bk = r._bank || '';
+    const su = r.nama_sub_unit || '', pg = r._penanggungOperasional || '', sg = r.Segment || '', kt = r._keterangan || '', bk = r._bank || '';
     if (q && !(su.toLowerCase().includes(q) || pg.toLowerCase().includes(q) || kt.toLowerCase().includes(q))) return false;
+    if (penanggungQ && !pg.toLowerCase().includes(penanggungQ)) return false;
     if (subUnit && su !== subUnit) return false;
     if (penanggung && pg !== penanggung) return false;
     if (segmen && sg !== segmen) return false;
@@ -3071,16 +2567,14 @@ function filterPelunasanDetail() {
     return true;
   });
   rows = tblApplySort('tblPelunasanDetail', rows);
-  lastPelunasanDetailRows = rows; // simpan versi LENGKAP (tanpa batas 2000) untuk Cetak Excel
+  lastPelunasanDetailRows = rows;
 
   document.getElementById('pelunasanDetailCount').textContent = `${num(rows.length)} dari ${num(currentPelunasanDetail.length)} baris`;
 
-  const tbody = document.querySelector('#tblPelunasanDetail tbody');
-  tbody.innerHTML = rows.slice(0,2000).map(r => `
+  // 10 kolom, sesuai header tabel
+  document.querySelector('#tblPelunasanDetail tbody').innerHTML = rows.slice(0,2000).map(r => `
     <tr>
       <td>${(r.tanggal_sub_transaksi||'').substring(0,10)}</td>
-      <td>${r.keterangan === 'Uang Muka' ? formatTanggal(r._tanggalJatuhTempo) : '-'}</td>
-      <td class="td-num">${r.keterangan === 'Uang Muka' ? labelSisaJatuhTempo(r._sisaJatuhTempoHari) : '-'}</td>
       <td style="font-size:11px">${r.nama_sub_unit||'-'}</td>
       <td style="font-size:11px">${r._penanggungOperasional||'-'}</td>
       <td><span class="badge badge-cyan">${r.Segment||'-'}</span></td>
@@ -3090,8 +2584,7 @@ function filterPelunasanDetail() {
       <td class="td-num">${rupiah(r._debet)}</td>
       <td class="td-num">${rupiah(r._kredit)}</td>
       <td class="td-num td-bold">${rupiah(r._nominal)}</td>
-    </tr>`).join('') || '<tr><td colspan="11" class="empty">Tidak ada data</td></tr>';
-
+    </tr>`).join('') || '<tr><td colspan="10" class="empty">Tidak ada data</td></tr>';
   document.querySelector('#tblPelunasanDetail tfoot').innerHTML = rows.length ? tblTotalRow(7, [
     { value: sumBy(rows,'_debet'), type: 'rupiah' },
     { value: sumBy(rows,'_kredit'), type: 'rupiah' },
@@ -3100,23 +2593,16 @@ function filterPelunasanDetail() {
   tblRefreshIcons('tblPelunasanDetail', 'head-tblPelunasanDetail');
 }
 function resetPelunasanDetailFilter() {
-  document.getElementById('searchPelunasanDetail').value = '';
-  document.getElementById('searchPelunasanPenanggung').value = '';
-  document.getElementById('fltPelunasanSubUnit').value = '';
-  document.getElementById('fltPelunasanPenanggung').value = '';
-  document.getElementById('fltPelunasanSegmen').value = '';
-  document.getElementById('fltPelunasanKeterangan').value = '';
-  document.getElementById('fltPelunasanBankDetail').value = '';
+  ['searchPelunasanDetail','searchPelunasanPenanggung','fltPelunasanSubUnit','fltPelunasanPenanggung','fltPelunasanSegmen','fltPelunasanKeterangan','fltPelunasanBankDetail']
+    .forEach(id => document.getElementById(id).value = '');
   filterPelunasanDetail();
 }
 
-// ── Cetak Excel: ekspor SELURUH baris hasil filter saat ini (tidak
-//    dibatasi 2000 baris seperti tampilan tabel di layar) ──
+// ── Cetak Excel: ekspor SELURUH baris hasil filter (tidak dibatasi 2000 baris) ──
 function exportPelunasanExcel() {
   const rows = lastPelunasanDetailRows || [];
   if (!rows.length) { alert('Tidak ada data untuk diekspor sesuai filter saat ini.'); return; }
   if (typeof XLSX === 'undefined') { alert('Modul Excel gagal dimuat. Coba refresh halaman.'); return; }
-
   const data = rows.map(r => ({
     'Tanggal'      : (r.tanggal_sub_transaksi || '').substring(0,10),
     'Sub Unit'     : r.nama_sub_unit || '-',
@@ -3129,25 +2615,15 @@ function exportPelunasanExcel() {
     'Kredit'       : r._kredit || 0,
     'Nominal'      : r._nominal || 0,
   }));
-
   const ws = XLSX.utils.json_to_sheet(data);
-  ws['!cols'] = [
-    { wch: 12 }, { wch: 18 }, { wch: 24 }, { wch: 14 }, { wch: 18 },
-    { wch: 30 }, { wch: 22 }, { wch: 16 }, { wch: 16 }, { wch: 16 },
-  ];
+  ws['!cols'] = [{ wch: 12 }, { wch: 18 }, { wch: 24 }, { wch: 14 }, { wch: 18 }, { wch: 30 }, { wch: 22 }, { wch: 16 }, { wch: 16 }, { wch: 16 }];
   const wb = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb, ws, 'Pelunasan Piutang');
-
   const { awal, akhir } = getDateRange();
-  const namaFile = `pelunasan-piutang_${awal || 'semua'}_${akhir || 'semua'}.xlsx`;
-  XLSX.writeFile(wb, namaFile);
+  XLSX.writeFile(wb, `pelunasan-piutang_${awal || 'semua'}_${akhir || 'semua'}.xlsx`);
 }
 
-// ── PENGELUARAN KAS (dari data/pengeluaran-kas-YYYY-MM-pN.json, sumber tabel
-//    routing-dokumen.monitoring_keuangan.pengeluaran_kas). Struktur & fungsi
-//    di bawah ini SENGAJA dibuat sejajar/mirip dengan modul Pelunasan
-//    Piutang di atas, karena skema datanya sama persis (sama-sama berasal
-//    dari tabel pendapatan_unit, hanya beda filter coa_code). ──
+// ── PENGELUARAN KAS ──
 let currentPengeluaranKasHarian = [];
 let currentPengeluaranKasDetail = [];
 
@@ -3174,12 +2650,10 @@ function renderPengeluaranKas(d) {
     <div class="kpi-card amber"><div class="kpi-label">Hari Tertinggi</div><div class="kpi-value">${hariTertinggi ? rupiah(hariTertinggi.total) : '-'}</div><div class="kpi-sub">${hariTertinggi ? hariTertinggi.tanggal : '-'}</div></div>
     <div class="kpi-card purple"><div class="kpi-label">Jumlah Baris</div><div class="kpi-value">${num(detail.length)}</div><div class="kpi-sub">baris pengeluaran sesuai filter</div></div>
   `;
-
   makeLine('chartPengeluaranKasHarian',
     harian.map(r => r.tanggal?.substring(5)),
     [{ label:'Total Pengeluaran', data: harian.map(r => parseFloat(r.total)||0), borderColor:'#dc2626', backgroundColor:'rgba(220,38,38,.08)', fill:true, tension:.3, pointRadius:2, borderWidth:2 }]
   );
-
   populatePengeluaranKasFilterOptions();
   filterPengeluaranKasHarian();
   filterPengeluaranKasDetail();
@@ -3188,9 +2662,7 @@ function renderPengeluaranKas(d) {
 function filterPengeluaranKasHarian() {
   const q = (document.getElementById('searchPengeluaranKasHarian')?.value || '').toLowerCase();
   const rows = tblApplySort('tblPengeluaranKasHarian', currentPengeluaranKasHarian.filter(r => !q || (r.tanggal||'').toLowerCase().includes(q)));
-
-  const tbody = document.querySelector('#tblPengeluaranKasHarian tbody');
-  tbody.innerHTML = rows.map(r => `
+  document.querySelector('#tblPengeluaranKasHarian tbody').innerHTML = rows.map(r => `
     <tr>
       <td class="td-bold">${r.tanggal||'-'}</td>
       <td class="td-num">${num(r.jumlah_transaksi)}</td>
@@ -3199,7 +2671,6 @@ function filterPengeluaranKasHarian() {
       <td class="td-num td-bold">${rupiah(r.total)}</td>
       <td class="td-num">${rupiah(r.kumulatif)}</td>
     </tr>`).join('') || '<tr><td colspan="6" class="empty">Tidak ada data</td></tr>';
-
   document.querySelector('#tblPengeluaranKasHarian tfoot').innerHTML = rows.length ? tblTotalRow(1, [
     { value: sumBy(rows,'jumlah_transaksi'), type: 'num' },
     { value: sumBy(rows,'total_debet'), type: 'rupiah' },
@@ -3210,10 +2681,7 @@ function filterPengeluaranKasHarian() {
   document.getElementById('pengeluaranKasHarianCount').textContent = `${num(rows.length)} dari ${num(currentPengeluaranKasHarian.length)} hari`;
   tblRefreshIcons('tblPengeluaranKasHarian', 'head-tblPengeluaranKasHarian');
 }
-function resetPengeluaranKasHarianFilter() {
-  document.getElementById('searchPengeluaranKasHarian').value = '';
-  filterPengeluaranKasHarian();
-}
+function resetPengeluaranKasHarianFilter() { document.getElementById('searchPengeluaranKasHarian').value = ''; filterPengeluaranKasHarian(); }
 
 function populatePengeluaranKasFilterOptions() {
   const fillSelect = (elId, values, allLabel) => {
@@ -3221,8 +2689,7 @@ function populatePengeluaranKasFilterOptions() {
     if (!el) return;
     const current = el.value;
     const opts = [...new Set(values.filter(Boolean))].sort();
-    el.innerHTML = `<option value="">${allLabel}</option>` +
-      opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
+    el.innerHTML = `<option value="">${allLabel}</option>` + opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
     if (opts.includes(current)) el.value = current;
   };
   fillSelect('fltPengeluaranKasSubUnit', currentPengeluaranKasDetail.map(r => r.nama_sub_unit), 'Semua Sub Unit');
@@ -3237,10 +2704,7 @@ function filterPengeluaranKasDetail() {
   const segmen    = document.getElementById('fltPengeluaranKasSegmen')?.value || '';
 
   let rows = currentPengeluaranKasDetail.filter(r => {
-    const su = r.nama_sub_unit || '';
-    const pg = r._penanggung || '';
-    const sg = r.Segment || '';
-    const ket = r.operasional || '';
+    const su = r.nama_sub_unit || '', pg = r._penanggung || '', sg = r.Segment || '', ket = r.operasional || '';
     if (q && !(su.toLowerCase().includes(q) || pg.toLowerCase().includes(q) || ket.toLowerCase().includes(q))) return false;
     if (subUnit && su !== subUnit) return false;
     if (penanggung && pg !== penanggung) return false;
@@ -3248,11 +2712,9 @@ function filterPengeluaranKasDetail() {
     return true;
   });
   rows = tblApplySort('tblPengeluaranKasDetail', rows);
-
   document.getElementById('pengeluaranKasDetailCount').textContent = `${num(rows.length)} dari ${num(currentPengeluaranKasDetail.length)} baris`;
 
-  const tbody = document.querySelector('#tblPengeluaranKasDetail tbody');
-  tbody.innerHTML = rows.slice(0,2000).map(r => `
+  document.querySelector('#tblPengeluaranKasDetail tbody').innerHTML = rows.slice(0,2000).map(r => `
     <tr>
       <td>${(r.tanggal_sub_transaksi||'').substring(0,10)}</td>
       <td style="font-size:11px">${r.nama_sub_unit||'-'}</td>
@@ -3264,7 +2726,6 @@ function filterPengeluaranKasDetail() {
       <td class="td-num">${rupiah(r._kredit)}</td>
       <td class="td-num td-bold">${rupiah(r._nominal)}</td>
     </tr>`).join('') || '<tr><td colspan="9" class="empty">Tidak ada data</td></tr>';
-
   document.querySelector('#tblPengeluaranKasDetail tfoot').innerHTML = rows.length ? tblTotalRow(6, [
     { value: sumBy(rows,'_debet'), type: 'rupiah' },
     { value: sumBy(rows,'_kredit'), type: 'rupiah' },
@@ -3273,17 +2734,11 @@ function filterPengeluaranKasDetail() {
   tblRefreshIcons('tblPengeluaranKasDetail', 'head-tblPengeluaranKasDetail');
 }
 function resetPengeluaranKasDetailFilter() {
-  document.getElementById('searchPengeluaranKasDetail').value = '';
-  document.getElementById('fltPengeluaranKasSubUnit').value = '';
-  document.getElementById('fltPengeluaranKasPenanggung').value = '';
-  document.getElementById('fltPengeluaranKasSegmen').value = '';
+  ['searchPengeluaranKasDetail','fltPengeluaranKasSubUnit','fltPengeluaranKasPenanggung','fltPengeluaranKasSegmen'].forEach(id => document.getElementById(id).value = '');
   filterPengeluaranKasDetail();
 }
 
-// ── UANG MUKA & PJK (dari data/uang-muka-pjk-YYYY-MM-pN.json, sumber tabel
-//    routing-dokumen.monitoring_keuangan.uang_muka_pjk). Kolom `keterangan`
-//    (Uang Muka/PJK) dan `keterangan_pencocokan` sudah dihitung di BigQuery;
-//    status pertanggungjawaban dihitung di sini (lihat hitungStatusUmPjk). ──
+// ── UANG MUKA & PJK ──
 let currentUmPjkDetail  = [];
 let currentUmPjkSubUnit = [];
 
@@ -3293,10 +2748,7 @@ function tanggalPlusHari(tanggal, jumlahHari) {
   const d = new Date(t + 'T00:00:00');
   if (isNaN(d)) return null;
   d.setDate(d.getDate() + Number(jumlahHari || 0));
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
+  return tanggalLokalStr(d);
 }
 function formatTanggal(tanggal) {
   const t = String(tanggal || '').substring(0,10);
@@ -3336,8 +2788,7 @@ function labelSisaJatuhTempo(hari) {
 }
 
 function renderUmPjk(d) {
-  const mentah = d.uang_muka_pjk_detail || [];
-  const denganStatus = hitungStatusUmPjk(mentah);
+  const denganStatus = hitungStatusUmPjk(d.uang_muka_pjk_detail || []);
   const detail = denganStatus.map(r => ({
     ...r,
     _debet: akuntansiDebet(r),
@@ -3349,7 +2800,6 @@ function renderUmPjk(d) {
   }));
   currentUmPjkDetail = detail;
 
-  // Rekap per sub unit: HANYA Uang Muka (PJK tidak ditampilkan di grouping)
   const subUnitMap = {};
   detail.filter(r => r.keterangan === 'Uang Muka').forEach(r => {
     const su = r.nama_sub_unit || 'Lainnya';
@@ -3358,8 +2808,7 @@ function renderUmPjk(d) {
     subUnitMap[su].jumlah_um += 1;
     if (r._statusUm === 'Belum Dipertanggungjawabkan') { subUnitMap[su].jumlah_belum_pjk += 1; subUnitMap[su].total_belum_pjk += r._nominal; }
   });
-  currentUmPjkSubUnit = Object.values(subUnitMap)
-    .sort((a,b) => b.total_um - a.total_um);
+  currentUmPjkSubUnit = Object.values(subUnitMap).sort((a,b) => b.total_um - a.total_um);
 
   const totalUm  = detail.filter(r => r.keterangan === 'Uang Muka').reduce((s,r) => s + r._nominal, 0);
   const totalPjk = detail.filter(r => r.keterangan === 'PJK').reduce((s,r) => s + r._nominal, 0);
@@ -3372,7 +2821,6 @@ function renderUmPjk(d) {
     <div class="kpi-card red"><div class="kpi-label">Belum Dipertanggungjawabkan</div><div class="kpi-value">${rupiah(belumTotal)}</div><div class="kpi-sub">${num(belumList.length)} baris UM</div></div>
     <div class="kpi-card purple"><div class="kpi-label">Selisih UM - PJK</div><div class="kpi-value">${rupiah(totalUm - totalPjk)}</div><div class="kpi-sub">seluruh sub unit</div></div>
   `;
-
   populateUmPjkFilterOptions();
   filterUmPjkSubUnit();
   filterUmPjkDetail();
@@ -3380,26 +2828,18 @@ function renderUmPjk(d) {
 
 function filterUmPjkSubUnit() {
   const q = (document.getElementById('searchUmPjkSubUnit')?.value || '').toLowerCase();
-  const filtered = currentUmPjkSubUnit.filter(r => !q || (r.sub_unit||'').toLowerCase().includes(q));
-  const rows = tblApplySort('tblUmPjkSubUnit', filtered);
+  const rows = tblApplySort('tblUmPjkSubUnit', currentUmPjkSubUnit.filter(r => !q || (r.sub_unit||'').toLowerCase().includes(q)));
 
   destroyChart('chartUmPjkSubUnit');
   const ctx = document.getElementById('chartUmPjkSubUnit');
   if (ctx) {
     CHARTS['chartUmPjkSubUnit'] = new Chart(ctx, {
       type: 'bar',
-      data: {
-        labels: rows.map(r => (r.sub_unit||'-').substring(0,20)),
-        datasets: [
-          { label: 'Uang Muka', data: rows.map(r => r.total_um), backgroundColor: '#2563eb', borderRadius: 5 }
-        ]
-      },
+      data: { labels: rows.map(r => (r.sub_unit||'-').substring(0,20)), datasets: [{ label: 'Uang Muka', data: rows.map(r => r.total_um), backgroundColor: '#2563eb', borderRadius: 5 }] },
       options: CHART_DEFAULTS
     });
   }
-
-  const tbody = document.querySelector('#tblUmPjkSubUnit tbody');
-  tbody.innerHTML = rows.map(r => `
+  document.querySelector('#tblUmPjkSubUnit tbody').innerHTML = rows.map(r => `
     <tr>
       <td class="td-bold">${r.sub_unit||'-'}</td>
       <td class="td-num">${rupiah(r.total_um)}</td>
@@ -3416,10 +2856,7 @@ function filterUmPjkSubUnit() {
   document.getElementById('umPjkSubUnitCount').textContent = `${num(rows.length)} dari ${num(currentUmPjkSubUnit.length)} sub unit`;
   tblRefreshIcons('tblUmPjkSubUnit', 'head-tblUmPjkSubUnit');
 }
-function resetUmPjkSubUnitFilter() {
-  document.getElementById('searchUmPjkSubUnit').value = '';
-  filterUmPjkSubUnit();
-}
+function resetUmPjkSubUnitFilter() { document.getElementById('searchUmPjkSubUnit').value = ''; filterUmPjkSubUnit(); }
 
 function populateUmPjkFilterOptions() {
   const fillSelect = (elId, values, allLabel) => {
@@ -3427,8 +2864,7 @@ function populateUmPjkFilterOptions() {
     if (!el) return;
     const current = el.value;
     const opts = [...new Set(values.filter(Boolean))].sort();
-    el.innerHTML = `<option value="">${allLabel}</option>` +
-      opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
+    el.innerHTML = `<option value="">${allLabel}</option>` + opts.map(v => `<option value="${v.replace(/"/g,'&quot;')}">${v}</option>`).join('');
     if (opts.includes(current)) el.value = current;
   };
   fillSelect('fltUmPjkSubUnitDetail', currentUmPjkDetail.map(r => r.nama_sub_unit), 'Semua Sub Unit');
@@ -3443,9 +2879,7 @@ function filterUmPjkDetail() {
   const status  = document.getElementById('fltUmPjkStatus')?.value || '';
 
   let rows = currentUmPjkDetail.filter(r => {
-    const su = r.nama_sub_unit || '';
-    const op = r.operasional || '';
-    const kp = r.keterangan_pencocokan || '';
+    const su = r.nama_sub_unit || '', op = r.operasional || '', kp = r.keterangan_pencocokan || '';
     if (q && !(op.toLowerCase().includes(q) || kp.toLowerCase().includes(q))) return false;
     if (subUnit && su !== subUnit) return false;
     if (ket && r.keterangan !== ket) return false;
@@ -3453,11 +2887,9 @@ function filterUmPjkDetail() {
     return true;
   });
   rows = tblApplySort('tblUmPjkDetail', rows);
-
   document.getElementById('umPjkDetailCount').textContent = `${num(rows.length)} dari ${num(currentUmPjkDetail.length)} baris`;
 
-  const tbody = document.querySelector('#tblUmPjkDetail tbody');
-  tbody.innerHTML = rows.slice(0,2000).map(r => `
+  document.querySelector('#tblUmPjkDetail tbody').innerHTML = rows.slice(0,2000).map(r => `
     <tr>
       <td>${(r.tanggal_sub_transaksi||'').substring(0,10)}</td>
       <td>${r.keterangan === 'Uang Muka' ? formatTanggal(r._tanggalJatuhTempo) : '-'}</td>
@@ -3473,8 +2905,7 @@ function filterUmPjkDetail() {
       <td class="td-num">${rupiah(r._kredit)}</td>
       <td class="td-num td-bold">${rupiah(r._nominal)}</td>
     </tr>`).join('') || '<tr><td colspan="13" class="empty">Tidak ada data</td></tr>';
-
-  document.querySelector('#tblUmPjkDetail tfoot').innerHTML = rows.length ? tblTotalRow(7, [
+  document.querySelector('#tblUmPjkDetail tfoot').innerHTML = rows.length ? tblTotalRow(10, [
     { value: sumBy(rows,'_debet'), type: 'rupiah' },
     { value: sumBy(rows,'_kredit'), type: 'rupiah' },
     { value: sumBy(rows,'_nominal'), type: 'rupiah' },
@@ -3482,39 +2913,29 @@ function filterUmPjkDetail() {
   tblRefreshIcons('tblUmPjkDetail', 'head-tblUmPjkDetail');
 }
 function resetUmPjkDetailFilter() {
-  document.getElementById('searchUmPjkOperasional').value = '';
-  document.getElementById('fltUmPjkSubUnitDetail').value = '';
-  document.getElementById('fltUmPjkKeterangan').value = '';
-  document.getElementById('fltUmPjkStatus').value = '';
+  ['searchUmPjkOperasional','fltUmPjkSubUnitDetail','fltUmPjkKeterangan','fltUmPjkStatus'].forEach(id => document.getElementById(id).value = '');
   filterUmPjkDetail();
 }
 
-// ── BIAYA BAHAN & BIAYA UMUM ──
-// Kedua modul ini strukturnya identik (sama-sama dari pendapatan_unit,
-// kolom `keterangan` = kategori jurnal sudah dihitung di BigQuery, kolom
-// coa_code perlu di-lookup ke nama COA via COA_BIAYA_MAP). Ditulis sebagai
-// satu fungsi generik `renderBiayaGeneric` yang dipanggil oleh masing-masing
-// modul, supaya perilakunya konsisten dan tidak dobel logika.
+// ── BIAYA BAHAN MEDIS, BIAYA BAHAN NON MEDIS, BIAYA UMUM & PENDAPATAN LAIN ──
+// Semua modul ini memakai satu infrastruktur generik (renderBiayaGeneric, filterBiayaGeneric, dst).
+// ID internal: biaya-bahan = Biaya Bahan Medis | biaya-umum = Biaya Bahan Non Medis | biaya-umum-baru = Biaya Umum.
 let currentBiayaBahanDetail = [];
 let currentBiayaUmumDetail  = [];
+let currentBiayaUmumBaruDetail = [];
 
-// Nominal NETO untuk biaya: debet - kredit (kredit = retur/koreksi/Adj Naik
-// yang MENGURANGI biaya). JANGAN pakai akuntansiNominal() di sini karena
-// fungsi itu mengambil nilai absolut, sehingga kredit malah ditambahkan ke
-// total (Sep 2026: tampil Rp 6,94 M padahal yang benar Rp 6,05 M).
-// Sudah dicocokkan dengan Excel laporan laba rugi untuk COA 4.1.1-4.1.7
-// (Biaya Bahan) dan 4.2.x (Biaya Umum, Sep 2026): selisih Rp 0.
+// Nominal NETO biaya = debet - kredit (kredit = retur/koreksi yang MENGURANGI biaya)
 function biayaNominalNeto(r) {
   return (parseFloat(r.debet) || 0) - (parseFloat(r.kredit) || 0);
 }
 
-function renderBiayaGeneric(rowsMentah, neto = false) {
+function renderBiayaGeneric(rowsMentah, neto = false, namaCoaFn = namaCoaBiaya) {
   return rowsMentah.map(r => ({
     ...r,
     _debet: akuntansiDebet(r),
     _kredit: akuntansiKredit(r),
     _nominal: neto ? biayaNominalNeto(r) : akuntansiNominal(r),
-    _namaCoa: namaCoaBiaya(r),
+    _namaCoa: namaCoaFn(r),
     _kodeCoa: kodeCoaBiaya(r),
   }));
 }
@@ -3529,15 +2950,9 @@ function rekapBiayaByField(detail, field, fallback) {
   });
   return Object.values(map).sort((a,b) => b.total_nominal - a.total_nominal);
 }
-function rekapBiayaPerCoa(detail) {
-  return rekapBiayaByField(detail, '_namaCoa', 'Lainnya');
-}
-function rekapBiayaPerKategori(detail) {
-  return rekapBiayaByField(detail, 'keterangan', 'Lainnya');
-}
-function rekapBiayaPerSubUnit(detail) {
-  return rekapBiayaByField(detail, 'nama_sub_unit', 'Lainnya');
-}
+function rekapBiayaPerCoa(detail)      { return rekapBiayaByField(detail, '_namaCoa', 'Lainnya'); }
+function rekapBiayaPerKategori(detail) { return rekapBiayaByField(detail, 'keterangan', 'Lainnya'); }
+function rekapBiayaPerSubUnit(detail)  { return rekapBiayaByField(detail, 'nama_sub_unit', 'Lainnya'); }
 
 function populateBiayaFilterOptions(prefix, detail) {
   const fillSelect = (elId, values, allLabel) => {
@@ -3581,10 +2996,17 @@ function renderBiayaRekap(prefix, detail) {
   renderBiayaRekapTable(`tbl${prefix}SubUnit`, `head-tbl${prefix}SubUnit`, perSubUnit);
 
   const chartCoa = perCoa.slice(0,15);
-  const chartKategori = perKategori.filter(r => r.total_nominal > 0); // donat tidak bisa menampilkan neto negatif (mis. Adj Naik); nilainya tetap ada di tabel
+  const chartKategori = perKategori.filter(r => r.total_nominal > 0); // donat tidak bisa menampilkan neto negatif; nilainya tetap ada di tabel
   makeBar(`chart${prefix}Coa`, chartCoa.map(r => r.nama.substring(0,22)), chartCoa.map(r => r.total_nominal), 'Nominal', { indexAxis:'y' });
   makeDoughnut(`chart${prefix}Kategori`, chartKategori.map(r => r.nama), chartKategori.map(r => r.total_nominal));
 }
+
+const LABEL_TOTAL_BIAYA = {
+  BiayaBahan:     'Total Biaya Bahan Medis',
+  BiayaUmum:      'Total Biaya Bahan Non Medis',
+  BiayaUmumBaru:  'Total Biaya Umum',
+  PendapatanLain: 'Total Pendapatan Lain',
+};
 
 function filterBiayaGeneric(prefix, sourceDetail, tableId, headId) {
   const q       = (document.getElementById(`search${prefix}Detail`)?.value || '').trim().toLowerCase();
@@ -3602,14 +3024,12 @@ function filterBiayaGeneric(prefix, sourceDetail, tableId, headId) {
     if (subUnit && su !== subUnit) return false;
     return true;
   });
-
   rows = tblApplySort(tableId, rows);
 
   const countEl = document.getElementById(`${prefix.charAt(0).toLowerCase()}${prefix.slice(1)}DetailCount`);
   if (countEl) countEl.textContent = `${num(rows.length)} dari ${num(sourceDetail.length)} baris`;
 
-  const tbody = document.querySelector(`#${tableId} tbody`);
-  tbody.innerHTML = rows.slice(0,2000).map(r => `
+  document.querySelector(`#${tableId} tbody`).innerHTML = rows.slice(0,2000).map(r => `
     <tr>
       <td>${(r.tanggal_sub_transaksi||'').substring(0,10)}</td>
       <td style="font-size:11px">${r.nama_sub_unit||'-'}</td>
@@ -3620,7 +3040,6 @@ function filterBiayaGeneric(prefix, sourceDetail, tableId, headId) {
       <td class="td-num">${rupiah(r._kredit)}</td>
       <td class="td-num td-bold">${rupiah(r._nominal)}</td>
     </tr>`).join('') || '<tr><td colspan="8" class="empty">Tidak ada data</td></tr>';
-
   document.querySelector(`#${tableId} tfoot`).innerHTML = rows.length ? tblTotalRow(5, [
     { value: sumBy(rows,'_debet'), type: 'rupiah' },
     { value: sumBy(rows,'_kredit'), type: 'rupiah' },
@@ -3628,28 +3047,21 @@ function filterBiayaGeneric(prefix, sourceDetail, tableId, headId) {
   ]) : '';
   tblRefreshIcons(tableId, headId);
 
-  // PENTING: rekap dihitung ulang dari BARIS YANG SUDAH TERFILTER.
-  // Dengan demikian total per COA, kategori, dan sub unit ikut berubah.
-  const recapPrefix = prefix;
-  renderBiayaRekap(recapPrefix, rows);
+  // Rekap dihitung ulang dari baris yang sudah terfilter, sehingga total COA/kategori/sub unit ikut berubah
+  renderBiayaRekap(prefix, rows);
 
   const totalNominal = sumBy(rows, '_nominal');
-  const totalDebet = sumBy(rows, '_debet');
-  const totalKredit = sumBy(rows, '_kredit');
-  const kpiId = `kpi${prefix}`;
-  const label = prefix === 'BiayaBahan' ? 'Total Biaya Bahan' : prefix === 'BiayaUmum' ? 'Total Biaya Umum' : prefix === 'PendapatanLain' ? 'Total Pendapatan Lain' : `Total ${prefix}`;
-  const jumlahCoa = rekapBiayaPerCoa(rows).length;
-  const jumlahKategori = rekapBiayaPerKategori(rows).length;
-  const jumlahSubUnit = rekapBiayaPerSubUnit(rows).length;
-  document.getElementById(kpiId).innerHTML = `
+  const label = LABEL_TOTAL_BIAYA[prefix] || `Total ${prefix}`;
+  document.getElementById(`kpi${prefix}`).innerHTML = `
     <div class="kpi-card blue"><div class="kpi-label">${label}</div><div class="kpi-value">${rupiah(totalNominal)}</div><div class="kpi-sub">${num(rows.length)} baris terfilter</div></div>
-    <div class="kpi-card purple"><div class="kpi-label">Jumlah Nama COA</div><div class="kpi-value">${num(jumlahCoa)}</div><div class="kpi-sub">COA pada filter</div></div>
-    <div class="kpi-card amber"><div class="kpi-label">Jumlah Kategori</div><div class="kpi-value">${num(jumlahKategori)}</div><div class="kpi-sub">kategori pada filter</div></div>
-    <div class="kpi-card green"><div class="kpi-label">Jumlah Sub Unit</div><div class="kpi-value">${num(jumlahSubUnit)}</div><div class="kpi-sub">sub unit pada filter</div></div>
+    <div class="kpi-card purple"><div class="kpi-label">Jumlah Nama COA</div><div class="kpi-value">${num(rekapBiayaPerCoa(rows).length)}</div><div class="kpi-sub">COA pada filter</div></div>
+    <div class="kpi-card amber"><div class="kpi-label">Jumlah Kategori</div><div class="kpi-value">${num(rekapBiayaPerKategori(rows).length)}</div><div class="kpi-sub">kategori pada filter</div></div>
+    <div class="kpi-card green"><div class="kpi-label">Jumlah Sub Unit</div><div class="kpi-value">${num(rekapBiayaPerSubUnit(rows).length)}</div><div class="kpi-sub">sub unit pada filter</div></div>
   `;
   return rows;
 }
 
+// ── Biaya Bahan Medis ──
 function renderBiayaBahan(d) {
   const detail = renderBiayaGeneric(d.biaya_bahan_detail || [], true);
   currentBiayaBahanDetail = detail;
@@ -3660,13 +3072,11 @@ function filterBiayaBahanDetail() {
   return filterBiayaGeneric('BiayaBahan', currentBiayaBahanDetail, 'tblBiayaBahanDetail', 'head-tblBiayaBahanDetail');
 }
 function resetBiayaBahanDetailFilter() {
-  document.getElementById('searchBiayaBahanDetail').value = '';
-  document.getElementById('fltBiayaBahanCoa').value = '';
-  document.getElementById('fltBiayaBahanKategori').value = '';
-  document.getElementById('fltBiayaBahanSubUnit').value = '';
+  ['searchBiayaBahanDetail','fltBiayaBahanCoa','fltBiayaBahanKategori','fltBiayaBahanSubUnit'].forEach(id => document.getElementById(id).value = '');
   filterBiayaBahanDetail();
 }
 
+// ── Biaya Bahan Non Medis ──
 function renderBiayaUmum(d) {
   const detail = renderBiayaGeneric(d.biaya_umum_detail || [], true);
   currentBiayaUmumDetail = detail;
@@ -3677,38 +3087,54 @@ function filterBiayaUmumDetail() {
   return filterBiayaGeneric('BiayaUmum', currentBiayaUmumDetail, 'tblBiayaUmumDetail', 'head-tblBiayaUmumDetail');
 }
 function resetBiayaUmumDetailFilter() {
-  document.getElementById('searchBiayaUmumDetail').value = '';
-  document.getElementById('fltBiayaUmumCoa').value = '';
-  document.getElementById('fltBiayaUmumKategori').value = '';
-  document.getElementById('fltBiayaUmumSubUnit').value = '';
+  ['searchBiayaUmumDetail','fltBiayaUmumCoa','fltBiayaUmumKategori','fltBiayaUmumSubUnit'].forEach(id => document.getElementById(id).value = '');
   filterBiayaUmumDetail();
 }
 
+// ── Biaya Umum (modul baru) ──
+function renderBiayaUmumBaru(d) {
+  const detail = renderBiayaGeneric(d.biaya_umum_baru_detail || [], true, namaCoaBiayaUmumBaru);
+  currentBiayaUmumBaruDetail = detail;
+  populateBiayaFilterOptions('BiayaUmumBaru', detail);
+  filterBiayaUmumBaruDetail();
+}
+function filterBiayaUmumBaruDetail() {
+  return filterBiayaGeneric('BiayaUmumBaru', currentBiayaUmumBaruDetail, 'tblBiayaUmumBaruDetail', 'head-tblBiayaUmumBaruDetail');
+}
+function resetBiayaUmumBaruDetailFilter() {
+  ['searchBiayaUmumBaruDetail','fltBiayaUmumBaruCoa','fltBiayaUmumBaruKategori','fltBiayaUmumBaruSubUnit'].forEach(id => document.getElementById(id).value = '');
+  filterBiayaUmumBaruDetail();
+}
+
 // ══ PERBANDINGAN BIAYA VS PENDAPATAN PER SUB UNIT ══
+// Total Biaya = Biaya Bahan Medis + Biaya Bahan Non Medis + Biaya Umum
 let currentPerbandinganUnit = [];
 function buildPerbandinganUnitRows() {
   const revMap = {};
   (FILTERED?.pendapatan_per_unit || []).forEach(r => {
     const su = r.nama_sub_unit || r.sub_unit || 'Lainnya';
-    revMap[normalizeMatchText(su)] = (revMap[normalizeMatchText(su)] || 0) + (parseFloat(r.net ?? r.total ?? r.pendapatan) || 0);
+    const k = normalizeMatchText(su);
+    revMap[k] = (revMap[k] || 0) + (parseFloat(r.net ?? r.total ?? r.pendapatan) || 0);
   });
   const costMap = {};
-  const addCost = (rows, field, nominalFn = akuntansiNominal) => rows.forEach(r => {
+  const addCost = (rows, field) => rows.forEach(r => {
     const su = r.nama_sub_unit || 'Lainnya';
     const key = normalizeMatchText(su);
-    if (!costMap[key]) costMap[key] = { sub_unit: su, biaya_bahan: 0, biaya_umum: 0 };
-    costMap[key][field] += nominalFn(r);
+    if (!costMap[key]) costMap[key] = { sub_unit: su, biaya_medis: 0, biaya_non_medis: 0, biaya_umum: 0 };
+    costMap[key][field] += biayaNominalNeto(r);
   });
-  addCost(FILTERED?.biaya_bahan_detail || [], 'biaya_bahan', biayaNominalNeto);
-  addCost(FILTERED?.biaya_umum_detail || [], 'biaya_umum', biayaNominalNeto);
+  addCost(FILTERED?.biaya_bahan_detail || [],     'biaya_medis');
+  addCost(FILTERED?.biaya_umum_detail || [],      'biaya_non_medis');
+  addCost(FILTERED?.biaya_umum_baru_detail || [], 'biaya_umum');
+
   const keys = new Set([...Object.keys(revMap), ...Object.keys(costMap)]);
   return [...keys].map(key => {
-    const c = costMap[key] || {sub_unit:key, biaya_bahan:0, biaya_umum:0};
+    const c = costMap[key] || { sub_unit: key, biaya_medis: 0, biaya_non_medis: 0, biaya_umum: 0 };
     const pendapatan = revMap[key] || 0;
-    const total_biaya = c.biaya_bahan + c.biaya_umum;
+    const total_biaya = c.biaya_medis + c.biaya_non_medis + c.biaya_umum;
     const persentase_biaya = pendapatan > 0 ? total_biaya / pendapatan * 100 : (total_biaya > 0 ? Infinity : 0);
-    return {...c, pendapatan, total_biaya, persentase_biaya, status: persentase_biaya > 65 ? 'WARNING' : 'AMAN'};
-  }).sort((a,b) => b.total_biaya-a.total_biaya);
+    return { ...c, pendapatan, total_biaya, persentase_biaya, status: persentase_biaya > 65 ? 'WARNING' : 'AMAN' };
+  }).sort((a,b) => b.total_biaya - a.total_biaya);
 }
 function renderPerbandinganUnit() {
   currentPerbandinganUnit = buildPerbandinganUnitRows();
@@ -3719,80 +3145,85 @@ function filterPerbandinganUnit() {
   const rows = tblApplySort('tblPerbandinganUnit', currentPerbandinganUnit.filter(r => !q || normalizeMatchText(r.sub_unit).includes(q)));
   const warn = rows.filter(r => r.status === 'WARNING').length;
   const totalBiaya = sumBy(rows,'total_biaya'), totalPend = sumBy(rows,'pendapatan');
+
   document.getElementById('kpiPerbandinganUnit').innerHTML = `
     <div class="kpi-card blue"><div class="kpi-label">Total Pendapatan</div><div class="kpi-value">${rupiah(totalPend)}</div><div class="kpi-sub">sub unit terfilter</div></div>
-    <div class="kpi-card amber"><div class="kpi-label">Total Biaya</div><div class="kpi-value">${rupiah(totalBiaya)}</div><div class="kpi-sub">Biaya Bahan + Biaya Umum</div></div>
+    <div class="kpi-card amber"><div class="kpi-label">Total Biaya</div><div class="kpi-value">${rupiah(totalBiaya)}</div><div class="kpi-sub">Medis + Non Medis + Umum</div></div>
     <div class="kpi-card ${warn?'red':'green'}"><div class="kpi-label">Unit Warning > 65%</div><div class="kpi-value">${num(warn)}</div><div class="kpi-sub">dari ${num(rows.length)} unit</div></div>
     <div class="kpi-card purple"><div class="kpi-label">Rasio Biaya Gabungan</div><div class="kpi-value">${totalPend ? (totalBiaya/totalPend*100).toFixed(1)+'%' : '-'}</div><div class="kpi-sub">total biaya / total pendapatan</div></div>`;
-  makeBar('chartPerbandinganUnit', rows.slice(0,20).map(r => (r.sub_unit||'-').substring(0,18)), [
-    {label:'Pendapatan', data:rows.slice(0,20).map(r=>r.pendapatan), backgroundColor:'#2563eb'},
-    {label:'Total Biaya', data:rows.slice(0,20).map(r=>r.total_biaya), backgroundColor:'#dc2626'}
-  ], null, {indexAxis:'y'});
+
+  // Chart 2 dataset (makeBar hanya mendukung 1 dataset), dibuat langsung
+  destroyChart('chartPerbandinganUnit');
+  const ctx = document.getElementById('chartPerbandinganUnit');
+  if (ctx) {
+    const top = rows.slice(0,20);
+    CHARTS['chartPerbandinganUnit'] = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: top.map(r => (r.sub_unit||'-').substring(0,18)),
+        datasets: [
+          { label:'Pendapatan', data: top.map(r => r.pendapatan), backgroundColor:'#2563eb', borderRadius:4 },
+          { label:'Total Biaya', data: top.map(r => r.total_biaya), backgroundColor:'#dc2626', borderRadius:4 },
+        ]
+      },
+      options: { ...CHART_DEFAULTS, indexAxis: 'y' }
+    });
+  }
+
   document.querySelector('#tblPerbandinganUnit tbody').innerHTML = rows.map(r => `<tr>
-    <td class="td-bold">${r.sub_unit||'-'}</td><td class="td-num">${rupiah(r.pendapatan)}</td>
-    <td class="td-num">${rupiah(r.biaya_bahan)}</td><td class="td-num">${rupiah(r.biaya_umum)}</td>
+    <td class="td-bold">${r.sub_unit||'-'}</td>
+    <td class="td-num">${rupiah(r.pendapatan)}</td>
+    <td class="td-num">${rupiah(r.biaya_medis)}</td>
+    <td class="td-num">${rupiah(r.biaya_non_medis)}</td>
+    <td class="td-num">${rupiah(r.biaya_umum)}</td>
     <td class="td-num td-bold">${rupiah(r.total_biaya)}</td>
     <td class="td-num ${r.status==='WARNING'?'rekon-diff':'rekon-match'}">${isFinite(r.persentase_biaya)?r.persentase_biaya.toFixed(1)+'%':'∞'}</td>
     <td><span class="badge ${r.status==='WARNING'?'badge-red':'badge-green'}">${r.status==='WARNING'?'⚠ WARNING':'✓ AMAN'}</span></td>
-  </tr>`).join('') || '<tr><td colspan="7" class="empty">Tidak ada data</td></tr>';
-  document.querySelector('#tblPerbandinganUnit tfoot').innerHTML = rows.length ? tblTotalRow(0,[
-    {value:sumBy(rows,'pendapatan'),type:'rupiah'},{value:sumBy(rows,'biaya_bahan'),type:'rupiah'},
-    {value:sumBy(rows,'biaya_umum'),type:'rupiah'},{value:sumBy(rows,'total_biaya'),type:'rupiah'},
-    {value:totalPend ? totalBiaya/totalPend*100 : 0,type:'percent'}]) : '';
+  </tr>`).join('') || '<tr><td colspan="8" class="empty">Tidak ada data</td></tr>';
+
+  document.querySelector('#tblPerbandinganUnit tfoot').innerHTML = rows.length ? tblTotalRow(1, [
+    { value: sumBy(rows,'pendapatan'), type: 'rupiah' },
+    { value: sumBy(rows,'biaya_medis'), type: 'rupiah' },
+    { value: sumBy(rows,'biaya_non_medis'), type: 'rupiah' },
+    { value: sumBy(rows,'biaya_umum'), type: 'rupiah' },
+    { value: sumBy(rows,'total_biaya'), type: 'rupiah' },
+    { value: totalPend ? totalBiaya/totalPend*100 : 0, type: 'percent' },
+  ]) : '';
   document.getElementById('perbandinganUnitCount').textContent = `${num(rows.length)} dari ${num(currentPerbandinganUnit.length)} sub unit`;
   tblRefreshIcons('tblPerbandinganUnit','head-tblPerbandinganUnit');
 }
 function resetPerbandinganUnitFilter(){ document.getElementById('searchPerbandinganUnit').value=''; filterPerbandinganUnit(); }
 
-// ══ Hubungkan setiap tableId ke fungsi render/filter-nya masing-masing,
-//    supaya klik header sort cukup memanggil tblSort() lalu re-render otomatis ══
-TblRerender.tblUnit             = () => filterUnitDetailAndUnit();
-TblRerender.tblUnitDetail        = filterUnitDetail;
-TblRerender.tblJaminan           = filterJaminan;
-TblRerender.tblTipe              = filterTipe;
-TblRerender.tblKas               = filterKas;
-TblRerender.tblDetail            = filterDetail;
-TblRerender.tblPendapatanUnit    = filterPendapatanUnit;
-TblRerender.tblKredit            = filterKredit;
-TblRerender.tblPelunasanHarian   = filterPelunasanHarian;
-TblRerender.tblPelunasanBank     = filterPelunasanBank;
-TblRerender.tblPelunasanDetail   = filterPelunasanDetail;
+// ══ Hubungkan setiap tableId ke fungsi render/filter-nya ══
+TblRerender.tblUnit                 = filterUnitDetailAndUnit;
+TblRerender.tblUnitDetail           = filterUnitDetail;
+TblRerender.tblJaminan              = filterJaminan;
+TblRerender.tblTipe                 = filterTipe;
+TblRerender.tblKas                  = filterKas;
+TblRerender.tblDetail               = filterDetail;
+TblRerender.tblPendapatanUnit       = filterPendapatanUnit;
+TblRerender.tblKredit               = filterKredit;
+TblRerender.tblPelunasanHarian      = filterPelunasanHarian;
+TblRerender.tblPelunasanBank        = filterPelunasanBank;
+TblRerender.tblPelunasanDetail      = filterPelunasanDetail;
 TblRerender.tblPengeluaranKasHarian = filterPengeluaranKasHarian;
 TblRerender.tblPengeluaranKasDetail = filterPengeluaranKasDetail;
-TblRerender.tblUmPjkSubUnit = filterUmPjkSubUnit;
-TblRerender.tblUmPjkDetail  = filterUmPjkDetail;
-TblRerender.tblBiayaBahanDetail = filterBiayaBahanDetail;
-TblRerender.tblBiayaUmumDetail  = filterBiayaUmumDetail;
-TblRerender.tblBiayaBahanCoa = () => renderBiayaRekapTable('tblBiayaBahanCoa','head-tblBiayaBahanCoa', rekapBiayaPerCoa(currentBiayaBahanDetail));
-TblRerender.tblBiayaBahanKategori = () => renderBiayaRekapTable('tblBiayaBahanKategori','head-tblBiayaBahanKategori', rekapBiayaPerKategori(currentBiayaBahanDetail));
-TblRerender.tblBiayaBahanSubUnit = () => renderBiayaRekapTable('tblBiayaBahanSubUnit','head-tblBiayaBahanSubUnit', rekapBiayaPerSubUnit(currentBiayaBahanDetail));
-TblRerender.tblBiayaUmumCoa = () => renderBiayaRekapTable('tblBiayaUmumCoa','head-tblBiayaUmumCoa', rekapBiayaPerCoa(currentBiayaUmumDetail));
-TblRerender.tblBiayaUmumKategori = () => renderBiayaRekapTable('tblBiayaUmumKategori','head-tblBiayaUmumKategori', rekapBiayaPerKategori(currentBiayaUmumDetail));
-TblRerender.tblBiayaUmumSubUnit = () => renderBiayaRekapTable('tblBiayaUmumSubUnit','head-tblBiayaUmumSubUnit', rekapBiayaPerSubUnit(currentBiayaUmumDetail));
-TblRerender.tblPendapatanLainDetail = filterPendapatanLainDetail;
-TblRerender.tblPendapatanLainCoa = () => renderBiayaRekapTable('tblPendapatanLainCoa','head-tblPendapatanLainCoa', rekapBiayaPerCoa(currentPendapatanLainDetail));
-TblRerender.tblPendapatanLainKategori = () => renderBiayaRekapTable('tblPendapatanLainKategori','head-tblPendapatanLainKategori', rekapBiayaPerKategori(currentPendapatanLainDetail));
-TblRerender.tblPendapatanLainSubUnit = () => renderBiayaRekapTable('tblPendapatanLainSubUnit','head-tblPendapatanLainSubUnit', rekapBiayaPerSubUnit(currentPendapatanLainDetail));
-TblRerender.tblPerbandinganUnit = filterPerbandinganUnit;
+TblRerender.tblUmPjkSubUnit         = filterUmPjkSubUnit;
+TblRerender.tblUmPjkDetail          = filterUmPjkDetail;
+TblRerender.tblPerbandinganUnit     = filterPerbandinganUnit;
 
-// tblUnit disortir ulang lewat renderUnitData memakai data unit yang sedang aktif
-function filterUnitDetailAndUnit() {
-  const unitSorted = tblApplySort('tblUnit', currentUnitData.perUnit);
-  const tbody1 = document.querySelector('#tblUnit tbody');
-  tbody1.innerHTML = unitSorted.map(r => `
-    <tr>
-      <td class="td-bold">${r.unit_kasir||'-'}</td>
-      <td class="td-num">${rupiah(r.total_nominal)}</td>
-      <td class="td-num">${num(r.jumlah_transaksi)}</td>
-      <td class="td-num">${num(r.jumlah_pasien)}</td>
-    </tr>`).join('') || '<tr><td colspan="4" class="empty">Tidak ada data</td></tr>';
-  document.querySelector('#tblUnit tfoot').innerHTML = unitSorted.length ? tblTotalRow(1, [
-    { value: sumBy(unitSorted,'total_nominal'), type: 'rupiah' },
-    { value: sumBy(unitSorted,'jumlah_transaksi'), type: 'num' },
-    { value: sumBy(unitSorted,'jumlah_pasien'), type: 'num' },
-  ]) : '';
-  tblRefreshIcons('tblUnit', 'head-tblUnit');
-}
+// Modul generik: Detail + 3 tabel rekap (COA, Kategori, Sub Unit) untuk tiap prefix
+[
+  ['BiayaBahan',     () => currentBiayaBahanDetail,     filterBiayaBahanDetail],
+  ['BiayaUmum',      () => currentBiayaUmumDetail,      filterBiayaUmumDetail],
+  ['BiayaUmumBaru',  () => currentBiayaUmumBaruDetail,  filterBiayaUmumBaruDetail],
+  ['PendapatanLain', () => currentPendapatanLainDetail, filterPendapatanLainDetail],
+].forEach(([p, getDetail, filterFn]) => {
+  TblRerender[`tbl${p}Detail`]   = filterFn;
+  TblRerender[`tbl${p}Coa`]      = () => renderBiayaRekapTable(`tbl${p}Coa`, `head-tbl${p}Coa`, rekapBiayaPerCoa(getDetail()));
+  TblRerender[`tbl${p}Kategori`] = () => renderBiayaRekapTable(`tbl${p}Kategori`, `head-tbl${p}Kategori`, rekapBiayaPerKategori(getDetail()));
+  TblRerender[`tbl${p}SubUnit`]  = () => renderBiayaRekapTable(`tbl${p}SubUnit`, `head-tbl${p}SubUnit`, rekapBiayaPerSubUnit(getDetail()));
+});
 
 // ══ LOAD AWAL ══
 async function loadManifest() {
@@ -3817,7 +3248,6 @@ async function loadAux() {
 
 async function loadData() {
   document.getElementById('kpiGrid').innerHTML = '<div class="loading"><div class="spinner"></div> Memuat data...</div>';
-
   await Promise.all([loadManifest(), loadAux()]);
 
   if (MANIFEST.generated_at) {
@@ -3834,12 +3264,7 @@ async function loadData() {
     return;
   }
 
-  // Default filter: bulan berjalan
-  // PENTING: pakai tanggalLokalStr() (komponen tanggal LOKAL), BUKAN
-  // toISOString() — masalahnya sama seperti tanggalAkhirBulanStr() di atas:
-  // toISOString() mengonversi ke UTC dulu, yang di timezone WIB (UTC+7) bisa
-  // menggeser tanggal mundur 1 hari (paling kentara kalau dashboard dibuka
-  // dini hari WIB, jam 00:00-06:59, saat UTC masih di tanggal "kemarin").
+  // Default filter: bulan berjalan (pakai tanggalLokalStr, BUKAN toISOString — lihat catatan di atas)
   const today = new Date();
   const awalBulan = new Date(today.getFullYear(), today.getMonth(), 1);
   document.getElementById('fltAwal').value  = tanggalLokalStr(awalBulan);
@@ -3852,9 +3277,7 @@ async function loadData() {
 
 // ══ INIT ══
 loadData();
-
 if (window.innerWidth < 768) closeSidebar();
-
 </script>
 </body>
 </html>
