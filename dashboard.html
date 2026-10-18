@@ -257,6 +257,10 @@ tfoot td { position: sticky; bottom: 0; z-index: 3; background: var(--bg3); box-
       <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l3-3 3 2 5-6"/></svg>
       Biaya Umum
     </button>
+    <button class="nav-item" onclick="showPage('biaya-rkap')">
+      <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14h4M7 9h8M7 18h10"/></svg>
+      Biaya vs RKAP
+    </button>
     <button class="nav-item" onclick="showPage('perbandingan-unit')">
       <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-5M12 16V8M16 16V4"/></svg>
       Biaya vs Pendapatan
@@ -1194,6 +1198,67 @@ tfoot td { position: sticky; bottom: 0; z-index: 3; background: var(--bg3); box-
   </div>
 
 
+  <!-- ══ PAGE: BIAYA VS RKAP ══ -->
+  <div class="page" id="page-biaya-rkap">
+    <div class="kpi-grid" id="kpiBiayaRkap">
+      <div class="loading"><div class="spinner"></div> Memuat data...</div>
+    </div>
+    <div class="section-card">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Realisasi Biaya vs RKAP per Kelompok Biaya</div>
+          <div class="section-sub" id="rkapBasisInfo">Realisasi = Biaya Bahan Medis + Biaya Bahan Non Medis + Biaya Umum (netto: debet - kredit).</div>
+        </div>
+      </div>
+      <div class="local-filter-wrap">
+        <select id="fltRkapBasis" onchange="renderBiayaRkap()">
+          <option value="prorata">RKAP prorata sesuai periode filter</option>
+          <option value="tahunan">RKAP setahun penuh</option>
+        </select>
+        <input type="text" id="searchBiayaRkap" placeholder="Cari kelompok biaya..." oninput="filterBiayaRkap()"/>
+        <button class="btn btn-outline" onclick="resetBiayaRkapFilter()">Reset Filter</button>
+        <span class="local-filter-count" id="biayaRkapCount"></span>
+      </div>
+      <div class="section-body">
+        <div class="chart-wrap" style="height:330px;margin-bottom:18px"><canvas id="chartBiayaRkap"></canvas></div>
+        <div class="tbl-wrap"><table id="tblBiayaRkap">
+          <thead id="head-tblBiayaRkap"><tr>
+            <th data-key="kelompok" onclick="tblSort('tblBiayaRkap','kelompok','text')">Kelompok Biaya <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="rkap_tahunan" onclick="tblSort('tblBiayaRkap','rkap_tahunan','number')">RKAP Tahunan <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="rkap_basis" onclick="tblSort('tblBiayaRkap','rkap_basis','number')">RKAP Pembanding <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="realisasi" onclick="tblSort('tblBiayaRkap','realisasi','number')">Realisasi <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="sisa" onclick="tblSort('tblBiayaRkap','sisa','number')">Sisa / (Lebih) <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="persen" onclick="tblSort('tblBiayaRkap','persen','number')">% Realisasi <span class="sort-ico-wrap"></span></th>
+            <th data-key="status" onclick="tblSort('tblBiayaRkap','status','text')">Status <span class="sort-ico-wrap"></span></th>
+          </tr></thead>
+          <tbody></tbody><tfoot></tfoot>
+        </table></div>
+      </div>
+    </div>
+    <div class="section-card" style="margin-top:20px">
+      <div class="section-head">
+        <div><div class="section-title">Rincian Per Nama COA</div><div class="section-sub">Untuk mengecek pemetaan Nama COA ke kelompok biaya. COA yang tidak dikenali masuk "BELUM TER-MAPPING".</div></div>
+      </div>
+      <div class="local-filter-wrap">
+        <select id="fltRkapKelompok" onchange="filterBiayaRkapCoa()"><option value="">Semua Kelompok</option></select>
+        <input type="text" id="searchBiayaRkapCoa" placeholder="Cari nama COA..." oninput="filterBiayaRkapCoa()"/>
+        <span class="local-filter-count" id="biayaRkapCoaCount"></span>
+      </div>
+      <div class="section-body" style="padding:0">
+        <div class="tbl-wrap"><table id="tblBiayaRkapCoa">
+          <thead id="head-tblBiayaRkapCoa"><tr>
+            <th data-key="kelompok" onclick="tblSort('tblBiayaRkapCoa','kelompok','text')">Kelompok <span class="sort-ico-wrap"></span></th>
+            <th data-key="nama_coa" onclick="tblSort('tblBiayaRkapCoa','nama_coa','text')">Nama COA <span class="sort-ico-wrap"></span></th>
+            <th data-key="sumber" onclick="tblSort('tblBiayaRkapCoa','sumber','text')">Sumber Modul <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="jumlah" onclick="tblSort('tblBiayaRkapCoa','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th>
+            <th class="td-num" data-key="realisasi" onclick="tblSort('tblBiayaRkapCoa','realisasi','number')">Realisasi <span class="sort-ico-wrap"></span></th>
+          </tr></thead>
+          <tbody></tbody><tfoot></tfoot>
+        </table></div>
+      </div>
+    </div>
+  </div>
+
   <!-- ══ PAGE: PERBANDINGAN BIAYA VS PENDAPATAN ══ -->
   <div class="page" id="page-perbandingan-unit">
     <div class="kpi-grid" id="kpiPerbandinganUnit">
@@ -1245,7 +1310,7 @@ tfoot td { position: sticky; bottom: 0; z-index: 3; background: var(--bg3); box-
       <div><strong>PPB &amp; ERP</strong> — RSSG Monitoring Keuangan</div>
     </div>
     <div class="footer-right">
-      <span>Versi 2.2.0</span>
+      <span>Versi 2.3.0</span>
       <span class="dot">•</span>
       <span>Update terakhir: <span id="footerLastUpdate">—</span></span>
     </div>
@@ -1323,6 +1388,7 @@ const PAGE_TITLES = {
   'biaya-bahan'       : ['Biaya Bahan Medis', 'Monitoring Biaya'],
   'biaya-umum'        : ['Biaya Bahan Non Medis', 'Monitoring Biaya'],
   'biaya-umum-baru'   : ['Biaya Umum', 'Monitoring Biaya'],
+  'biaya-rkap'        : ['Biaya vs RKAP', 'Realisasi vs Anggaran'],
   'perbandingan-unit' : ['Biaya vs Pendapatan', 'Analisis per Sub Unit'],
 };
 
@@ -1623,7 +1689,7 @@ async function buildFiltered() {
     .filter(r => (parseFloat(r.kredit) || 0) !== 0)
     .filter(r => !/(dropping|penempatan\s+deposito|setoran|pinbuk)/i.test(String(r.operasional || r.keterangan || '')));
   const umPjkRows = umPjk.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
-  const biayaBahanRows = biayaBahan.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
+  const biayaBahanRows = terapkanRevisiBiayaMedis(biayaBahan.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir)));
   const biayaUmumRows = biayaUmum.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const biayaUmumBaruRows = biayaUmumBaru.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const pendapatanLainRows = pendapatanLain.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
@@ -2039,6 +2105,7 @@ function renderPage(id) {
     case 'biaya-bahan':        renderBiayaBahan(d);        break;
     case 'biaya-umum':         renderBiayaUmum(d);         break;
     case 'biaya-umum-baru':    renderBiayaUmumBaru(d);     break;
+    case 'biaya-rkap':         renderBiayaRkap();          break;
     case 'perbandingan-unit':  renderPerbandinganUnit();   break;
   }
   const fl = document.getElementById('footerLastUpdate');
@@ -3018,7 +3085,7 @@ function filterBiayaGeneric(prefix, sourceDetail, tableId, headId) {
     const su = String(r.nama_sub_unit || '');
     const kt = String(r.keterangan || '');
     const namaCoa = String(r._namaCoa || '');
-    if (q && !(su.toLowerCase().includes(q) || kt.toLowerCase().includes(q) || namaCoa.toLowerCase().includes(q))) return false;
+    if (q && !(su.toLowerCase().includes(q) || kt.toLowerCase().includes(q) || namaCoa.toLowerCase().includes(q) || String(r.operasional || '').toLowerCase().includes(q))) return false;
     if (coa && r._namaCoa !== coa) return false;
     if (kategori && kt !== kategori) return false;
     if (subUnit && su !== subUnit) return false;
@@ -3193,6 +3260,228 @@ function filterPerbandinganUnit() {
   tblRefreshIcons('tblPerbandinganUnit','head-tblPerbandinganUnit');
 }
 function resetPerbandinganUnitFilter(){ document.getElementById('searchPerbandinganUnit').value=''; filterPerbandinganUnit(); }
+
+// ══ BIAYA BAHAN MEDIS: grouping Sub Unit (setara CASE WHEN BigQuery) & keterangan tambahan ══
+// Butuh kolom nama_cc, nama_sub_unit, nama_sub_penerima, operasional pada file biaya-bahan-*.json.
+function normCc(v) { return String(v || '').toUpperCase().replace(/\s*\|\s*/g, ' | ').replace(/\s+/g, ' ').trim(); }
+const CC_SUBUNIT_BIAYA_MEDIS = (() => {
+  const m = {};
+  const add = (cc, hasil, varian) => {
+    m[normCc(cc)] = hasil;
+    if (varian) { m[normCc(cc + ' | FARMASI')] = hasil; m[normCc(cc + ' | LOGISTIK')] = hasil; }
+  };
+  add('122 - INSTALASI LABORATORIUM GRESIK', '[9241] LABORATORIUM');
+  add('134 - INSTALASI FARMASI RSSG  (RAWAT JALAN)', '[9807] FARMASI RAWAT JALAN', true);
+  add('119 - INSTALASI FARMASI RSSG (RAWAT INAP)', '[9130] FARMASI RAWAT INAP', true);
+  add('121 - INSTALASI BEDAH SENTRAL (IBS)', '[9123] KAMAR OPERASI');
+  add('152 - DEPO FARMASI IGD', '[9819] DEPO FARMASI IGD', true);
+  add('123 - RADIOLOGI GRESIK', '[9252] RONTGEN');
+  add('151 - CATH LAB', '[9148] RUANG LABORATORIUM KATHERISASI');
+  return m;
+})();
+// Catatan: aturan SQL "134 ... AND nama_sub_penerima != 'Pasien Umum'" dan aturan 134 tanpa syarat
+// menghasilkan nilai yang sama ([9807] FARMASI RAWAT JALAN), jadi cukup satu entri di atas.
+// 'Non CC' dan semua nilai nama_cc lain -> tetap memakai nama_sub_unit asli.
+function subUnitBiayaMedis(r) {
+  const cc = normCc(r.nama_cc || r.Nama_CC || r.NAMA_CC);
+  return CC_SUBUNIT_BIAYA_MEDIS[cc] || r.nama_sub_unit;
+}
+
+// Keterangan tambahan (menggantikan Kategori Jurnal jika kolom operasional memuat kata tersebut).
+// Urutan = prioritas bila lebih dari satu cocok. Ubah pola di sini jika penulisan di data berbeda.
+const KETERANGAN_BIAYA_MEDIS_RULES = [
+  { label: 'Stokopname Naik',  re: /sto(?:k|ck)\s*-?\s*opname\s+naik/i },
+  { label: 'Stokopname Turun', re: /sto(?:k|ck)\s*-?\s*opname\s+turun/i },
+  { label: 'Jurnal KSO',       re: /\bkso\b/i },
+];
+function keteranganBiayaMedis(r) {
+  const teks = String(r.operasional || r.Operasional || '');
+  for (const rule of KETERANGAN_BIAYA_MEDIS_RULES) if (rule.re.test(teks)) return rule.label;
+  return r.keterangan;
+}
+function terapkanRevisiBiayaMedis(rows) {
+  return rows.map(r => ({
+    ...r,
+    nama_sub_unit_asli: r.nama_sub_unit,
+    nama_sub_unit: subUnitBiayaMedis(r),
+    keterangan_asli: r.keterangan,
+    keterangan: keteranganBiayaMedis(r),
+  }));
+}
+
+// ══ BIAYA VS RKAP ══
+// RKAP tahunan per kelompok biaya (isi/ubah di sini)
+const RKAP_BIAYA = {
+  'BIAYA BAHAN'              : 67124657165,
+  'BIAYA TENAGA KERJA'       : 93582566653,
+  'BIAYA PEMELIHARAAN'       : 12794614090,
+  'BIAYA PENYUSUTAN'         : 10538080071,
+  'BIAYA SEWA'               : 3342748016,
+  'BIAYA PEMASARAN'          : 1231576832,
+  'BIAYA UMUM'               : 8506789903,
+  'BIAYA ADMINISTRASI'       : 1909537834,
+  'BIAYA ASURANSI DAN PAJAK' : 287270000,
+};
+const KELOMPOK_BELUM_MAPPING = 'BELUM TER-MAPPING';
+
+// Pemetaan Nama COA -> kelompok biaya
+const KELOMPOK_COA_BIAYA = {
+  'BIAYA BAHAN': ['BIAYA BAHAN MEDIS','BIAYA BAHAN TABLET','BIAYA BAHAN SYRUP','BIAYA BAHAN INJEKSI','BIAYA BAHAN SALEP','BIAYA BAHAN CHEMICALIEN','BIAYA BAHAN ALKES','BIAYA BAHAN O2 & NO2','BIAYA BAHAN NON MEDIS','BIAYA BAHAN MAKAN','BIAYA BAHAN CUCIAN','BIAYA BAHAN PEMBERSIH','BIAYA BAHAN LINEN','BIAYA BAHAN BAKAR L.P.G.','BIAYA BAHAN NON MEDIS KLINIK','DISCOUNT','DISCOUNT PENJUALAN'],
+  'BIAYA TENAGA KERJA': ['BIAYA GAJI','BIAYA GAJI PEGAWAI TETAP','BIAYA GAJI PEGAWAI KONTRAK','BIAYA GAJI PEGAWAI OUTSOURCING','BIAYA HONORARIUM','BIAYA TALI ASIH PEGAWAI PURNA TUGAS','BIAYA TUNJANGAN HARI RAYA','BIAYA JASA PRODUKSI','BIAYA INSENTIF KINERJA','BIAYA TUNJANGAN PAJAK','BIAYA TUNJANGAN HARI TUA','BIAYA PENGOBATAN','BIAYA DIKLAT PEGAWAI','BIAYA SERAGAM PEGAWAI'],
+  'BIAYA PEMELIHARAAN': ['BIAYA PEMELIHARAAN TANAH & SAMPAH','BIAYA CLEANING SERVICE','BIAYA PERBAIKAN BANGUNAN','BIAYA PEMAKAIAN SUKU CADANG MEDIS','BIAYA SERVICE PERALATAN MEDIS','BIAYA PEMAKAIAN SUKU CADANG NON MEDIS','BIAYA SERVICE PERALATAN NON MEDIS','BIAYA SPAREPART KENDARAAN','BIAYA SERVICE KENDARAAN'],
+  'BIAYA SEWA': ['BIAYA SEWA TANAH','BIAYA SEWA BANGUNAN','BIAYA SEWA PERALATAN MEDIS','BIAYA SEWA PERALATAN NON MEDIS','BIAYA SEWA KENDARAAN'],
+  'BIAYA PENYUSUTAN': ['BIAYA PENYUSUTAN BANGUNAN','BIAYA PENYUSUTAN PERALATAN MEDIS','BIAYA PENYUSUTAN PERALATAN NON MEDIS','BIAYA PENYUSUTAN KENDARAAN','BIAYA AMORTISASI BEBAN DITANGGUHKAN'],
+  'BIAYA ASURANSI DAN PAJAK': ['BIAYA ASURANSI BANGUNAN','BIAYA ASURANSI PERALATAN MEDIS','BIAYA ASURANSI PERALATAN NON MEDIS','BIAYA ASURANSI KENDARAAN','BIAYA PAJAK','BIAYA PAJAK BANGUNAN','BEBAN PAJAK KINI','BEBAN PAJAK TANGGUHAN','BIAYA PAJAK KENDARAAN'],
+  'BIAYA UMUM': ['BIAYA PERIJINAN','BIAYA SUMBANGAN','BIAYA PENELITIAN/PEMERIKSAAN','BIAYA RUMAH TANGGA','BIAYA BBM','BIAYA AIR','BIAYA LISTRIK','BIAYA TRANSPORT & TOL','BIAYA PERJALANAN DINAS','BIAYA KOMUNIKASI'],
+  'BIAYA ADMINISTRASI': ['BIAYA KORESPONDENSI','BIAYA PEMAKAIAN ALAT PERKANTORAN','BIAYA CETAK & FOTOCOPY','BIAYA ADMIN. BANK'],
+  'BIAYA PEMASARAN': ['BIAYA PUBLIKASI','BIAYA SPONSOR'],
+};
+function normNamaCoa(v) { return String(v || '').toUpperCase().replace(/\s+/g, ' ').trim(); }
+const COA_KELOMPOK_MAP = (() => {
+  const m = {};
+  Object.entries(KELOMPOK_COA_BIAYA).forEach(([kel, arr]) => arr.forEach(n => { m[normNamaCoa(n)] = kel; }));
+  return m;
+})();
+const KELOMPOK_BIAYA_URUT = Object.keys(RKAP_BIAYA);
+
+function kelompokBiayaDariRow(r) {
+  const kandidat = [r.Nama_COA, r.nama_coa, r.Nama_Coa, namaCoaBiaya(r)].filter(v => v && String(v).trim());
+  for (const k of kandidat) { const kel = COA_KELOMPOK_MAP[normNamaCoa(k)]; if (kel) return { kelompok: kel, nama: String(k).trim() }; }
+  const kode = kodeCoaBiaya(r);
+  return { kelompok: KELOMPOK_BELUM_MAPPING, nama: kandidat.length ? String(kandidat[0]).trim() : ('COA ' + kode) };
+}
+function hariDalamTahun(y) { return ((y % 4 === 0 && y % 100 !== 0) || y % 400 === 0) ? 366 : 365; }
+// Faktor prorata = jumlah hari periode filter / jumlah hari dalam tahun (dijumlah per tahun jika lintas tahun)
+function rkapFaktorPeriode() {
+  const { awal, akhir } = getDateRange();
+  const bulan = [...new Set(MANIFEST?.bulan || [])].sort();
+  let a = awal || (bulan.length ? bulan[0] + '-01' : '');
+  let b = akhir || (bulan.length ? (() => { const [y, m] = bulan[bulan.length - 1].split('-').map(Number); return tanggalAkhirBulanStr(y, m); })() : '');
+  if (!a || !b || a > b) return { faktor: 1, hari: 0, a, b };
+  let faktor = 0, hari = 0;
+  for (let d = new Date(a + 'T00:00:00'), end = new Date(b + 'T00:00:00'); d <= end; d.setDate(d.getDate() + 1)) {
+    faktor += 1 / hariDalamTahun(d.getFullYear()); hari++;
+  }
+  return { faktor, hari, a, b };
+}
+
+let currentBiayaRkap = [];
+let currentBiayaRkapCoa = [];
+function renderBiayaRkap() {
+  if (!FILTERED) return;
+  const basis = document.getElementById('fltRkapBasis')?.value || 'prorata';
+  const f = rkapFaktorPeriode();
+  const sumber = [['Bahan Medis', FILTERED.biaya_bahan_detail], ['Bahan Non Medis', FILTERED.biaya_umum_detail], ['Biaya Umum', FILTERED.biaya_umum_baru_detail]];
+
+  const real = {}, coaMap = {};
+  sumber.forEach(([namaSumber, rows]) => (rows || []).forEach(r => {
+    const { kelompok, nama } = kelompokBiayaDariRow(r);
+    const nominal = biayaNominalNeto(r);
+    real[kelompok] = (real[kelompok] || 0) + nominal;
+    const key = kelompok + '|' + nama;
+    if (!coaMap[key]) coaMap[key] = { kelompok, nama_coa: nama, sumberSet: new Set(), jumlah: 0, realisasi: 0 };
+    coaMap[key].sumberSet.add(namaSumber);
+    coaMap[key].jumlah += 1;
+    coaMap[key].realisasi += nominal;
+  }));
+
+  const kelompokList = [...KELOMPOK_BIAYA_URUT];
+  if (real[KELOMPOK_BELUM_MAPPING] !== undefined) kelompokList.push(KELOMPOK_BELUM_MAPPING);
+  currentBiayaRkap = kelompokList.map(k => {
+    const rkap_tahunan = RKAP_BIAYA[k] || 0;
+    const rkap_basis = basis === 'tahunan' ? rkap_tahunan : rkap_tahunan * f.faktor;
+    const realisasi = real[k] || 0;
+    const persen = rkap_basis > 0 ? realisasi / rkap_basis * 100 : 0;
+    const status = rkap_basis <= 0 ? 'TANPA RKAP' : persen > 100 ? 'OVER' : persen >= 90 ? 'WASPADA' : 'AMAN';
+    return { kelompok: k, rkap_tahunan, rkap_basis, realisasi, sisa: rkap_basis - realisasi, persen, status };
+  });
+  currentBiayaRkapCoa = Object.values(coaMap).map(x => ({ ...x, sumber: [...x.sumberSet].join(', ') }))
+    .sort((a, b) => b.realisasi - a.realisasi);
+
+  const totRkap = sumBy(currentBiayaRkap, 'rkap_basis'), totReal = sumBy(currentBiayaRkap, 'realisasi');
+  const serapan = totRkap > 0 ? totReal / totRkap * 100 : 0;
+  const nOver = currentBiayaRkap.filter(r => r.status === 'OVER').length;
+  document.getElementById('rkapBasisInfo').textContent = basis === 'tahunan'
+    ? 'Pembanding: RKAP setahun penuh. Realisasi = Biaya Bahan Medis + Biaya Bahan Non Medis + Biaya Umum (netto: debet - kredit) pada periode filter.'
+    : `Pembanding: RKAP prorata ${f.a || '-'} s/d ${f.b || '-'} (${num(f.hari)} hari = ${(f.faktor * 100).toFixed(1)}% dari RKAP tahunan). Realisasi = Biaya Bahan Medis + Non Medis + Biaya Umum (netto).`;
+  document.getElementById('kpiBiayaRkap').innerHTML = `
+    <div class="kpi-card blue"><div class="kpi-label">Total RKAP Pembanding</div><div class="kpi-value">${rupiah(totRkap)}</div><div class="kpi-sub">${basis === 'tahunan' ? 'setahun penuh' : 'prorata periode filter'}</div></div>
+    <div class="kpi-card amber"><div class="kpi-label">Total Realisasi Biaya</div><div class="kpi-value">${rupiah(totReal)}</div><div class="kpi-sub">${real[KELOMPOK_BELUM_MAPPING] !== undefined ? 'termasuk COA belum ter-mapping' : 'semua COA ter-mapping'}</div></div>
+    <div class="kpi-card ${serapan > 100 ? 'red' : 'green'}"><div class="kpi-label">% Realisasi vs RKAP</div><div class="kpi-value">${totRkap > 0 ? serapan.toFixed(1) + '%' : '-'}</div><div class="kpi-sub">sisa / (lebih): ${rupiah(totRkap - totReal)}</div></div>
+    <div class="kpi-card ${nOver ? 'red' : 'purple'}"><div class="kpi-label">Kelompok Melebihi RKAP</div><div class="kpi-value">${num(nOver)}</div><div class="kpi-sub">dari ${num(KELOMPOK_BIAYA_URUT.length)} kelompok</div></div>`;
+
+  // opsi filter kelompok pada tabel rincian COA
+  const sel = document.getElementById('fltRkapKelompok');
+  if (sel) {
+    const cur = sel.value;
+    sel.innerHTML = '<option value="">Semua Kelompok</option>' + kelompokList.map(k => `<option value="${k}">${k}</option>`).join('');
+    if (kelompokList.includes(cur)) sel.value = cur;
+  }
+  filterBiayaRkap();
+  filterBiayaRkapCoa();
+}
+
+function filterBiayaRkap() {
+  const q = (document.getElementById('searchBiayaRkap')?.value || '').toLowerCase();
+  const rows = tblApplySort('tblBiayaRkap', currentBiayaRkap.filter(r => !q || r.kelompok.toLowerCase().includes(q)));
+  destroyChart('chartBiayaRkap');
+  const ctx = document.getElementById('chartBiayaRkap');
+  if (ctx) {
+    CHARTS['chartBiayaRkap'] = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: rows.map(r => r.kelompok.replace(/^BIAYA /, '')),
+        datasets: [
+          { label: 'RKAP Pembanding', data: rows.map(r => r.rkap_basis), backgroundColor: '#2563eb', borderRadius: 4 },
+          { label: 'Realisasi', data: rows.map(r => r.realisasi), backgroundColor: '#d97706', borderRadius: 4 },
+        ]
+      },
+      options: { ...CHART_DEFAULTS, indexAxis: 'y' }
+    });
+  }
+  const totRkapT = sumBy(rows, 'rkap_tahunan'), totRkap = sumBy(rows, 'rkap_basis'), totReal = sumBy(rows, 'realisasi');
+  document.querySelector('#tblBiayaRkap tbody').innerHTML = rows.map(r => `<tr>
+    <td class="td-bold">${r.kelompok}</td>
+    <td class="td-num">${rupiah(r.rkap_tahunan)}</td>
+    <td class="td-num">${rupiah(r.rkap_basis)}</td>
+    <td class="td-num td-bold">${rupiah(r.realisasi)}</td>
+    <td class="td-num ${r.sisa < 0 ? 'rekon-diff' : 'rekon-match'}">${rupiah(r.sisa)}</td>
+    <td class="td-num">${r.rkap_basis > 0 ? r.persen.toFixed(1) + '%' : '-'}</td>
+    <td><span class="badge ${r.status === 'OVER' ? 'badge-red' : r.status === 'WASPADA' ? 'badge-amber' : r.status === 'AMAN' ? 'badge-green' : 'badge-gray'}">${r.status}</span></td>
+  </tr>`).join('') || '<tr><td colspan="7" class="empty">Tidak ada data</td></tr>';
+  document.querySelector('#tblBiayaRkap tfoot').innerHTML = rows.length ? tblTotalRow(1, [
+    { value: totRkapT, type: 'rupiah' },
+    { value: totRkap, type: 'rupiah' },
+    { value: totReal, type: 'rupiah' },
+    { value: totRkap - totReal, type: 'rupiah' },
+    { value: totRkap > 0 ? totReal / totRkap * 100 : 0, type: 'percent' },
+    { value: '', type: '' },
+  ]) : '';
+  document.getElementById('biayaRkapCount').textContent = `${num(rows.length)} dari ${num(currentBiayaRkap.length)} kelompok`;
+  tblRefreshIcons('tblBiayaRkap', 'head-tblBiayaRkap');
+}
+function resetBiayaRkapFilter() { document.getElementById('searchBiayaRkap').value = ''; filterBiayaRkap(); }
+
+function filterBiayaRkapCoa() {
+  const q = (document.getElementById('searchBiayaRkapCoa')?.value || '').toLowerCase();
+  const kel = document.getElementById('fltRkapKelompok')?.value || '';
+  const rows = tblApplySort('tblBiayaRkapCoa', currentBiayaRkapCoa.filter(r => (!kel || r.kelompok === kel) && (!q || r.nama_coa.toLowerCase().includes(q))));
+  document.querySelector('#tblBiayaRkapCoa tbody').innerHTML = rows.map(r => `<tr>
+    <td><span class="badge ${r.kelompok === KELOMPOK_BELUM_MAPPING ? 'badge-red' : 'badge-purple'}" style="font-size:10px">${r.kelompok}</span></td>
+    <td style="font-size:11px">${r.nama_coa}</td>
+    <td style="font-size:11px">${r.sumber}</td>
+    <td class="td-num">${num(r.jumlah)}</td>
+    <td class="td-num td-bold">${rupiah(r.realisasi)}</td>
+  </tr>`).join('') || '<tr><td colspan="5" class="empty">Tidak ada data</td></tr>';
+  document.querySelector('#tblBiayaRkapCoa tfoot').innerHTML = rows.length ? tblTotalRow(3, [
+    { value: sumBy(rows, 'jumlah'), type: 'num' },
+    { value: sumBy(rows, 'realisasi'), type: 'rupiah' },
+  ]) : '';
+  document.getElementById('biayaRkapCoaCount').textContent = `${num(rows.length)} dari ${num(currentBiayaRkapCoa.length)} COA`;
+  tblRefreshIcons('tblBiayaRkapCoa', 'head-tblBiayaRkapCoa');
+}
+TblRerender.tblBiayaRkap    = filterBiayaRkap;
+TblRerender.tblBiayaRkapCoa = filterBiayaRkapCoa;
 
 // ══ Hubungkan setiap tableId ke fungsi render/filter-nya ══
 TblRerender.tblUnit                 = filterUnitDetailAndUnit;
