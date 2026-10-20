@@ -1137,9 +1137,9 @@ tfoot td { position: sticky; bottom: 0; z-index: 3; background: var(--bg3); box-
         <div class="section-body" style="padding:0">
           <div class="tbl-wrap"><table id="tblBiayaUmumBaruCoa">
             <thead id="head-tblBiayaUmumBaruCoa"><tr>
-              <th data-key="nama" onclick="tblSort('tblBiayaUmumBaruCoa','nama','text')">Nama COA <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="jumlah" onclick="tblSort('tblBiayaUmumBaruCoa','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="total_nominal" onclick="tblSort('tblBiayaUmumBaruCoa','total_nominal','number')">Total Nominal <span class="sort-ico-wrap"></span></th>
+              <th>Kelompok / Nama COA</th>
+              <th class="td-num">Jumlah Baris</th>
+              <th class="td-num">Total Nominal</th>
             </tr></thead><tbody></tbody><tfoot></tfoot>
           </table></div>
         </div>
@@ -1310,7 +1310,7 @@ tfoot td { position: sticky; bottom: 0; z-index: 3; background: var(--bg3); box-
       <div><strong>PPB &amp; ERP</strong> — RSSG Monitoring Keuangan</div>
     </div>
     <div class="footer-right">
-      <span>Versi 2.3.0</span>
+      <span>Versi 2.4.0</span>
       <span class="dot">•</span>
       <span>Update terakhir: <span id="footerLastUpdate">—</span></span>
     </div>
@@ -3094,16 +3094,16 @@ function rekapBiayaPerKategori(detail) { return rekapBiayaByField(detail, 'keter
 function rekapBiayaPerSubUnit(detail)  { return rekapBiayaByField(detail, 'nama_sub_unit', 'Lainnya'); }
 
 function populateBiayaFilterOptions(prefix, detail) {
-  const fillSelect = (elId, values, allLabel) => {
+  const fillSelect = (elId, values, allLabel, sorter) => {
     const el = document.getElementById(elId);
     if (!el) return;
     const current = el.value;
-    const opts = [...new Set(values.filter(v => v !== null && v !== undefined && String(v).trim() !== '').map(String))].sort((a,b) => a.localeCompare(b, 'id'));
+    const opts = [...new Set(values.filter(v => v !== null && v !== undefined && String(v).trim() !== '').map(String))].sort(sorter || ((a,b) => a.localeCompare(b, 'id')));
     el.innerHTML = `<option value="">${allLabel}</option>` +
       opts.map(v => `<option value="${v.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}">${v}</option>`).join('');
     if (opts.includes(current)) el.value = current;
   };
-  fillSelect(`flt${prefix}Coa`, detail.map(r => r._namaCoa), 'Semua Nama COA');
+  fillSelect(`flt${prefix}Coa`, detail.map(r => r._namaCoa), 'Semua Nama COA', prefix === 'BiayaUmumBaru' ? bandingUrutanCoa : null);
   fillSelect(`flt${prefix}Kategori`, detail.map(r => r.keterangan), 'Semua Kategori Jurnal');
   fillSelect(`flt${prefix}SubUnit`, detail.map(r => r.nama_sub_unit), 'Semua Sub Unit');
 }
@@ -3130,7 +3130,8 @@ function renderBiayaRekap(prefix, detail) {
   const perKategori = rekapBiayaPerKategori(detail);
   const perSubUnit = rekapBiayaPerSubUnit(detail);
 
-  renderBiayaRekapTable(`tbl${prefix}Coa`, `head-tbl${prefix}Coa`, perCoa);
+  if (prefix === 'BiayaUmumBaru') renderRekapCoaTerkelompok(`tbl${prefix}Coa`, `head-tbl${prefix}Coa`, detail);
+  else renderBiayaRekapTable(`tbl${prefix}Coa`, `head-tbl${prefix}Coa`, perCoa);
   renderBiayaRekapTable(`tbl${prefix}Kategori`, `head-tbl${prefix}Kategori`, perKategori);
   renderBiayaRekapTable(`tbl${prefix}SubUnit`, `head-tbl${prefix}SubUnit`, perSubUnit);
 
@@ -3414,12 +3415,19 @@ function normNamaCoa(v) { return String(v || '').toUpperCase().replace(/\s+/g, '
 const COA_KELOMPOK_MAP = (() => {
   const m = {};
   Object.entries(KELOMPOK_COA_BIAYA).forEach(([kel, arr]) => arr.forEach(n => { m[normNamaCoa(n)] = kel; }));
+  // Akun induk (mis. kode 5.7 bernama "BIAYA UMUM") ikut ke kelompok yang bernama sama, bila ada transaksinya
+  Object.keys(KELOMPOK_COA_BIAYA).forEach(kel => { const k = normNamaCoa(kel); if (!(k in m)) m[k] = kel; });
+  m[normNamaCoa('BIAYA ASURANSI & PAJAK')] = 'BIAYA ASURANSI DAN PAJAK';
   return m;
 })();
 const KELOMPOK_BIAYA_URUT = Object.keys(RKAP_BIAYA);
 
-function kelompokBiayaDariRow(r) {
-  const kandidat = [r.Nama_COA, r.nama_coa, r.Nama_Coa, namaCoaBiaya(r)].filter(v => v && String(v).trim());
+// namaCoaFn = fungsi nama COA sesuai modul sumbernya. PENTING: Biaya Umum (kode 5.x) memakai
+// namaCoaBiayaUmumBaru; sebelumnya semua modul memakai namaCoaBiaya (peta 4.x) sehingga nama COA
+// Biaya Umum jatuh ke "COA 5.x.x" dan masuk BELUM TER-MAPPING.
+function kelompokBiayaDariRow(r, namaCoaFn) {
+  const fn = namaCoaFn || namaCoaBiaya;
+  const kandidat = [fn(r), r.Nama_COA, r.nama_coa, r.Nama_Coa].filter(v => v && String(v).trim());
   for (const k of kandidat) { const kel = COA_KELOMPOK_MAP[normNamaCoa(k)]; if (kel) return { kelompok: kel, nama: String(k).trim() }; }
   const kode = kodeCoaBiaya(r);
   return { kelompok: KELOMPOK_BELUM_MAPPING, nama: kandidat.length ? String(kandidat[0]).trim() : ('COA ' + kode) };
@@ -3445,11 +3453,11 @@ function renderBiayaRkap() {
   if (!FILTERED) return;
   const basis = document.getElementById('fltRkapBasis')?.value || 'prorata';
   const f = rkapFaktorPeriode();
-  const sumber = [['Bahan Medis', FILTERED.biaya_bahan_detail], ['Bahan Non Medis', FILTERED.biaya_umum_detail], ['Biaya Umum', FILTERED.biaya_umum_baru_detail]];
+  const sumber = [['Bahan Medis', FILTERED.biaya_bahan_detail, namaCoaBiaya], ['Bahan Non Medis', FILTERED.biaya_umum_detail, namaCoaBiaya], ['Biaya Umum', FILTERED.biaya_umum_baru_detail, namaCoaBiayaUmumBaru]];
 
   const real = {}, coaMap = {};
-  sumber.forEach(([namaSumber, rows]) => (rows || []).forEach(r => {
-    const { kelompok, nama } = kelompokBiayaDariRow(r);
+  sumber.forEach(([namaSumber, rows, fnNama]) => (rows || []).forEach(r => {
+    const { kelompok, nama } = kelompokBiayaDariRow(r, fnNama);
     const nominal = biayaNominalNeto(r);
     real[kelompok] = (real[kelompok] || 0) + nominal;
     const key = kelompok + '|' + nama;
@@ -3556,6 +3564,48 @@ function filterBiayaRkapCoa() {
 }
 TblRerender.tblBiayaRkap    = filterBiayaRkap;
 TblRerender.tblBiayaRkapCoa = filterBiayaRkapCoa;
+
+// ══ URUTAN & GROUPING NAMA COA (dipakai modul Biaya Umum) ══
+// Urutan = urutan kelompok & nama COA pada KELOMPOK_COA_BIAYA di atas.
+const URUTAN_COA_BIAYA = (() => {
+  const m = {}; let i = 0;
+  Object.values(KELOMPOK_COA_BIAYA).forEach(arr => arr.forEach(n => { const k = normNamaCoa(n); if (!(k in m)) m[k] = i++; }));
+  return m;
+})();
+function indeksUrutanCoa(nama) { const i = URUTAN_COA_BIAYA[normNamaCoa(nama)]; return i === undefined ? 99999 : i; }
+function bandingUrutanCoa(a, b) { return indeksUrutanCoa(a) - indeksUrutanCoa(b) || String(a).localeCompare(String(b), 'id'); }
+
+// Rekap per Nama COA, dikelompokkan per kelompok biaya (baris kelompok = subtotal), urut sesuai daftar.
+function renderRekapCoaTerkelompok(tableId, headId, detail) {
+  const coaMap = {};
+  detail.forEach(r => {
+    const nama = String(r._namaCoa || 'Lainnya');
+    if (!coaMap[nama]) coaMap[nama] = { nama, jumlah: 0, total: 0 };
+    coaMap[nama].jumlah += 1;
+    coaMap[nama].total  += Number(r._nominal) || 0;
+  });
+  const grup = {};
+  Object.values(coaMap).forEach(c => {
+    const kel = COA_KELOMPOK_MAP[normNamaCoa(c.nama)] || KELOMPOK_BELUM_MAPPING;
+    (grup[kel] = grup[kel] || []).push(c);
+  });
+  const urutKel = [...Object.keys(KELOMPOK_COA_BIAYA), KELOMPOK_BELUM_MAPPING].filter(k => grup[k]);
+  const hdr = 'background:var(--bg3)';
+  let html = '', totJ = 0, totN = 0;
+  urutKel.forEach(kel => {
+    const items = grup[kel].sort((a, b) => kel === KELOMPOK_BELUM_MAPPING ? b.total - a.total : bandingUrutanCoa(a.nama, b.nama));
+    const sJ = items.reduce((s, c) => s + c.jumlah, 0), sN = items.reduce((s, c) => s + c.total, 0);
+    totJ += sJ; totN += sN;
+    html += `<tr><td class="td-bold" style="${hdr}">${kel}</td><td class="td-num td-bold" style="${hdr}">${num(sJ)}</td><td class="td-num td-bold" style="${hdr}">${rupiah(sN)}</td></tr>`;
+    items.forEach(c => {
+      html += `<tr><td style="font-size:11px;padding-left:26px">${c.nama}</td><td class="td-num">${num(c.jumlah)}</td><td class="td-num">${rupiah(c.total)}</td></tr>`;
+    });
+  });
+  document.querySelector(`#${tableId} tbody`).innerHTML = html || '<tr><td colspan="3" class="empty">Tidak ada data</td></tr>';
+  document.querySelector(`#${tableId} tfoot`).innerHTML = html ? tblTotalRow(1, [
+    { value: totJ, type: 'num' }, { value: totN, type: 'rupiah' },
+  ]) : '';
+}
 
 // ══ Hubungkan setiap tableId ke fungsi render/filter-nya ══
 TblRerender.tblUnit                 = filterUnitDetailAndUnit;
