@@ -1702,7 +1702,7 @@ async function buildFiltered() {
     .filter(r => !/(dropping|penempatan\s+deposito|setoran|pinbuk)/i.test(String(r.operasional || r.keterangan || '')));
   const umPjkRows = umPjk.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const biayaBahanRows = terapkanRevisiBiayaMedis(biayaBahan.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir)));
-  const biayaUmumRows = biayaUmum.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
+  const biayaUmumRows = terapkanKategoriMutasi(biayaUmum.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir)));
   const biayaUmumBaruRows = biayaUmumBaru.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const pendapatanLainRows = pendapatanLain.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
 
@@ -3167,7 +3167,7 @@ async function loadPembandingBiaya() {
     a.push(await fetchBulanBiayaBahan(k)); b.push(await fetchBulanBiayaUmum(k)); c.push(await fetchBulanBiayaUmumBaru(k));
   }
   const f = arr => dedupeAbaikanLoadedAt([].concat(...arr)).filter(r => inRange(r.tanggal_sub_transaksi, p.awal, p.akhir));
-  return { bahan: terapkanRevisiBiayaMedis(f(a)), umum: f(b), umumBaru: f(c), periode: p };
+  return { bahan: terapkanRevisiBiayaMedis(f(a)), umum: terapkanKategoriMutasi(f(b)), umumBaru: f(c), periode: p };
 }
 
 function renderTrenBulanan(chartId, rows) {
@@ -3482,8 +3482,18 @@ function terapkanRevisiBiayaMedis(rows) {
     nama_sub_unit_asli: r.nama_sub_unit,
     nama_sub_unit: subUnitBiayaMedis(r),
     keterangan_asli: r.keterangan,
-    keterangan: keteranganBiayaMedis(r),
+    keterangan: kategoriMutasi(r) || keteranganBiayaMedis(r),
   }));
+}
+
+// ══ Kategori "Mutasi": baris yang kolom operasional/keterangannya memuat kata "mutasi"
+//    dikategorikan 'Mutasi' (Biaya Bahan Medis & Biaya Bahan Non Medis, termasuk data bulan lalu) ══
+const RE_MUTASI = /mutasi/i;
+function kategoriMutasi(r) {
+  return (RE_MUTASI.test(String(r.operasional || r.Operasional || '')) || RE_MUTASI.test(String(r.keterangan || ''))) ? 'Mutasi' : null;
+}
+function terapkanKategoriMutasi(rows) {
+  return rows.map(r => { const k = kategoriMutasi(r); return k ? { ...r, keterangan_asli: r.keterangan, keterangan: k } : r; });
 }
 
 // ══ BIAYA VS RKAP ══
