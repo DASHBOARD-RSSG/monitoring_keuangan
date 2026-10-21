@@ -1,7 +1,7 @@
 {
   "bulan": "2026-10",
   "bagian": 1,
-  "generated_at": "2026-10-20T01:26:05.563Z",
+  "generated_at": "2026-10-21T01:26:04.724Z",
   "biaya_umum_detail": [
     {
       "id_sub_transaksi": "7881528",
@@ -1610,7 +1610,7 @@
       "operasional": "Pemakaian 1930, (2329) 60633-SIPPOL DISHWASHING CLEANER 5L (SABUN CUCI PIRING), (31) 124 - POLI GIGI GRESIK, Inventori ID (32546)",
       "nama_sub_penerima": "ainur.rois",
       "nama_penerima": "ainur.rois",
-      "loaded_at": "1.792366899221E9",
+      "loaded_at": "1.792467314206E9",
       "keterangan": "Pemakaian 1930, (2329) 60633-SIPPOL DISHWASHING CLEANER 5L (SABUN CUCI PIRING), (31) 124 - POLI GIGI GRESIK, Inventori ID (32546)"
     },
     {
@@ -1624,7 +1624,7 @@
       "operasional": "Pemakaian 1931, (2976) 7 BAYMED HANDRUB 500ML, (31) 124 - POLI GIGI GRESIK, Inventori ID (76398)",
       "nama_sub_penerima": "ainur.rois",
       "nama_penerima": "ainur.rois",
-      "loaded_at": "1.792366911117E9",
+      "loaded_at": "1.792467314206E9",
       "keterangan": "Pemakaian 1931, (2976) 7 BAYMED HANDRUB 500ML, (31) 124 - POLI GIGI GRESIK, Inventori ID (76398)"
     },
     {
@@ -1638,7 +1638,7 @@
       "operasional": "Pemakaian 1930, (2331) 60632-SIPPOL HANDSOAP 5L, (31) 124 - POLI GIGI GRESIK, Inventori ID (32548)",
       "nama_sub_penerima": "ainur.rois",
       "nama_penerima": "ainur.rois",
-      "loaded_at": "1.792366899221E9",
+      "loaded_at": "1.792467314206E9",
       "keterangan": "Pemakaian 1930, (2331) 60632-SIPPOL HANDSOAP 5L, (31) 124 - POLI GIGI GRESIK, Inventori ID (32548)"
     },
     {
@@ -1652,7 +1652,7 @@
       "operasional": "Pemakaian 1943, (2573) 6-TEPUNG BERAS MAWAR 500GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13562)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (2573) 6-TEPUNG BERAS MAWAR 500GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13562)"
     },
     {
@@ -1666,7 +1666,7 @@
       "operasional": "Pemakaian 1943, (932) 6-GULA PASIR KEMASAN 1KG, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11920)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (932) 6-GULA PASIR KEMASAN 1KG, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11920)"
     },
     {
@@ -1680,7 +1680,7 @@
       "operasional": "Pemakaian 1944, (2460) 6-SUSU ULTRAMILK VANILA 1000GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13448)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (2460) 6-SUSU ULTRAMILK VANILA 1000GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13448)"
     },
     {
@@ -1694,7 +1694,7 @@
       "operasional": "Pemakaian 1944, (2463) 6-SU'UN VERMICELLI 250 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13451)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (2463) 6-SU'UN VERMICELLI 250 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13451)"
     },
     {
@@ -1708,7 +1708,7 @@
       "operasional": "Pemakaian 1944, (832) 6-FIBER CREME 450 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11821)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (832) 6-FIBER CREME 450 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11821)"
     },
     {
@@ -1722,7 +1722,7 @@
       "operasional": "Pemakaian 1944, (1984) 6-PLASTIK ROLL CUP SEALER (POLOS), (24) 131 - SUB DAPUR GRESIK, Inventori ID (12972)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (1984) 6-PLASTIK ROLL CUP SEALER (POLOS), (24) 131 - SUB DAPUR GRESIK, Inventori ID (12972)"
     },
     {
@@ -1736,7 +1736,7 @@
       "operasional": "Pemakaian 1944, (2458) 6-SUSU DANCOW FULL CREAM 800GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13446)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (2458) 6-SUSU DANCOW FULL CREAM 800GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13446)"
     },
     {
@@ -1750,7 +1750,7 @@
       "operasional": "Pemakaian 1944, (1231) 6-KEJU CHEDAR 165GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12219)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (1231) 6-KEJU CHEDAR 165GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12219)"
     },
     {
@@ -1764,7 +1764,7 @@
       "operasional": "Pemakaian 1944, (2956) 6-SUSU HEPATOSOL VANILLA, (24) 131 - SUB DAPUR GRESIK, Inventori ID (75617)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (2956) 6-SUSU HEPATOSOL VANILLA, (24) 131 - SUB DAPUR GRESIK, Inventori ID (75617)"
     },
     {
@@ -1778,7 +1778,7 @@
       "operasional": "Pemakaian 1945, (876) 6-GARAM HALUS 500GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11864)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (876) 6-GARAM HALUS 500GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11864)"
     },
     {
@@ -1792,7 +1792,7 @@
       "operasional": "Pemakaian 1945, (2454) 6-SUSU CARNATION SKM 495GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13442)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (2454) 6-SUSU CARNATION SKM 495GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13442)"
     },
     {
@@ -1806,7 +1806,7 @@
       "operasional": "Pemakaian 1945, (2468) 6-SWEETENER GULA JAWA 350ML - TROPICANA, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13456)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (2468) 6-SWEETENER GULA JAWA 350ML - TROPICANA, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13456)"
     },
     {
@@ -1820,7 +1820,7 @@
       "operasional": "Pemakaian 1945, (2202) 6-SAOS TIRAM ABC 425ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13190)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (2202) 6-SAOS TIRAM ABC 425ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13190)"
     },
     {
@@ -1834,7 +1834,7 @@
       "operasional": "Pemakaian 1945, (446) 6-AGAR-AGAR SUPER 5GR PUTIH, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11434)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (446) 6-AGAR-AGAR SUPER 5GR PUTIH, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11434)"
     },
     {
@@ -1848,7 +1848,7 @@
       "operasional": "Pemakaian 1945, (2779) 6-SUSU NEPHRISOL VANILA 201 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (33312)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (2779) 6-SUSU NEPHRISOL VANILA 201 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (33312)"
     },
     {
@@ -1862,7 +1862,7 @@
       "operasional": "Pemakaian 1945, (808) 6-SUSU ENTRAMIX 174GR VANILA, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11796)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (808) 6-SUSU ENTRAMIX 174GR VANILA, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11796)"
     },
     {
@@ -1876,7 +1876,7 @@
       "operasional": "Pemakaian 1945, (931) 6-GULA MERAH KANGORO 500GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11919)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1945, (931) 6-GULA MERAH KANGORO 500GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11919)"
     },
     {
@@ -1890,7 +1890,7 @@
       "operasional": "Pemakaian 1944, (2333) 6-SIRUP TROPICANA SLIM 750ML COCOPANDAN, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13321)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (2333) 6-SIRUP TROPICANA SLIM 750ML COCOPANDAN, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13321)"
     },
     {
@@ -1904,7 +1904,7 @@
       "operasional": "Pemakaian 1944, (1647) 7-MAYONNAISE 300ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12636)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (1647) 7-MAYONNAISE 300ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12636)"
     },
     {
@@ -1918,7 +1918,7 @@
       "operasional": "Pemakaian 1944, (2332) 6-SIRUP MARJAN MELON, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13320)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (2332) 6-SIRUP MARJAN MELON, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13320)"
     },
     {
@@ -1932,7 +1932,7 @@
       "operasional": "Pemakaian 1944, (1734) 6-MINYAK WIJEN, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12723)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (1734) 6-MINYAK WIJEN, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12723)"
     },
     {
@@ -1946,7 +1946,7 @@
       "operasional": "Pemakaian 1943, (1226) 6-KECAP ASIN ABC 625ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12214)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (1226) 6-KECAP ASIN ABC 625ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12214)"
     },
     {
@@ -1960,7 +1960,7 @@
       "operasional": "Pemakaian 1943, (1228) 6-KECAP BANGO REFIL 550ML MANIS, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12216)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (1228) 6-KECAP BANGO REFIL 550ML MANIS, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12216)"
     },
     {
@@ -1974,7 +1974,7 @@
       "operasional": "Pemakaian 1943, (2184) 6-SABUN SUNLIGHT NIPIS 755ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13172)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (2184) 6-SABUN SUNLIGHT NIPIS 755ML, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13172)"
     },
     {
@@ -1988,7 +1988,7 @@
       "operasional": "Pemakaian 1943, (1731) 6-MINYAK GORENG REFILL 2LT, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12720)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (1731) 6-MINYAK GORENG REFILL 2LT, (24) 131 - SUB DAPUR GRESIK, Inventori ID (12720)"
     },
     {
@@ -2002,7 +2002,7 @@
       "operasional": "Pemakaian 1943, (3049) 6-DAGING KEMASAN 1 KG, (24) 131 - SUB DAPUR GRESIK, Inventori ID (75613)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (3049) 6-DAGING KEMASAN 1 KG, (24) 131 - SUB DAPUR GRESIK, Inventori ID (75613)"
     },
     {
@@ -2016,7 +2016,7 @@
       "operasional": "Pemakaian 1943, (2543) 6-TELOR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13531)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (2543) 6-TELOR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13531)"
     },
     {
@@ -2030,7 +2030,7 @@
       "operasional": "Pemakaian 1943, (582) 6-BERAS KEMASAN 25KG, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11570)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (582) 6-BERAS KEMASAN 25KG, (24) 131 - SUB DAPUR GRESIK, Inventori ID (11570)"
     },
     {
@@ -2044,7 +2044,7 @@
       "operasional": "Pemakaian 1943, (2467) 6-SWA GELAS 48'S, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13455)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (2467) 6-SWA GELAS 48'S, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13455)"
     },
     {
@@ -2058,7 +2058,7 @@
       "operasional": "Pemakaian 1943, (2466) 6-SWA GALON, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13454)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (2466) 6-SWA GALON, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13454)"
     },
     {
@@ -2072,7 +2072,7 @@
       "operasional": "Pemakaian 1943, (2465) 6-SWA BOTOL 600ML 24'S, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13453)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (2465) 6-SWA BOTOL 600ML 24'S, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13453)"
     },
     {
@@ -2086,7 +2086,7 @@
       "operasional": "Pemakaian 1943, (2464) 6-SWA BOTOL 330ML 24'S, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13452)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367018177E9",
+      "loaded_at": "1.792467416962E9",
       "keterangan": "Pemakaian 1943, (2464) 6-SWA BOTOL 330ML 24'S, (24) 131 - SUB DAPUR GRESIK, Inventori ID (13452)"
     },
     {
@@ -2100,7 +2100,7 @@
       "operasional": "Pemakaian 1944, (2774) 6-SAOS BOLOGNESE (LA FONTE) 315 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (33307)",
       "nama_sub_penerima": "RS7009530",
       "nama_penerima": "RS7009530",
-      "loaded_at": "1.792367038317E9",
+      "loaded_at": "1.792467427858E9",
       "keterangan": "Pemakaian 1944, (2774) 6-SAOS BOLOGNESE (LA FONTE) 315 GR, (24) 131 - SUB DAPUR GRESIK, Inventori ID (33307)"
     }
   ]
