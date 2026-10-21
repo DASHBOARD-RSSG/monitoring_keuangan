@@ -170,6 +170,29 @@ tr[data-rf] { cursor: pointer; }
 .footer-right { display: flex; gap: 10px; align-items: center; color: var(--text3); flex-wrap: wrap; }
 .footer-right .dot { color: var(--border); }
 
+/* ── TABEL: WARNA LEBIH GELAP & KONTRAS ── */
+.tbl-wrap { border-color: #b8c2d3; }
+th { color: #1e293b; background: #dde4f0; border-bottom: 1px solid #b8c2d3; box-shadow: 0 1px 0 #b8c2d3; }
+th[data-key]:hover { color: var(--accent2); }
+.sort-ico-wrap, .sort-ico { color: #64748b; }
+.sort-ico.active { color: var(--accent2); }
+td { color: #1e293b; border-bottom: 1px solid #cbd5e1; }
+tbody tr:nth-child(even) td { background: #f0f3f9; }
+tbody tr:hover td { background: #dbe6ff; color: #0f172a; }
+.td-bold { color: #0f172a; }
+td[style*="color:var(--text3)"] { color: #475569 !important; }
+tfoot td { background: #dde4f0; color: #0f172a; box-shadow: 0 -1px 0 #b8c2d3; }
+.rekon-match { color: #047857; }
+.rekon-diff  { color: #b91c1c; }
+.empty { color: #475569; }
+.badge-blue   { background: rgba(37,99,235,.16);  color: #1d4ed8; }
+.badge-green  { background: rgba(5,150,105,.16);  color: #047857; }
+.badge-amber  { background: rgba(217,119,6,.2);   color: #92400e; }
+.badge-purple { background: rgba(124,58,237,.16); color: #5b21b6; }
+.badge-red    { background: rgba(220,38,38,.16);  color: #b91c1c; }
+.badge-cyan   { background: rgba(8,145,178,.16);  color: #0e7490; }
+.badge-gray   { background: rgba(100,116,139,.2); color: #1e293b; }
+
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
