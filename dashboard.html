@@ -6,6 +6,9 @@
 <title>Monitoring Keuangan — RSSG</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <style>
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -193,6 +196,26 @@ tfoot td { background: #dde4f0; color: #0f172a; box-shadow: 0 -1px 0 #b8c2d3; }
 .badge-cyan   { background: rgba(8,145,178,.16);  color: #0e7490; }
 .badge-gray   { background: rgba(100,116,139,.2); color: #1e293b; }
 
+/* ── LOGIN ── */
+#loginScreen { display: none; position: fixed; inset: 0; z-index: 1000; align-items: center; justify-content: center; background: linear-gradient(135deg, #eef2ff, #e0f2fe); padding: 20px; }
+body.need-login #loginScreen { display: flex; }
+body.need-login .sidebar, body.need-login .header, body.need-login .main, body.need-login .overlay { display: none !important; }
+.login-card { width: 100%; max-width: 380px; background: var(--bg2); border: 1px solid var(--border); border-radius: 14px; padding: 30px 28px; box-shadow: 0 10px 30px rgba(30,36,51,.12); text-align: center; }
+.login-logo { width: 46px; height: 46px; margin: 0 auto 12px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--cyan)); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.login-card h1 { font-size: 17px; color: var(--text); }
+.login-sub { font-size: 12px; color: var(--text2); margin: 4px 0 18px; }
+#loginCheck { font-size: 13px; color: var(--text2); padding: 14px 0; }
+#loginForm { text-align: left; }
+#loginForm label { display: block; font-size: 11px; font-weight: 700; color: var(--text2); margin: 10px 0 4px; }
+#loginForm input { width: 100%; padding: 10px 12px; border: 1px solid #b8c2d3; border-radius: 8px; font-size: 14px; outline: none; background: #fff; color: var(--text); }
+#loginForm input:focus { border-color: var(--accent); }
+#loginError { color: #b91c1c; font-size: 12px; font-weight: 600; min-height: 18px; margin: 10px 0 6px; }
+#btnLogin { width: 100%; padding: 10px; font-size: 14px; }
+.user-box { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.user-box .u-email { font-size: 11px; color: var(--text); font-weight: 600; word-break: break-all; }
+.user-box .u-role { display: inline-block; margin: 4px 0 8px; }
+.user-box .btn { width: 100%; }
+
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
@@ -200,7 +223,25 @@ tfoot td { background: #dde4f0; color: #0f172a; box-shadow: 0 -1px 0 #b8c2d3; }
 ::-webkit-scrollbar-thumb:hover { background: #94a1b5; }
 </style>
 </head>
-<body>
+<body class="need-login">
+
+<!-- LOGIN -->
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-logo">PPB</div>
+    <h1>RSSG Monitoring Keuangan</h1>
+    <div class="login-sub">Masuk dengan akun Anda</div>
+    <div id="loginCheck">Memeriksa sesi login...</div>
+    <form id="loginForm" onsubmit="return doLogin(event)" style="display:none">
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" autocomplete="username" required/>
+      <label for="loginPass">Password</label>
+      <input type="password" id="loginPass" autocomplete="current-password" required/>
+      <div id="loginError"></div>
+      <button class="btn btn-primary" id="btnLogin" type="submit">Masuk</button>
+    </form>
+  </div>
+</div>
 
 <!-- OVERLAY -->
 <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
@@ -295,6 +336,11 @@ tfoot td { background: #dde4f0; color: #0f172a; box-shadow: 0 -1px 0 #b8c2d3; }
   <div class="sidebar-footer">
     <div style="margin-bottom:3px">Update terakhir</div>
     <div id="lastUpdate">—</div>
+    <div class="user-box">
+      <div class="u-email" id="userEmail">—</div>
+      <span class="badge badge-blue u-role" id="userRole">—</span>
+      <button class="btn btn-outline" onclick="doLogout()">Logout</button>
+    </div>
   </div>
 </aside>
 
@@ -1399,6 +1445,7 @@ const PAGE_TITLES = {
 };
 
 function showPage(id) {
+  if (!halamanBoleh(id)) return;
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   document.getElementById('page-' + id).classList.add('active');
@@ -1662,15 +1709,15 @@ async function loadSemuaUntukRentang(awal, akhir) {
 
   // Sumber diproses satu per satu (di dalamnya ada concurrency global 4)
   for (const k of bulanList) {
-    pelunasanArr.push(await fetchBulanPelunasan(k));
-    kasirArr.push(await fetchBulanKasir(k));
-    kreditArr.push(await fetchBulanKredit(k));
-    biayaBahanArr.push(await fetchBulanBiayaBahan(k));
-    biayaUmumArr.push(await fetchBulanBiayaUmum(k));
-    biayaUmumBaruArr.push(await fetchBulanBiayaUmumBaru(k));
-    pengeluaranKasArr.push(await fetchBulanPengeluaranKas(k));
-    umPjkArr.push(await fetchBulanUangMukaPjk(k));
-    pendapatanLainArr.push(await fetchBulanPendapatanLain(k));
+    if (sumberOk('pelunasan')) pelunasanArr.push(await fetchBulanPelunasan(k));
+    if (sumberOk('kasir')) kasirArr.push(await fetchBulanKasir(k));
+    if (sumberOk('kredit')) kreditArr.push(await fetchBulanKredit(k));
+    if (sumberOk('biayaBahan')) biayaBahanArr.push(await fetchBulanBiayaBahan(k));
+    if (sumberOk('biayaUmum')) biayaUmumArr.push(await fetchBulanBiayaUmum(k));
+    if (sumberOk('biayaUmumBaru')) biayaUmumBaruArr.push(await fetchBulanBiayaUmumBaru(k));
+    if (sumberOk('pengeluaranKas')) pengeluaranKasArr.push(await fetchBulanPengeluaranKas(k));
+    if (sumberOk('umPjk')) umPjkArr.push(await fetchBulanUangMukaPjk(k));
+    if (sumberOk('pendapatanLain')) pendapatanLainArr.push(await fetchBulanPendapatanLain(k));
   }
 
   return {
@@ -1702,8 +1749,8 @@ async function buildFiltered() {
     .filter(r => !/(dropping|penempatan\s+deposito|setoran|pinbuk)/i.test(String(r.operasional || r.keterangan || '')));
   const umPjkRows = umPjk.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
   const biayaBahanRows = terapkanRevisiBiayaMedis(biayaBahan.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir)));
-  const biayaUmumRows = terapkanKategoriMutasi(biayaUmum.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir)));
-  const biayaUmumBaruRows = biayaUmumBaru.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
+  const biayaUmumRows = terapkanKategoriMutasi(biayaUmum.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir))).filter(bolehSubUnit);
+  const biayaUmumBaruRows = biayaUmumBaru.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir)).filter(bolehSubUnit);
   const pendapatanLainRows = pendapatanLain.filter(r => inRange(r.tanggal_sub_transaksi, awal, akhir));
 
   FILTERED = {
@@ -3164,10 +3211,10 @@ async function loadPembandingBiaya() {
   if (!p) return null;
   const a = [], b = [], c = [];
   for (const k of monthsInRange(p.awal, p.akhir)) {
-    a.push(await fetchBulanBiayaBahan(k)); b.push(await fetchBulanBiayaUmum(k)); c.push(await fetchBulanBiayaUmumBaru(k));
+    if (sumberOk('biayaBahan')) a.push(await fetchBulanBiayaBahan(k)); if (sumberOk('biayaUmum')) b.push(await fetchBulanBiayaUmum(k)); if (sumberOk('biayaUmumBaru')) c.push(await fetchBulanBiayaUmumBaru(k));
   }
   const f = arr => dedupeAbaikanLoadedAt([].concat(...arr)).filter(r => inRange(r.tanggal_sub_transaksi, p.awal, p.akhir));
-  return { bahan: terapkanRevisiBiayaMedis(f(a)), umum: terapkanKategoriMutasi(f(b)), umumBaru: f(c), periode: p };
+  return { bahan: terapkanRevisiBiayaMedis(f(a)), umum: terapkanKategoriMutasi(f(b)).filter(bolehSubUnit), umumBaru: f(c).filter(bolehSubUnit), periode: p };
 }
 
 function renderTrenBulanan(chartId, rows) {
@@ -3843,6 +3890,7 @@ async function loadManifest() {
   }
 }
 async function loadAux() {
+  if (!sumberOk('aux')) { AUX = {}; return; }
   try {
     const r = await fetch('data.json?_=' + Date.now());
     AUX = await r.json();
@@ -3878,12 +3926,113 @@ async function loadData() {
 
   await buildFiltered();
   populateDetailFilterOptions();
-  renderPage('dashboard');
+  showPage(ROLE_CFG[USER_ROLE].awal);
+}
+
+// ══ FIREBASE AUTH & HAK AKSES ══
+// ISI dengan konfigurasi dari Firebase Console -> Project settings -> Your apps -> SDK setup (Config)
+const firebaseConfig = {
+  apiKey: 'ISI_API_KEY',
+  authDomain: 'ISI_PROJECT_ID.firebaseapp.com',
+  projectId: 'ISI_PROJECT_ID',
+  appId: 'ISI_APP_ID',
+};
+// Cadangan peran bila dokumen Firestore users/{uid} belum dibuat. Sesuaikan dengan email akun Anda.
+const ROLE_BY_EMAIL = {
+  'admin@ptcn.id'     : 'admin',
+  'umum@ptcn.id'      : 'umum',
+  'sdm@ptcn.id'       : 'sdm',
+  'akuntansi@ptcn.id' : 'akuntansi',
+};
+// halaman = id halaman yang boleh dibuka (null = semua) | sumber = data yang boleh dimuat (null = semua)
+// subUnit = bila diisi, hanya baris dengan nama sub unit yang cocok yang ditampilkan
+const ROLE_CFG = {
+  admin:     { label: 'Admin',     halaman: null, sumber: null, subUnit: null, awal: 'dashboard' },
+  akuntansi: { label: 'Akuntansi', halaman: null, sumber: null, subUnit: null, awal: 'dashboard' },
+  umum:      { label: 'Umum',      halaman: ['biaya-bahan','biaya-umum','biaya-umum-baru'], sumber: ['biayaBahan','biayaUmum','biayaUmumBaru'], subUnit: null, awal: 'biaya-bahan' },
+  sdm:       { label: 'SDM',       halaman: ['biaya-umum','biaya-umum-baru'], sumber: ['biayaUmum','biayaUmumBaru'], subUnit: /personalia/i, awal: 'biaya-umum' },
+};
+let USER_ROLE = null;
+let FB_AUTH = null, FB_DB = null;
+
+function halamanBoleh(id) { const c = ROLE_CFG[USER_ROLE]; return !!c && (c.halaman === null || c.halaman.includes(id)); }
+function sumberOk(nama)   { const c = ROLE_CFG[USER_ROLE]; return !!c && (c.sumber === null || c.sumber.includes(nama)); }
+function bolehSubUnit(r)  { const c = ROLE_CFG[USER_ROLE]; if (!c || !c.subUnit) return true; return c.subUnit.test(String(r.nama_sub_unit || '')); }
+
+function terapkanAkses() {
+  document.querySelectorAll('.nav-item').forEach(btn => {
+    const id = (btn.getAttribute('onclick') || '').match(/showPage\('([^']+)'\)/)?.[1];
+    btn.style.display = (id && halamanBoleh(id)) ? '' : 'none';
+  });
+  document.querySelectorAll('.sidebar-section').forEach(sec => {
+    const ada = [...sec.querySelectorAll('.nav-item')].some(b => b.style.display !== 'none');
+    sec.style.display = ada ? '' : 'none';
+  });
+  document.getElementById('userRole').textContent = ROLE_CFG[USER_ROLE].label;
+}
+function tampilLogin(pesan) {
+  document.body.classList.add('need-login');
+  document.getElementById('loginCheck').style.display = 'none';
+  document.getElementById('loginForm').style.display = 'block';
+  if (pesan) document.getElementById('loginError').textContent = pesan;
+}
+async function doLogin(e) {
+  e.preventDefault();
+  const btn = document.getElementById('btnLogin'), err = document.getElementById('loginError');
+  err.textContent = ''; btn.disabled = true; btn.textContent = 'Memproses...';
+  try {
+    await FB_AUTH.signInWithEmailAndPassword(document.getElementById('loginEmail').value.trim(), document.getElementById('loginPass').value);
+  } catch (ex) {
+    const peta = {
+      'auth/invalid-credential': 'Email atau password salah.',
+      'auth/wrong-password': 'Email atau password salah.',
+      'auth/user-not-found': 'Email atau password salah.',
+      'auth/invalid-email': 'Format email tidak valid.',
+      'auth/user-disabled': 'Akun ini dinonaktifkan.',
+      'auth/too-many-requests': 'Terlalu banyak percobaan. Coba lagi beberapa menit lagi.',
+      'auth/network-request-failed': 'Koneksi internet bermasalah.',
+    };
+    err.textContent = peta[ex.code] || ('Gagal masuk: ' + (ex.code || ex.message));
+  } finally {
+    btn.disabled = false; btn.textContent = 'Masuk';
+  }
+  return false;
+}
+function doLogout() {
+  if (!FB_AUTH) return;
+  FB_AUTH.signOut().then(() => location.reload());
+}
+function mulaiAuth() {
+  if (typeof firebase === 'undefined') { tampilLogin('Library Firebase gagal dimuat. Periksa koneksi internet.'); return; }
+  if (/^ISI_/.test(firebaseConfig.apiKey)) { tampilLogin('firebaseConfig belum diisi di index.html.'); return; }
+  firebase.initializeApp(firebaseConfig);
+  FB_AUTH = firebase.auth();
+  FB_DB = firebase.firestore();
+  FB_AUTH.onAuthStateChanged(async user => {
+    if (!user) { USER_ROLE = null; tampilLogin(); return; }
+    if (USER_ROLE) return;
+    let role = null;
+    try {
+      const snap = await FB_DB.collection('users').doc(user.uid).get();
+      if (snap.exists) role = String(snap.data().role || '').trim().toLowerCase();
+    } catch (ex) { console.warn('Gagal membaca peran dari Firestore: ' + ex.message); }
+    if (!ROLE_CFG[role]) role = ROLE_BY_EMAIL[(user.email || '').toLowerCase()] || null;
+    if (!ROLE_CFG[role]) {
+      await FB_AUTH.signOut();
+      tampilLogin('Akun ini belum memiliki hak akses. Hubungi admin.');
+      return;
+    }
+    USER_ROLE = role;
+    document.getElementById('userEmail').textContent = user.email || '';
+    terapkanAkses();
+    document.body.classList.remove('need-login');
+    loadData();
+  });
 }
 
 // ══ INIT ══
 pasangTombolExport();
-loadData();
+mulaiAuth();
 if (window.innerWidth < 768) closeSidebar();
 </script>
 </body>
