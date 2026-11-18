@@ -3932,10 +3932,10 @@ async function loadData() {
 // ══ FIREBASE AUTH & HAK AKSES ══
 // ISI dengan konfigurasi dari Firebase Console -> Project settings -> Your apps -> SDK setup (Config)
 const firebaseConfig = {
-  apiKey: 'ISI_API_KEY',
-  authDomain: 'ISI_PROJECT_ID.firebaseapp.com',
-  projectId: 'ISI_PROJECT_ID',
-  appId: 'ISI_APP_ID',
+  apiKey: 'AIzaSyDPj7UgHEuTCoVFerodfCW-ieHCHQQ_C2w',
+  authDomain: 'routing-dokumen.firebaseapp.com',
+  projectId: 'routing-dokumen',
+  appId: '1:471657928718:web:34b59dadb7d681efb3445f',
 };
 // Cadangan peran bila dokumen Firestore users/{uid} belum dibuat. Sesuaikan dengan email akun Anda.
 const ROLE_BY_EMAIL = {
@@ -3943,6 +3943,7 @@ const ROLE_BY_EMAIL = {
   'umum@ptcn.id'      : 'umum',
   'sdm@ptcn.id'       : 'sdm',
   'akuntansi@ptcn.id' : 'akuntansi',
+  'pprp@ptcn.id'      : 'pprp',
 };
 // halaman = id halaman yang boleh dibuka (null = semua) | sumber = data yang boleh dimuat (null = semua)
 // subUnit = bila diisi, hanya baris dengan nama sub unit yang cocok yang ditampilkan
@@ -3950,6 +3951,7 @@ const ROLE_CFG = {
   admin:     { label: 'Admin',     halaman: null, sumber: null, subUnit: null, awal: 'dashboard' },
   akuntansi: { label: 'Akuntansi', halaman: null, sumber: null, subUnit: null, awal: 'dashboard' },
   umum:      { label: 'Umum',      halaman: ['biaya-bahan','biaya-umum','biaya-umum-baru'], sumber: ['biayaBahan','biayaUmum','biayaUmumBaru'], subUnit: null, awal: 'biaya-bahan' },
+  pprp:      { label: 'PPRP',      halaman: ['biaya-bahan','biaya-umum','biaya-umum-baru','biaya-rkap','perbandingan-unit'], sumber: ['biayaBahan','biayaUmum','biayaUmumBaru','aux'], subUnit: null, awal: 'biaya-rkap' },
   sdm:       { label: 'SDM',       halaman: ['biaya-umum','biaya-umum-baru'], sumber: ['biayaUmum','biayaUmumBaru'], subUnit: /personalia/i, awal: 'biaya-umum' },
 };
 let USER_ROLE = null;
