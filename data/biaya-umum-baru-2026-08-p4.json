@@ -1,7 +1,7 @@
 {
   "bulan": "2026-08",
   "bagian": 4,
-  "generated_at": "2026-10-20T23:50:05.358Z",
+  "generated_at": "2026-11-18T03:14:49.764Z",
   "biaya_umum_baru_detail": [
     {
       "id_sub_transaksi": "6554434",
@@ -52,6 +52,23 @@
       "kredit": "0.0",
       "Total": "6290740.61",
       "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554433",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9205] POLIKLINIK FISIOTERAPI",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 45 - ID Jurnal Umum Detail 9231 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 FISIOTERAPI",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "6290740.61",
+      "kredit": "0.0",
+      "Total": "6290740.61",
+      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -72,23 +89,6 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554433",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9205] POLIKLINIK FISIOTERAPI",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 45 - ID Jurnal Umum Detail 9231 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 FISIOTERAPI",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "6290740.61",
-      "kredit": "0.0",
-      "Total": "6290740.61",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
       "id_sub_transaksi": "6554432",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9204] SPESIALIS KONSERVASI GIGI",
@@ -205,23 +205,6 @@
       "kredit": "0.0",
       "Total": "4108269.42",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554430",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9200] Poli Gigi umum",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 20 - ID Jurnal Umum Detail 9228 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 POLI GIGI UMUM",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "4108269.42",
-      "kredit": "0.0",
-      "Total": "4108269.42",
-      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -242,6 +225,23 @@
       "loaded_at": "1.791725560251E9"
     },
     {
+      "id_sub_transaksi": "6554430",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9200] Poli Gigi umum",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 20 - ID Jurnal Umum Detail 9228 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 POLI GIGI UMUM",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "4108269.42",
+      "kredit": "0.0",
+      "Total": "4108269.42",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
       "id_sub_transaksi": "6554429",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9198] Poli Bedah Orthopedi",
@@ -256,7 +256,7 @@
       "kredit": "0.0",
       "Total": "1072346.55",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554429",
@@ -290,7 +290,7 @@
       "kredit": "0.0",
       "Total": "1072346.55",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554428",
@@ -307,23 +307,6 @@
       "kredit": "0.0",
       "Total": "784707.93",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6553343",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "SASTYA ALFIN NANDA",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 720384",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -342,6 +325,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6553343",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "SASTYA ALFIN NANDA",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 720384",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6553343",
@@ -443,7 +443,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6553356",
@@ -460,40 +460,6 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6553971",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MACHBUB",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720363",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6553971",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MACHBUB",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720363",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
       "loaded_at": "1.791729390921E9"
     },
     {
@@ -514,6 +480,40 @@
       "loaded_at": "1.791725915474E9"
     },
     {
+      "id_sub_transaksi": "6553971",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MACHBUB",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720363",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6553971",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MACHBUB",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720363",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
       "id_sub_transaksi": "6553981",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
@@ -545,7 +545,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6553981",
@@ -561,6 +561,23 @@
       "debet": "21000.0",
       "kredit": "0.0",
       "Total": "21000.0",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6553986",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MACHBUB",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720366",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
@@ -599,19 +616,19 @@
       "loaded_at": "1.791725560251E9"
     },
     {
-      "id_sub_transaksi": "6553986",
+      "id_sub_transaksi": "6553991",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "MACHBUB",
       "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720366",
+      "operasional": "Diskon Penjualan 720367",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
+      "debet": "5000.0",
       "kredit": "0.0",
-      "Total": "20800.0",
+      "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
@@ -630,7 +647,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6553991",
@@ -650,23 +667,6 @@
       "loaded_at": "1.791725560251E9"
     },
     {
-      "id_sub_transaksi": "6553991",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MACHBUB",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720367",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
-      "kredit": "0.0",
-      "Total": "5000.0",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
       "id_sub_transaksi": "6553999",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
@@ -681,7 +681,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6553999",
@@ -715,7 +715,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554002",
@@ -749,7 +749,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554002",
@@ -766,41 +766,24 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554005",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MACHBUB",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720373",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554005",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MACHBUB",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720373",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
       "loaded_at": "1.791725915474E9"
+    },
+    {
+      "id_sub_transaksi": "6554005",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MACHBUB",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720373",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554005",
@@ -820,13 +803,13 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554008",
+      "id_sub_transaksi": "6554005",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "MACHBUB",
       "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720374",
+      "operasional": "Diskon Penjualan 720373",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
@@ -871,6 +854,40 @@
       "loaded_at": "1.791729390921E9"
     },
     {
+      "id_sub_transaksi": "6554008",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MACHBUB",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720374",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791725915474E9"
+    },
+    {
+      "id_sub_transaksi": "6554018",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MACHBUB",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720376",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "6000.0",
+      "kredit": "0.0",
+      "Total": "6000.0",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
       "id_sub_transaksi": "6554018",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
@@ -905,40 +922,6 @@
       "loaded_at": "1.791725915474E9"
     },
     {
-      "id_sub_transaksi": "6554018",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MACHBUB",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720376",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "6000.0",
-      "kredit": "0.0",
-      "Total": "6000.0",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554473",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "HARIS GUNAWAN",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720001",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
-      "kredit": "0.0",
-      "Total": "5000.0",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
       "id_sub_transaksi": "6554473",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
@@ -973,6 +956,23 @@
       "loaded_at": "1.791725915474E9"
     },
     {
+      "id_sub_transaksi": "6554473",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "HARIS GUNAWAN",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720001",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
       "id_sub_transaksi": "6554476",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
@@ -1004,7 +1004,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554476",
@@ -1021,7 +1021,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554479",
@@ -1055,23 +1055,6 @@
       "kredit": "0.0",
       "Total": "784707.93",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554479",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "HARIS GUNAWAN",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720003",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
       "loaded_at": "1.791725560251E9"
     },
     {
@@ -1089,6 +1072,23 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554479",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "HARIS GUNAWAN",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720003",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
       "loaded_at": "1.791729390921E9"
     },
     {
@@ -1106,7 +1106,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554487",
@@ -1140,7 +1140,24 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
+    },
+    {
+      "id_sub_transaksi": "6554492",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "HARIS GUNAWAN",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Penjualan 720006",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "6000.0",
+      "kredit": "0.0",
+      "Total": "6000.0",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554492",
@@ -1177,23 +1194,6 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554492",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "HARIS GUNAWAN",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Penjualan 720006",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "6000.0",
-      "kredit": "0.0",
-      "Total": "6000.0",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
       "id_sub_transaksi": "6554495",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
@@ -1208,7 +1208,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554495",
@@ -1242,7 +1242,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554503",
@@ -1259,7 +1259,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554503",
@@ -1293,7 +1293,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554508",
@@ -1361,7 +1361,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554511",
@@ -1378,7 +1378,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554511",
@@ -1463,6 +1463,23 @@
       "kredit": "0.0",
       "Total": "271950.0",
       "Segment": null,
+      "loaded_at": "1.791725570343E9"
+    },
+    {
+      "id_sub_transaksi": "6560830",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "meyta.riniastuti",
+      "nama_sub_penerima": "meyta.riniastuti",
+      "operasional": "Adjustment Turun 5782, (4325) 76065-Thermal Paper 11x30, (15) 125 - CHECK UP GRESIK, Inventori ID (79920) Biaya (5.8.3)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.8.3",
+      "Nama_COA": "COA 5.8.3",
+      "debet": "271950.0",
+      "kredit": "0.0",
+      "Total": "271950.0",
+      "Segment": null,
       "loaded_at": "1.791729400935E9"
     },
     {
@@ -1481,23 +1498,6 @@
       "Total": "271950.0",
       "Segment": null,
       "loaded_at": "1.791725925567E9"
-    },
-    {
-      "id_sub_transaksi": "6560830",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "meyta.riniastuti",
-      "nama_sub_penerima": "meyta.riniastuti",
-      "operasional": "Adjustment Turun 5782, (4325) 76065-Thermal Paper 11x30, (15) 125 - CHECK UP GRESIK, Inventori ID (79920) Biaya (5.8.3)",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.8.3",
-      "Nama_COA": "COA 5.8.3",
-      "debet": "271950.0",
-      "kredit": "0.0",
-      "Total": "271950.0",
-      "Segment": null,
-      "loaded_at": "1.791725570343E9"
     },
     {
       "id_sub_transaksi": "6560832",
@@ -1565,7 +1565,7 @@
       "kredit": "0.0",
       "Total": "784707.93",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554427",
@@ -1599,7 +1599,7 @@
       "kredit": "0.0",
       "Total": "616411.99",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554427",
@@ -1616,7 +1616,7 @@
       "kredit": "0.0",
       "Total": "616411.99",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554426",
@@ -1633,7 +1633,7 @@
       "kredit": "0.0",
       "Total": "5181907.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554426",
@@ -1667,6 +1667,40 @@
       "kredit": "0.0",
       "Total": "5181907.0",
       "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6554425",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9184] Hemodialisis",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 48 - ID Jurnal Umum Detail 9223 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 HEMODIALISA",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "7022641.55",
+      "kredit": "0.0",
+      "Total": "7022641.55",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554425",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9184] Hemodialisis",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 48 - ID Jurnal Umum Detail 9223 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 HEMODIALISA",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "7022641.55",
+      "kredit": "0.0",
+      "Total": "7022641.55",
+      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -1687,36 +1721,19 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554425",
+      "id_sub_transaksi": "6554424",
       "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9184] Hemodialisis",
+      "nama_sub_unit": "[9183] ENDOSKOPI",
       "nama_cc": "Non CC",
       "nama_penerima": "LAIN-LAIN",
       "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 48 - ID Jurnal Umum Detail 9223 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 HEMODIALISA",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 98 - ID Jurnal Umum Detail 9222 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 ENDOSKOPI",
       "keterangan": "Jurnal Umum",
       "coa_code": "5.1.6",
       "Nama_COA": "COA 5.1.6",
-      "debet": "7022641.55",
+      "debet": "912027.73",
       "kredit": "0.0",
-      "Total": "7022641.55",
-      "Segment": null,
-      "loaded_at": "1.791725915474E9"
-    },
-    {
-      "id_sub_transaksi": "6554425",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9184] Hemodialisis",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 48 - ID Jurnal Umum Detail 9223 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 HEMODIALISA",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "7022641.55",
-      "kredit": "0.0",
-      "Total": "7022641.55",
+      "Total": "912027.73",
       "Segment": null,
       "loaded_at": "1.791725560251E9"
     },
@@ -1755,23 +1772,6 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554424",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9183] ENDOSKOPI",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 98 - ID Jurnal Umum Detail 9222 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 ENDOSKOPI",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "912027.73",
-      "kredit": "0.0",
-      "Total": "912027.73",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
       "id_sub_transaksi": "6554423",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9180] Poli Paru",
@@ -1803,7 +1803,7 @@
       "kredit": "0.0",
       "Total": "911869.12",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554423",
@@ -1819,6 +1819,23 @@
       "debet": "911869.12",
       "kredit": "0.0",
       "Total": "911869.12",
+      "Segment": null,
+      "loaded_at": "1.791725915474E9"
+    },
+    {
+      "id_sub_transaksi": "6554422",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9178] Poli Kulit & Kelamin",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 27 - ID Jurnal Umum Detail 9220 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 SPESIALIS KULIT DAN KELAMIN",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "597737.07",
+      "kredit": "0.0",
+      "Total": "597737.07",
       "Segment": null,
       "loaded_at": "1.791725560251E9"
     },
@@ -1857,21 +1874,21 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554422",
+      "id_sub_transaksi": "6554421",
       "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9178] Poli Kulit & Kelamin",
+      "nama_sub_unit": "[9176] Poli Neurologi",
       "nama_cc": "Non CC",
       "nama_penerima": "LAIN-LAIN",
       "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 27 - ID Jurnal Umum Detail 9220 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 SPESIALIS KULIT DAN KELAMIN",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 26 - ID Jurnal Umum Detail 9219 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 SPESIALIS NEUROLOGI ",
       "keterangan": "Jurnal Umum",
       "coa_code": "5.1.6",
       "Nama_COA": "COA 5.1.6",
-      "debet": "597737.07",
+      "debet": "1118482.22",
       "kredit": "0.0",
-      "Total": "597737.07",
+      "Total": "1118482.22",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554421",
@@ -1906,23 +1923,6 @@
       "Total": "1118482.22",
       "Segment": null,
       "loaded_at": "1.791725915474E9"
-    },
-    {
-      "id_sub_transaksi": "6554421",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9176] Poli Neurologi",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 26 - ID Jurnal Umum Detail 9219 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 SPESIALIS NEUROLOGI ",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "1118482.22",
-      "kredit": "0.0",
-      "Total": "1118482.22",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554420",
@@ -1990,7 +1990,7 @@
       "kredit": "0.0",
       "Total": "1106871.39",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554419",
@@ -2024,7 +2024,7 @@
       "kredit": "0.0",
       "Total": "1106871.39",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554418",
@@ -2058,7 +2058,7 @@
       "kredit": "0.0",
       "Total": "1475096.11",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554418",
@@ -2074,23 +2074,6 @@
       "debet": "1475096.11",
       "kredit": "0.0",
       "Total": "1475096.11",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554417",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9172] Poli Spesialis Anak",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 22 - ID Jurnal Umum Detail 9215 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 SPESIALIS ANAK",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "3113285.45",
-      "kredit": "0.0",
-      "Total": "3113285.45",
       "Segment": null,
       "loaded_at": "1.791725560251E9"
     },
@@ -2110,6 +2093,23 @@
       "Total": "3113285.45",
       "Segment": null,
       "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6554417",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9172] Poli Spesialis Anak",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 22 - ID Jurnal Umum Detail 9215 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 SPESIALIS ANAK",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "3113285.45",
+      "kredit": "0.0",
+      "Total": "3113285.45",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6659307",
@@ -2194,6 +2194,23 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6553314",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "123 - RADIOLOGI GRESIK",
+      "nama_penerima": "SASTYA ALFIN NANDA",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 720387",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "37000.0",
+      "kredit": "0.0",
+      "Total": "37000.0",
+      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -2214,23 +2231,6 @@
       "loaded_at": "1.791725560251E9"
     },
     {
-      "id_sub_transaksi": "6553314",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "123 - RADIOLOGI GRESIK",
-      "nama_penerima": "SASTYA ALFIN NANDA",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 720387",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "37000.0",
-      "kredit": "0.0",
-      "Total": "37000.0",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
       "id_sub_transaksi": "6554416",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9161] Poli Umum",
@@ -2246,23 +2246,6 @@
       "Total": "4584010.64",
       "Segment": null,
       "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554416",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9161] Poli Umum",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 29 - ID Jurnal Umum Detail 9214 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 POLI UMUM",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "4584010.64",
-      "kredit": "0.0",
-      "Total": "4584010.64",
-      "Segment": null,
-      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554416",
@@ -2282,21 +2265,21 @@
       "loaded_at": "1.791725560251E9"
     },
     {
-      "id_sub_transaksi": "6554415",
+      "id_sub_transaksi": "6554416",
       "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9154] RUANG PERAWATAN PAVILYUN 1",
+      "nama_sub_unit": "[9161] Poli Umum",
       "nama_cc": "Non CC",
       "nama_penerima": "LAIN-LAIN",
       "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 12 - ID Jurnal Umum Detail 9213 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG RAWAT INAP PAVILIUN I ",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 29 - ID Jurnal Umum Detail 9214 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 POLI UMUM",
       "keterangan": "Jurnal Umum",
       "coa_code": "5.1.6",
       "Nama_COA": "COA 5.1.6",
-      "debet": "5463347.62",
+      "debet": "4584010.64",
       "kredit": "0.0",
-      "Total": "5463347.62",
+      "Total": "4584010.64",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554415",
@@ -2331,6 +2314,23 @@
       "Total": "5463347.62",
       "Segment": null,
       "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554415",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9154] RUANG PERAWATAN PAVILYUN 1",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 12 - ID Jurnal Umum Detail 9213 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG RAWAT INAP PAVILIUN I ",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "5463347.62",
+      "kredit": "0.0",
+      "Total": "5463347.62",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554414",
@@ -2398,23 +2398,6 @@
       "kredit": "0.0",
       "Total": "2186317.41",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554413",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9148] RUANG LABORATORIUM KATHERISASI-CATHLAB",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 55 - ID Jurnal Umum Detail 9211 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG LABORATORIUM KATHERISASI (CATHLAB)",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2186317.41",
-      "kredit": "0.0",
-      "Total": "2186317.41",
-      "Segment": null,
       "loaded_at": "1.791729390921E9"
     },
     {
@@ -2435,6 +2418,40 @@
       "loaded_at": "1.791725915474E9"
     },
     {
+      "id_sub_transaksi": "6554413",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9148] RUANG LABORATORIUM KATHERISASI-CATHLAB",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 55 - ID Jurnal Umum Detail 9211 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG LABORATORIUM KATHERISASI (CATHLAB)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2186317.41",
+      "kredit": "0.0",
+      "Total": "2186317.41",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554412",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9147] RUANG PERAWATAN NEONATAL",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 16 - ID Jurnal Umum Detail 9210 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG NEONATAL, NICU    ",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2096527.53",
+      "kredit": "0.0",
+      "Total": "2096527.53",
+      "Segment": null,
+      "loaded_at": "1.791725915474E9"
+    },
+    {
       "id_sub_transaksi": "6554412",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9147] RUANG PERAWATAN NEONATAL",
@@ -2469,23 +2486,6 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554412",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9147] RUANG PERAWATAN NEONATAL",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 16 - ID Jurnal Umum Detail 9210 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG NEONATAL, NICU    ",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2096527.53",
-      "kredit": "0.0",
-      "Total": "2096527.53",
-      "Segment": null,
-      "loaded_at": "1.791725915474E9"
-    },
-    {
       "id_sub_transaksi": "6554516",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9220] MCU",
@@ -2517,7 +2517,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554516",
@@ -2534,7 +2534,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554411",
@@ -2619,7 +2619,7 @@
       "kredit": "0.0",
       "Total": "6930594.11",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554410",
@@ -2636,7 +2636,24 @@
       "kredit": "0.0",
       "Total": "6930594.11",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554409",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9144] RUANG PERAWATAN PENYAKIT BEDAH & ANAK",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 9 - ID Jurnal Umum Detail 9207 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG RAWAT INAP BEDAH & ANAK",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "9489475.32",
+      "kredit": "0.0",
+      "Total": "9489475.32",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554409",
@@ -2673,21 +2690,21 @@
       "loaded_at": "1.791725560251E9"
     },
     {
-      "id_sub_transaksi": "6554409",
+      "id_sub_transaksi": "6554408",
       "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9144] RUANG PERAWATAN PENYAKIT BEDAH & ANAK",
+      "nama_sub_unit": "[9143] RUANG PERAWATAN PENYAKIT DALAM II",
       "nama_cc": "Non CC",
       "nama_penerima": "LAIN-LAIN",
       "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 9 - ID Jurnal Umum Detail 9207 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG RAWAT INAP BEDAH & ANAK",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 8 - ID Jurnal Umum Detail 9206 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG PERAWATAN PENYAKIT DALAM II",
       "keterangan": "Jurnal Umum",
       "coa_code": "5.1.6",
       "Nama_COA": "COA 5.1.6",
-      "debet": "9489475.32",
+      "debet": "5041642.5",
       "kredit": "0.0",
-      "Total": "9489475.32",
+      "Total": "5041642.5",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554408",
@@ -2722,23 +2739,6 @@
       "Total": "5041642.5",
       "Segment": null,
       "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554408",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9143] RUANG PERAWATAN PENYAKIT DALAM II",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 8 - ID Jurnal Umum Detail 9206 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 RUANG PERAWATAN PENYAKIT DALAM II",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "5041642.5",
-      "kredit": "0.0",
-      "Total": "5041642.5",
-      "Segment": null,
-      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554407",
@@ -2755,7 +2755,7 @@
       "kredit": "0.0",
       "Total": "7307793.01",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6553964",
@@ -2789,6 +2789,23 @@
       "kredit": "0.0",
       "Total": "2645383.59",
       "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554406",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9140] INSTALASI RAWAT INAP",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 6 - ID Jurnal Umum Detail 9204 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 INSTALASI RAWAT INAP",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2645383.59",
+      "kredit": "0.0",
+      "Total": "2645383.59",
+      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -2809,23 +2826,6 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554406",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9140] INSTALASI RAWAT INAP",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 6 - ID Jurnal Umum Detail 9204 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 INSTALASI RAWAT INAP",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2645383.59",
-      "kredit": "0.0",
-      "Total": "2645383.59",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
       "id_sub_transaksi": "6554405",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[9130] FARMASI RAWAT INAP",
@@ -2857,7 +2857,7 @@
       "kredit": "0.0",
       "Total": "1.004114247E7",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554405",
@@ -2874,41 +2874,7 @@
       "kredit": "0.0",
       "Total": "1.004114247E7",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554404",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9124] CSSD",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 52 - ID Jurnal Umum Detail 9202 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 CSSD",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2287065.84",
-      "kredit": "0.0",
-      "Total": "2287065.84",
-      "Segment": null,
       "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554404",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9124] CSSD",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 52 - ID Jurnal Umum Detail 9202 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 CSSD",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2287065.84",
-      "kredit": "0.0",
-      "Total": "2287065.84",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554404",
@@ -2926,6 +2892,57 @@
       "Total": "2287065.84",
       "Segment": null,
       "loaded_at": "1.791725915474E9"
+    },
+    {
+      "id_sub_transaksi": "6554404",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9124] CSSD",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 52 - ID Jurnal Umum Detail 9202 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 CSSD",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2287065.84",
+      "kredit": "0.0",
+      "Total": "2287065.84",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554404",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9124] CSSD",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 52 - ID Jurnal Umum Detail 9202 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 CSSD",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2287065.84",
+      "kredit": "0.0",
+      "Total": "2287065.84",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6554403",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9123] KAMAR OPERASI",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 50 - ID Jurnal Umum Detail 9201 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 IBS",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "1.197344566E7",
+      "kredit": "0.0",
+      "Total": "1.197344566E7",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554403",
@@ -2960,23 +2977,6 @@
       "Total": "1.197344566E7",
       "Segment": null,
       "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554403",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9123] KAMAR OPERASI",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 50 - ID Jurnal Umum Detail 9201 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 IBS",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "1.197344566E7",
-      "kredit": "0.0",
-      "Total": "1.197344566E7",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554402",
@@ -3061,7 +3061,7 @@
       "kredit": "0.0",
       "Total": "5204187.37",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554401",
@@ -3078,7 +3078,7 @@
       "kredit": "0.0",
       "Total": "5204187.37",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554400",
@@ -3146,6 +3146,23 @@
       "kredit": "0.0",
       "Total": "4651239.04",
       "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6554399",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9015] Pelayanan Medik",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 154 - ID Jurnal Umum Detail 9197 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 PELAYANAN MEDIS                                                                                                                                       ",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "4651239.04",
+      "kredit": "0.0",
+      "Total": "4651239.04",
+      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -3163,40 +3180,6 @@
       "kredit": "0.0",
       "Total": "4651239.04",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554399",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9015] Pelayanan Medik",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 154 - ID Jurnal Umum Detail 9197 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 PELAYANAN MEDIS                                                                                                                                       ",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "4651239.04",
-      "kredit": "0.0",
-      "Total": "4651239.04",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554398",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[9012] PENGEMBANGAN LAYANAN DAN MUTU KEPERAWATAN",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 68 - ID Jurnal Umum Detail 9196 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 MUTU KEPERAWATAN",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2332694.75",
-      "kredit": "0.0",
-      "Total": "2332694.75",
-      "Segment": null,
       "loaded_at": "1.791725560251E9"
     },
     {
@@ -3215,6 +3198,23 @@
       "Total": "2332694.75",
       "Segment": null,
       "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6554398",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[9012] PENGEMBANGAN LAYANAN DAN MUTU KEPERAWATAN",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 68 - ID Jurnal Umum Detail 9196 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 MUTU KEPERAWATAN",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2332694.75",
+      "kredit": "0.0",
+      "Total": "2332694.75",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554398",
@@ -3299,7 +3299,7 @@
       "kredit": "0.0",
       "Total": "3064061.8",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554396",
@@ -3333,7 +3333,7 @@
       "kredit": "0.0",
       "Total": "3064061.8",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554395",
@@ -3351,23 +3351,6 @@
       "Total": "2388773.74",
       "Segment": null,
       "loaded_at": "1.791725915474E9"
-    },
-    {
-      "id_sub_transaksi": "6554395",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[8159] Satuan Pemeriksaan Internal",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 90 - ID Jurnal Umum Detail 9193 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 INTERNAL AUDIT                                                                                                                                        ",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2388773.74",
-      "kredit": "0.0",
-      "Total": "2388773.74",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554395",
@@ -3385,6 +3368,23 @@
       "Total": "2388773.74",
       "Segment": null,
       "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6554395",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[8159] Satuan Pemeriksaan Internal",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 90 - ID Jurnal Umum Detail 9193 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 INTERNAL AUDIT                                                                                                                                        ",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2388773.74",
+      "kredit": "0.0",
+      "Total": "2388773.74",
+      "Segment": null,
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554394",
@@ -3452,6 +3452,23 @@
       "kredit": "0.0",
       "Total": "2572630.58",
       "Segment": null,
+      "loaded_at": "1.791725560251E9"
+    },
+    {
+      "id_sub_transaksi": "6554393",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[8151] Teknologi Informasi",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 70 - ID Jurnal Umum Detail 9191 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 TEKNOLOGI INFORMASI",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2572630.58",
+      "kredit": "0.0",
+      "Total": "2572630.58",
+      "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
     {
@@ -3472,23 +3489,6 @@
       "loaded_at": "1.791729390921E9"
     },
     {
-      "id_sub_transaksi": "6554393",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[8151] Teknologi Informasi",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 70 - ID Jurnal Umum Detail 9191 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 TEKNOLOGI INFORMASI",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2572630.58",
-      "kredit": "0.0",
-      "Total": "2572630.58",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
       "id_sub_transaksi": "6554392",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[8141] Bendahara",
@@ -3520,7 +3520,7 @@
       "kredit": "0.0",
       "Total": "3574704.05",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554392",
@@ -3537,7 +3537,7 @@
       "kredit": "0.0",
       "Total": "3574704.05",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554391",
@@ -3554,7 +3554,7 @@
       "kredit": "0.0",
       "Total": "1006372.83",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554391",
@@ -3588,7 +3588,24 @@
       "kredit": "0.0",
       "Total": "1006372.83",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791725915474E9"
+    },
+    {
+      "id_sub_transaksi": "6554390",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 88 - ID Jurnal Umum Detail 9188 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 AKUNTANSI+PENAGIHAN",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "4014340.38",
+      "kredit": "0.0",
+      "Total": "4014340.38",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554390",
@@ -3625,40 +3642,6 @@
       "loaded_at": "1.791725915474E9"
     },
     {
-      "id_sub_transaksi": "6554390",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[8122] Akuntansi Biaya",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 88 - ID Jurnal Umum Detail 9188 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 AKUNTANSI+PENAGIHAN",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "4014340.38",
-      "kredit": "0.0",
-      "Total": "4014340.38",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
-      "id_sub_transaksi": "6554389",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[8118] Pengembangan Proses Bisnis & ERP",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 91 - ID Jurnal Umum Detail 9187 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 BAGIAN PPB DAN ERP",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "2514687.31",
-      "kredit": "0.0",
-      "Total": "2514687.31",
-      "Segment": null,
-      "loaded_at": "1.791729390921E9"
-    },
-    {
       "id_sub_transaksi": "6554389",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[8118] Pengembangan Proses Bisnis & ERP",
@@ -3693,6 +3676,23 @@
       "loaded_at": "1.791725560251E9"
     },
     {
+      "id_sub_transaksi": "6554389",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[8118] Pengembangan Proses Bisnis & ERP",
+      "nama_cc": "Non CC",
+      "nama_penerima": "LAIN-LAIN",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 91 - ID Jurnal Umum Detail 9187 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 BAGIAN PPB DAN ERP",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "2514687.31",
+      "kredit": "0.0",
+      "Total": "2514687.31",
+      "Segment": null,
+      "loaded_at": "1.791729390921E9"
+    },
+    {
       "id_sub_transaksi": "6554388",
       "tanggal_sub_transaksi": "2026-08-29",
       "nama_sub_unit": "[8111] Pengadaan Barang & Jasa",
@@ -3724,7 +3724,7 @@
       "kredit": "0.0",
       "Total": "4694081.97",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554388",
@@ -3741,7 +3741,7 @@
       "kredit": "0.0",
       "Total": "4694081.97",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554387",
@@ -3775,7 +3775,7 @@
       "kredit": "0.0",
       "Total": "4755988.26",
       "Segment": null,
-      "loaded_at": "1.791729390921E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554387",
@@ -3792,7 +3792,7 @@
       "kredit": "0.0",
       "Total": "4755988.26",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791729390921E9"
     },
     {
       "id_sub_transaksi": "6554386",
@@ -3826,7 +3826,7 @@
       "kredit": "0.0",
       "Total": "1074950.56",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554386",
@@ -3843,7 +3843,7 @@
       "kredit": "0.0",
       "Total": "1074950.56",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554385",
@@ -3877,7 +3877,7 @@
       "kredit": "0.0",
       "Total": "5364758.07",
       "Segment": null,
-      "loaded_at": "1.791725915474E9"
+      "loaded_at": "1.791725560251E9"
     },
     {
       "id_sub_transaksi": "6554385",
@@ -3893,23 +3893,6 @@
       "debet": "5364758.07",
       "kredit": "0.0",
       "Total": "5364758.07",
-      "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6554384",
-      "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[8011] PELAYANAN UMUM",
-      "nama_cc": "Non CC",
-      "nama_penerima": "LAIN-LAIN",
-      "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 92 - ID Jurnal Umum Detail 9182 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 PELAYANAN UMUM",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "6059149.36",
-      "kredit": "0.0",
-      "Total": "6059149.36",
       "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
@@ -3948,19 +3931,19 @@
       "loaded_at": "1.791725560251E9"
     },
     {
-      "id_sub_transaksi": "6548225",
+      "id_sub_transaksi": "6554384",
       "tanggal_sub_transaksi": "2026-08-29",
-      "nama_sub_unit": "[8021] Personalia",
+      "nama_sub_unit": "[8011] PELAYANAN UMUM",
       "nama_cc": "Non CC",
-      "nama_penerima": "ayu.cahya",
+      "nama_penerima": "LAIN-LAIN",
       "nama_sub_penerima": "ayu.cahya",
-      "operasional": "Jurnal Umum V3 - ID Sub Unit 80 - ID Jurnal Umum Detail 9175 - SPREADING TALIASIH AGUSTUS 2026",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 92 - ID Jurnal Umum Detail 9182 - BPJS KETENAGAKERJAAN CN AGUSTUS 2026 PELAYANAN UMUM",
       "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.10",
-      "Nama_COA": "COA 5.1.10",
-      "debet": "2.1216876E7",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "6059149.36",
       "kredit": "0.0",
-      "Total": "2.1216876E7",
+      "Total": "6059149.36",
       "Segment": null,
       "loaded_at": "1.791725915474E9"
     },
@@ -3980,6 +3963,23 @@
       "Total": "2.1216876E7",
       "Segment": null,
       "loaded_at": "1.791729390921E9"
+    },
+    {
+      "id_sub_transaksi": "6548225",
+      "tanggal_sub_transaksi": "2026-08-29",
+      "nama_sub_unit": "[8021] Personalia",
+      "nama_cc": "Non CC",
+      "nama_penerima": "ayu.cahya",
+      "nama_sub_penerima": "ayu.cahya",
+      "operasional": "Jurnal Umum V3 - ID Sub Unit 80 - ID Jurnal Umum Detail 9175 - SPREADING TALIASIH AGUSTUS 2026",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.10",
+      "Nama_COA": "COA 5.1.10",
+      "debet": "2.1216876E7",
+      "kredit": "0.0",
+      "Total": "2.1216876E7",
+      "Segment": null,
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6548225",
@@ -4030,7 +4030,7 @@
       "kredit": "0.0",
       "Total": "5.6683584E7",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6554407",
@@ -4047,330 +4047,7 @@
       "kredit": "0.0",
       "Total": "7307793.01",
       "Segment": null,
-      "loaded_at": "1.791725560251E9"
-    },
-    {
-      "id_sub_transaksi": "6576369",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "SRI HARIJATI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 723392",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "65400.0",
-      "kredit": "0.0",
-      "Total": "65400.0",
-      "Segment": null,
-      "loaded_at": "1.791729412763E9"
-    },
-    {
-      "id_sub_transaksi": "6571836",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "ACH ROFI'I",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722529",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "24100.0",
-      "kredit": "0.0",
-      "Total": "24100.0",
-      "Segment": null,
-      "loaded_at": "1.791725935721E9"
-    },
-    {
-      "id_sub_transaksi": "6571836",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "ACH ROFI'I",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722529",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "24100.0",
-      "kredit": "0.0",
-      "Total": "24100.0",
-      "Segment": null,
-      "loaded_at": "1.791725580702E9"
-    },
-    {
-      "id_sub_transaksi": "6571836",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "ACH ROFI'I",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722529",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "24100.0",
-      "kredit": "0.0",
-      "Total": "24100.0",
-      "Segment": null,
-      "loaded_at": "1.791729412763E9"
-    },
-    {
-      "id_sub_transaksi": "6571875",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "ASTUTI SRI UTAMI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722539",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "17100.0",
-      "kredit": "0.0",
-      "Total": "17100.0",
-      "Segment": null,
-      "loaded_at": "1.791729412763E9"
-    },
-    {
-      "id_sub_transaksi": "6571875",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "ASTUTI SRI UTAMI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722539",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "17100.0",
-      "kredit": "0.0",
-      "Total": "17100.0",
-      "Segment": null,
-      "loaded_at": "1.791725935721E9"
-    },
-    {
-      "id_sub_transaksi": "6571875",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "ASTUTI SRI UTAMI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722539",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "17100.0",
-      "kredit": "0.0",
-      "Total": "17100.0",
-      "Segment": null,
-      "loaded_at": "1.791725580702E9"
-    },
-    {
-      "id_sub_transaksi": "6572326",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "KUSUMA DEWI WARDHANI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722632",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "13100.0",
-      "kredit": "0.0",
-      "Total": "13100.0",
-      "Segment": null,
-      "loaded_at": "1.791725935721E9"
-    },
-    {
-      "id_sub_transaksi": "6572326",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "KUSUMA DEWI WARDHANI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722632",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "13100.0",
-      "kredit": "0.0",
-      "Total": "13100.0",
-      "Segment": null,
-      "loaded_at": "1.791729412763E9"
-    },
-    {
-      "id_sub_transaksi": "6572326",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "KUSUMA DEWI WARDHANI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722632",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "13100.0",
-      "kredit": "0.0",
-      "Total": "13100.0",
-      "Segment": null,
-      "loaded_at": "1.791725580702E9"
-    },
-    {
-      "id_sub_transaksi": "6573242",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "HUDA ERNAWATI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722779",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "89500.0",
-      "kredit": "0.0",
-      "Total": "89500.0",
-      "Segment": null,
-      "loaded_at": "1.791725580702E9"
-    },
-    {
-      "id_sub_transaksi": "6573242",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "HUDA ERNAWATI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722779",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "89500.0",
-      "kredit": "0.0",
-      "Total": "89500.0",
-      "Segment": null,
-      "loaded_at": "1.791729412763E9"
-    },
-    {
-      "id_sub_transaksi": "6573242",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "HUDA ERNAWATI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 722779",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "89500.0",
-      "kredit": "0.0",
-      "Total": "89500.0",
-      "Segment": null,
-      "loaded_at": "1.791725935721E9"
-    },
-    {
-      "id_sub_transaksi": "6574503",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "RAHMAT WAHYUDI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 723026",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "16500.0",
-      "kredit": "0.0",
-      "Total": "16500.0",
-      "Segment": null,
-      "loaded_at": "1.791725580702E9"
-    },
-    {
-      "id_sub_transaksi": "6574503",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "RAHMAT WAHYUDI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 723026",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "16500.0",
-      "kredit": "0.0",
-      "Total": "16500.0",
-      "Segment": null,
-      "loaded_at": "1.791725935721E9"
-    },
-    {
-      "id_sub_transaksi": "6574503",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "RAHMAT WAHYUDI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 723026",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "16500.0",
-      "kredit": "0.0",
-      "Total": "16500.0",
-      "Segment": null,
-      "loaded_at": "1.791729412763E9"
-    },
-    {
-      "id_sub_transaksi": "6574525",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "HIDAYATUL KHUSNAH",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 723006",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "23100.0",
-      "kredit": "0.0",
-      "Total": "23100.0",
-      "Segment": null,
-      "loaded_at": "1.791725935721E9"
-    },
-    {
-      "id_sub_transaksi": "6574525",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "HIDAYATUL KHUSNAH",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 723006",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "23100.0",
-      "kredit": "0.0",
-      "Total": "23100.0",
-      "Segment": null,
-      "loaded_at": "1.791729412763E9"
-    },
-    {
-      "id_sub_transaksi": "6574525",
-      "tanggal_sub_transaksi": "2026-08-30",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "HIDAYATUL KHUSNAH",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 723006",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "23100.0",
-      "kredit": "0.0",
-      "Total": "23100.0",
-      "Segment": null,
-      "loaded_at": "1.791725580702E9"
+      "loaded_at": "1.791725915474E9"
     },
     {
       "id_sub_transaksi": "6576369",
@@ -4388,6 +4065,329 @@
       "Total": "65400.0",
       "Segment": null,
       "loaded_at": "1.791725935721E9"
+    },
+    {
+      "id_sub_transaksi": "6571836",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "ACH ROFI'I",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722529",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "24100.0",
+      "kredit": "0.0",
+      "Total": "24100.0",
+      "Segment": null,
+      "loaded_at": "1.791729412763E9"
+    },
+    {
+      "id_sub_transaksi": "6571836",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "ACH ROFI'I",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722529",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "24100.0",
+      "kredit": "0.0",
+      "Total": "24100.0",
+      "Segment": null,
+      "loaded_at": "1.791725935721E9"
+    },
+    {
+      "id_sub_transaksi": "6571836",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "ACH ROFI'I",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722529",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "24100.0",
+      "kredit": "0.0",
+      "Total": "24100.0",
+      "Segment": null,
+      "loaded_at": "1.791725580702E9"
+    },
+    {
+      "id_sub_transaksi": "6571875",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "ASTUTI SRI UTAMI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722539",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "17100.0",
+      "kredit": "0.0",
+      "Total": "17100.0",
+      "Segment": null,
+      "loaded_at": "1.791729412763E9"
+    },
+    {
+      "id_sub_transaksi": "6571875",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "ASTUTI SRI UTAMI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722539",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "17100.0",
+      "kredit": "0.0",
+      "Total": "17100.0",
+      "Segment": null,
+      "loaded_at": "1.791725580702E9"
+    },
+    {
+      "id_sub_transaksi": "6571875",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "ASTUTI SRI UTAMI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722539",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "17100.0",
+      "kredit": "0.0",
+      "Total": "17100.0",
+      "Segment": null,
+      "loaded_at": "1.791725935721E9"
+    },
+    {
+      "id_sub_transaksi": "6572326",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "KUSUMA DEWI WARDHANI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722632",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "13100.0",
+      "kredit": "0.0",
+      "Total": "13100.0",
+      "Segment": null,
+      "loaded_at": "1.791725580702E9"
+    },
+    {
+      "id_sub_transaksi": "6572326",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "KUSUMA DEWI WARDHANI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722632",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "13100.0",
+      "kredit": "0.0",
+      "Total": "13100.0",
+      "Segment": null,
+      "loaded_at": "1.791729412763E9"
+    },
+    {
+      "id_sub_transaksi": "6572326",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "KUSUMA DEWI WARDHANI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722632",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "13100.0",
+      "kredit": "0.0",
+      "Total": "13100.0",
+      "Segment": null,
+      "loaded_at": "1.791725935721E9"
+    },
+    {
+      "id_sub_transaksi": "6573242",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "HUDA ERNAWATI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722779",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "89500.0",
+      "kredit": "0.0",
+      "Total": "89500.0",
+      "Segment": null,
+      "loaded_at": "1.791725580702E9"
+    },
+    {
+      "id_sub_transaksi": "6573242",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "HUDA ERNAWATI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722779",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "89500.0",
+      "kredit": "0.0",
+      "Total": "89500.0",
+      "Segment": null,
+      "loaded_at": "1.791725935721E9"
+    },
+    {
+      "id_sub_transaksi": "6573242",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "HUDA ERNAWATI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 722779",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "89500.0",
+      "kredit": "0.0",
+      "Total": "89500.0",
+      "Segment": null,
+      "loaded_at": "1.791729412763E9"
+    },
+    {
+      "id_sub_transaksi": "6574503",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "RAHMAT WAHYUDI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 723026",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "16500.0",
+      "kredit": "0.0",
+      "Total": "16500.0",
+      "Segment": null,
+      "loaded_at": "1.791725580702E9"
+    },
+    {
+      "id_sub_transaksi": "6574503",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "RAHMAT WAHYUDI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 723026",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "16500.0",
+      "kredit": "0.0",
+      "Total": "16500.0",
+      "Segment": null,
+      "loaded_at": "1.791729412763E9"
+    },
+    {
+      "id_sub_transaksi": "6574503",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "RAHMAT WAHYUDI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 723026",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "16500.0",
+      "kredit": "0.0",
+      "Total": "16500.0",
+      "Segment": null,
+      "loaded_at": "1.791725935721E9"
+    },
+    {
+      "id_sub_transaksi": "6574525",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "HIDAYATUL KHUSNAH",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 723006",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "23100.0",
+      "kredit": "0.0",
+      "Total": "23100.0",
+      "Segment": null,
+      "loaded_at": "1.791725935721E9"
+    },
+    {
+      "id_sub_transaksi": "6574525",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "HIDAYATUL KHUSNAH",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 723006",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "23100.0",
+      "kredit": "0.0",
+      "Total": "23100.0",
+      "Segment": null,
+      "loaded_at": "1.791729412763E9"
+    },
+    {
+      "id_sub_transaksi": "6574525",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "HIDAYATUL KHUSNAH",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 723006",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "23100.0",
+      "kredit": "0.0",
+      "Total": "23100.0",
+      "Segment": null,
+      "loaded_at": "1.791725580702E9"
+    },
+    {
+      "id_sub_transaksi": "6576369",
+      "tanggal_sub_transaksi": "2026-08-30",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "SRI HARIJATI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 723392",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "65400.0",
+      "kredit": "0.0",
+      "Total": "65400.0",
+      "Segment": null,
+      "loaded_at": "1.791729412763E9"
     },
     {
       "id_sub_transaksi": "6576369",
