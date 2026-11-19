@@ -1,0 +1,20 @@
+{
+  "bulan": "2026-11",
+  "bagian": 1,
+  "generated_at": "2026-11-19T01:08:10.578Z",
+  "pelunasan_detail": [
+    {
+      "id_sub_transaksi": "9682006",
+      "tanggal_sub_transaksi": "2026-11-11",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "2.007023672E9",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - Tagihan ORJTL-ORITL Bulan Pelayanan September 2026",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794788518533E9"
+    }
+  ]
+}
