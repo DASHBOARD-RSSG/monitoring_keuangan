@@ -1,7 +1,7 @@
 {
   "bulan": "2026-10",
   "bagian": 1,
-  "generated_at": "2026-10-21T01:30:05.563Z",
+  "generated_at": "2026-11-19T01:08:15.589Z",
   "pelunasan_detail": [
     {
       "id_sub_transaksi": "8355533",
@@ -14,7 +14,98 @@
       "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - ORITL - ORJTL BUPEL AGUSTUS 2026",
       "nama_sub_penerima": "indri.nurisa",
       "nama_penerima": "indri.nurisa",
-      "loaded_at": "1.792240080996E9"
+      "loaded_at": "1.794792120506E9"
+    },
+    {
+      "id_sub_transaksi": "8755848",
+      "tanggal_sub_transaksi": "2026-10-14",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "1.2071196E9",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - ",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794793092205E9"
+    },
+    {
+      "id_sub_transaksi": "8755840",
+      "tanggal_sub_transaksi": "2026-10-16",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "4.7367823E7",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASNA PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - Susulan ORITL - ORJTL BUPEL JULI 2026",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794793092205E9"
+    },
+    {
+      "id_sub_transaksi": "9031508",
+      "tanggal_sub_transaksi": "2026-10-21",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "3.973795E8",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - SUSULAN RITL - RJTL BUPEL MEI 2026",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794793500484E9"
+    },
+    {
+      "id_sub_transaksi": "9092893",
+      "tanggal_sub_transaksi": "2026-10-29",
+      "coa_code": "1.1.1.2.1.11",
+      "debet": "8.937472E7",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8145] Penagihan",
+      "nama_cc": "Non CC",
+      "operasional": null,
+      "nama_sub_penerima": "PT ALDZAMA",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794794379886E9"
+    },
+    {
+      "id_sub_transaksi": "9254618",
+      "tanggal_sub_transaksi": "2026-10-30",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "3.12080612E8",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - ASKES RAMAYANA-ADMEDIKA",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794794532977E9"
+    },
+    {
+      "id_sub_transaksi": "9309827",
+      "tanggal_sub_transaksi": "2026-10-30",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "4.5847725E9",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8145] Penagihan",
+      "nama_cc": "Non CC",
+      "operasional": null,
+      "nama_sub_penerima": "BPJS - INACBGS",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794794556913E9"
+    },
+    {
+      "id_sub_transaksi": "9310017",
+      "tanggal_sub_transaksi": "2026-10-30",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "4.2254321E9",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8145] Penagihan",
+      "nama_cc": "Non CC",
+      "operasional": null,
+      "nama_sub_penerima": "BPJS - INACBGS",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.794794556913E9"
     }
   ]
 }
