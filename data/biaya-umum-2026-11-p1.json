@@ -1,7 +1,7 @@
 {
   "bulan": "2026-11",
   "bagian": 1,
-  "generated_at": "2026-11-20T01:26:04.738Z",
+  "generated_at": "2026-11-21T01:26:04.782Z",
   "biaya_umum_detail": [
     {
       "id_sub_transaksi": "9267066",
@@ -1204,7 +1204,7 @@
       "operasional": "Pemakaian 2157, (2976) 7 BAYMED HANDRUB 500ML, (112) RUANG PERAWATAN DEWASA I, Inventori ID (75486)",
       "nama_sub_penerima": "nur.aleq",
       "nama_penerima": "nur.aleq",
-      "loaded_at": "1.795051979771E9",
+      "loaded_at": "1.795137791453E9",
       "keterangan": "Pemakaian 2157, (2976) 7 BAYMED HANDRUB 500ML, (112) RUANG PERAWATAN DEWASA I, Inventori ID (75486)"
     },
     {
@@ -1218,7 +1218,7 @@
       "operasional": "Pemakaian 2158, (2976) 7 BAYMED HANDRUB 500ML, (148) RONTGEN, Inventori ID (75687)",
       "nama_sub_penerima": "winda.wulandari",
       "nama_penerima": "winda.wulandari",
-      "loaded_at": "1.795051990656E9",
+      "loaded_at": "1.795137803827E9",
       "keterangan": "Pemakaian 2158, (2976) 7 BAYMED HANDRUB 500ML, (148) RONTGEN, Inventori ID (75687)"
     },
     {
@@ -1232,7 +1232,7 @@
       "operasional": "Pemakaian 2163, (933) 6-GULA SACHET (GULAKU STICK), (107) Paviliun 3, Inventori ID (74662)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2163, (933) 6-GULA SACHET (GULAKU STICK), (107) Paviliun 3, Inventori ID (74662)"
     },
     {
@@ -1246,7 +1246,7 @@
       "operasional": "Pemakaian 2167, (2330) 779459-SIPPOL HAND SANITIZER LIQ 500 ML, (136) HEMODIALISA, Inventori ID (74000)",
       "nama_sub_penerima": "giki.rozak",
       "nama_penerima": "giki.rozak",
-      "loaded_at": "1.795052014578E9",
+      "loaded_at": "1.795137826289E9",
       "keterangan": "Pemakaian 2167, (2330) 779459-SIPPOL HAND SANITIZER LIQ 500 ML, (136) HEMODIALISA, Inventori ID (74000)"
     },
     {
@@ -1260,7 +1260,7 @@
       "operasional": "Pemakaian 2158, (2184) 6-SABUN SUNLIGHT NIPIS 755ML, (148) RONTGEN, Inventori ID (76555)",
       "nama_sub_penerima": "winda.wulandari",
       "nama_penerima": "winda.wulandari",
-      "loaded_at": "1.795051990656E9",
+      "loaded_at": "1.795137803827E9",
       "keterangan": "Pemakaian 2158, (2184) 6-SABUN SUNLIGHT NIPIS 755ML, (148) RONTGEN, Inventori ID (76555)"
     },
     {
@@ -1274,7 +1274,7 @@
       "operasional": "Pemakaian 2163, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (107) Paviliun 3, Inventori ID (74159)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2163, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (107) Paviliun 3, Inventori ID (74159)"
     },
     {
@@ -1288,7 +1288,7 @@
       "operasional": "Pemakaian 2163, (2465) 6-SWA BOTOL 600ML 24'S, (107) Paviliun 3, Inventori ID (76579)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2163, (2465) 6-SWA BOTOL 600ML 24'S, (107) Paviliun 3, Inventori ID (76579)"
     },
     {
@@ -1302,7 +1302,7 @@
       "operasional": "Pemakaian 2163, (936) 6-GULA TROPIKANA SLIM CLASIC 160'S, (107) Paviliun 3, Inventori ID (75977)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2163, (936) 6-GULA TROPIKANA SLIM CLASIC 160'S, (107) Paviliun 3, Inventori ID (75977)"
     },
     {
@@ -1316,7 +1316,7 @@
       "operasional": "Pemakaian 2161, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (105) Paviliun 1, Inventori ID (74146)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2161, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (105) Paviliun 1, Inventori ID (74146)"
     },
     {
@@ -1330,7 +1330,7 @@
       "operasional": "Pemakaian 2161, (2796) 6-SABUN LOGO RSSG, (105) Paviliun 1, Inventori ID (74144)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2161, (2796) 6-SABUN LOGO RSSG, (105) Paviliun 1, Inventori ID (74144)"
     },
     {
@@ -1344,7 +1344,7 @@
       "operasional": "Pemakaian 2161, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (105) Paviliun 1, Inventori ID (74511)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2161, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (105) Paviliun 1, Inventori ID (74511)"
     },
     {
@@ -1358,7 +1358,7 @@
       "operasional": "Pemakaian 2161, (898) 6-GELAS UKUR 2 LTR, (105) Paviliun 1, Inventori ID (76608)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2161, (898) 6-GELAS UKUR 2 LTR, (105) Paviliun 1, Inventori ID (76608)"
     },
     {
@@ -1372,7 +1372,7 @@
       "operasional": "Pemakaian 2161, (933) 6-GULA SACHET (GULAKU STICK), (105) Paviliun 1, Inventori ID (74325)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2161, (933) 6-GULA SACHET (GULAKU STICK), (105) Paviliun 1, Inventori ID (74325)"
     },
     {
@@ -1386,7 +1386,7 @@
       "operasional": "Pemakaian 2161, (936) 6-GULA TROPIKANA SLIM CLASIC 160'S, (105) Paviliun 1, Inventori ID (74510)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2161, (936) 6-GULA TROPIKANA SLIM CLASIC 160'S, (105) Paviliun 1, Inventori ID (74510)"
     },
     {
@@ -1400,7 +1400,7 @@
       "operasional": "Pemakaian 2162, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (106) Paviliun 2, Inventori ID (74152)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2162, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (106) Paviliun 2, Inventori ID (74152)"
     },
     {
@@ -1414,7 +1414,7 @@
       "operasional": "Pemakaian 2162, (933) 6-GULA SACHET (GULAKU STICK), (106) Paviliun 2, Inventori ID (74153)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2162, (933) 6-GULA SACHET (GULAKU STICK), (106) Paviliun 2, Inventori ID (74153)"
     },
     {
@@ -1428,7 +1428,7 @@
       "operasional": "Pemakaian 2162, (2465) 6-SWA BOTOL 600ML 24'S, (106) Paviliun 2, Inventori ID (75254)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2162, (2465) 6-SWA BOTOL 600ML 24'S, (106) Paviliun 2, Inventori ID (75254)"
     },
     {
@@ -1442,7 +1442,7 @@
       "operasional": "Pemakaian 2162, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (106) Paviliun 2, Inventori ID (74154)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2162, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (106) Paviliun 2, Inventori ID (74154)"
     },
     {
@@ -1456,7 +1456,7 @@
       "operasional": "Pemakaian 2163, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (107) Paviliun 3, Inventori ID (74160)",
       "nama_sub_penerima": "tina.eliyanti",
       "nama_penerima": "tina.eliyanti",
-      "loaded_at": "1.795052003582E9",
+      "loaded_at": "1.795137815731E9",
       "keterangan": "Pemakaian 2163, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (107) Paviliun 3, Inventori ID (74160)"
     },
     {
@@ -1470,7 +1470,7 @@
       "operasional": "Pemakaian 2167, (1877) 6-PEMUTIH BAYCLIN 1000ML, (136) HEMODIALISA, Inventori ID (74001)",
       "nama_sub_penerima": "giki.rozak",
       "nama_penerima": "giki.rozak",
-      "loaded_at": "1.795052014578E9",
+      "loaded_at": "1.795137826289E9",
       "keterangan": "Pemakaian 2167, (1877) 6-PEMUTIH BAYCLIN 1000ML, (136) HEMODIALISA, Inventori ID (74001)"
     },
     {
@@ -1484,7 +1484,7 @@
       "operasional": "Pemakaian 2170, (936) 6-GULA TROPIKANA SLIM CLASIC 160'S, (30) 125 - CHECK UP GRESIK, Inventori ID (28406)",
       "nama_sub_penerima": "devvy.rachmawati",
       "nama_penerima": "devvy.rachmawati",
-      "loaded_at": "1.795052091274E9",
+      "loaded_at": "1.795137882878E9",
       "keterangan": "Pemakaian 2170, (936) 6-GULA TROPIKANA SLIM CLASIC 160'S, (30) 125 - CHECK UP GRESIK, Inventori ID (28406)"
     },
     {
@@ -1498,7 +1498,7 @@
       "operasional": "Pemakaian 2170, (933) 6-GULA SACHET (GULAKU STICK), (30) 125 - CHECK UP GRESIK, Inventori ID (28403)",
       "nama_sub_penerima": "devvy.rachmawati",
       "nama_penerima": "devvy.rachmawati",
-      "loaded_at": "1.795052091274E9",
+      "loaded_at": "1.795137882878E9",
       "keterangan": "Pemakaian 2170, (933) 6-GULA SACHET (GULAKU STICK), (30) 125 - CHECK UP GRESIK, Inventori ID (28403)"
     },
     {
@@ -1512,7 +1512,7 @@
       "operasional": "Pemakaian 2170, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (30) 125 - CHECK UP GRESIK, Inventori ID (28158)",
       "nama_sub_penerima": "devvy.rachmawati",
       "nama_penerima": "devvy.rachmawati",
-      "loaded_at": "1.795052091274E9",
+      "loaded_at": "1.795137882878E9",
       "keterangan": "Pemakaian 2170, (688) 6-COFFEE SACHET ( NESCAFE CLASSIC ), (30) 125 - CHECK UP GRESIK, Inventori ID (28158)"
     },
     {
@@ -1526,7 +1526,7 @@
       "operasional": "Pemakaian 2168, (2218) 6-SASKLIN HANDWASH 5 LT, (100) INSTALASI RAWAT JALAN, Inventori ID (75545)",
       "nama_sub_penerima": "umi.marfuah",
       "nama_penerima": "umi.marfuah",
-      "loaded_at": "1.795052066838E9",
+      "loaded_at": "1.795137860721E9",
       "keterangan": "Pemakaian 2168, (2218) 6-SASKLIN HANDWASH 5 LT, (100) INSTALASI RAWAT JALAN, Inventori ID (75545)"
     },
     {
@@ -1540,7 +1540,7 @@
       "operasional": "Pemakaian 2170, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (30) 125 - CHECK UP GRESIK, Inventori ID (29996)",
       "nama_sub_penerima": "devvy.rachmawati",
       "nama_penerima": "devvy.rachmawati",
-      "loaded_at": "1.795052091274E9",
+      "loaded_at": "1.795137882878E9",
       "keterangan": "Pemakaian 2170, (2526) 6-TEH SACHET  ( TEA BAG TONG TJIE ), (30) 125 - CHECK UP GRESIK, Inventori ID (29996)"
     },
     {
@@ -1554,7 +1554,7 @@
       "operasional": "Pemakaian 2172, (2976) 7 BAYMED HANDRUB 500ML, (50) INSTALASI GAWAT DARURAT, Inventori ID (75471)",
       "nama_sub_penerima": "kartika.tri",
       "nama_penerima": "kartika.tri",
-      "loaded_at": "1.795052115618E9",
+      "loaded_at": "1.795137904047E9",
       "keterangan": "Pemakaian 2172, (2976) 7 BAYMED HANDRUB 500ML, (50) INSTALASI GAWAT DARURAT, Inventori ID (75471)"
     }
   ]
