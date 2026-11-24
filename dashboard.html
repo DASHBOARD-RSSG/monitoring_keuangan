@@ -1360,24 +1360,35 @@ body.need-login .sidebar, body.need-login .header, body.need-login .main, body.n
 
   <!-- ══ FOOTER ══ -->
   <!-- ══ PAGE: LAPORAN INHEALTH ══ -->
+  <style>
+    .local-filter-wrap input[type=number] { background: var(--bg2); border: 1px solid var(--border); border-radius: 7px; color: var(--text); padding: 6px 10px; font-size: 12px; outline: none; width: 150px; }
+    .local-filter-wrap input[type=number]:focus { border-color: var(--accent); }
+    .local-filter-wrap select:disabled { opacity: .5; cursor: not-allowed; }
+  </style>
   <div class="page" id="page-inhealth">
     <div class="kpi-grid" id="kpiInhealth">
       <div class="loading"><div class="spinner"></div> Memuat data...</div>
     </div>
+    <div class="kpi-grid" id="kpiInhealthKomponen"></div>
 
     <div class="section-card" style="margin-bottom:18px">
       <div class="section-head">
         <div>
           <div class="section-title">Filter Laporan Inhealth</div>
-          <div class="section-sub">Total Rupiah = total penjualan; Rupiah Kapitasi = pendapatan yang diakui; Selisih = Kapitasi − Total Rupiah (negatif = kapitasi lebih kecil dari total). Klik baris rekap/detail untuk memfilter (klik lagi untuk melepas).</div>
+          <div class="section-sub">Total Rupiah = total penjualan; Rupiah Kapitasi = pendapatan yang diakui; Selisih = Kapitasi − Total Rupiah (negatif = kapitasi lebih kecil dari total). Dropdown yang kolomnya kosong pada data otomatis nonaktif. Klik baris rekap/detail untuk memfilter (klik lagi untuk melepas).</div>
         </div>
       </div>
       <div class="local-filter-wrap">
-        <input type="text" id="searchInhealth" placeholder="Cari nama pasien / ID penjualan / ID kunjungan..." oninput="filterInhealthDetail()"/>
-        <select id="fltInhealthKategori" onchange="filterInhealthDetail()"><option value="">Semua Kategori</option></select>
-        <select id="fltInhealthUnit" onchange="filterInhealthDetail()"><option value="">Semua Unit / Ruangan</option></select>
-        <select id="fltInhealthJenis" onchange="filterInhealthDetail()"><option value="">Semua Jenis Penjualan</option></select>
-        <select id="fltInhealthLunas" onchange="filterInhealthDetail()"><option value="">Semua Status Lunas</option></select>
+        <input type="text" id="searchInhealth" placeholder="Cari pasien / No RM / ID / dokter..." oninput="filterInhealthDetail()" style="min-width:230px"/>
+        <span id="inhealthFilterSelects" style="display:contents"></span>
+        <select id="fltInhealthSelisih" onchange="filterInhealthDetail()">
+          <option value="">Semua Selisih</option>
+          <option value="neg">Selisih negatif (kapitasi &lt; total)</option>
+          <option value="nol">Selisih nol</option>
+          <option value="pos">Selisih positif (kapitasi &gt; total)</option>
+        </select>
+        <input type="number" id="minInhealth" placeholder="Total Rp minimum" oninput="filterInhealthDetail()"/>
+        <input type="number" id="maxInhealth" placeholder="Total Rp maksimum" oninput="filterInhealthDetail()"/>
         <button class="btn btn-outline" onclick="resetInhealthFilter()">Reset Filter</button>
         <span class="local-filter-count" id="inhealthCount"></span>
       </div>
@@ -1393,58 +1404,51 @@ body.need-login .sidebar, body.need-login .header, body.need-login .main, body.n
         <div class="section-body"><div class="chart-wrap"><canvas id="chartInhealthTren"></canvas></div></div>
       </div>
     </div>
-
     <div class="grid-2">
       <div class="section-card">
-        <div class="section-head"><div><div class="section-title">Rekap Per Kategori</div><div class="section-sub">Total mengikuti filter aktif</div></div></div>
-        <div class="section-body" style="padding:0">
-          <div class="tbl-wrap"><table id="tblInhealthKategori">
-            <thead id="head-tblInhealthKategori"><tr>
-              <th data-key="nama" onclick="tblSort('tblInhealthKategori','nama','text')">Kategori <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="jumlah" onclick="tblSort('tblInhealthKategori','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="total" onclick="tblSort('tblInhealthKategori','total','number')">Total Rupiah <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="kapitasi" onclick="tblSort('tblInhealthKategori','kapitasi','number')">Rupiah Kapitasi <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="selisih" onclick="tblSort('tblInhealthKategori','selisih','number')">Selisih <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="persen" onclick="tblSort('tblInhealthKategori','persen','number')">% Kapitasi <span class="sort-ico-wrap"></span></th>
-            </tr></thead><tbody></tbody><tfoot></tfoot>
-          </table></div>
-        </div>
+        <div class="section-head"><div class="section-title">Komposisi Harga (Barang / Jasa / Fasilitas / Rikjang / Tax)</div></div>
+        <div class="section-body"><div class="chart-wrap"><canvas id="chartInhealthKomposisi"></canvas></div></div>
       </div>
       <div class="section-card">
-        <div class="section-head"><div><div class="section-title">Rekap Per Unit / Ruangan</div><div class="section-sub">Total mengikuti filter aktif</div></div></div>
-        <div class="section-body" style="padding:0">
-          <div class="tbl-wrap"><table id="tblInhealthUnit">
-            <thead id="head-tblInhealthUnit"><tr>
-              <th data-key="nama" onclick="tblSort('tblInhealthUnit','nama','text')">Unit / Ruangan <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="jumlah" onclick="tblSort('tblInhealthUnit','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="total" onclick="tblSort('tblInhealthUnit','total','number')">Total Rupiah <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="kapitasi" onclick="tblSort('tblInhealthUnit','kapitasi','number')">Rupiah Kapitasi <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="selisih" onclick="tblSort('tblInhealthUnit','selisih','number')">Selisih <span class="sort-ico-wrap"></span></th>
-              <th class="td-num" data-key="persen" onclick="tblSort('tblInhealthUnit','persen','number')">% Kapitasi <span class="sort-ico-wrap"></span></th>
-            </tr></thead><tbody></tbody><tfoot></tfoot>
-          </table></div>
-        </div>
+        <div class="section-head"><div class="section-title">Komponen Harga per Kategori</div></div>
+        <div class="section-body"><div class="chart-wrap"><canvas id="chartInhealthKomponen"></canvas></div></div>
+      </div>
+    </div>
+
+    <div class="section-card" style="margin-top:18px">
+      <div class="section-head"><div><div class="section-title">Rekap Per Kategori</div><div class="section-sub">Total mengikuti filter aktif; klik baris untuk memfilter</div></div></div>
+      <div class="section-body" style="padding:0">
+        <div class="tbl-wrap"><table id="tblInhealthKategori">
+          <thead id="head-tblInhealthKategori"><tr><th data-key="nama" onclick="tblSort('tblInhealthKategori','nama','text')">Kategori <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="jumlah" onclick="tblSort('tblInhealthKategori','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="barang" onclick="tblSort('tblInhealthKategori','barang','number')">Barang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="jasa" onclick="tblSort('tblInhealthKategori','jasa','number')">Jasa <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="fasilitas" onclick="tblSort('tblInhealthKategori','fasilitas','number')">Fasilitas <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="rikjang" onclick="tblSort('tblInhealthKategori','rikjang','number')">Rikjang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="tax" onclick="tblSort('tblInhealthKategori','tax','number')">Tax <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="diskon" onclick="tblSort('tblInhealthKategori','diskon','number')">Diskon <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="total" onclick="tblSort('tblInhealthKategori','total','number')">Total Rupiah <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="kapitasi" onclick="tblSort('tblInhealthKategori','kapitasi','number')">Rupiah Kapitasi <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="selisih" onclick="tblSort('tblInhealthKategori','selisih','number')">Selisih <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="persen" onclick="tblSort('tblInhealthKategori','persen','number')">% Kapitasi <span class="sort-ico-wrap"></span></th></tr></thead><tbody></tbody><tfoot></tfoot>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="section-card" style="margin-top:18px">
+      <div class="section-head"><div><div class="section-title">Rekap Per Unit / Ruangan</div><div class="section-sub">Total mengikuti filter aktif; klik baris untuk memfilter</div></div></div>
+      <div class="section-body" style="padding:0">
+        <div class="tbl-wrap"><table id="tblInhealthUnit">
+          <thead id="head-tblInhealthUnit"><tr><th data-key="nama" onclick="tblSort('tblInhealthUnit','nama','text')">Unit / Ruangan <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="jumlah" onclick="tblSort('tblInhealthUnit','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="barang" onclick="tblSort('tblInhealthUnit','barang','number')">Barang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="jasa" onclick="tblSort('tblInhealthUnit','jasa','number')">Jasa <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="fasilitas" onclick="tblSort('tblInhealthUnit','fasilitas','number')">Fasilitas <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="rikjang" onclick="tblSort('tblInhealthUnit','rikjang','number')">Rikjang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="tax" onclick="tblSort('tblInhealthUnit','tax','number')">Tax <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="diskon" onclick="tblSort('tblInhealthUnit','diskon','number')">Diskon <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="total" onclick="tblSort('tblInhealthUnit','total','number')">Total Rupiah <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="kapitasi" onclick="tblSort('tblInhealthUnit','kapitasi','number')">Rupiah Kapitasi <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="selisih" onclick="tblSort('tblInhealthUnit','selisih','number')">Selisih <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="persen" onclick="tblSort('tblInhealthUnit','persen','number')">% Kapitasi <span class="sort-ico-wrap"></span></th></tr></thead><tbody></tbody><tfoot></tfoot>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="section-card" style="margin-top:18px">
+      <div class="section-head"><div><div class="section-title" id="inhealthRekapJudul">Rekap Per Kelompok</div><div class="section-sub">Total mengikuti filter aktif; klik baris untuk memfilter</div></div><select id="fltInhealthRekapDim" onchange="filterInhealthDetail()" style="background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:6px 10px;font-size:12px"></select></div>
+      <div class="section-body" style="padding:0">
+        <div class="tbl-wrap"><table id="tblInhealthRekap">
+          <thead id="head-tblInhealthRekap"><tr><th data-key="nama" onclick="tblSort('tblInhealthRekap','nama','text')">Kelompok <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="jumlah" onclick="tblSort('tblInhealthRekap','jumlah','number')">Jumlah Baris <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="barang" onclick="tblSort('tblInhealthRekap','barang','number')">Barang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="jasa" onclick="tblSort('tblInhealthRekap','jasa','number')">Jasa <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="fasilitas" onclick="tblSort('tblInhealthRekap','fasilitas','number')">Fasilitas <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="rikjang" onclick="tblSort('tblInhealthRekap','rikjang','number')">Rikjang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="tax" onclick="tblSort('tblInhealthRekap','tax','number')">Tax <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="diskon" onclick="tblSort('tblInhealthRekap','diskon','number')">Diskon <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="total" onclick="tblSort('tblInhealthRekap','total','number')">Total Rupiah <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="kapitasi" onclick="tblSort('tblInhealthRekap','kapitasi','number')">Rupiah Kapitasi <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="selisih" onclick="tblSort('tblInhealthRekap','selisih','number')">Selisih <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="persen" onclick="tblSort('tblInhealthRekap','persen','number')">% Kapitasi <span class="sort-ico-wrap"></span></th></tr></thead><tbody></tbody><tfoot></tfoot>
+        </table></div>
       </div>
     </div>
 
     <div class="section-card" style="margin-top:18px">
       <div class="section-head">
-        <div><div class="section-title">Detail Laporan Inhealth</div><div class="section-sub">Menampilkan maks 2000 baris pertama dari hasil filter; Export Excel mengambil seluruh hasil filter</div></div>
+        <div><div class="section-title">Detail Laporan Inhealth</div><div class="section-sub">Menampilkan maks 2000 baris pertama dari hasil filter; Export Excel mengambil seluruh hasil filter. Geser tabel ke kanan untuk melihat seluruh kolom harga.</div></div>
       </div>
       <div class="section-body" style="padding:0">
         <div class="tbl-wrap"><table id="tblInhealthDetail">
-          <thead id="head-tblInhealthDetail"><tr>
-            <th data-key="_tanggal" onclick="tblSort('tblInhealthDetail','_tanggal','text')">Tanggal <span class="sort-ico-wrap"></span></th>
-            <th data-key="nama_rm" onclick="tblSort('tblInhealthDetail','nama_rm','text')">Nama Pasien <span class="sort-ico-wrap"></span></th>
-            <th data-key="id_kunjungan" onclick="tblSort('tblInhealthDetail','id_kunjungan','text')">ID Kunjungan <span class="sort-ico-wrap"></span></th>
-            <th data-key="_jenis" onclick="tblSort('tblInhealthDetail','_jenis','text')">Jenis Penjualan <span class="sort-ico-wrap"></span></th>
-            <th data-key="_kategori" onclick="tblSort('tblInhealthDetail','_kategori','text')">Kategori <span class="sort-ico-wrap"></span></th>
-            <th data-key="_unit" onclick="tblSort('tblInhealthDetail','_unit','text')">Unit / Ruangan <span class="sort-ico-wrap"></span></th>
-            <th data-key="_lunas" onclick="tblSort('tblInhealthDetail','_lunas','text')">Status Lunas <span class="sort-ico-wrap"></span></th>
-            <th class="td-num" data-key="_total" onclick="tblSort('tblInhealthDetail','_total','number')">Total Rupiah <span class="sort-ico-wrap"></span></th>
-            <th class="td-num" data-key="_kapitasi" onclick="tblSort('tblInhealthDetail','_kapitasi','number')">Rupiah Kapitasi <span class="sort-ico-wrap"></span></th>
-            <th class="td-num" data-key="_selisih" onclick="tblSort('tblInhealthDetail','_selisih','number')">Selisih <span class="sort-ico-wrap"></span></th>
-          </tr></thead><tbody></tbody><tfoot></tfoot>
+          <thead id="head-tblInhealthDetail"><tr><th data-key="_tanggal" onclick="tblSort('tblInhealthDetail','_tanggal','text')">Tanggal <span class="sort-ico-wrap"></span></th><th data-key="nama_rm" onclick="tblSort('tblInhealthDetail','nama_rm','text')">Nama Pasien <span class="sort-ico-wrap"></span></th><th data-key="nomor_rm" onclick="tblSort('tblInhealthDetail','nomor_rm','text')">No RM <span class="sort-ico-wrap"></span></th><th data-key="id_penjualan" onclick="tblSort('tblInhealthDetail','id_penjualan','text')">ID Penjualan <span class="sort-ico-wrap"></span></th><th data-key="id_kunjungan" onclick="tblSort('tblInhealthDetail','id_kunjungan','text')">ID Kunjungan <span class="sort-ico-wrap"></span></th><th data-key="jenis_penjualan" onclick="tblSort('tblInhealthDetail','jenis_penjualan','text')">Jenis Penjualan <span class="sort-ico-wrap"></span></th><th data-key="_kategori" onclick="tblSort('tblInhealthDetail','_kategori','text')">Kategori <span class="sort-ico-wrap"></span></th><th data-key="_unit" onclick="tblSort('tblInhealthDetail','_unit','text')">Unit / Ruangan <span class="sort-ico-wrap"></span></th><th data-key="poliklinik" onclick="tblSort('tblInhealthDetail','poliklinik','text')">Poliklinik <span class="sort-ico-wrap"></span></th><th data-key="dokter" onclick="tblSort('tblInhealthDetail','dokter','text')">Dokter <span class="sort-ico-wrap"></span></th><th data-key="jenis_layanan" onclick="tblSort('tblInhealthDetail','jenis_layanan','text')">Jenis Layanan <span class="sort-ico-wrap"></span></th><th data-key="status_lunas" onclick="tblSort('tblInhealthDetail','status_lunas','text')">Status Lunas <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_barang" onclick="tblSort('tblInhealthDetail','_barang','number')">Harga Barang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_jasa" onclick="tblSort('tblInhealthDetail','_jasa','number')">Harga Jasa <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_fasilitas" onclick="tblSort('tblInhealthDetail','_fasilitas','number')">Harga Fasilitas <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_rikjang" onclick="tblSort('tblInhealthDetail','_rikjang','number')">Harga Rikjang <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_tax" onclick="tblSort('tblInhealthDetail','_tax','number')">Tax <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_diskon" onclick="tblSort('tblInhealthDetail','_diskon','number')">Diskon <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_total" onclick="tblSort('tblInhealthDetail','_total','number')">Total Rupiah <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_kapitasi" onclick="tblSort('tblInhealthDetail','_kapitasi','number')">Rupiah Kapitasi <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_selisih" onclick="tblSort('tblInhealthDetail','_selisih','number')">Selisih <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_terbayar" onclick="tblSort('tblInhealthDetail','_terbayar','number')">Total Terbayar <span class="sort-ico-wrap"></span></th><th class="td-num" data-key="_sisa" onclick="tblSort('tblInhealthDetail','_sisa','number')">Sisa Pembayaran <span class="sort-ico-wrap"></span></th></tr></thead><tbody></tbody><tfoot></tfoot>
         </table></div>
       </div>
     </div>
@@ -4004,72 +4008,126 @@ const INHEALTH_FIELD_KAPITASI = 'pendapatan';      // Rupiah Kapitasi (pendapata
 let currentInhealth = [];
 const INH_REKAP_LAST = {};
 const escInh = s => String(s ?? '-').replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
+const inhV = (r, k) => { const v = r[k]; return (v === null || v === undefined || String(v).trim() === '') ? '' : String(v).trim(); };
+const inhD = v => (v === '' || v === null || v === undefined) ? '-' : v;
+const inhNum = (r, k) => parseFloat(r[k]) || 0;
+
+// Daftar filter dropdown. id -> elemen #fltInhealth<id>. Tambah baris baru di sini untuk menambah filter.
+const INH_FILTERS = [
+  { id: 'Kategori',        label: 'Kategori',             get: r => r._kategori },
+  { id: 'Unit',            label: 'Unit / Ruangan',       get: r => r._unit },
+  { id: 'Poli',            label: 'Poliklinik',           get: r => inhV(r, 'poliklinik') },
+  { id: 'Dokter',          label: 'Dokter',               get: r => inhV(r, 'dokter') },
+  { id: 'Layanan',         label: 'Jenis Layanan',        get: r => inhV(r, 'jenis_layanan') },
+  { id: 'Jenis',           label: 'Jenis Penjualan',      get: r => inhV(r, 'jenis_penjualan') },
+  { id: 'StatusPenjualan', label: 'Status Penjualan',     get: r => inhV(r, 'status_penjualan') },
+  { id: 'Lunas',           label: 'Status Lunas',         get: r => inhV(r, 'status_lunas') },
+  { id: 'Bayar',           label: 'Tipe Pembayaran',      get: r => inhV(r, 'tipe_pembayaran') },
+  { id: 'Asuransi',        label: 'Asuransi',             get: r => inhV(r, 'asuransi') },
+  { id: 'Ket',             label: 'Keterangan Kunjungan', get: r => inhV(r, 'keterangan_kunjungan') },
+  { id: 'Jurnal',          label: 'Status Jurnal',        get: r => inhV(r, 'status_jurnal') },
+  { id: 'Gudang',          label: 'Gudang',               get: r => inhV(r, 'gudang') },
+  { id: 'KunjunganKe',     label: 'Kunjungan Ke',         get: r => inhV(r, 'kunjungan_ke') },
+  { id: 'Bulan',           label: 'Bulan',                get: r => r._tanggal.substring(0, 7) },
+];
+const INH_SUM = ['barang', 'jasa', 'fasilitas', 'rikjang', 'tax', 'diskon', 'total', 'kapitasi', 'terbayar', 'sisa'];
 
 function olahInhealth(rows) {
   return rows.map(r => {
-    const total = parseFloat(r[INHEALTH_FIELD_TOTAL]) || 0;
-    const kap   = parseFloat(r[INHEALTH_FIELD_KAPITASI]) || 0;
+    const total = inhNum(r, INHEALTH_FIELD_TOTAL);
+    const kap   = inhNum(r, INHEALTH_FIELD_KAPITASI);
     return {
       ...r,
-      _tanggal : String(r.tanggal_penjualan || r.tgl_kunjungan || '').substring(0,10),
-      _kategori: r.kategori || 'Tanpa Kategori',
-      _unit    : r.sub_unit || r.ruangan_terakhir || r.poliklinik || 'Tidak diketahui',
-      _jenis   : r.jenis_penjualan || '-',
-      _lunas   : r.status_lunas || '-',
-      _total   : total,
-      _kapitasi: kap,
-      _selisih : kap - total,
+      _tanggal  : String(r.tanggal_penjualan || r.tgl_kunjungan || '').substring(0, 10),
+      _kategori : inhV(r, 'kategori') || 'Tanpa Kategori',
+      _unit     : inhV(r, 'sub_unit') || inhV(r, 'ruangan_terakhir') || inhV(r, 'poliklinik') || 'Tidak diketahui',
+      _barang   : inhNum(r, 'harga_total_barang'),
+      _jasa     : inhNum(r, 'harga_total_jasa'),
+      _fasilitas: inhNum(r, 'harga_total_fasilitas'),
+      _rikjang  : inhNum(r, 'harga_total_rikjang'),
+      _tax      : inhNum(r, 'tax'),
+      _diskon   : inhNum(r, 'diskon'),
+      _total    : total,
+      _kapitasi : kap,
+      _selisih  : kap - total,
+      _terbayar : inhNum(r, 'total_terbayar'),
+      _sisa     : inhNum(r, 'sisa_pembayaran'),
     };
   });
 }
 
+// Bangun dropdown filter + pilihan dimensi rekap (sekali saja)
+function bangunFilterInhealth() {
+  const box = document.getElementById('inhealthFilterSelects');
+  if (box && !box.childElementCount) {
+    box.innerHTML = INH_FILTERS.map(f => `<select id="fltInhealth${f.id}" onchange="filterInhealthDetail()"><option value="">Semua ${f.label}</option></select>`).join('');
+  }
+  const dim = document.getElementById('fltInhealthRekapDim');
+  if (dim && !dim.childElementCount) {
+    dim.innerHTML = INH_FILTERS.map(f => `<option value="${f.id}">${f.label}</option>`).join('');
+    dim.value = 'Poli';
+  }
+}
+
 function renderInhealth(d) {
   currentInhealth = olahInhealth(d.inhealth_detail || []);
+  bangunFilterInhealth();
   populateInhealthFilterOptions();
   filterInhealthDetail();
 }
 
 function populateInhealthFilterOptions() {
-  const fill = (id, values, label) => {
-    const el = document.getElementById(id);
+  INH_FILTERS.forEach(f => {
+    const el = document.getElementById('fltInhealth' + f.id);
     if (!el) return;
     const cur = el.value;
-    const opts = [...new Set(values.filter(v => v && v !== '-'))].sort((a,b) => String(a).localeCompare(String(b), 'id'));
-    el.innerHTML = `<option value="">${label}</option>` + opts.map(v => `<option value="${escInh(v)}">${escInh(v)}</option>`).join('');
+    const opts = [...new Set(currentInhealth.map(f.get).filter(v => v !== ''))].sort((a, b) => String(a).localeCompare(String(b), 'id', { numeric: true }));
+    el.innerHTML = `<option value="">Semua ${f.label}</option>` + opts.map(v => `<option value="${escInh(v)}">${escInh(v)}</option>`).join('');
     if (opts.includes(cur)) el.value = cur;
-  };
-  fill('fltInhealthKategori', currentInhealth.map(r => r._kategori), 'Semua Kategori');
-  fill('fltInhealthUnit',     currentInhealth.map(r => r._unit),     'Semua Unit / Ruangan');
-  fill('fltInhealthJenis',    currentInhealth.map(r => r._jenis),    'Semua Jenis Penjualan');
-  fill('fltInhealthLunas',    currentInhealth.map(r => r._lunas),    'Semua Status Lunas');
+    el.disabled = opts.length === 0;
+    el.title = opts.length === 0 ? 'Kolom ini kosong pada data periode terpilih' : '';
+  });
 }
 
-function rekapInhealth(rows, field) {
+function rekapInhealth(rows, getter) {
   const map = {};
   rows.forEach(r => {
-    const k = r[field] || 'Lainnya';
-    const x = map[k] || (map[k] = { nama: k, jumlah: 0, total: 0, kapitasi: 0 });
-    x.jumlah += 1; x.total += r._total; x.kapitasi += r._kapitasi;
+    const k = getter(r) || '(Kosong)';
+    const x = map[k] || (map[k] = Object.assign({ nama: k, jumlah: 0 }, ...INH_SUM.map(s => ({ [s]: 0 }))));
+    x.jumlah += 1;
+    INH_SUM.forEach(s => { x[s] += r['_' + s]; });
   });
   return Object.values(map).map(x => ({ ...x, selisih: x.kapitasi - x.total, persen: x.total ? x.kapitasi / x.total * 100 : 0 }))
-    .sort((a,b) => b.total - a.total);
+    .sort((a, b) => b.total - a.total);
 }
 
 function renderInhealthRekapTable(tableId, rows, filterId) {
   INH_REKAP_LAST[tableId] = { rows, filterId };
   const sorted = tblApplySort(tableId, rows);
   document.querySelector(`#${tableId} tbody`).innerHTML = sorted.map(r => `
-    <tr ${rfAttr([[filterId, r.nama]])}>
+    <tr ${filterId ? rfAttr([[filterId, r.nama]]) : ''}>
       <td style="font-size:11px">${escInh(r.nama)}</td>
       <td class="td-num">${num(r.jumlah)}</td>
+      <td class="td-num">${rupiah(r.barang)}</td>
+      <td class="td-num">${rupiah(r.jasa)}</td>
+      <td class="td-num">${rupiah(r.fasilitas)}</td>
+      <td class="td-num">${rupiah(r.rikjang)}</td>
+      <td class="td-num">${rupiah(r.tax)}</td>
+      <td class="td-num">${rupiah(r.diskon)}</td>
       <td class="td-num td-bold">${rupiah(r.total)}</td>
       <td class="td-num">${rupiah(r.kapitasi)}</td>
       <td class="td-num ${r.selisih < 0 ? 'rekon-diff' : 'rekon-match'}">${rupiah(r.selisih)}</td>
       <td class="td-num">${r.total ? r.persen.toFixed(1) + '%' : '-'}</td>
-    </tr>`).join('') || '<tr><td colspan="6" class="empty">Tidak ada data</td></tr>';
+    </tr>`).join('') || '<tr><td colspan="12" class="empty">Tidak ada data</td></tr>';
   const tt = sumBy(sorted, 'total'), tk = sumBy(sorted, 'kapitasi');
   document.querySelector(`#${tableId} tfoot`).innerHTML = sorted.length ? tblTotalRow(1, [
     { value: sumBy(sorted, 'jumlah'), type: 'num' },
+    { value: sumBy(sorted, 'barang'), type: 'rupiah' },
+    { value: sumBy(sorted, 'jasa'), type: 'rupiah' },
+    { value: sumBy(sorted, 'fasilitas'), type: 'rupiah' },
+    { value: sumBy(sorted, 'rikjang'), type: 'rupiah' },
+    { value: sumBy(sorted, 'tax'), type: 'rupiah' },
+    { value: sumBy(sorted, 'diskon'), type: 'rupiah' },
     { value: tt, type: 'rupiah' },
     { value: tk, type: 'rupiah' },
     { value: tk - tt, type: 'rupiah' },
@@ -4079,25 +4137,31 @@ function renderInhealthRekapTable(tableId, rows, filterId) {
 }
 
 function filterInhealthDetail() {
-  const q      = (document.getElementById('searchInhealth')?.value || '').trim().toLowerCase();
-  const kat    = document.getElementById('fltInhealthKategori')?.value || '';
-  const unit   = document.getElementById('fltInhealthUnit')?.value || '';
-  const jenis  = document.getElementById('fltInhealthJenis')?.value || '';
-  const lunas  = document.getElementById('fltInhealthLunas')?.value || '';
+  bangunFilterInhealth();
+  const q     = (document.getElementById('searchInhealth')?.value || '').trim().toLowerCase();
+  const sel   = {};
+  INH_FILTERS.forEach(f => { sel[f.id] = document.getElementById('fltInhealth' + f.id)?.value || ''; });
+  const selisihF = document.getElementById('fltInhealthSelisih')?.value || '';
+  const minRaw = document.getElementById('minInhealth')?.value;
+  const maxRaw = document.getElementById('maxInhealth')?.value;
+  const minV = (minRaw === '' || minRaw == null) ? null : Number(minRaw);
+  const maxV = (maxRaw === '' || maxRaw == null) ? null : Number(maxRaw);
 
   let rows = currentInhealth.filter(r => {
-    if (q && !([r.nama_rm, r.id_penjualan, r.id_kunjungan, r.idgl, r.nomor_rm].some(v => String(v ?? '').toLowerCase().includes(q)))) return false;
-    if (kat   && r._kategori !== kat)   return false;
-    if (unit  && r._unit !== unit)      return false;
-    if (jenis && r._jenis !== jenis)    return false;
-    if (lunas && r._lunas !== lunas)    return false;
+    if (q && !([r.nama_rm, r.id_penjualan, r.id_kunjungan, r.idgl, r.nomor_rm, r.nomor_asuransi, r.dokter].some(v => String(v ?? '').toLowerCase().includes(q)))) return false;
+    for (const f of INH_FILTERS) if (sel[f.id] && f.get(r) !== sel[f.id]) return false;
+    if (selisihF === 'neg' && !(r._selisih < 0)) return false;
+    if (selisihF === 'nol' && Math.abs(r._selisih) >= 0.5) return false;
+    if (selisihF === 'pos' && !(r._selisih > 0)) return false;
+    if (minV !== null && r._total < minV) return false;
+    if (maxV !== null && r._total > maxV) return false;
     return true;
   });
   rows = tblApplySort('tblInhealthDetail', rows);
 
   document.getElementById('inhealthCount').textContent = `${num(rows.length)} dari ${num(currentInhealth.length)} baris`;
 
-  // ── KPI ──
+  // ── KPI utama ──
   const totalRp = sumBy(rows, '_total'), totalKap = sumBy(rows, '_kapitasi'), selisih = totalKap - totalRp;
   const nKunjungan = new Set(rows.map(r => r.id_kunjungan).filter(Boolean)).size;
   document.getElementById('kpiInhealth').innerHTML = `
@@ -4106,13 +4170,35 @@ function filterInhealthDetail() {
     <div class="kpi-card ${selisih < 0 ? 'red' : 'purple'}"><div class="kpi-label">Selisih (Kapitasi − Total)</div><div class="kpi-value">${rupiah(selisih)}</div><div class="kpi-sub">${selisih < 0 ? 'kapitasi lebih kecil dari total' : 'kapitasi ≥ total rupiah'}</div></div>
     <div class="kpi-card amber"><div class="kpi-label">Jumlah Kunjungan</div><div class="kpi-value">${num(nKunjungan)}</div><div class="kpi-sub">ID kunjungan unik</div></div>`;
 
+  // ── KPI komponen harga ──
+  const sb = sumBy(rows, '_barang'), sj = sumBy(rows, '_jasa'), sf = sumBy(rows, '_fasilitas'), sr = sumBy(rows, '_rikjang');
+  const st = sumBy(rows, '_tax'), sd = sumBy(rows, '_diskon'), sp = sumBy(rows, '_terbayar'), ss = sumBy(rows, '_sisa');
+  const pctTot = v => totalRp ? (v / totalRp * 100).toFixed(1) + '% dari total' : '-';
+  document.getElementById('kpiInhealthKomponen').innerHTML = `
+    <div class="kpi-card cyan"><div class="kpi-label">Harga Barang</div><div class="kpi-value">${rupiah(sb)}</div><div class="kpi-sub">${pctTot(sb)}</div></div>
+    <div class="kpi-card cyan"><div class="kpi-label">Harga Jasa</div><div class="kpi-value">${rupiah(sj)}</div><div class="kpi-sub">${pctTot(sj)}</div></div>
+    <div class="kpi-card cyan"><div class="kpi-label">Harga Fasilitas</div><div class="kpi-value">${rupiah(sf)}</div><div class="kpi-sub">${pctTot(sf)}</div></div>
+    <div class="kpi-card cyan"><div class="kpi-label">Harga Rikjang</div><div class="kpi-value">${rupiah(sr)}</div><div class="kpi-sub">${pctTot(sr)}</div></div>
+    <div class="kpi-card amber"><div class="kpi-label">Tax</div><div class="kpi-value">${rupiah(st)}</div><div class="kpi-sub">${pctTot(st)}</div></div>
+    <div class="kpi-card amber"><div class="kpi-label">Diskon</div><div class="kpi-value">${rupiah(sd)}</div><div class="kpi-sub">${pctTot(sd)}</div></div>
+    <div class="kpi-card green"><div class="kpi-label">Total Terbayar</div><div class="kpi-value">${rupiah(sp)}</div><div class="kpi-sub">${num(rows.filter(r => r._terbayar).length)} baris terisi</div></div>
+    <div class="kpi-card red"><div class="kpi-label">Sisa Pembayaran</div><div class="kpi-value">${rupiah(ss)}</div><div class="kpi-sub">${num(rows.filter(r => r._sisa).length)} baris terisi</div></div>`;
+
   // ── Rekap (dihitung dari baris terfilter) ──
-  const perKategori = rekapInhealth(rows, '_kategori');
-  const perUnit     = rekapInhealth(rows, '_unit');
+  const perKategori = rekapInhealth(rows, r => r._kategori);
+  const perUnit     = rekapInhealth(rows, r => r._unit);
   renderInhealthRekapTable('tblInhealthKategori', perKategori, 'fltInhealthKategori');
   renderInhealthRekapTable('tblInhealthUnit',     perUnit,     'fltInhealthUnit');
 
-  // ── Grafik per kategori ──
+  const dimId = document.getElementById('fltInhealthRekapDim')?.value || 'Poli';
+  const dim = INH_FILTERS.find(f => f.id === dimId) || INH_FILTERS[0];
+  const lbl = document.querySelector('#head-tblInhealthRekap th');
+  if (lbl && lbl.firstChild) lbl.firstChild.nodeValue = dim.label + ' ';
+  const judul = document.getElementById('inhealthRekapJudul');
+  if (judul) judul.textContent = 'Rekap Per ' + dim.label;
+  renderInhealthRekapTable('tblInhealthRekap', rekapInhealth(rows, dim.get), 'fltInhealth' + dim.id);
+
+  // ── Grafik per kategori: Total vs Kapitasi ──
   destroyChart('chartInhealthKategori');
   const c1 = document.getElementById('chartInhealthKategori');
   if (c1) {
@@ -4144,35 +4230,71 @@ function filterInhealthDetail() {
     { label: 'Rupiah Kapitasi', data: labels.map(l => tren[l].kap),   borderColor: '#059669', backgroundColor: 'rgba(5,150,105,.06)', fill: true, tension: .3, pointRadius: 2, borderWidth: 2 },
   ]);
 
+  // ── Grafik komposisi harga (donat) & komponen per kategori (bar bertumpuk) ──
+  const komp = [['Barang', sb], ['Jasa', sj], ['Fasilitas', sf], ['Rikjang', sr], ['Tax', st]].filter(x => x[1] > 0);
+  makeDoughnut('chartInhealthKomposisi', komp.map(x => x[0]), komp.map(x => x[1]));
+  destroyChart('chartInhealthKomponen');
+  const c2 = document.getElementById('chartInhealthKomponen');
+  if (c2) {
+    CHARTS['chartInhealthKomponen'] = new Chart(c2, {
+      type: 'bar',
+      data: {
+        labels: perKategori.map(r => String(r.nama).substring(0, 22)),
+        datasets: [
+          { label: 'Barang',    data: perKategori.map(r => r.barang),    backgroundColor: '#2563eb' },
+          { label: 'Jasa',      data: perKategori.map(r => r.jasa),      backgroundColor: '#059669' },
+          { label: 'Fasilitas', data: perKategori.map(r => r.fasilitas), backgroundColor: '#d97706' },
+          { label: 'Rikjang',   data: perKategori.map(r => r.rikjang),   backgroundColor: '#7c3aed' },
+        ]
+      },
+      options: { ...CHART_DEFAULTS, scales: { x: { ...CHART_DEFAULTS.scales.x, stacked: true }, y: { ...CHART_DEFAULTS.scales.y, stacked: true } } }
+    });
+  }
+
   // ── Detail ──
   document.querySelector('#tblInhealthDetail tbody').innerHTML = rows.slice(0, 2000).map(r => `
     <tr ${rfAttr([['fltInhealthKategori', r._kategori], ['fltInhealthUnit', r._unit]])}>
       <td>${escInh(r._tanggal)}</td>
       <td>${escInh(r.nama_rm)}</td>
+      <td style="font-size:11px">${escInh(inhD(inhV(r, 'nomor_rm')))}</td>
+      <td style="font-size:11px">${escInh(r.id_penjualan)}</td>
       <td style="font-size:11px">${escInh(r.id_kunjungan)}</td>
-      <td style="font-size:11px">${escInh(r._jenis)}</td>
+      <td style="font-size:11px">${escInh(inhD(inhV(r, 'jenis_penjualan')))}</td>
       <td><span class="badge ${/kapitasi/i.test(r._kategori) ? 'badge-green' : 'badge-blue'}">${escInh(r._kategori)}</span></td>
       <td style="font-size:11px">${escInh(r._unit)}</td>
-      <td><span class="badge ${r._lunas === 'Lunas' ? 'badge-green' : 'badge-amber'}">${escInh(r._lunas)}</span></td>
-      <td class="td-num">${rupiah(r._total)}</td>
+      <td style="font-size:11px">${escInh(inhD(inhV(r, 'poliklinik')))}</td>
+      <td style="font-size:11px">${escInh(inhD(inhV(r, 'dokter')))}</td>
+      <td style="font-size:11px">${escInh(inhD(inhV(r, 'jenis_layanan')))}</td>
+      <td><span class="badge ${inhV(r, 'status_lunas') === 'Lunas' ? 'badge-green' : 'badge-amber'}">${escInh(inhD(inhV(r, 'status_lunas')))}</span></td>
+      <td class="td-num">${rupiah(r._barang)}</td>
+      <td class="td-num">${rupiah(r._jasa)}</td>
+      <td class="td-num">${rupiah(r._fasilitas)}</td>
+      <td class="td-num">${rupiah(r._rikjang)}</td>
+      <td class="td-num">${rupiah(r._tax)}</td>
+      <td class="td-num">${rupiah(r._diskon)}</td>
+      <td class="td-num td-bold">${rupiah(r._total)}</td>
       <td class="td-num">${rupiah(r._kapitasi)}</td>
       <td class="td-num td-bold ${r._selisih < 0 ? 'rekon-diff' : ''}">${rupiah(r._selisih)}</td>
-    </tr>`).join('') || '<tr><td colspan="10" class="empty">Tidak ada data</td></tr>';
-  document.querySelector('#tblInhealthDetail tfoot').innerHTML = rows.length ? tblTotalRow(7, [
-    { value: totalRp,  type: 'rupiah' },
-    { value: totalKap, type: 'rupiah' },
-    { value: selisih,  type: 'rupiah' },
+      <td class="td-num">${rupiah(r._terbayar)}</td>
+      <td class="td-num">${rupiah(r._sisa)}</td>
+    </tr>`).join('') || '<tr><td colspan="23" class="empty">Tidak ada data</td></tr>';
+  document.querySelector('#tblInhealthDetail tfoot').innerHTML = rows.length ? tblTotalRow(12, [
+    { value: sb, type: 'rupiah' }, { value: sj, type: 'rupiah' }, { value: sf, type: 'rupiah' }, { value: sr, type: 'rupiah' },
+    { value: st, type: 'rupiah' }, { value: sd, type: 'rupiah' },
+    { value: totalRp, type: 'rupiah' }, { value: totalKap, type: 'rupiah' }, { value: selisih, type: 'rupiah' },
+    { value: sp, type: 'rupiah' }, { value: ss, type: 'rupiah' },
   ]) : '';
   tblRefreshIcons('tblInhealthDetail', 'head-tblInhealthDetail');
 }
 
 function resetInhealthFilter() {
-  ['searchInhealth','fltInhealthKategori','fltInhealthUnit','fltInhealthJenis','fltInhealthLunas'].forEach(id => document.getElementById(id).value = '');
+  ['searchInhealth', 'fltInhealthSelisih', 'minInhealth', 'maxInhealth'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  INH_FILTERS.forEach(f => { const el = document.getElementById('fltInhealth' + f.id); if (el) el.value = ''; });
   filterInhealthDetail();
 }
 
 TblRerender.tblInhealthDetail = filterInhealthDetail;
-['tblInhealthKategori', 'tblInhealthUnit'].forEach(id => {
+['tblInhealthKategori', 'tblInhealthUnit', 'tblInhealthRekap'].forEach(id => {
   TblRerender[id] = () => { const st = INH_REKAP_LAST[id]; if (st) renderInhealthRekapTable(id, st.rows, st.filterId); };
 });
 
