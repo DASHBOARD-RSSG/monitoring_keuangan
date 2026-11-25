@@ -1,7 +1,7 @@
 {
   "bulan": "2026-03",
   "bagian": 1,
-  "generated_at": "2026-11-18T03:13:00.537Z",
+  "generated_at": "2026-11-25T04:17:01.048Z",
   "biaya_umum_baru_detail": [
     {
       "id_sub_transaksi": "964223",
@@ -13652,7 +13652,7 @@
       "kredit": "0.0",
       "Total": "4500.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1043999",
@@ -13669,24 +13669,7 @@
       "kredit": "0.0",
       "Total": "432332.01",
       "Segment": null,
-      "loaded_at": "1.791712240675E9"
-    },
-    {
-      "id_sub_transaksi": "1043997",
-      "tanggal_sub_transaksi": "2026-03-06",
-      "nama_sub_unit": "[8011] PELAYANAN UMUM",
-      "nama_cc": "PELAYANAN UMUM",
-      "nama_penerima": "fatima.ulfah",
-      "nama_sub_penerima": "fatima.ulfah",
-      "operasional": "Pemakaian 465, (1501) Lampu LED 7 Watt - Hannochs, (141) PELAYANAN UMUM, Inventori ID (74385)",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.2.6",
-      "Nama_COA": "COA 5.2.6",
-      "debet": "207000.0",
-      "kredit": "0.0",
-      "Total": "207000.0",
-      "Segment": null,
-      "loaded_at": "1.791712240675E9"
+      "loaded_at": "1.79171263522E9"
     },
     {
       "id_sub_transaksi": "1043997",
@@ -13704,6 +13687,23 @@
       "Total": "207000.0",
       "Segment": null,
       "loaded_at": "1.79171263522E9"
+    },
+    {
+      "id_sub_transaksi": "1043997",
+      "tanggal_sub_transaksi": "2026-03-06",
+      "nama_sub_unit": "[8011] PELAYANAN UMUM",
+      "nama_cc": "PELAYANAN UMUM",
+      "nama_penerima": "fatima.ulfah",
+      "nama_sub_penerima": "fatima.ulfah",
+      "operasional": "Pemakaian 465, (1501) Lampu LED 7 Watt - Hannochs, (141) PELAYANAN UMUM, Inventori ID (74385)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.2.6",
+      "Nama_COA": "COA 5.2.6",
+      "debet": "207000.0",
+      "kredit": "0.0",
+      "Total": "207000.0",
+      "Segment": null,
+      "loaded_at": "1.791712240675E9"
     },
     {
       "id_sub_transaksi": "1183961",
@@ -13720,24 +13720,7 @@
       "kredit": "0.0",
       "Total": "4500.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
-    },
-    {
-      "id_sub_transaksi": "1046777",
-      "tanggal_sub_transaksi": "2026-03-06",
-      "nama_sub_unit": "[8021] Personalia",
-      "nama_cc": "PERSONALIA",
-      "nama_penerima": "RS8400531",
-      "nama_sub_penerima": "RS8400531",
-      "operasional": "Pemakaian 470, (542) Baterai A3 Alkalin 6's, (128) PERSONALIA, Inventori ID (74395)",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.8.2",
-      "Nama_COA": "COA 5.8.2",
-      "debet": "29402.34",
-      "kredit": "0.0",
-      "Total": "29402.34",
-      "Segment": null,
-      "loaded_at": "1.791712252803E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1046777",
@@ -13755,6 +13738,23 @@
       "Total": "29402.34",
       "Segment": null,
       "loaded_at": "1.791712645865E9"
+    },
+    {
+      "id_sub_transaksi": "1046777",
+      "tanggal_sub_transaksi": "2026-03-06",
+      "nama_sub_unit": "[8021] Personalia",
+      "nama_cc": "PERSONALIA",
+      "nama_penerima": "RS8400531",
+      "nama_sub_penerima": "RS8400531",
+      "operasional": "Pemakaian 470, (542) Baterai A3 Alkalin 6's, (128) PERSONALIA, Inventori ID (74395)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.8.2",
+      "Nama_COA": "COA 5.8.2",
+      "debet": "29402.34",
+      "kredit": "0.0",
+      "Total": "29402.34",
+      "Segment": null,
+      "loaded_at": "1.791712252803E9"
     },
     {
       "id_sub_transaksi": "1046774",
@@ -13788,7 +13788,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.791712240675E9"
+      "loaded_at": "1.79171263522E9"
     },
     {
       "id_sub_transaksi": "1039785",
@@ -13805,7 +13805,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.79171263522E9"
+      "loaded_at": "1.791712240675E9"
     },
     {
       "id_sub_transaksi": "1046774",
@@ -13839,7 +13839,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.79171263522E9"
+      "loaded_at": "1.791712240675E9"
     },
     {
       "id_sub_transaksi": "1039784",
@@ -13856,7 +13856,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.791712240675E9"
+      "loaded_at": "1.79171263522E9"
     },
     {
       "id_sub_transaksi": "1039777",
@@ -13992,7 +13992,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.791712240675E9"
+      "loaded_at": "1.79171263522E9"
     },
     {
       "id_sub_transaksi": "1039781",
@@ -14009,7 +14009,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.79171263522E9"
+      "loaded_at": "1.791712240675E9"
     },
     {
       "id_sub_transaksi": "1039780",
@@ -14060,7 +14060,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.79171263522E9"
+      "loaded_at": "1.791712240675E9"
     },
     {
       "id_sub_transaksi": "1039779",
@@ -14077,24 +14077,7 @@
       "kredit": "0.0",
       "Total": "1143963.0",
       "Segment": null,
-      "loaded_at": "1.791712240675E9"
-    },
-    {
-      "id_sub_transaksi": "1183959",
-      "tanggal_sub_transaksi": "2026-03-06",
-      "nama_sub_unit": "[8011] PELAYANAN UMUM",
-      "nama_cc": "Non CC",
-      "nama_penerima": "tasya.salsabila",
-      "nama_sub_penerima": "tasya.salsabila",
-      "operasional": "Alokasi 88 - Telkom - 0031099102114  - Manual",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.7.9",
-      "Nama_COA": "COA 5.7.9",
-      "debet": "103230.0",
-      "kredit": "0.0",
-      "Total": "103230.0",
-      "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.79171263522E9"
     },
     {
       "id_sub_transaksi": "1183959",
@@ -14112,6 +14095,23 @@
       "Total": "103230.0",
       "Segment": null,
       "loaded_at": "1.791712869481E9"
+    },
+    {
+      "id_sub_transaksi": "1183959",
+      "tanggal_sub_transaksi": "2026-03-06",
+      "nama_sub_unit": "[8011] PELAYANAN UMUM",
+      "nama_cc": "Non CC",
+      "nama_penerima": "tasya.salsabila",
+      "nama_sub_penerima": "tasya.salsabila",
+      "operasional": "Alokasi 88 - Telkom - 0031099102114  - Manual",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.7.9",
+      "Nama_COA": "COA 5.7.9",
+      "debet": "103230.0",
+      "kredit": "0.0",
+      "Total": "103230.0",
+      "Segment": null,
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1183960",
@@ -14162,7 +14162,7 @@
       "kredit": "0.0",
       "Total": "432332.01",
       "Segment": null,
-      "loaded_at": "1.79171263522E9"
+      "loaded_at": "1.791712240675E9"
     },
     {
       "id_sub_transaksi": "1184182",
@@ -14196,7 +14196,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1184183",
@@ -14230,7 +14230,7 @@
       "kredit": "0.0",
       "Total": "64769.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1184183",
@@ -14264,24 +14264,7 @@
       "kredit": "0.0",
       "Total": "130708.44",
       "Segment": null,
-      "loaded_at": "1.791712274526E9"
-    },
-    {
-      "id_sub_transaksi": "1059925",
-      "tanggal_sub_transaksi": "2026-03-07",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "WINOTO (PT. MEGANAGA)",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 194910",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "33000.0",
-      "kredit": "0.0",
-      "Total": "33000.0",
-      "Segment": null,
-      "loaded_at": "1.791712274526E9"
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1059925",
@@ -14301,13 +14284,13 @@
       "loaded_at": "1.791712667835E9"
     },
     {
-      "id_sub_transaksi": "1059958",
+      "id_sub_transaksi": "1059925",
       "tanggal_sub_transaksi": "2026-03-07",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "KAMARI (PT. MEGANAGA)",
+      "nama_penerima": "WINOTO (PT. MEGANAGA)",
       "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 194890",
+      "operasional": "Diskon Penjualan 194910",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
@@ -14333,6 +14316,23 @@
       "Total": "33000.0",
       "Segment": null,
       "loaded_at": "1.791712667835E9"
+    },
+    {
+      "id_sub_transaksi": "1059958",
+      "tanggal_sub_transaksi": "2026-03-07",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "KAMARI (PT. MEGANAGA)",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 194890",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "33000.0",
+      "kredit": "0.0",
+      "Total": "33000.0",
+      "Segment": null,
+      "loaded_at": "1.791712274526E9"
     },
     {
       "id_sub_transaksi": "1059957",
@@ -14434,7 +14434,7 @@
       "kredit": "0.0",
       "Total": "18500.0",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
+      "loaded_at": "1.791712274526E9"
     },
     {
       "id_sub_transaksi": "1184189",
@@ -14468,7 +14468,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1184189",
@@ -14502,7 +14502,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1184184",
@@ -14519,7 +14519,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1184185",
@@ -14553,7 +14553,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1184185",
@@ -14587,7 +14587,7 @@
       "kredit": "0.0",
       "Total": "63936.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1057458",
@@ -14604,7 +14604,7 @@
       "kredit": "0.0",
       "Total": "130708.44",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
+      "loaded_at": "1.791712274526E9"
     },
     {
       "id_sub_transaksi": "1056929",
@@ -14655,7 +14655,7 @@
       "kredit": "0.0",
       "Total": "380000.0",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
+      "loaded_at": "1.791712274526E9"
     },
     {
       "id_sub_transaksi": "1059772",
@@ -14706,7 +14706,7 @@
       "kredit": "0.0",
       "Total": "44600.0",
       "Segment": null,
-      "loaded_at": "1.791712274526E9"
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1184186",
@@ -14723,7 +14723,7 @@
       "kredit": "0.0",
       "Total": "63936.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1184188",
@@ -14740,7 +14740,7 @@
       "kredit": "0.0",
       "Total": "64769.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1057574",
@@ -14757,7 +14757,7 @@
       "kredit": "0.0",
       "Total": "44600.0",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
+      "loaded_at": "1.791712274526E9"
     },
     {
       "id_sub_transaksi": "1057213",
@@ -14808,7 +14808,7 @@
       "kredit": "0.0",
       "Total": "380000.0",
       "Segment": null,
-      "loaded_at": "1.791712274526E9"
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1056929",
@@ -14842,7 +14842,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1184187",
@@ -14859,7 +14859,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1059957",
@@ -14910,7 +14910,7 @@
       "kredit": "0.0",
       "Total": "20000.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1184191",
@@ -14927,7 +14927,7 @@
       "kredit": "0.0",
       "Total": "72816.0",
       "Segment": null,
-      "loaded_at": "1.791712869481E9"
+      "loaded_at": "1.791712460089E9"
     },
     {
       "id_sub_transaksi": "1056926",
@@ -15012,7 +15012,7 @@
       "kredit": "0.0",
       "Total": "31200.0",
       "Segment": null,
-      "loaded_at": "1.791712274526E9"
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1059927",
@@ -15029,23 +15029,6 @@
       "kredit": "0.0",
       "Total": "31200.0",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
-    },
-    {
-      "id_sub_transaksi": "1059926",
-      "tanggal_sub_transaksi": "2026-03-07",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "WINOTO (PT. MEGANAGA)",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 194911",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "22500.0",
-      "kredit": "0.0",
-      "Total": "22500.0",
-      "Segment": null,
       "loaded_at": "1.791712274526E9"
     },
     {
@@ -15066,21 +15049,21 @@
       "loaded_at": "1.791712667835E9"
     },
     {
-      "id_sub_transaksi": "1059773",
+      "id_sub_transaksi": "1059926",
       "tanggal_sub_transaksi": "2026-03-07",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "AHMAD KURNIAWAN (PT. MEGANAGA)",
+      "nama_penerima": "WINOTO (PT. MEGANAGA)",
       "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 194936",
+      "operasional": "Diskon Penjualan 194911",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "31200.0",
+      "debet": "22500.0",
       "kredit": "0.0",
-      "Total": "31200.0",
+      "Total": "22500.0",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
+      "loaded_at": "1.791712274526E9"
     },
     {
       "id_sub_transaksi": "1059773",
@@ -15098,6 +15081,23 @@
       "Total": "31200.0",
       "Segment": null,
       "loaded_at": "1.791712274526E9"
+    },
+    {
+      "id_sub_transaksi": "1059773",
+      "tanggal_sub_transaksi": "2026-03-07",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "AHMAD KURNIAWAN (PT. MEGANAGA)",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 194936",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "31200.0",
+      "kredit": "0.0",
+      "Total": "31200.0",
+      "Segment": null,
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1059771",
@@ -15284,7 +15284,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712274526E9"
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1057380",
@@ -15301,23 +15301,6 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
-    },
-    {
-      "id_sub_transaksi": "1057379",
-      "tanggal_sub_transaksi": "2026-03-07",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "DIFA RIFKY RAMADHANI",
-      "nama_sub_penerima": "PT ALDZAMA",
-      "operasional": "Diskon Penjualan 194689",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
       "loaded_at": "1.791712274526E9"
     },
     {
@@ -15338,19 +15321,19 @@
       "loaded_at": "1.791712667835E9"
     },
     {
-      "id_sub_transaksi": "1057088",
+      "id_sub_transaksi": "1057379",
       "tanggal_sub_transaksi": "2026-03-07",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "DIFA RIFKY RAMADHANI",
       "nama_sub_penerima": "PT ALDZAMA",
-      "operasional": "Diskon Penjualan 194699",
+      "operasional": "Diskon Penjualan 194689",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "32400.0",
+      "debet": "11600.0",
       "kredit": "0.0",
-      "Total": "32400.0",
+      "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712274526E9"
     },
@@ -15372,21 +15355,21 @@
       "loaded_at": "1.791712667835E9"
     },
     {
-      "id_sub_transaksi": "1057047",
+      "id_sub_transaksi": "1057088",
       "tanggal_sub_transaksi": "2026-03-07",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "DIFA RIFKY RAMADHANI",
       "nama_sub_penerima": "PT ALDZAMA",
-      "operasional": "Diskon Penjualan 194697",
+      "operasional": "Diskon Penjualan 194699",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
+      "debet": "32400.0",
       "kredit": "0.0",
-      "Total": "11000.0",
+      "Total": "32400.0",
       "Segment": null,
-      "loaded_at": "1.791712667835E9"
+      "loaded_at": "1.791712274526E9"
     },
     {
       "id_sub_transaksi": "1057047",
@@ -15404,6 +15387,23 @@
       "Total": "11000.0",
       "Segment": null,
       "loaded_at": "1.791712274526E9"
+    },
+    {
+      "id_sub_transaksi": "1057047",
+      "tanggal_sub_transaksi": "2026-03-07",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "DIFA RIFKY RAMADHANI",
+      "nama_sub_penerima": "PT ALDZAMA",
+      "operasional": "Diskon Penjualan 194697",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11000.0",
+      "kredit": "0.0",
+      "Total": "11000.0",
+      "Segment": null,
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1184192",
@@ -15420,7 +15420,7 @@
       "kredit": "0.0",
       "Total": "20000.0",
       "Segment": null,
-      "loaded_at": "1.791712460089E9"
+      "loaded_at": "1.791712869481E9"
     },
     {
       "id_sub_transaksi": "1057575",
@@ -15437,7 +15437,7 @@
       "kredit": "0.0",
       "Total": "18500.0",
       "Segment": null,
-      "loaded_at": "1.791712274526E9"
+      "loaded_at": "1.791712667835E9"
     },
     {
       "id_sub_transaksi": "1184182",
@@ -15471,7 +15471,7 @@
       "kredit": "0.0",
       "Total": "20900.0",
       "Segment": null,
-      "loaded_at": "1.791712688009E9"
+      "loaded_at": "1.791712296123E9"
     },
     {
       "id_sub_transaksi": "1072911",
@@ -15488,23 +15488,6 @@
       "kredit": "0.0",
       "Total": "20900.0",
       "Segment": null,
-      "loaded_at": "1.791712296123E9"
-    },
-    {
-      "id_sub_transaksi": "1072745",
-      "tanggal_sub_transaksi": "2026-03-08",
-      "nama_sub_unit": "[9241] LABORATORIUM",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "FITRAH KURNIA EKA SARI",
-      "nama_sub_penerima": "UMUM",
-      "operasional": "Diskon Penjualan 198263",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "24000.0",
-      "kredit": "0.0",
-      "Total": "24000.0",
-      "Segment": null,
       "loaded_at": "1.791712688009E9"
     },
     {
@@ -15523,6 +15506,23 @@
       "Total": "24000.0",
       "Segment": null,
       "loaded_at": "1.791712296123E9"
+    },
+    {
+      "id_sub_transaksi": "1072745",
+      "tanggal_sub_transaksi": "2026-03-08",
+      "nama_sub_unit": "[9241] LABORATORIUM",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "FITRAH KURNIA EKA SARI",
+      "nama_sub_penerima": "UMUM",
+      "operasional": "Diskon Penjualan 198263",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "24000.0",
+      "kredit": "0.0",
+      "Total": "24000.0",
+      "Segment": null,
+      "loaded_at": "1.791712688009E9"
     },
     {
       "id_sub_transaksi": "1071163",
@@ -15573,7 +15573,7 @@
       "kredit": "0.0",
       "Total": "63300.0",
       "Segment": null,
-      "loaded_at": "1.791712688009E9"
+      "loaded_at": "1.791712296123E9"
     },
     {
       "id_sub_transaksi": "1069452",
@@ -15590,7 +15590,7 @@
       "kredit": "0.0",
       "Total": "63300.0",
       "Segment": null,
-      "loaded_at": "1.791712296123E9"
+      "loaded_at": "1.791712688009E9"
     },
     {
       "id_sub_transaksi": "1105394",
@@ -15641,7 +15641,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1076759",
@@ -15726,7 +15726,7 @@
       "kredit": "0.0",
       "Total": "64000.0",
       "Segment": null,
-      "loaded_at": "1.791712713453E9"
+      "loaded_at": "1.791712307647E9"
     },
     {
       "id_sub_transaksi": "1076758",
@@ -15743,7 +15743,7 @@
       "kredit": "0.0",
       "Total": "64000.0",
       "Segment": null,
-      "loaded_at": "1.791712307647E9"
+      "loaded_at": "1.791712713453E9"
     },
     {
       "id_sub_transaksi": "1074956",
@@ -15828,7 +15828,7 @@
       "kredit": "0.0",
       "Total": "1000000.0",
       "Segment": null,
-      "loaded_at": "1.791712307647E9"
+      "loaded_at": "1.791712713453E9"
     },
     {
       "id_sub_transaksi": "1124494",
@@ -15845,7 +15845,7 @@
       "kredit": "0.0",
       "Total": "37600.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1124662",
@@ -15862,7 +15862,7 @@
       "kredit": "0.0",
       "Total": "44600.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1079499",
@@ -15913,7 +15913,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1124662",
@@ -15930,7 +15930,7 @@
       "kredit": "0.0",
       "Total": "44600.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1121459",
@@ -15947,7 +15947,7 @@
       "kredit": "0.0",
       "Total": "33000.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1104913",
@@ -15981,24 +15981,7 @@
       "kredit": "0.0",
       "Total": "33000.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
-    },
-    {
-      "id_sub_transaksi": "1076760",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[8021] Personalia",
-      "nama_cc": "Non CC",
-      "nama_penerima": "ibnu.chris",
-      "nama_sub_penerima": "may.azmianty",
-      "operasional": "Alokasi 88 - PEMBELIAN ES CENDOL NANGKA KHATAMAN AL QUR'AN ( HC EVENT ) - Manual",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.7.3",
-      "Nama_COA": "COA 5.7.3",
-      "debet": "377500.0",
-      "kredit": "0.0",
-      "Total": "377500.0",
-      "Segment": null,
-      "loaded_at": "1.791712307647E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1076760",
@@ -16016,6 +15999,23 @@
       "Total": "377500.0",
       "Segment": null,
       "loaded_at": "1.791712713453E9"
+    },
+    {
+      "id_sub_transaksi": "1076760",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[8021] Personalia",
+      "nama_cc": "Non CC",
+      "nama_penerima": "ibnu.chris",
+      "nama_sub_penerima": "may.azmianty",
+      "operasional": "Alokasi 88 - PEMBELIAN ES CENDOL NANGKA KHATAMAN AL QUR'AN ( HC EVENT ) - Manual",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.7.3",
+      "Nama_COA": "COA 5.7.3",
+      "debet": "377500.0",
+      "kredit": "0.0",
+      "Total": "377500.0",
+      "Segment": null,
+      "loaded_at": "1.791712307647E9"
     },
     {
       "id_sub_transaksi": "1076761",
@@ -16100,7 +16100,7 @@
       "kredit": "0.0",
       "Total": "55900.0",
       "Segment": null,
-      "loaded_at": "1.791712713453E9"
+      "loaded_at": "1.791712307647E9"
     },
     {
       "id_sub_transaksi": "1076781",
@@ -16117,7 +16117,7 @@
       "kredit": "0.0",
       "Total": "55900.0",
       "Segment": null,
-      "loaded_at": "1.791712307647E9"
+      "loaded_at": "1.791712713453E9"
     },
     {
       "id_sub_transaksi": "1076782",
@@ -16168,7 +16168,7 @@
       "kredit": "0.0",
       "Total": "600000.0",
       "Segment": null,
-      "loaded_at": "1.791712307647E9"
+      "loaded_at": "1.791712713453E9"
     },
     {
       "id_sub_transaksi": "1076888",
@@ -16185,7 +16185,7 @@
       "kredit": "0.0",
       "Total": "600000.0",
       "Segment": null,
-      "loaded_at": "1.791712713453E9"
+      "loaded_at": "1.791712307647E9"
     },
     {
       "id_sub_transaksi": "1076906",
@@ -16270,7 +16270,7 @@
       "kredit": "0.0",
       "Total": "500000.0",
       "Segment": null,
-      "loaded_at": "1.791712713453E9"
+      "loaded_at": "1.791712307647E9"
     },
     {
       "id_sub_transaksi": "1076908",
@@ -16287,7 +16287,7 @@
       "kredit": "0.0",
       "Total": "500000.0",
       "Segment": null,
-      "loaded_at": "1.791712307647E9"
+      "loaded_at": "1.791712713453E9"
     },
     {
       "id_sub_transaksi": "1076909",
@@ -16474,7 +16474,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120662",
@@ -16491,24 +16491,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
-    },
-    {
-      "id_sub_transaksi": "1119871",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "MUHAMMAD IMAM HANAFI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "726360.0",
-      "kredit": "0.0",
-      "Total": "726360.0",
-      "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1119871",
@@ -16528,11 +16511,11 @@
       "loaded_at": "1.791712384683E9"
     },
     {
-      "id_sub_transaksi": "1107494",
+      "id_sub_transaksi": "1119871",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "MUHAMMAD AIRLANGGA",
+      "nama_penerima": "MUHAMMAD IMAM HANAFI",
       "nama_sub_penerima": "PT. Ume Sembada",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
@@ -16542,7 +16525,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1107494",
@@ -16560,6 +16543,23 @@
       "Total": "726360.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
+    },
+    {
+      "id_sub_transaksi": "1107494",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "MUHAMMAD AIRLANGGA",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "726360.0",
+      "kredit": "0.0",
+      "Total": "726360.0",
+      "Segment": null,
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1107053",
@@ -16576,7 +16576,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1101655",
@@ -16627,7 +16627,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712759002E9"
+      "loaded_at": "1.791712350938E9"
     },
     {
       "id_sub_transaksi": "1101703",
@@ -16644,7 +16644,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712350938E9"
+      "loaded_at": "1.791712759002E9"
     },
     {
       "id_sub_transaksi": "1101812",
@@ -16695,7 +16695,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712350938E9"
+      "loaded_at": "1.791712759002E9"
     },
     {
       "id_sub_transaksi": "1101835",
@@ -16712,7 +16712,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712759002E9"
+      "loaded_at": "1.791712350938E9"
     },
     {
       "id_sub_transaksi": "1101857",
@@ -16763,7 +16763,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1104992",
@@ -16780,24 +16780,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1105036",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "ACHMAD FERDIANSYAH",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105036",
@@ -16817,7 +16800,7 @@
       "loaded_at": "1.791712769211E9"
     },
     {
-      "id_sub_transaksi": "1105039",
+      "id_sub_transaksi": "1105036",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -16827,9 +16810,9 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
+      "debet": "11600.0",
       "kredit": "0.0",
-      "Total": "20800.0",
+      "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
     },
@@ -16849,6 +16832,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712769211E9"
+    },
+    {
+      "id_sub_transaksi": "1105039",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "ACHMAD FERDIANSYAH",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105052",
@@ -16899,7 +16899,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105253",
@@ -16916,7 +16916,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105256",
@@ -16967,7 +16967,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105270",
@@ -16984,7 +16984,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105287",
@@ -17035,7 +17035,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105299",
@@ -17052,24 +17052,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1105390",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "ACHMAD ALDY FEBRIANSYAH",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105390",
@@ -17087,6 +17070,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712769211E9"
+    },
+    {
+      "id_sub_transaksi": "1105390",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "ACHMAD ALDY FEBRIANSYAH",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105393",
@@ -17171,7 +17171,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105502",
@@ -17188,24 +17188,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
-    },
-    {
-      "id_sub_transaksi": "1105747",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "AGUNG HERMAWAN",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
-      "kredit": "0.0",
-      "Total": "5000.0",
-      "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105747",
@@ -17223,6 +17206,23 @@
       "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
+    },
+    {
+      "id_sub_transaksi": "1105747",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "AGUNG HERMAWAN",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105764",
@@ -17273,7 +17273,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105765",
@@ -17290,23 +17290,6 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
-    },
-    {
-      "id_sub_transaksi": "1105777",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "AGUNG HERMAWAN",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "15000.0",
-      "kredit": "0.0",
-      "Total": "15000.0",
-      "Segment": null,
       "loaded_at": "1.791712360848E9"
     },
     {
@@ -17325,6 +17308,23 @@
       "Total": "15000.0",
       "Segment": null,
       "loaded_at": "1.791712769211E9"
+    },
+    {
+      "id_sub_transaksi": "1105777",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "AGUNG HERMAWAN",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "15000.0",
+      "kredit": "0.0",
+      "Total": "15000.0",
+      "Segment": null,
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105778",
@@ -17409,7 +17409,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105804",
@@ -17426,7 +17426,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105920",
@@ -17545,7 +17545,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105959",
@@ -17562,7 +17562,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105972",
@@ -17613,7 +17613,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105990",
@@ -17630,7 +17630,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1106202",
@@ -17749,7 +17749,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1106249",
@@ -17766,24 +17766,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
-    },
-    {
-      "id_sub_transaksi": "1106250",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "HUDAN ALFAROBI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
-      "kredit": "0.0",
-      "Total": "11000.0",
-      "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1106250",
@@ -17801,6 +17784,23 @@
       "Total": "11000.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
+    },
+    {
+      "id_sub_transaksi": "1106250",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "HUDAN ALFAROBI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11000.0",
+      "kredit": "0.0",
+      "Total": "11000.0",
+      "Segment": null,
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1106444",
@@ -17851,7 +17851,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1106546",
@@ -17868,7 +17868,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1106557",
@@ -17919,7 +17919,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1106598",
@@ -17936,7 +17936,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1107059",
@@ -18089,7 +18089,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1107117",
@@ -18106,23 +18106,6 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1107179",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD AIRLANGGA",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
-      "kredit": "0.0",
-      "Total": "5000.0",
-      "Segment": null,
       "loaded_at": "1.791712769211E9"
     },
     {
@@ -18141,6 +18124,23 @@
       "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
+    },
+    {
+      "id_sub_transaksi": "1107179",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD AIRLANGGA",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1107198",
@@ -18293,7 +18293,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1107253",
@@ -18310,7 +18310,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1107254",
@@ -18497,7 +18497,7 @@
       "kredit": "0.0",
       "Total": "37600.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1119757",
@@ -18565,7 +18565,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1119766",
@@ -18582,7 +18582,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1119877",
@@ -18667,7 +18667,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1119891",
@@ -18684,24 +18684,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
-    },
-    {
-      "id_sub_transaksi": "1119918",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD IMAM HANAFI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1119918",
@@ -18719,6 +18702,23 @@
       "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712792822E9"
+    },
+    {
+      "id_sub_transaksi": "1119918",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD IMAM HANAFI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1119989",
@@ -18769,7 +18769,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1120011",
@@ -18786,7 +18786,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120052",
@@ -18871,7 +18871,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1120130",
@@ -18888,7 +18888,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120152",
@@ -18939,7 +18939,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120168",
@@ -18956,24 +18956,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
-    },
-    {
-      "id_sub_transaksi": "1120171",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "M. NAIM BAIDHOWI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
-      "kredit": "0.0",
-      "Total": "11000.0",
-      "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1120171",
@@ -18991,6 +18974,23 @@
       "Total": "11000.0",
       "Segment": null,
       "loaded_at": "1.791712384683E9"
+    },
+    {
+      "id_sub_transaksi": "1120171",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "M. NAIM BAIDHOWI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11000.0",
+      "kredit": "0.0",
+      "Total": "11000.0",
+      "Segment": null,
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120182",
@@ -19143,7 +19143,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120959",
@@ -19160,24 +19160,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
-    },
-    {
-      "id_sub_transaksi": "1121150",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MOH. TAUFIQUL AMRI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
-      "kredit": "0.0",
-      "Total": "5000.0",
-      "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1121150",
@@ -19195,6 +19178,23 @@
       "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712384683E9"
+    },
+    {
+      "id_sub_transaksi": "1121150",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MOH. TAUFIQUL AMRI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1121160",
@@ -19245,7 +19245,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1121166",
@@ -19262,24 +19262,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
-    },
-    {
-      "id_sub_transaksi": "1121169",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MOH. TAUFIQUL AMRI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "21000.0",
-      "kredit": "0.0",
-      "Total": "21000.0",
-      "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1121169",
@@ -19299,7 +19282,7 @@
       "loaded_at": "1.791712792822E9"
     },
     {
-      "id_sub_transaksi": "1121187",
+      "id_sub_transaksi": "1121169",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -19309,11 +19292,11 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
+      "debet": "21000.0",
       "kredit": "0.0",
-      "Total": "11600.0",
+      "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1121187",
@@ -19331,6 +19314,23 @@
       "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712384683E9"
+    },
+    {
+      "id_sub_transaksi": "1121187",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MOH. TAUFIQUL AMRI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1121448",
@@ -19415,7 +19415,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1124091",
@@ -19432,24 +19432,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
-    },
-    {
-      "id_sub_transaksi": "1124104",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "IMAM MUSI KHOTZAU",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "21000.0",
-      "kredit": "0.0",
-      "Total": "21000.0",
-      "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1124104",
@@ -19469,19 +19452,19 @@
       "loaded_at": "1.791712394778E9"
     },
     {
-      "id_sub_transaksi": "1124113",
+      "id_sub_transaksi": "1124104",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "IMAM MUSI KHOTZAU",
       "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Jasa",
+      "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
+      "debet": "21000.0",
       "kredit": "0.0",
-      "Total": "20800.0",
+      "Total": "21000.0",
       "Segment": null,
       "loaded_at": "1.791712804688E9"
     },
@@ -19503,19 +19486,19 @@
       "loaded_at": "1.791712394778E9"
     },
     {
-      "id_sub_transaksi": "1124141",
+      "id_sub_transaksi": "1124113",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "IMAM MUSI KHOTZAU",
       "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Rikjang",
+      "operasional": "Diskon Jasa",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
+      "debet": "20800.0",
       "kredit": "0.0",
-      "Total": "11600.0",
+      "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712804688E9"
     },
@@ -19537,7 +19520,7 @@
       "loaded_at": "1.791712394778E9"
     },
     {
-      "id_sub_transaksi": "1124144",
+      "id_sub_transaksi": "1124141",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -19547,11 +19530,11 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
+      "debet": "11600.0",
       "kredit": "0.0",
-      "Total": "5000.0",
+      "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1124144",
@@ -19569,6 +19552,23 @@
       "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712804688E9"
+    },
+    {
+      "id_sub_transaksi": "1124144",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "IMAM MUSI KHOTZAU",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1124155",
@@ -19653,7 +19653,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1124259",
@@ -19670,7 +19670,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1124278",
@@ -19755,7 +19755,7 @@
       "kredit": "0.0",
       "Total": "7500.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1124593",
@@ -19772,7 +19772,7 @@
       "kredit": "0.0",
       "Total": "7500.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1074538",
@@ -19788,23 +19788,6 @@
       "debet": "1000000.0",
       "kredit": "0.0",
       "Total": "1000000.0",
-      "Segment": null,
-      "loaded_at": "1.791712713453E9"
-    },
-    {
-      "id_sub_transaksi": "1074523",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[8021] Personalia",
-      "nama_cc": "Non CC",
-      "nama_penerima": "ibnu.chris",
-      "nama_sub_penerima": "may.azmianty",
-      "operasional": "Alokasi 88 - BIAYA PELATIHAN WEBINAR ZOOMEMERGENCY BLS & ACLS UPDATE ACCORDING TO THE 2025 AMERICAN HEART ASSOCIATION SUPPORT GILELINES - Manual",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.8",
-      "Nama_COA": "COA 5.1.8",
-      "debet": "2380265.0",
-      "kredit": "0.0",
-      "Total": "2380265.0",
       "Segment": null,
       "loaded_at": "1.791712307647E9"
     },
@@ -19824,6 +19807,23 @@
       "Total": "2380265.0",
       "Segment": null,
       "loaded_at": "1.791712713453E9"
+    },
+    {
+      "id_sub_transaksi": "1074523",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[8021] Personalia",
+      "nama_cc": "Non CC",
+      "nama_penerima": "ibnu.chris",
+      "nama_sub_penerima": "may.azmianty",
+      "operasional": "Alokasi 88 - BIAYA PELATIHAN WEBINAR ZOOMEMERGENCY BLS & ACLS UPDATE ACCORDING TO THE 2025 AMERICAN HEART ASSOCIATION SUPPORT GILELINES - Manual",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.8",
+      "Nama_COA": "COA 5.1.8",
+      "debet": "2380265.0",
+      "kredit": "0.0",
+      "Total": "2380265.0",
+      "Segment": null,
+      "loaded_at": "1.791712307647E9"
     },
     {
       "id_sub_transaksi": "1074522",
@@ -19874,24 +19874,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
-    },
-    {
-      "id_sub_transaksi": "1106318",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
-      "nama_penerima": "HUDAN ALFAROBI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "726360.0",
-      "kredit": "0.0",
-      "Total": "726360.0",
-      "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1106318",
@@ -19911,21 +19894,21 @@
       "loaded_at": "1.791712360848E9"
     },
     {
-      "id_sub_transaksi": "1837566",
+      "id_sub_transaksi": "1106318",
       "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[8021] Personalia",
-      "nama_cc": "Non CC",
-      "nama_penerima": "ibnu.chris",
-      "nama_sub_penerima": "fajar.aldiansyah",
-      "operasional": "Alokasi 88 - TUNJ&IURAN BPJS KESEHATAN BLN. MARET 2026 - Manual",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "122 - INSTALASI LABORATORIUM GRESIK",
+      "nama_penerima": "HUDAN ALFAROBI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.7",
-      "Nama_COA": "COA 5.1.7",
-      "debet": "1.96513478E8",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "726360.0",
       "kredit": "0.0",
-      "Total": "1.96513478E8",
+      "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712471502E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1837566",
@@ -19945,21 +19928,21 @@
       "loaded_at": "1.791712896467E9"
     },
     {
-      "id_sub_transaksi": "1076150",
+      "id_sub_transaksi": "1837566",
       "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[8115] Gudang & Distribusi",
-      "nama_cc": "GUDANG",
-      "nama_penerima": "mina.khussaniya",
-      "nama_sub_penerima": "mina.khussaniya",
-      "operasional": "Pemakaian 478, (2505) Tas Kresek Putih Sedang 28x45, (73) GUDANG, Inventori ID (74382)",
+      "nama_sub_unit": "[8021] Personalia",
+      "nama_cc": "Non CC",
+      "nama_penerima": "ibnu.chris",
+      "nama_sub_penerima": "fajar.aldiansyah",
+      "operasional": "Alokasi 88 - TUNJ&IURAN BPJS KESEHATAN BLN. MARET 2026 - Manual",
       "keterangan": "Jurnal Umum",
-      "coa_code": "5.2.6",
-      "Nama_COA": "COA 5.2.6",
-      "debet": "7729.26",
+      "coa_code": "5.1.7",
+      "Nama_COA": "COA 5.1.7",
+      "debet": "1.96513478E8",
       "kredit": "0.0",
-      "Total": "7729.26",
+      "Total": "1.96513478E8",
       "Segment": null,
-      "loaded_at": "1.791712713453E9"
+      "loaded_at": "1.791712471502E9"
     },
     {
       "id_sub_transaksi": "1076150",
@@ -19979,6 +19962,23 @@
       "loaded_at": "1.791712307647E9"
     },
     {
+      "id_sub_transaksi": "1076150",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[8115] Gudang & Distribusi",
+      "nama_cc": "GUDANG",
+      "nama_penerima": "mina.khussaniya",
+      "nama_sub_penerima": "mina.khussaniya",
+      "operasional": "Pemakaian 478, (2505) Tas Kresek Putih Sedang 28x45, (73) GUDANG, Inventori ID (74382)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.2.6",
+      "Nama_COA": "COA 5.2.6",
+      "debet": "7729.26",
+      "kredit": "0.0",
+      "Total": "7729.26",
+      "Segment": null,
+      "loaded_at": "1.791712713453E9"
+    },
+    {
       "id_sub_transaksi": "1726620",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[8017] PEMASARAN & PENJUALAN",
@@ -20061,7 +20061,7 @@
       "kredit": "0.0",
       "Total": "50450.0",
       "Segment": null,
-      "loaded_at": "1.791712471502E9"
+      "loaded_at": "1.791712896467E9"
     },
     {
       "id_sub_transaksi": "1629786",
@@ -20078,7 +20078,7 @@
       "kredit": "0.0",
       "Total": "50450.0",
       "Segment": null,
-      "loaded_at": "1.791712896467E9"
+      "loaded_at": "1.791712471502E9"
     },
     {
       "id_sub_transaksi": "1105478",
@@ -20231,7 +20231,7 @@
       "kredit": "0.0",
       "Total": "55500.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1121510",
@@ -20248,7 +20248,7 @@
       "kredit": "0.0",
       "Total": "55500.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120893",
@@ -20265,24 +20265,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712792822E9"
-    },
-    {
-      "id_sub_transaksi": "1076828",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9123] KAMAR OPERASI",
-      "nama_cc": "121 - INSTALASI BEDAH SENTRAL (IBS)",
-      "nama_penerima": "tyas.aji",
-      "nama_sub_penerima": "tyas.aji",
-      "operasional": "Pemakaian 479, (2883) Door Closer uk besar, (26) 121 - INSTALASI BEDAH SENTRAL (IBS), Inventori ID (74393)",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.2.6",
-      "Nama_COA": "COA 5.2.6",
-      "debet": "460000.0",
-      "kredit": "0.0",
-      "Total": "460000.0",
-      "Segment": null,
-      "loaded_at": "1.791712713453E9"
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1076828",
@@ -20302,6 +20285,23 @@
       "loaded_at": "1.791712307647E9"
     },
     {
+      "id_sub_transaksi": "1076828",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9123] KAMAR OPERASI",
+      "nama_cc": "121 - INSTALASI BEDAH SENTRAL (IBS)",
+      "nama_penerima": "tyas.aji",
+      "nama_sub_penerima": "tyas.aji",
+      "operasional": "Pemakaian 479, (2883) Door Closer uk besar, (26) 121 - INSTALASI BEDAH SENTRAL (IBS), Inventori ID (74393)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.2.6",
+      "Nama_COA": "COA 5.2.6",
+      "debet": "460000.0",
+      "kredit": "0.0",
+      "Total": "460000.0",
+      "Segment": null,
+      "loaded_at": "1.791712713453E9"
+    },
+    {
       "id_sub_transaksi": "1120893",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
@@ -20316,7 +20316,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1119995",
@@ -20435,7 +20435,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1077484",
@@ -20486,23 +20486,6 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
-    },
-    {
-      "id_sub_transaksi": "1105962",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "123 - RADIOLOGI GRESIK",
-      "nama_penerima": "HUDAN ALFAROBI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "37000.0",
-      "kredit": "0.0",
-      "Total": "37000.0",
-      "Segment": null,
       "loaded_at": "1.791712360848E9"
     },
     {
@@ -20523,11 +20506,11 @@
       "loaded_at": "1.791712769211E9"
     },
     {
-      "id_sub_transaksi": "1105737",
+      "id_sub_transaksi": "1105962",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "123 - RADIOLOGI GRESIK",
-      "nama_penerima": "AGUNG HERMAWAN",
+      "nama_penerima": "HUDAN ALFAROBI",
       "nama_sub_penerima": "PT. Ume Sembada",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
@@ -20537,7 +20520,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105737",
@@ -20555,6 +20538,23 @@
       "Total": "37000.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
+    },
+    {
+      "id_sub_transaksi": "1105737",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "123 - RADIOLOGI GRESIK",
+      "nama_penerima": "AGUNG HERMAWAN",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "37000.0",
+      "kredit": "0.0",
+      "Total": "37000.0",
+      "Segment": null,
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105242",
@@ -20571,7 +20571,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1124295",
@@ -20622,7 +20622,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1124140",
@@ -20639,24 +20639,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
-    },
-    {
-      "id_sub_transaksi": "1121178",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "MOH. TAUFIQUL AMRI",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "28000.0",
-      "kredit": "0.0",
-      "Total": "28000.0",
-      "Segment": null,
-      "loaded_at": "1.791712792822E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1121178",
@@ -20676,7 +20659,7 @@
       "loaded_at": "1.791712384683E9"
     },
     {
-      "id_sub_transaksi": "1120920",
+      "id_sub_transaksi": "1121178",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
@@ -20690,7 +20673,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712384683E9"
+      "loaded_at": "1.791712792822E9"
     },
     {
       "id_sub_transaksi": "1120920",
@@ -20710,11 +20693,11 @@
       "loaded_at": "1.791712792822E9"
     },
     {
-      "id_sub_transaksi": "1120137",
+      "id_sub_transaksi": "1120920",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "M. NAIM BAIDHOWI",
+      "nama_penerima": "MOH. TAUFIQUL AMRI",
       "nama_sub_penerima": "PT. Ume Sembada",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
@@ -20742,6 +20725,23 @@
       "Total": "28000.0",
       "Segment": null,
       "loaded_at": "1.791712792822E9"
+    },
+    {
+      "id_sub_transaksi": "1120137",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "INSTALASI RAWAT JALAN",
+      "nama_penerima": "M. NAIM BAIDHOWI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "28000.0",
+      "kredit": "0.0",
+      "Total": "28000.0",
+      "Segment": null,
+      "loaded_at": "1.791712384683E9"
     },
     {
       "id_sub_transaksi": "1120010",
@@ -20894,7 +20894,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1107171",
@@ -20911,24 +20911,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1107084",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "AKHMAD ANDREAN ALFARENZA",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "28000.0",
-      "kredit": "0.0",
-      "Total": "28000.0",
-      "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1107084",
@@ -20948,7 +20931,7 @@
       "loaded_at": "1.791712769211E9"
     },
     {
-      "id_sub_transaksi": "1106539",
+      "id_sub_transaksi": "1107084",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
@@ -20982,6 +20965,40 @@
       "loaded_at": "1.791712769211E9"
     },
     {
+      "id_sub_transaksi": "1106539",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "INSTALASI RAWAT JALAN",
+      "nama_penerima": "AKHMAD ANDREAN ALFARENZA",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "28000.0",
+      "kredit": "0.0",
+      "Total": "28000.0",
+      "Segment": null,
+      "loaded_at": "1.791712360848E9"
+    },
+    {
+      "id_sub_transaksi": "1106321",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "INSTALASI RAWAT JALAN",
+      "nama_penerima": "HUDAN ALFAROBI",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "28000.0",
+      "kredit": "0.0",
+      "Total": "28000.0",
+      "Segment": null,
+      "loaded_at": "1.791712360848E9"
+    },
+    {
       "id_sub_transaksi": "1106321",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
@@ -20999,7 +21016,7 @@
       "loaded_at": "1.791712769211E9"
     },
     {
-      "id_sub_transaksi": "1106321",
+      "id_sub_transaksi": "1105961",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
@@ -21013,7 +21030,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105961",
@@ -21033,11 +21050,11 @@
       "loaded_at": "1.791712360848E9"
     },
     {
-      "id_sub_transaksi": "1105961",
+      "id_sub_transaksi": "1105811",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "HUDAN ALFAROBI",
+      "nama_penerima": "AGUNG HERMAWAN",
       "nama_sub_penerima": "PT. Ume Sembada",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
@@ -21067,7 +21084,7 @@
       "loaded_at": "1.791712360848E9"
     },
     {
-      "id_sub_transaksi": "1105811",
+      "id_sub_transaksi": "1105723",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
@@ -21101,11 +21118,11 @@
       "loaded_at": "1.791712360848E9"
     },
     {
-      "id_sub_transaksi": "1105723",
+      "id_sub_transaksi": "1105529",
       "tanggal_sub_transaksi": "2026-03-09",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "AGUNG HERMAWAN",
+      "nama_penerima": "ACHMAD ALDY FEBRIANSYAH",
       "nama_sub_penerima": "PT. Ume Sembada",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
@@ -21133,23 +21150,6 @@
       "Total": "28000.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1105529",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "ACHMAD ALDY FEBRIANSYAH",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "28000.0",
-      "kredit": "0.0",
-      "Total": "28000.0",
-      "Segment": null,
-      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105254",
@@ -21218,23 +21218,6 @@
       "Total": "28000.0",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1101821",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "ACHMAD FERDIANSYAH",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "28000.0",
-      "kredit": "0.0",
-      "Total": "28000.0",
-      "Segment": null,
-      "loaded_at": "1.791712350938E9"
     },
     {
       "id_sub_transaksi": "1101821",
@@ -21252,6 +21235,23 @@
       "Total": "28000.0",
       "Segment": null,
       "loaded_at": "1.791712759002E9"
+    },
+    {
+      "id_sub_transaksi": "1101821",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "INSTALASI RAWAT JALAN",
+      "nama_penerima": "ACHMAD FERDIANSYAH",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "28000.0",
+      "kredit": "0.0",
+      "Total": "28000.0",
+      "Segment": null,
+      "loaded_at": "1.791712350938E9"
     },
     {
       "id_sub_transaksi": "1105242",
@@ -21268,24 +21268,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1101633",
-      "tanggal_sub_transaksi": "2026-03-09",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "123 - RADIOLOGI GRESIK",
-      "nama_penerima": "ACHMAD FERDIANSYAH",
-      "nama_sub_penerima": "PT. Ume Sembada",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "37000.0",
-      "kredit": "0.0",
-      "Total": "37000.0",
-      "Segment": null,
-      "loaded_at": "1.791712350938E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1101633",
@@ -21303,6 +21286,23 @@
       "Total": "37000.0",
       "Segment": null,
       "loaded_at": "1.791712759002E9"
+    },
+    {
+      "id_sub_transaksi": "1101633",
+      "tanggal_sub_transaksi": "2026-03-09",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "123 - RADIOLOGI GRESIK",
+      "nama_penerima": "ACHMAD FERDIANSYAH",
+      "nama_sub_penerima": "PT. Ume Sembada",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "37000.0",
+      "kredit": "0.0",
+      "Total": "37000.0",
+      "Segment": null,
+      "loaded_at": "1.791712350938E9"
     },
     {
       "id_sub_transaksi": "1104913",
@@ -21387,7 +21387,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1131150",
@@ -21438,7 +21438,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131000",
@@ -21455,24 +21455,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1131005",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD RIZAL FAHMI",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131005",
@@ -21492,7 +21475,7 @@
       "loaded_at": "1.791712404694E9"
     },
     {
-      "id_sub_transaksi": "1131007",
+      "id_sub_transaksi": "1131005",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -21502,11 +21485,11 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "21000.0",
+      "debet": "11600.0",
       "kredit": "0.0",
-      "Total": "21000.0",
+      "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131007",
@@ -21524,6 +21507,23 @@
       "Total": "21000.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1131007",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD RIZAL FAHMI",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "21000.0",
+      "kredit": "0.0",
+      "Total": "21000.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131028",
@@ -21608,7 +21608,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131042",
@@ -21625,7 +21625,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131052",
@@ -21676,7 +21676,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131060",
@@ -21693,7 +21693,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131063",
@@ -21744,7 +21744,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131261",
@@ -21761,24 +21761,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1131268",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "EKO KHOIRUR ROSYIDIN",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "6000.0",
-      "kredit": "0.0",
-      "Total": "6000.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131268",
@@ -21798,21 +21781,21 @@
       "loaded_at": "1.791712404694E9"
     },
     {
-      "id_sub_transaksi": "1131294",
+      "id_sub_transaksi": "1131268",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "EKO KHOIRUR ROSYIDIN",
       "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Jasa",
+      "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
+      "debet": "6000.0",
       "kredit": "0.0",
-      "Total": "20800.0",
+      "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131294",
@@ -21830,6 +21813,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1131294",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "EKO KHOIRUR ROSYIDIN",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Jasa",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131312",
@@ -21880,7 +21880,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131316",
@@ -21897,7 +21897,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131338",
@@ -21948,7 +21948,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131359",
@@ -21965,24 +21965,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
-    },
-    {
-      "id_sub_transaksi": "1131380",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "EKO KHOIRUR ROSYIDIN",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
-      "kredit": "0.0",
-      "Total": "5000.0",
-      "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131380",
@@ -22000,6 +21983,23 @@
       "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1131380",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "EKO KHOIRUR ROSYIDIN",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131391",
@@ -22050,7 +22050,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132212",
@@ -22067,24 +22067,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1132213",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "AGUS SUYONO",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Jasa",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132213",
@@ -22104,19 +22087,19 @@
       "loaded_at": "1.791712404694E9"
     },
     {
-      "id_sub_transaksi": "1132219",
+      "id_sub_transaksi": "1132213",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "AGUS SUYONO",
       "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
+      "operasional": "Diskon Jasa",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
+      "debet": "20800.0",
       "kredit": "0.0",
-      "Total": "5000.0",
+      "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
     },
@@ -22136,6 +22119,23 @@
       "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1132219",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "AGUS SUYONO",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132226",
@@ -22288,7 +22288,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132251",
@@ -22305,7 +22305,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132258",
@@ -22356,7 +22356,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132376",
@@ -22373,7 +22373,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132377",
@@ -22458,7 +22458,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132389",
@@ -22475,23 +22475,6 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
-    },
-    {
-      "id_sub_transaksi": "1132395",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "EKO VARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Jasa",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
       "loaded_at": "1.791712816758E9"
     },
     {
@@ -22510,6 +22493,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1132395",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "EKO VARDIANSYAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Jasa",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132400",
@@ -22560,7 +22560,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132404",
@@ -22577,23 +22577,6 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
-    },
-    {
-      "id_sub_transaksi": "1132407",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "EKO VARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
-      "kredit": "0.0",
-      "Total": "11000.0",
-      "Segment": null,
       "loaded_at": "1.791712816758E9"
     },
     {
@@ -22614,7 +22597,7 @@
       "loaded_at": "1.791712404694E9"
     },
     {
-      "id_sub_transaksi": "1132409",
+      "id_sub_transaksi": "1132407",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -22624,11 +22607,11 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
+      "debet": "11000.0",
       "kredit": "0.0",
-      "Total": "11600.0",
+      "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132409",
@@ -22646,6 +22629,23 @@
       "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1132409",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "EKO VARDIANSYAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132501",
@@ -22696,7 +22696,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132503",
@@ -22713,7 +22713,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132506",
@@ -22798,7 +22798,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132508",
@@ -22815,23 +22815,6 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
-    },
-    {
-      "id_sub_transaksi": "1132509",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "TEGUH FIRMANSAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
-      "kredit": "0.0",
-      "Total": "11000.0",
-      "Segment": null,
       "loaded_at": "1.791712816758E9"
     },
     {
@@ -22852,7 +22835,7 @@
       "loaded_at": "1.791712404694E9"
     },
     {
-      "id_sub_transaksi": "1132513",
+      "id_sub_transaksi": "1132509",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -22862,9 +22845,9 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
+      "debet": "11000.0",
       "kredit": "0.0",
-      "Total": "11600.0",
+      "Total": "11000.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
     },
@@ -22886,7 +22869,7 @@
       "loaded_at": "1.791712404694E9"
     },
     {
-      "id_sub_transaksi": "1132528",
+      "id_sub_transaksi": "1132513",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -22896,11 +22879,11 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "15000.0",
+      "debet": "11600.0",
       "kredit": "0.0",
-      "Total": "15000.0",
+      "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132528",
@@ -22918,6 +22901,40 @@
       "Total": "15000.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1132528",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "TEGUH FIRMANSAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "15000.0",
+      "kredit": "0.0",
+      "Total": "15000.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1132529",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "TEGUH FIRMANSAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "6000.0",
+      "kredit": "0.0",
+      "Total": "6000.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132529",
@@ -22937,40 +22954,6 @@
       "loaded_at": "1.791712816758E9"
     },
     {
-      "id_sub_transaksi": "1132529",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "TEGUH FIRMANSAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "6000.0",
-      "kredit": "0.0",
-      "Total": "6000.0",
-      "Segment": null,
-      "loaded_at": "1.791712404694E9"
-    },
-    {
-      "id_sub_transaksi": "1132601",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MOHAMMAD FAJAR ACHFAN",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Jasa",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
-      "loaded_at": "1.791712404694E9"
-    },
-    {
       "id_sub_transaksi": "1132601",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
@@ -22988,13 +22971,13 @@
       "loaded_at": "1.791712816758E9"
     },
     {
-      "id_sub_transaksi": "1132604",
+      "id_sub_transaksi": "1132601",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "MOHAMMAD FAJAR ACHFAN",
       "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
+      "operasional": "Diskon Jasa",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
@@ -23020,6 +23003,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1132604",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MOHAMMAD FAJAR ACHFAN",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132608",
@@ -23104,7 +23104,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132612",
@@ -23121,7 +23121,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132625",
@@ -23206,7 +23206,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132635",
@@ -23223,7 +23223,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132636",
@@ -23342,7 +23342,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132703",
@@ -23359,7 +23359,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132712",
@@ -23410,7 +23410,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132721",
@@ -23427,7 +23427,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132722",
@@ -23478,7 +23478,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132723",
@@ -23495,7 +23495,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132727",
@@ -23580,7 +23580,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132773",
@@ -23597,7 +23597,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132780",
@@ -23682,7 +23682,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132782",
@@ -23699,7 +23699,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132786",
@@ -23784,7 +23784,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132789",
@@ -23801,7 +23801,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132794",
@@ -23920,7 +23920,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132921",
@@ -23937,7 +23937,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132928",
@@ -23988,7 +23988,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132931",
@@ -24005,23 +24005,6 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1132934",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMAD JUHAN DWI SURYANTO",
-      "nama_sub_penerima": "PT Asuka Intiblast Indonesia",
-      "operasional": "Diskon Jasa",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
       "loaded_at": "1.791712404694E9"
     },
     {
@@ -24040,6 +24023,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1132934",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMAD JUHAN DWI SURYANTO",
+      "nama_sub_penerima": "PT Asuka Intiblast Indonesia",
+      "operasional": "Diskon Jasa",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132937",
@@ -24090,7 +24090,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132946",
@@ -24107,7 +24107,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132947",
@@ -24158,7 +24158,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132955",
@@ -24175,24 +24175,7 @@
       "kredit": "0.0",
       "Total": "6000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1133062",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MOKHAMAD YUNUS",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Jasa",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133062",
@@ -24212,21 +24195,21 @@
       "loaded_at": "1.791712404694E9"
     },
     {
-      "id_sub_transaksi": "1133064",
+      "id_sub_transaksi": "1133062",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
       "nama_penerima": "MOKHAMAD YUNUS",
       "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
+      "operasional": "Diskon Jasa",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
+      "debet": "20800.0",
       "kredit": "0.0",
-      "Total": "5000.0",
+      "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133064",
@@ -24244,6 +24227,23 @@
       "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1133064",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MOKHAMAD YUNUS",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "5000.0",
+      "kredit": "0.0",
+      "Total": "5000.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133066",
@@ -24294,7 +24294,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133075",
@@ -24311,24 +24311,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1133080",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MOKHAMAD YUNUS",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133080",
@@ -24346,6 +24329,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1133080",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MOKHAMAD YUNUS",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133088",
@@ -24430,7 +24430,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133102",
@@ -24447,23 +24447,6 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1133103",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MOKHAMAD YUNUS",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
-      "kredit": "0.0",
-      "Total": "11000.0",
-      "Segment": null,
       "loaded_at": "1.791712404694E9"
     },
     {
@@ -24482,6 +24465,23 @@
       "Total": "11000.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1133103",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MOKHAMAD YUNUS",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11000.0",
+      "kredit": "0.0",
+      "Total": "11000.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133191",
@@ -24532,7 +24532,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133196",
@@ -24549,23 +24549,6 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1133199",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "NICOLAS ARDI EKA PERMANA",
-      "nama_sub_penerima": "PT Asuka Intiblast Indonesia",
-      "operasional": "Diskon Jasa",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "20800.0",
-      "kredit": "0.0",
-      "Total": "20800.0",
-      "Segment": null,
       "loaded_at": "1.791712404694E9"
     },
     {
@@ -24584,6 +24567,23 @@
       "Total": "20800.0",
       "Segment": null,
       "loaded_at": "1.791712816758E9"
+    },
+    {
+      "id_sub_transaksi": "1133199",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "NICOLAS ARDI EKA PERMANA",
+      "nama_sub_penerima": "PT Asuka Intiblast Indonesia",
+      "operasional": "Diskon Jasa",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "20800.0",
+      "kredit": "0.0",
+      "Total": "20800.0",
+      "Segment": null,
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133201",
@@ -24770,7 +24770,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133223",
@@ -24787,7 +24787,7 @@
       "kredit": "0.0",
       "Total": "11000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133285",
@@ -24838,7 +24838,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133286",
@@ -24855,24 +24855,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
-    },
-    {
-      "id_sub_transaksi": "1133298",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD IMAM MAHMUDI",
-      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133298",
@@ -24892,7 +24875,7 @@
       "loaded_at": "1.791712816758E9"
     },
     {
-      "id_sub_transaksi": "1133299",
+      "id_sub_transaksi": "1133298",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -24902,9 +24885,9 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "6000.0",
+      "debet": "11600.0",
       "kredit": "0.0",
-      "Total": "6000.0",
+      "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
     },
@@ -24926,7 +24909,7 @@
       "loaded_at": "1.791712816758E9"
     },
     {
-      "id_sub_transaksi": "1133304",
+      "id_sub_transaksi": "1133299",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -24936,9 +24919,9 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
+      "debet": "6000.0",
       "kredit": "0.0",
-      "Total": "5000.0",
+      "Total": "6000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
     },
@@ -24960,7 +24943,7 @@
       "loaded_at": "1.791712816758E9"
     },
     {
-      "id_sub_transaksi": "1133314",
+      "id_sub_transaksi": "1133304",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -24970,9 +24953,9 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "15000.0",
+      "debet": "5000.0",
       "kredit": "0.0",
-      "Total": "15000.0",
+      "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
     },
@@ -24994,7 +24977,7 @@
       "loaded_at": "1.791712816758E9"
     },
     {
-      "id_sub_transaksi": "1133315",
+      "id_sub_transaksi": "1133314",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -25004,11 +24987,11 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "21000.0",
+      "debet": "15000.0",
       "kredit": "0.0",
-      "Total": "21000.0",
+      "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133315",
@@ -25026,6 +25009,23 @@
       "Total": "21000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1133315",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD IMAM MAHMUDI",
+      "nama_sub_penerima": "PT. Asuka Engineering Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "21000.0",
+      "kredit": "0.0",
+      "Total": "21000.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133316",
@@ -25076,7 +25076,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133317",
@@ -25093,7 +25093,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1130060",
@@ -25212,7 +25212,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1130044",
@@ -25229,7 +25229,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1128766",
@@ -25331,24 +25331,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
-    },
-    {
-      "id_sub_transaksi": "1128699",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "M SOFYAN",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "5000.0",
-      "kredit": "0.0",
-      "Total": "5000.0",
-      "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1128699",
@@ -25368,19 +25351,19 @@
       "loaded_at": "1.791712804688E9"
     },
     {
-      "id_sub_transaksi": "1128376",
+      "id_sub_transaksi": "1128699",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
+      "nama_penerima": "M SOFYAN",
       "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
+      "debet": "5000.0",
       "kredit": "0.0",
-      "Total": "11000.0",
+      "Total": "5000.0",
       "Segment": null,
       "loaded_at": "1.791712394778E9"
     },
@@ -25400,6 +25383,23 @@
       "Total": "11000.0",
       "Segment": null,
       "loaded_at": "1.791712804688E9"
+    },
+    {
+      "id_sub_transaksi": "1128376",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11000.0",
+      "kredit": "0.0",
+      "Total": "11000.0",
+      "Segment": null,
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1128374",
@@ -25416,7 +25416,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1131150",
@@ -25484,7 +25484,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1128143",
@@ -25501,24 +25501,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
-    },
-    {
-      "id_sub_transaksi": "1128142",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1128142",
@@ -25536,6 +25519,23 @@
       "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712804688E9"
+    },
+    {
+      "id_sub_transaksi": "1128142",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1128120",
@@ -25586,7 +25586,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1128093",
@@ -25603,23 +25603,6 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
-    },
-    {
-      "id_sub_transaksi": "1128090",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "21000.0",
-      "kredit": "0.0",
-      "Total": "21000.0",
-      "Segment": null,
       "loaded_at": "1.791712804688E9"
     },
     {
@@ -25640,7 +25623,7 @@
       "loaded_at": "1.791712394778E9"
     },
     {
-      "id_sub_transaksi": "1128089",
+      "id_sub_transaksi": "1128090",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "125 - CHECK UP GRESIK",
@@ -25650,9 +25633,9 @@
       "keterangan": "Jurnal Umum",
       "coa_code": "4.3.1",
       "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
+      "debet": "21000.0",
       "kredit": "0.0",
-      "Total": "11600.0",
+      "Total": "21000.0",
       "Segment": null,
       "loaded_at": "1.791712804688E9"
     },
@@ -25672,6 +25655,23 @@
       "Total": "11600.0",
       "Segment": null,
       "loaded_at": "1.791712394778E9"
+    },
+    {
+      "id_sub_transaksi": "1128089",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1128006",
@@ -25722,7 +25722,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127999",
@@ -25739,24 +25739,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
-    },
-    {
-      "id_sub_transaksi": "1127910",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "AHMAD FUAD ANWARI",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11000.0",
-      "kredit": "0.0",
-      "Total": "11000.0",
-      "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1127910",
@@ -25774,6 +25757,23 @@
       "Total": "11000.0",
       "Segment": null,
       "loaded_at": "1.791712804688E9"
+    },
+    {
+      "id_sub_transaksi": "1127910",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "AHMAD FUAD ANWARI",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11000.0",
+      "kredit": "0.0",
+      "Total": "11000.0",
+      "Segment": null,
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127904",
@@ -25824,7 +25824,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127903",
@@ -25841,7 +25841,7 @@
       "kredit": "0.0",
       "Total": "5000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1127902",
@@ -25892,7 +25892,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1127889",
@@ -25909,24 +25909,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
-    },
-    {
-      "id_sub_transaksi": "1127652",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "28000.0",
-      "kredit": "0.0",
-      "Total": "28000.0",
-      "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127652",
@@ -25946,7 +25929,7 @@
       "loaded_at": "1.791712394778E9"
     },
     {
-      "id_sub_transaksi": "1127663",
+      "id_sub_transaksi": "1127652",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
@@ -25980,11 +25963,11 @@
       "loaded_at": "1.791712394778E9"
     },
     {
-      "id_sub_transaksi": "1127913",
+      "id_sub_transaksi": "1127663",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "AHMAD FUAD ANWARI",
+      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
       "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
@@ -26014,7 +25997,7 @@
       "loaded_at": "1.791712394778E9"
     },
     {
-      "id_sub_transaksi": "1127922",
+      "id_sub_transaksi": "1127913",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
@@ -26028,7 +26011,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1127922",
@@ -26048,11 +26031,11 @@
       "loaded_at": "1.791712804688E9"
     },
     {
-      "id_sub_transaksi": "1128057",
+      "id_sub_transaksi": "1127922",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
       "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
+      "nama_penerima": "AHMAD FUAD ANWARI",
       "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
       "operasional": "Diskon Rikjang",
       "keterangan": "Jurnal Umum",
@@ -26062,7 +26045,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1128057",
@@ -26080,6 +26063,23 @@
       "Total": "28000.0",
       "Segment": null,
       "loaded_at": "1.791712394778E9"
+    },
+    {
+      "id_sub_transaksi": "1128057",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "INSTALASI RAWAT JALAN",
+      "nama_penerima": "NANDA SURYA PRATAMA WIBOWO",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "28000.0",
+      "kredit": "0.0",
+      "Total": "28000.0",
+      "Segment": null,
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1128081",
@@ -26198,7 +26198,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1130528",
@@ -26215,7 +26215,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1130566",
@@ -26334,7 +26334,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131627",
@@ -26351,7 +26351,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1131638",
@@ -26402,7 +26402,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132271",
@@ -26419,7 +26419,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132279",
@@ -26470,7 +26470,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132444",
@@ -26487,24 +26487,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1132450",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "TEGUH FIRMANSAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "28000.0",
-      "kredit": "0.0",
-      "Total": "28000.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132450",
@@ -26522,6 +26505,23 @@
       "Total": "28000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1132450",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "INSTALASI RAWAT JALAN",
+      "nama_penerima": "TEGUH FIRMANSAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "28000.0",
+      "kredit": "0.0",
+      "Total": "28000.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132544",
@@ -26572,7 +26572,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133284",
@@ -26691,7 +26691,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132913",
@@ -26708,7 +26708,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132763",
@@ -26742,7 +26742,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127875",
@@ -26759,7 +26759,7 @@
       "kredit": "0.0",
       "Total": "11600.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1127873",
@@ -26963,7 +26963,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132371",
@@ -26980,7 +26980,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132206",
@@ -27032,23 +27032,6 @@
       "Total": "726360.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
-    },
-    {
-      "id_sub_transaksi": "1127781",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "6000.0",
-      "kredit": "0.0",
-      "Total": "6000.0",
-      "Segment": null,
-      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127781",
@@ -27068,6 +27051,23 @@
       "loaded_at": "1.791712804688E9"
     },
     {
+      "id_sub_transaksi": "1127781",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "6000.0",
+      "kredit": "0.0",
+      "Total": "6000.0",
+      "Segment": null,
+      "loaded_at": "1.791712394778E9"
+    },
+    {
       "id_sub_transaksi": "1131249",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9220] MCU",
@@ -27099,7 +27099,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1130977",
@@ -27116,7 +27116,7 @@
       "kredit": "0.0",
       "Total": "726360.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1128789",
@@ -27235,7 +27235,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1127752",
@@ -27252,7 +27252,7 @@
       "kredit": "0.0",
       "Total": "15000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127649",
@@ -27303,7 +27303,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127647",
@@ -27320,92 +27320,7 @@
       "kredit": "0.0",
       "Total": "20800.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
-    },
-    {
-      "id_sub_transaksi": "1105510",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9123] KAMAR OPERASI",
-      "nama_cc": "121 - INSTALASI BEDAH SENTRAL (IBS)",
-      "nama_penerima": "tyas.aji",
-      "nama_sub_penerima": "tyas.aji",
-      "operasional": "Pemakaian 487, (566) Baygon Spray 675gr, (26) 121 - INSTALASI BEDAH SENTRAL (IBS), Inventori ID (17048)",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.2.6",
-      "Nama_COA": "COA 5.2.6",
-      "debet": "78870.66",
-      "kredit": "0.0",
-      "Total": "78870.66",
-      "Segment": null,
-      "loaded_at": "1.791712769211E9"
-    },
-    {
-      "id_sub_transaksi": "1127633",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "21000.0",
-      "kredit": "0.0",
-      "Total": "21000.0",
-      "Segment": null,
       "loaded_at": "1.791712804688E9"
-    },
-    {
-      "id_sub_transaksi": "1127633",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "21000.0",
-      "kredit": "0.0",
-      "Total": "21000.0",
-      "Segment": null,
-      "loaded_at": "1.791712394778E9"
-    },
-    {
-      "id_sub_transaksi": "1127626",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791712804688E9"
-    },
-    {
-      "id_sub_transaksi": "1127626",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "125 - CHECK UP GRESIK",
-      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "11600.0",
-      "kredit": "0.0",
-      "Total": "11600.0",
-      "Segment": null,
-      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1105510",
@@ -27425,6 +27340,91 @@
       "loaded_at": "1.791712360848E9"
     },
     {
+      "id_sub_transaksi": "1127633",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "21000.0",
+      "kredit": "0.0",
+      "Total": "21000.0",
+      "Segment": null,
+      "loaded_at": "1.791712804688E9"
+    },
+    {
+      "id_sub_transaksi": "1127633",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "21000.0",
+      "kredit": "0.0",
+      "Total": "21000.0",
+      "Segment": null,
+      "loaded_at": "1.791712394778E9"
+    },
+    {
+      "id_sub_transaksi": "1127626",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791712394778E9"
+    },
+    {
+      "id_sub_transaksi": "1127626",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "125 - CHECK UP GRESIK",
+      "nama_penerima": "MUHAMMAD ANGGA FARDIANSYAH",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "11600.0",
+      "kredit": "0.0",
+      "Total": "11600.0",
+      "Segment": null,
+      "loaded_at": "1.791712804688E9"
+    },
+    {
+      "id_sub_transaksi": "1105510",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9123] KAMAR OPERASI",
+      "nama_cc": "121 - INSTALASI BEDAH SENTRAL (IBS)",
+      "nama_penerima": "tyas.aji",
+      "nama_sub_penerima": "tyas.aji",
+      "operasional": "Pemakaian 487, (566) Baygon Spray 675gr, (26) 121 - INSTALASI BEDAH SENTRAL (IBS), Inventori ID (17048)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.2.6",
+      "Nama_COA": "COA 5.2.6",
+      "debet": "78870.66",
+      "kredit": "0.0",
+      "Total": "78870.66",
+      "Segment": null,
+      "loaded_at": "1.791712769211E9"
+    },
+    {
       "id_sub_transaksi": "1105512",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[9123] KAMAR OPERASI",
@@ -27439,7 +27439,7 @@
       "kredit": "0.0",
       "Total": "150000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1132659",
@@ -27473,7 +27473,7 @@
       "kredit": "0.0",
       "Total": "150000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1105514",
@@ -27524,7 +27524,7 @@
       "kredit": "0.0",
       "Total": "10000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1105516",
@@ -27541,24 +27541,7 @@
       "kredit": "0.0",
       "Total": "10000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1132732",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "123 - RADIOLOGI GRESIK",
-      "nama_penerima": "MUHAMMAD FAUSI ASRORI",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "37000.0",
-      "kredit": "0.0",
-      "Total": "37000.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1132732",
@@ -27576,6 +27559,23 @@
       "Total": "37000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1132732",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "123 - RADIOLOGI GRESIK",
+      "nama_penerima": "MUHAMMAD FAUSI ASRORI",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "37000.0",
+      "kredit": "0.0",
+      "Total": "37000.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1128247",
@@ -27694,24 +27694,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1132662",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "INSTALASI RAWAT JALAN",
-      "nama_penerima": "MUHAMMAD SYAFI'I",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "28000.0",
-      "kredit": "0.0",
-      "Total": "28000.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132662",
@@ -27729,6 +27712,23 @@
       "Total": "28000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1132662",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "INSTALASI RAWAT JALAN",
+      "nama_penerima": "MUHAMMAD SYAFI'I",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "28000.0",
+      "kredit": "0.0",
+      "Total": "28000.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132668",
@@ -27847,7 +27847,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132875",
@@ -27864,7 +27864,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132876",
@@ -27966,7 +27966,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132878",
@@ -27983,7 +27983,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1130511",
@@ -28034,7 +28034,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133132",
@@ -28051,7 +28051,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133137",
@@ -28119,7 +28119,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1133149",
@@ -28136,7 +28136,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133269",
@@ -28238,7 +28238,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1133267",
@@ -28255,24 +28255,7 @@
       "kredit": "0.0",
       "Total": "28000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1081142",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[8021] Personalia",
-      "nama_cc": "Non CC",
-      "nama_penerima": "ibnu.chris",
-      "nama_sub_penerima": "may.azmianty",
-      "operasional": "Alokasi 88 - TUNJ&IURAN DPLK BNI BLN. MARET 2026 - Manual",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.1.6",
-      "Nama_COA": "COA 5.1.6",
-      "debet": "4405000.0",
-      "kredit": "0.0",
-      "Total": "4405000.0",
-      "Segment": null,
-      "loaded_at": "1.79171272352E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1081142",
@@ -28292,6 +28275,23 @@
       "loaded_at": "1.791712319353E9"
     },
     {
+      "id_sub_transaksi": "1081142",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[8021] Personalia",
+      "nama_cc": "Non CC",
+      "nama_penerima": "ibnu.chris",
+      "nama_sub_penerima": "may.azmianty",
+      "operasional": "Alokasi 88 - TUNJ&IURAN DPLK BNI BLN. MARET 2026 - Manual",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.1.6",
+      "Nama_COA": "COA 5.1.6",
+      "debet": "4405000.0",
+      "kredit": "0.0",
+      "Total": "4405000.0",
+      "Segment": null,
+      "loaded_at": "1.79171272352E9"
+    },
+    {
       "id_sub_transaksi": "1108229",
       "tanggal_sub_transaksi": "2026-03-10",
       "nama_sub_unit": "[8017] PEMASARAN & PENJUALAN",
@@ -28374,7 +28374,7 @@
       "kredit": "0.0",
       "Total": "500000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1108297",
@@ -28391,23 +28391,6 @@
       "kredit": "0.0",
       "Total": "500000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
-    },
-    {
-      "id_sub_transaksi": "1108357",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[8017] PEMASARAN & PENJUALAN",
-      "nama_cc": "Non CC",
-      "nama_penerima": "ibnu.chris",
-      "nama_sub_penerima": "may.azmianty",
-      "operasional": "Alokasi 88 - Biaya Cetak Media Promosi - Manual",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.8.3",
-      "Nama_COA": "COA 5.8.3",
-      "debet": "1064000.0",
-      "kredit": "0.0",
-      "Total": "1064000.0",
-      "Segment": null,
       "loaded_at": "1.791712360848E9"
     },
     {
@@ -28426,6 +28409,23 @@
       "Total": "1064000.0",
       "Segment": null,
       "loaded_at": "1.791712769211E9"
+    },
+    {
+      "id_sub_transaksi": "1108357",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[8017] PEMASARAN & PENJUALAN",
+      "nama_cc": "Non CC",
+      "nama_penerima": "ibnu.chris",
+      "nama_sub_penerima": "may.azmianty",
+      "operasional": "Alokasi 88 - Biaya Cetak Media Promosi - Manual",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.8.3",
+      "Nama_COA": "COA 5.8.3",
+      "debet": "1064000.0",
+      "kredit": "0.0",
+      "Total": "1064000.0",
+      "Segment": null,
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1108425",
@@ -28476,7 +28476,7 @@
       "kredit": "0.0",
       "Total": "1500000.0",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1108426",
@@ -28493,7 +28493,7 @@
       "kredit": "0.0",
       "Total": "1500000.0",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1108427",
@@ -28646,7 +28646,7 @@
       "kredit": "0.0",
       "Total": "1173517.0",
       "Segment": null,
-      "loaded_at": "1.791712471502E9"
+      "loaded_at": "1.791712896467E9"
     },
     {
       "id_sub_transaksi": "1752875",
@@ -28663,7 +28663,7 @@
       "kredit": "0.0",
       "Total": "1173517.0",
       "Segment": null,
-      "loaded_at": "1.791712896467E9"
+      "loaded_at": "1.791712471502E9"
     },
     {
       "id_sub_transaksi": "1751384",
@@ -28714,7 +28714,7 @@
       "kredit": "0.0",
       "Total": "59162.2",
       "Segment": null,
-      "loaded_at": "1.791712769211E9"
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1109131",
@@ -28731,24 +28731,7 @@
       "kredit": "0.0",
       "Total": "59162.2",
       "Segment": null,
-      "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1109147",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9205] POLIKLINIK FISIOTERAPI",
-      "nama_cc": "RUANG FISIOTERAPI",
-      "nama_penerima": "hana.thrisminarsih",
-      "nama_sub_penerima": "hana.thrisminarsih",
-      "operasional": "Pemakaian 490, (2615) Tissue Gulung '120s, (114) RUANG FISIOTERAPI, Inventori ID (74036)",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "5.2.6",
-      "Nama_COA": "COA 5.2.6",
-      "debet": "57844.5",
-      "kredit": "0.0",
-      "Total": "57844.5",
-      "Segment": null,
-      "loaded_at": "1.791712360848E9"
+      "loaded_at": "1.791712769211E9"
     },
     {
       "id_sub_transaksi": "1109147",
@@ -28766,6 +28749,23 @@
       "Total": "57844.5",
       "Segment": null,
       "loaded_at": "1.791712769211E9"
+    },
+    {
+      "id_sub_transaksi": "1109147",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9205] POLIKLINIK FISIOTERAPI",
+      "nama_cc": "RUANG FISIOTERAPI",
+      "nama_penerima": "hana.thrisminarsih",
+      "nama_sub_penerima": "hana.thrisminarsih",
+      "operasional": "Pemakaian 490, (2615) Tissue Gulung '120s, (114) RUANG FISIOTERAPI, Inventori ID (74036)",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "5.2.6",
+      "Nama_COA": "COA 5.2.6",
+      "debet": "57844.5",
+      "kredit": "0.0",
+      "Total": "57844.5",
+      "Segment": null,
+      "loaded_at": "1.791712360848E9"
     },
     {
       "id_sub_transaksi": "1109152",
@@ -28800,23 +28800,6 @@
       "Total": "166650.6",
       "Segment": null,
       "loaded_at": "1.791712360848E9"
-    },
-    {
-      "id_sub_transaksi": "1629852",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[8145] Penagihan",
-      "nama_cc": "Non CC",
-      "nama_penerima": "AJ INHEALTH MI CARE",
-      "nama_sub_penerima": "indri.nurisa",
-      "operasional": "Biaya Selisih Rekap Tagihan",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "1023301.0",
-      "kredit": "0.0",
-      "Total": "1023301.0",
-      "Segment": null,
-      "loaded_at": "1.791712471502E9"
     },
     {
       "id_sub_transaksi": "1629852",
@@ -28834,6 +28817,23 @@
       "Total": "1023301.0",
       "Segment": null,
       "loaded_at": "1.791712896467E9"
+    },
+    {
+      "id_sub_transaksi": "1629852",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[8145] Penagihan",
+      "nama_cc": "Non CC",
+      "nama_penerima": "AJ INHEALTH MI CARE",
+      "nama_sub_penerima": "indri.nurisa",
+      "operasional": "Biaya Selisih Rekap Tagihan",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "1023301.0",
+      "kredit": "0.0",
+      "Total": "1023301.0",
+      "Segment": null,
+      "loaded_at": "1.791712471502E9"
     },
     {
       "id_sub_transaksi": "1130511",
@@ -28952,7 +28952,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1127880",
@@ -28969,7 +28969,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712394778E9"
+      "loaded_at": "1.791712804688E9"
     },
     {
       "id_sub_transaksi": "1127618",
@@ -29088,7 +29088,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132575",
@@ -29105,7 +29105,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1132451",
@@ -29156,7 +29156,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712404694E9"
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1132306",
@@ -29173,24 +29173,7 @@
       "kredit": "0.0",
       "Total": "37000.0",
       "Segment": null,
-      "loaded_at": "1.791712816758E9"
-    },
-    {
-      "id_sub_transaksi": "1131657",
-      "tanggal_sub_transaksi": "2026-03-10",
-      "nama_sub_unit": "[9220] MCU",
-      "nama_cc": "123 - RADIOLOGI GRESIK",
-      "nama_penerima": "AGUS SUYONO",
-      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
-      "operasional": "Diskon Rikjang",
-      "keterangan": "Jurnal Umum",
-      "coa_code": "4.3.1",
-      "Nama_COA": "DISCOUNT PENJUALAN",
-      "debet": "37000.0",
-      "kredit": "0.0",
-      "Total": "37000.0",
-      "Segment": null,
-      "loaded_at": "1.791712816758E9"
+      "loaded_at": "1.791712404694E9"
     },
     {
       "id_sub_transaksi": "1131657",
@@ -29208,6 +29191,23 @@
       "Total": "37000.0",
       "Segment": null,
       "loaded_at": "1.791712404694E9"
+    },
+    {
+      "id_sub_transaksi": "1131657",
+      "tanggal_sub_transaksi": "2026-03-10",
+      "nama_sub_unit": "[9220] MCU",
+      "nama_cc": "123 - RADIOLOGI GRESIK",
+      "nama_penerima": "AGUS SUYONO",
+      "nama_sub_penerima": "PT. Hikari Teknologi Indonesia",
+      "operasional": "Diskon Rikjang",
+      "keterangan": "Jurnal Umum",
+      "coa_code": "4.3.1",
+      "Nama_COA": "DISCOUNT PENJUALAN",
+      "debet": "37000.0",
+      "kredit": "0.0",
+      "Total": "37000.0",
+      "Segment": null,
+      "loaded_at": "1.791712816758E9"
     },
     {
       "id_sub_transaksi": "1128717",
@@ -29224,7 +29224,7 @@
       "kredit": "0.0",
       "Total": "21000.0",
       "Segment": null,
-      "loaded_at": "1.791712804688E9"
+      "loaded_at": "1.791712394778E9"
     },
     {
       "id_sub_transaksi": "1138543",
