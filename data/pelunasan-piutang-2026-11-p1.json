@@ -1,7 +1,7 @@
 {
   "bulan": "2026-11",
   "bagian": 1,
-  "generated_at": "2026-11-25T01:30:05.823Z",
+  "generated_at": "2026-11-26T01:08:10.389Z",
   "pelunasan_detail": [
     {
       "id_sub_transaksi": "9682006",
@@ -14,7 +14,59 @@
       "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - Tagihan ORJTL-ORITL Bulan Pelayanan September 2026",
       "nama_sub_penerima": "indri.nurisa",
       "nama_penerima": "indri.nurisa",
-      "loaded_at": "1.794788518533E9"
+      "loaded_at": "1.795578289028E9"
+    },
+    {
+      "id_sub_transaksi": "10117822",
+      "tanggal_sub_transaksi": "2026-11-16",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "8.12495E7",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - TAGIHAN AMBULANCE RI-RJ & ALKES BUPEL AGUSTUS 2026",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.795575381764E9"
+    },
+    {
+      "id_sub_transaksi": "10117841",
+      "tanggal_sub_transaksi": "2026-11-16",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "8993480.0",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - TAGIHAN SUSULAN ORJTL BUPEL AGUSTUS 2026",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.795575381764E9"
+    },
+    {
+      "id_sub_transaksi": "10118068",
+      "tanggal_sub_transaksi": "2026-11-16",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "9.208807E8",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - TAGIHAN SUSULAN RJTL & RITL  BUPEL AGUSTUS 2026",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.795575381764E9"
+    },
+    {
+      "id_sub_transaksi": "10118671",
+      "tanggal_sub_transaksi": "2026-11-18",
+      "coa_code": "1.1.1.2.1.1",
+      "debet": "1.10459168E8",
+      "kredit": "0.0",
+      "nama_sub_unit": "[8122] Akuntansi Biaya",
+      "nama_cc": "Non CC",
+      "operasional": "PELUNASAN PIUTANG - BPJS Kesehatan Kantor Cabang Gresik - TAGIHAN SUSULAN RJTL & RITL  BUPEL JUNI 2026",
+      "nama_sub_penerima": "indri.nurisa",
+      "nama_penerima": "indri.nurisa",
+      "loaded_at": "1.795575381764E9"
     }
   ]
 }
